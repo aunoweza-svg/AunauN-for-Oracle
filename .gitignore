@@ -1,0 +1,7 @@
+# Learned repository sources are local-only.
+.learn-sources/
+.oracle-skills-source/
+.codex/
+
+# Ignore origin links; keep generated learning documents.
+ψ/learn/**/origin

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="แผนที่ความรู้แบบอินเทอร์แอ็กทีฟสำหรับเรียนรู้ KlakMath จากมุมมองของนักพัฒนาเว็บ"
+    />
+    <title>AunauN // Knowledge Core</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AunauN Knowledge Core home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span>AunauN <b>// Knowledge Core</b></span>
+      </a>
+      <nav aria-label="เมนูหลัก">
+        <a href="#map">Graph</a>
+        <a href="#decode">Decode</a>
+        <a href="#path">Learning Path</a>
+      </nav>
+      <span class="status"><i></i> System online</span>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="map">
+        <div class="hero-copy">
+          <p class="eyebrow">ORACLE LEARNING INTERFACE / 001</p>
+          <h1>เข้าใจโค้ดใหม่<br />ผ่านสิ่งที่เรา<strong>รู้อยู่แล้ว</strong></h1>
+          <p class="lede">
+            KlakMath อาจพูดด้วยภาษา Unity และสมการ แต่โครงสร้างของมันยังเป็นเรื่องเดิมที่คนทำเว็บคุ้นเคย:
+            input, state, transformation และ output
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#decode">เริ่มถอดรหัส</a>
+            <button class="button ghost" id="toggle-motion" type="button">หยุดการหมุน</button>
+          </div>
+          <dl class="metrics" aria-label="สรุป repository">
+            <div><dt>06</dt><dd>Core modules</dd></div>
+            <div><dt>01</dt><dd>Unity package</dd></div>
+            <div><dt>∞</dt><dd>Connections</dd></div>
+          </dl>
+        </div>
+
+        <div class="globe-shell">
+          <div class="hud-label top"><span>KNOWLEDGE GRAPH</span><b>LIVE</b></div>
+          <canvas id="knowledge-globe" aria-label="ลูกโลกแสดงความสัมพันธ์ของโมดูลใน KlakMath"></canvas>
+          <div class="reticle" aria-hidden="true"></div>
+          <div class="hud-label bottom"><span>DRAG TO ROTATE · SELECT A NODE</span><b id="node-count">08 NODES</b></div>
+          <aside class="node-inspector" id="node-inspector" aria-live="polite">
+            <span class="node-code">CORE_00</span>
+            <h2>KlakMath</h2>
+            <p>ศูนย์กลางเครื่องมือคณิตศาสตร์สำหรับ motion, noise, random values และ rotation ใน Unity</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="decode section" id="decode">
+        <div class="section-heading">
+          <p class="eyebrow">TRANSLATION LAYER</p>
+          <h2>จาก Unity<br />สู่ภาษาคนทำเว็บ</h2>
+          <p>ไม่ต้องเริ่มจากสมการทั้งหมด เราเริ่มจาก mental model ที่คุณมีอยู่แล้ว แล้วค่อยเปิดกล่องดำทีละชั้น</p>
+        </div>
+
+        <div class="concept-grid">
+          <article class="concept-card accent-blue">
+            <span class="card-index">01 / MOTION</span>
+            <h3>ExpTween</h3>
+            <p>เหมือน easing ที่ถูกเรียกทุก frame แต่คำนวณให้ความเร็วคงเส้นคงวาแม้ frame rate เปลี่ยน</p>
+            <code>value → lerp → target</code>
+          </article>
+          <article class="concept-card accent-violet">
+            <span class="card-index">02 / STATE</span>
+            <h3>CdsTween</h3>
+            <p>คล้าย spring animation บนเว็บ โดย state ไม่ได้มีแค่ตำแหน่ง แต่จำ velocity เพื่อให้การเคลื่อนไหวมีน้ำหนัก</p>
+            <code>{ value, velocity } → next</code>
+          </article>
+          <article class="concept-card accent-cyan">
+            <span class="card-index">03 / SIGNAL</span>
+            <h3>Noise</h3>
+            <p>ฟังก์ชันสร้างสัญญาณต่อเนื่อง ใช้ขยับวัตถุแบบเป็นธรรมชาติกว่า Math.random() ที่กระโดดไปมา</p>
+            <code>position + seed → smooth value</code>
+          </article>
+          <article class="concept-card accent-orange">
+            <span class="card-index">04 / IDENTITY</span>
+            <h3>XXHash</h3>
+            <p>ค่า pseudo-random ที่ย้อนกลับมาค่าเดิมเสมอ เมื่อ seed และ id เหมือนเดิม—เหมือนสี avatar จาก user ID</p>
+            <code>seed + id → deterministic value</code>
+          </article>
+        </div>
+      </section>
+
+      <section class="path section" id="path">
+        <div class="path-panel">
+          <div class="section-heading compact">
+            <p class="eyebrow">SHARED LEARNING PROTOCOL</p>
+            <h2>เราเรียนรู้ร่วมกัน<br />ทีละ connection</h2>
+          </div>
+          <ol class="learning-steps">
+            <li>
+              <span>01</span>
+              <div><h3>เห็นภาพก่อน</h3><p>เล่นกับ animation และสังเกต input/output โดยยังไม่ต้องแตะสมการ</p></div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><h3>เทียบกับ Web API</h3><p>จับคู่แนวคิดกับ requestAnimationFrame, easing, state และ pure function</p></div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><h3>เปิดสูตรทีละชั้น</h3><p>อ่านโค้ดจริงเฉพาะส่วนที่อธิบายพฤติกรรมที่เราเพิ่งเห็น</p></div>
+            </li>
+          </ol>
+        </div>
+        <div class="signal-card" aria-label="ข้อความจากระบบ">
+          <span>SIGNAL RECEIVED</span>
+          <blockquote>“เราไม่ต้องเข้าใจทุกอย่างก่อนเริ่ม เราสร้างสิ่งที่มองเห็นได้ แล้วใช้มันเป็นสะพานไปหาโค้ด”</blockquote>
+          <a href="ψ/learn/keijiro/KlakMath/KlakMath.md">เปิด Learning Index →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>AUNAUN // ORACLE</span>
+      <span>BUILT FROM VERIFIED REPOSITORY KNOWLEDGE</span>
+      <span id="clock">00:00:00 BKK</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
