@@ -1,0 +1,646 @@
+{
+  "source": "https://github.com/aunoweza-svg/finance-skills",
+  "commit": "cedadc4b9f0f25c072576331a151863c8632a2d6",
+  "verified_at": "2026-10-15T00:48:01.487461+07:00",
+  "destination": "C:\\Users\\aunow\\.codex\\skills",
+  "skills": 26,
+  "file_count": 99,
+  "verification": "All files match pinned Git blobs except the documented frontmatter name adaptation; file inventory complete",
+  "adaptation": "skill-creator installed as finance-skill-creator with frontmatter name updated; system skill unchanged",
+  "groups": {
+    "data-providers": [
+      "finance-sentiment",
+      "fintel-data",
+      "hormuz-strait",
+      "hyperliquid-reader",
+      "tradingview-mcp",
+      "tradingview-reader"
+    ],
+    "market-analysis": [
+      "company-valuation",
+      "earnings-preview",
+      "earnings-recap",
+      "estimate-analysis",
+      "etf-premium",
+      "options-payoff",
+      "saas-valuation-compression",
+      "sepa-strategy",
+      "stock-correlation",
+      "stock-liquidity",
+      "yfinance-data"
+    ],
+    "skill-creator": [
+      "finance-skill-creator"
+    ],
+    "social-readers": [
+      "discord-reader",
+      "linkedin-reader",
+      "opencli-reader",
+      "telegram-reader",
+      "twitter-reader",
+      "yc-reader"
+    ],
+    "startup-tools": [
+      "startup-analysis"
+    ],
+    "ui-tools": [
+      "generative-ui"
+    ]
+  },
+  "files": [
+    {
+      "source": "plugins/data-providers/skills/finance-sentiment/README.md",
+      "installed": "finance-sentiment/README.md",
+      "sha256": "544a90705413a4c37be16888a69bfae8dac2ae09ff5c09729c7544858297cf5e",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/finance-sentiment/SKILL.md",
+      "installed": "finance-sentiment/SKILL.md",
+      "sha256": "cda06b8840cab5d623a09598317b23778d3453601808902abf3d945c8d1f4b63",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/finance-sentiment/references/api_reference.md",
+      "installed": "finance-sentiment/references/api_reference.md",
+      "sha256": "7ff5f000a3850f328edd5d6dcb45fc9dc9cc14b8ec148036e3ee13ecb3213a93",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/fintel-data/README.md",
+      "installed": "fintel-data/README.md",
+      "sha256": "b57ef9f94fe7ed9cf4c334964a2a8be3a5f314e8e668d17bd532a0424d6a8d75",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/fintel-data/SKILL.md",
+      "installed": "fintel-data/SKILL.md",
+      "sha256": "aca70480b2c4ecb9e3297804b08ed2f5e42847a1ae0df34a4db96a9f3c937880",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/fintel-data/references/api-reference.md",
+      "installed": "fintel-data/references/api-reference.md",
+      "sha256": "d05cad2b69174581c97718cb265bd4d7b4a8e5d2ce0cc30841eddfb4c59f4d61",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/hormuz-strait/README.md",
+      "installed": "hormuz-strait/README.md",
+      "sha256": "06869de5a96b2483648f9ae0d126d39551e2c42e4c2dd0a42917acd31cb862f6",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/hormuz-strait/SKILL.md",
+      "installed": "hormuz-strait/SKILL.md",
+      "sha256": "1f179c1a95a7793d73b028c3724c51ed7843503c7742901bfb0bfe44f6109a89",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/hormuz-strait/references/api_schema.md",
+      "installed": "hormuz-strait/references/api_schema.md",
+      "sha256": "6b931a00052af7307b1db0d46154a8547ba2c566d6f6d3e34782f595d2050522",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/hyperliquid-reader/README.md",
+      "installed": "hyperliquid-reader/README.md",
+      "sha256": "4c3fb23b3d019c136c04c738959976b36f48df61b9ad11a92c5c15f5f0cba144",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/hyperliquid-reader/SKILL.md",
+      "installed": "hyperliquid-reader/SKILL.md",
+      "sha256": "429d8c311a72b11c5e456b7a535b120ce9f31d21a6c5c67c6b062c6f746f01db",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/hyperliquid-reader/references/commands.md",
+      "installed": "hyperliquid-reader/references/commands.md",
+      "sha256": "de8f62dbfc7b09f50f2f3070977beb073091423a54e6fea6dffb3aa70ea4f343",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/tradingview-mcp/README.md",
+      "installed": "tradingview-mcp/README.md",
+      "sha256": "3edfe4f73076a982a2333287414720b6704a8a3507d4ddce43b53905d3de2853",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/tradingview-mcp/SKILL.md",
+      "installed": "tradingview-mcp/SKILL.md",
+      "sha256": "940c90063d15f26ff7150ca5175060b29b2ee6bade473934e970a79d5395e54e",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/tradingview-reader/README.md",
+      "installed": "tradingview-reader/README.md",
+      "sha256": "d197fc5a74a51db24466244917d9f0eb205edc544a06bfdfe048d36a194c8dfe",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/tradingview-reader/SKILL.md",
+      "installed": "tradingview-reader/SKILL.md",
+      "sha256": "6a60c00a67f55c28bc54c9d0541d0299c72c53f98e9a52f3495015861988b71f",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/data-providers/skills/tradingview-reader/references/commands.md",
+      "installed": "tradingview-reader/references/commands.md",
+      "sha256": "b33caf7f5da7d234651fda26e7262927e26acc4f2cc32cf6b1491b06d1e874d3",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/company-valuation/README.md",
+      "installed": "company-valuation/README.md",
+      "sha256": "84d37e76e5279c062aec6e4489e0c5e842f6327894e9e26252a52439257db7ce",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/company-valuation/SKILL.md",
+      "installed": "company-valuation/SKILL.md",
+      "sha256": "1400498965479ff2253747ddcfc22bf82a2ef709fbc02e30b6d38c464855675c",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/company-valuation/references/dcf.md",
+      "installed": "company-valuation/references/dcf.md",
+      "sha256": "71b4fb10de0cdddf8ada7170ad37b50db2262a853fd4afd5de60dfefee7331d2",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/company-valuation/references/relative_valuation.md",
+      "installed": "company-valuation/references/relative_valuation.md",
+      "sha256": "7fd32e31223d2a03bb404bcb390256d325d41e31f70e564141d0a2203581db7b",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/company-valuation/references/sotp.md",
+      "installed": "company-valuation/references/sotp.md",
+      "sha256": "6d7f0a8e36c503639c0ead9f99d4b92da79f96e76f3fce62ce5a929ffa25353d",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/company-valuation/references/wacc_erp_rates.md",
+      "installed": "company-valuation/references/wacc_erp_rates.md",
+      "sha256": "7a77f82bdf6460485ab371c58a0cf411638b78d0617029bd905861e2e4a68037",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/earnings-preview/README.md",
+      "installed": "earnings-preview/README.md",
+      "sha256": "0e3e1435e6a71d8930d78ece790faf300fab60cff2a04b209f80846d43c7722a",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/earnings-preview/SKILL.md",
+      "installed": "earnings-preview/SKILL.md",
+      "sha256": "180fed962bf293b1e008d8ed8e657c37eca84e2ddd4c5b60dde66cfc8ce9acfb",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/earnings-preview/references/api_reference.md",
+      "installed": "earnings-preview/references/api_reference.md",
+      "sha256": "9a5feb45fec2580f530ded1e542aa1fcad5f0bd824c3fd9768babc5c35f9df71",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/earnings-recap/README.md",
+      "installed": "earnings-recap/README.md",
+      "sha256": "03e23a8ae675322acf780e07275965bd8296c0ee517c4b904ce4da9300aa29a5",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/earnings-recap/SKILL.md",
+      "installed": "earnings-recap/SKILL.md",
+      "sha256": "6f1b9e05798beed8aed7996c28fde7b09455bbafb7063edfcde8c0365404fb3a",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/earnings-recap/references/api_reference.md",
+      "installed": "earnings-recap/references/api_reference.md",
+      "sha256": "100f0b61c0c1d4632e0edcc624eee2f3c5310ee0099d930b79e06a2058fedb1e",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/estimate-analysis/README.md",
+      "installed": "estimate-analysis/README.md",
+      "sha256": "ed7353c85e32abb3fcec50a373ce151be3d20b1a325d52d45d54acad6508f1e3",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/estimate-analysis/SKILL.md",
+      "installed": "estimate-analysis/SKILL.md",
+      "sha256": "5623ad80041a7c880896e8f1dd3f6c9b2a3f4952e6c4f65d729f2f75297a45cd",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/estimate-analysis/references/api_reference.md",
+      "installed": "estimate-analysis/references/api_reference.md",
+      "sha256": "03f71030c25c39a33576d6847d234c27a363c2d158c2a3659ad2161d56b70583",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/etf-premium/README.md",
+      "installed": "etf-premium/README.md",
+      "sha256": "cdd612487d21519b92d171fa7bcbdf01aedc8cddbeac06e4215d84cdc60c75a1",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/etf-premium/SKILL.md",
+      "installed": "etf-premium/SKILL.md",
+      "sha256": "08ef8457d52540946cfdd6abd6231c5052f9196ee067fe4230dcd1c8a291dbd4",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/etf-premium/references/etf_premium_reference.md",
+      "installed": "etf-premium/references/etf_premium_reference.md",
+      "sha256": "c8f4658e33ff351cbfa8079d50cdede3d7e886fbd278137b7dfb6d08f9acf76d",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/etf-premium/references/gamma_squeeze_reference.md",
+      "installed": "etf-premium/references/gamma_squeeze_reference.md",
+      "sha256": "a69caa8d16b35a822e31b6897b7d9fba08de9aacf9ab6889a7449c838dff1099",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/options-payoff/README.md",
+      "installed": "options-payoff/README.md",
+      "sha256": "2aa9fe011eb9bb72b04b0c2e0b22fe91ea28b743fe46fbc20c9ffd209ef21ce6",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/options-payoff/SKILL.md",
+      "installed": "options-payoff/SKILL.md",
+      "sha256": "9bbfdc9f6ea6c25269f9c71277ef9b4b8a465c4a00b30b0776104994b740f9e6",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/options-payoff/references/bs_code.md",
+      "installed": "options-payoff/references/bs_code.md",
+      "sha256": "c40b2b1103706e704aa0e82f2cef8e154fe69ace4fb9ff56421cdab33b478f57",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/options-payoff/references/strategies.md",
+      "installed": "options-payoff/references/strategies.md",
+      "sha256": "2dbeae37e3cfedd72fb12cab77906cd6ac90aa8207c99264590497e4a59e1d0a",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/saas-valuation-compression/README.md",
+      "installed": "saas-valuation-compression/README.md",
+      "sha256": "7477293e27fb8ea2057fc19bf32569dca1576fcdb3c2a2c8cdacf1faac9f53a6",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/saas-valuation-compression/SKILL.md",
+      "installed": "saas-valuation-compression/SKILL.md",
+      "sha256": "78df9bb1495ec9c2dbcbe2b58ae48bca7986ce335db3158bc0d8fbf551179454",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/saas-valuation-compression/references/benchmarks.md",
+      "installed": "saas-valuation-compression/references/benchmarks.md",
+      "sha256": "30191e6781926155d8bcec81f9707002c976ff62927673074d2122086fec1ee5",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/sepa-strategy/README.md",
+      "installed": "sepa-strategy/README.md",
+      "sha256": "212b2d9f1fe419dc52973eaeed39a0a20736efca314e76dd02bcd358fc351905",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/sepa-strategy/SKILL.md",
+      "installed": "sepa-strategy/SKILL.md",
+      "sha256": "00ee8f4b473ca038b17fd5000f3691afcf3c3cc1781c6920b66cce4ec9920c4b",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/sepa-strategy/references/entry-rules.md",
+      "installed": "sepa-strategy/references/entry-rules.md",
+      "sha256": "7f682cc72d3afef2e645975676fc7eae36af36644a785d2f58e987ead85a3281",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/sepa-strategy/references/fundamentals.md",
+      "installed": "sepa-strategy/references/fundamentals.md",
+      "sha256": "b077e99aa1bbce347f10cfd4d9ba9a304dbe56cd2cd478ceb683899dc7b16340",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/sepa-strategy/references/market-environment.md",
+      "installed": "sepa-strategy/references/market-environment.md",
+      "sha256": "0788217ee8f5c85ba2c9641a2f2a4ce81ae0e885675340ce94a92dcbebbb4e2e",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/sepa-strategy/references/patterns.md",
+      "installed": "sepa-strategy/references/patterns.md",
+      "sha256": "c29837ff797105ac210dc24591bf77133347548ce172c3e5b79d24cb15ebed3c",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/sepa-strategy/references/position-sizing.md",
+      "installed": "sepa-strategy/references/position-sizing.md",
+      "sha256": "09a9253c47762d3a795bebf088c6593ee7dfdb6fe5d49d4a412e61fd5b59c5c5",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/sepa-strategy/references/stage-analysis.md",
+      "installed": "sepa-strategy/references/stage-analysis.md",
+      "sha256": "4bfa452168ef956b2eba4cd3ee91e929982869825e0b4e89d826b3f6dcb93e1a",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/sepa-strategy/references/trend-template.md",
+      "installed": "sepa-strategy/references/trend-template.md",
+      "sha256": "9d0695c971cd34f3b550185697d68b77a54b110515460386e5136d46dcd8e64a",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/stock-correlation/README.md",
+      "installed": "stock-correlation/README.md",
+      "sha256": "820411eb1b06186ab8533d1c671b44c56a85ea17ccd82178abadfb768da80376",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/stock-correlation/SKILL.md",
+      "installed": "stock-correlation/SKILL.md",
+      "sha256": "28811c4800188122151b2ce20d7e3e38cc94b78e12c297c4c59929db399d59bd",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/stock-correlation/references/sector_universes.md",
+      "installed": "stock-correlation/references/sector_universes.md",
+      "sha256": "7a3c06b416265a360bbcecb6020fec057deba282252fd19e4cd90b600c30f227",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/stock-liquidity/README.md",
+      "installed": "stock-liquidity/README.md",
+      "sha256": "b8684b1ae073838d5b5a7b3c7230534f8701b05947d4fea6d78bde6e4c8ecb13",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/stock-liquidity/SKILL.md",
+      "installed": "stock-liquidity/SKILL.md",
+      "sha256": "c5276aa1dc06a8e23d7150f5431c250024a3743fa9caa8a14bcc565de3bae08a",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/stock-liquidity/references/liquidity_reference.md",
+      "installed": "stock-liquidity/references/liquidity_reference.md",
+      "sha256": "cfde788a0695b764806f28cec6d8722aece7ef22e64ad8922de40bac5b30fc3e",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/yfinance-data/README.md",
+      "installed": "yfinance-data/README.md",
+      "sha256": "3ce2f944f7260f898e6451905404dd29601ea3c56a2359d5ff8b67e7f512edf3",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/yfinance-data/SKILL.md",
+      "installed": "yfinance-data/SKILL.md",
+      "sha256": "258750d51191249a5cbca5992694adfa690de9a013bb12d5e347027a30136a13",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/market-analysis/skills/yfinance-data/references/api_reference.md",
+      "installed": "yfinance-data/references/api_reference.md",
+      "sha256": "5303690532bd4a110a8a893673c757630b46900bcb89022c00ab62b4397204d7",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/skill-creator/skills/skill-creator/README.md",
+      "installed": "finance-skill-creator/README.md",
+      "sha256": "2891af0893e0c6153c2fc7ddb53c25fea8120d5e43a3617edb96437ea706a740",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/skill-creator/skills/skill-creator/SKILL.md",
+      "installed": "finance-skill-creator/SKILL.md",
+      "sha256": "43c8f3d293007bb9e750c4d50c1c7a803d93cf0c9e214de78bd1845e66ba54ff",
+      "name_adapted": true
+    },
+    {
+      "source": "plugins/skill-creator/skills/skill-creator/references/architecture-patterns.md",
+      "installed": "finance-skill-creator/references/architecture-patterns.md",
+      "sha256": "bd4c0f39ccf5b73143b0f7e6f8da8f605d8cbc6fc84e019fbba3b11cae82fec7",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/skill-creator/skills/skill-creator/references/dynamic-calling.md",
+      "installed": "finance-skill-creator/references/dynamic-calling.md",
+      "sha256": "dc7939feccef63dbf7c3c918b95c3f96572279b424990e7c5c4be19db8a7f788",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/skill-creator/skills/skill-creator/references/frontmatter-guide.md",
+      "installed": "finance-skill-creator/references/frontmatter-guide.md",
+      "sha256": "d1c000ad3ca699e823cdb36bbfab0e5bacb4c1be3b66bb09924b814bc7ffaca8",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/skill-creator/skills/skill-creator/references/quality-rubric.md",
+      "installed": "finance-skill-creator/references/quality-rubric.md",
+      "sha256": "d43ca387004d62807c318beb5d2a6ddc804a37e2c51cec3179a554a92bd0b7f6",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/skill-creator/skills/skill-creator/references/skill-examples.md",
+      "installed": "finance-skill-creator/references/skill-examples.md",
+      "sha256": "b49a5d09f89180884cd26a13e4e7a52d87da20c21535f12d82d232b16051dfd8",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/skill-creator/skills/skill-creator/references/writing-guide.md",
+      "installed": "finance-skill-creator/references/writing-guide.md",
+      "sha256": "025ca6a90329e2d9c42d69e1a852dda9c8cc4ee0639f396a87242376e5bdc9a9",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/discord-reader/README.md",
+      "installed": "discord-reader/README.md",
+      "sha256": "c82f951d411e3c75de5c44bb3256c2444eb9109f590bbad04f43002e940b9df3",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/discord-reader/SKILL.md",
+      "installed": "discord-reader/SKILL.md",
+      "sha256": "baabf7177c692db9e8e55fc0ee381bfecb3cc3d8811c5a333daf67c0b954ac9d",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/discord-reader/references/commands.md",
+      "installed": "discord-reader/references/commands.md",
+      "sha256": "cc3696dfd3c830943dc3142c2ab9f507970750ba704451a4a925d221b59cece0",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/linkedin-reader/README.md",
+      "installed": "linkedin-reader/README.md",
+      "sha256": "5a13fc6079aa2f682697afe73004bf22ebb06974c48f42a38c90348c68b8c35f",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/linkedin-reader/SKILL.md",
+      "installed": "linkedin-reader/SKILL.md",
+      "sha256": "91000fbd5d8fd5fc314b14552284ed3c8bbae6268efb515402d5d04e4a354119",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/linkedin-reader/references/commands.md",
+      "installed": "linkedin-reader/references/commands.md",
+      "sha256": "5d033760abe268f61e68ae35ba46be432fd46ec9e2659e4787beb380212333c3",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/opencli-reader/README.md",
+      "installed": "opencli-reader/README.md",
+      "sha256": "150a338746b7e167f4adc382e1afee405b3c5b37f91c4a7bc33dfdc8a5a8808e",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/opencli-reader/SKILL.md",
+      "installed": "opencli-reader/SKILL.md",
+      "sha256": "8087666d852a71647fece614b438fe49750ea555deea30a1bc0ed6373f71f0d7",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/opencli-reader/references/discovery.md",
+      "installed": "opencli-reader/references/discovery.md",
+      "sha256": "1032da179970663ef0436dedb215844a790dbc14ee74fedca0631a74a0b126ec",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/opencli-reader/references/finance-sources.md",
+      "installed": "opencli-reader/references/finance-sources.md",
+      "sha256": "357511208bbf4759cbaac55125b29c37fe38b9cd3e57dc7b9ad05b18fb69a530",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/telegram-reader/README.md",
+      "installed": "telegram-reader/README.md",
+      "sha256": "b8a40b3a0e99293786569af16a022c14cf0e476979883b3e706ee934bf85a3aa",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/telegram-reader/SKILL.md",
+      "installed": "telegram-reader/SKILL.md",
+      "sha256": "36aaba55fdad0a15f7dcedd21dcbe2d2f5dc37d7f7411ac9cace1261b8c9431c",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/telegram-reader/references/commands.md",
+      "installed": "telegram-reader/references/commands.md",
+      "sha256": "c9e64fbaca29349104f957db581fc2c05086cb7e535e37611cee43bad450dac3",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/twitter-reader/README.md",
+      "installed": "twitter-reader/README.md",
+      "sha256": "b53660aafc210e056d40ed0b29beff2a1cae0aad662978fe42d8e24bd166abe8",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/twitter-reader/SKILL.md",
+      "installed": "twitter-reader/SKILL.md",
+      "sha256": "a8fcab4699cddd99c62c4e40326eced042af3d7ea8f5d8f3c6bd63023c26b9dc",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/twitter-reader/references/commands.md",
+      "installed": "twitter-reader/references/commands.md",
+      "sha256": "308b9668aba33dad252e532e3f8798217ee0604e89f38d21520d7b704b617a9e",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/twitter-reader/references/schema.md",
+      "installed": "twitter-reader/references/schema.md",
+      "sha256": "0909edbf7f65688519c1ba6adf10e97334092b3f5e78be7076a7b0631a7e61a5",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/yc-reader/README.md",
+      "installed": "yc-reader/README.md",
+      "sha256": "d8278d282bac280c866d46239d8d04f557dac1c245f1f95abd852ab9b32452f5",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/yc-reader/SKILL.md",
+      "installed": "yc-reader/SKILL.md",
+      "sha256": "abfd6873a1353b1c8321962322c72af6c2503561cb86b927dbf14925ce8b3485",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/social-readers/skills/yc-reader/references/api_reference.md",
+      "installed": "yc-reader/references/api_reference.md",
+      "sha256": "d7d4530c3e3c0fec529502b196c8aa17066e96183550e6ef81fabbc451ba534e",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/startup-tools/skills/startup-analysis/README.md",
+      "installed": "startup-analysis/README.md",
+      "sha256": "0d4017b691fd25cf9e2fb14a23d73cc7ee698b3b451076d5dc5488a4ec155d3c",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/startup-tools/skills/startup-analysis/SKILL.md",
+      "installed": "startup-analysis/SKILL.md",
+      "sha256": "7430e7165004c6cf7f5746c8894e2dcec681bbcdaf8d877b2aafa9283604cbb4",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/startup-tools/skills/startup-analysis/references/ceo-framework.md",
+      "installed": "startup-analysis/references/ceo-framework.md",
+      "sha256": "8b1d174536bb08c449b44a049c0d187149440df8da649d0e1cfff6429eb6557a",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/startup-tools/skills/startup-analysis/references/job-applicant-framework.md",
+      "installed": "startup-analysis/references/job-applicant-framework.md",
+      "sha256": "b5c6948fc5bff7d5035c2e1d2e3003a54f231ccb1a32a07dcc818dfae265213b",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/startup-tools/skills/startup-analysis/references/vc-framework.md",
+      "installed": "startup-analysis/references/vc-framework.md",
+      "sha256": "def73b537206b19f9be0f23ba4be6c006eeceb369973461ddab02deaef16cadd",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/ui-tools/skills/generative-ui/README.md",
+      "installed": "generative-ui/README.md",
+      "sha256": "bd0f2e79975a184b647c3dc74022595c8388443917a6bccd91912d937b6ca1e7",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/ui-tools/skills/generative-ui/SKILL.md",
+      "installed": "generative-ui/SKILL.md",
+      "sha256": "65a0c18c2deb07fc2661ee765ee9cefd6e0f5d18f9d4ab39f8d593eb821e876a",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/ui-tools/skills/generative-ui/references/chart_js.md",
+      "installed": "generative-ui/references/chart_js.md",
+      "sha256": "7b785fccfcf4264e5326a43550c2ba4fa5c79f6be34f4a200aae053be443d224",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/ui-tools/skills/generative-ui/references/design_system.md",
+      "installed": "generative-ui/references/design_system.md",
+      "sha256": "8f3016cf3485203e5f2e80fded01891873cf8fe52c8208fddff9f6473ea1ab7a",
+      "name_adapted": false
+    },
+    {
+      "source": "plugins/ui-tools/skills/generative-ui/references/svg_and_diagrams.md",
+      "installed": "generative-ui/references/svg_and_diagrams.md",
+      "sha256": "e8b62160d7aaa182020a04f9e8368e5eb56ee3ca6e1d986bca3a9539d8bdfcac",
+      "name_adapted": false
+    }
+  ]
+}

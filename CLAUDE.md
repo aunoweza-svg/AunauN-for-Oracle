@@ -123,6 +123,27 @@
 - ปรับกรอบ SaaS/B2B ให้เข้ากับธุรกิจท่องเที่ยวจริง สกิลเฉพาะโมเดลธุรกิจ เช่น `aso`, `paywalls` และ `revops` ใช้เมื่อเกี่ยวข้อง
 - ติดตั้งสกิลไม่เท่ากับเชื่อมบัญชีโฆษณาหรือ analytics การเรียกข้อมูล เผยแพร่ ส่งข้อความ ใช้งบ และตั้งงานอัตโนมัติต้องอยู่ในขอบเขตงานที่ผู้ใช้มอบหมาย
 
+## Investment & Finance Skills — installed 2026-10-15
+
+ติดตั้ง 26 สกิลจาก `aunoweza-svg/finance-skills` ที่ commit `cedadc4b9f0f25c072576331a151863c8632a2d6` ใน `C:/Users/aunow/.codex/skills` แล้ว ตรวจ inventory และเนื้อหาครบ 99 ไฟล์ จัดเป็นหมวด **Investment & Finance**
+
+- [ดัชนีและวิธีใช้ Finance Skills](ψ/learn/aunoweza-svg/finance-skills/FINANCE.md)
+- [Installation manifest](ψ/learn/aunoweza-svg/finance-skills/installation.json)
+- `company-valuation` สำหรับ DCF/มูลค่าเทียบเคียง, `earnings-preview`/`earnings-recap` สำหรับงบ, `stock-correlation`/`stock-liquidity` สำหรับความสัมพันธ์และสภาพคล่อง, `sepa-strategy` สำหรับกรอบแนวโน้มและความเสี่ยง, `hyperliquid-reader` สำหรับข้อมูลคริปโตตามขอบเขตสกิล
+- สกิลสร้างสกิลจาก repo นี้ใช้ชื่อ `finance-skill-creator` และเปลี่ยนเฉพาะ frontmatter name ให้ตรงกัน เพื่อไม่ชนกับ system skill-creator; ไฟล์อื่นตรงกับต้นทาง
+- สถานะคือ instructions ติดตั้งแล้ว External tools, Python dependencies, MCP และบัญชี/API ของแต่ละ provider ยังต้องตรวจและเตรียมตามโจทย์ ไม่มี ai-hedge-fund หรือการซื้อขายถูกติดตั้ง/เปิดใช้ในรอบนี้
+- ตรวจเวลา/แหล่งข้อมูลและสมมติฐาน valuation โดยเฉพาะค่าเริ่มต้นที่อิงสหรัฐฯ ปรับให้ตรงตลาด บริษัท และสกุลเงิน ไม่ตีความข้อความอัตราชนะในสกิลเป็นผลทดสอบของพอร์ตผู้ใช้
+
+## AI Hedge Fund — installed 2026-10-15
+
+ติดตั้งโปรแกรม `aihf 2.5.0` จาก `virattt/ai-hedge-fund` commit `78b779c1389e2d1452dc29606d2c4126d859b964` ใน environment แยกด้วย Python 3.12.15 แล้ว ใช้เป็นเครื่องมือทดลอง Backtesting/Paper Trading ของหมวด Investment & Finance
+
+- เปิดจาก workspace ด้วย `./aihf.cmd`; [วิธีใช้และสถานะติดตั้ง](ψ/learn/virattt/ai-hedge-fund/INSTALLATION.md)
+- ผ่าน CLI help, paper list, dependency check, risk arithmetic และ headless UI navigation; ยังไม่ได้ทดสอบ market/model API หรือผลตอบแทนจากข้อมูลจริง
+- ข้อมูลผู้ใช้และ credentials อยู่ใน `~/.hedge-fund/`; งานข้อมูลจริงต้องเตรียม Financial Datasets และ model provider ตามที่เลือก ไม่เก็บ keys ใน chat หรือ Git
+- Environment/runtime ถูก Git ignore และต้องติดตั้งใหม่เมื่อย้ายเครื่อง พอร์ต/ledger ไม่ได้เป็นความจำใน `ψ/` หรือซิงก์ GitHub โดยอัตโนมัติ
+- สถานะนี้แทนข้อความก่อนหน้าที่ระบุว่ายังไม่ได้ติดตั้ง ai-hedge-fund; บันทึกก่อนหน้าเป็นประวัติ ณ เวลาติดตั้ง Finance Skills
+
 ## Working Workflow
 
 1. **เข้าใจโจทย์** — ระบุผลลัพธ์ที่ต้องส่ง ขอบเขต และข้อจำกัด ใช้บริบทที่มีเพื่อเดินหน้าก่อน ถามเมื่อข้อมูลที่ขาดทำให้ผลลัพธ์เปลี่ยนอย่างมีนัยสำคัญ
