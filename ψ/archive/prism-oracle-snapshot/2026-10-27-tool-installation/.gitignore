@@ -1,0 +1,11 @@
+.env
+.env.*
+node_modules/
+*.key
+*.pem
+tools/runtime/
+tools/runtime-downloads/
+tools/npm-cache/
+tools/rea/node_modules/
+__pycache__/
+
