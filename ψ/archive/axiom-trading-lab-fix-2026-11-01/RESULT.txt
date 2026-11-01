@@ -1,0 +1,42 @@
+AXIOM-LAB-20261101-TOOLS — bug fix follow-up, 2026-11-01
+ผู้มอบหมาย AunauN; ผู้แก้ PRISM; ใช้ skill diagnosing-bugs
+
+แก้แล้วใน /mnt/d/OneDrive/AunauN Oracle/oracles/axiom-oracle/trading-lab:
+- dist/app.js: persist journal ก่อน commit ยอดเงิน/รายการ/สถานะ; write failure ไม่เปลี่ยนยอดหรือสถานะ ลองซ้ำได้ ไม่เพิ่มเงินซ้ำ; ปฏิเสธการเขียนทับเมื่อพบ journal เปลี่ยนจากอีกแท็บ
+- สถานะ loading/running และ guard ทั้งปุ่มและ handlers; โหลด failure เก็บ dataset/run เดิม, success ต้องเริ่ม run ใหม่ ปิดปุ่มซื้อขายจนพร้อม
+- ห้าม start/reload ขณะมี position ต้องปิดและบันทึกสำเร็จก่อน ไม่ละทิ้งสถานะเงียบ ๆ
+- อ่านและ validate JSON/schema แบบจับ error; journal เสีย/อ่านไม่ได้ไม่หยุดแอป ดูกราฟ/เดิน replay ได้ แต่ไม่เปิดสถานะใหม่หรือเขียนทับต้นฉบับ ข้อมูลเสียที่อ่านได้ส่งออก raw เป็น recovery.txt ได้
+- dist/index.html: เพิ่มสถานะแจ้ง journal ที่มองเห็นได้ทุกแท็บและ role=status
+- chart ใช้ clientHeight และ resize height ตามพื้นที่จริง ป้องกัน canvas สูงเกินพื้นที่มือถือ
+- README.md: เพิ่มขั้นตอนเปิด local server, ข้อจำกัด/recovery, คำสั่งทดสอบ
+- tests/regression.cjs และ tests/browser.cjs: regression ผ่าน UI handlers และ Chromium จริง
+
+สาเหตุที่ยืนยันได้: เดิม balance/records เปลี่ยนก่อน setItem แล้ว exception ข้าม position=null; state ของโหลดไม่ guard handlers; start ล้าง position โดยไม่มีเงื่อนไข; JSON.parse/record schema ไม่ถูกจับหรือตรวจ
+loop ก่อนแก้: node staged/tests/regression.cjs -> 1 pass/10 fail จาก 11 cases (before.tap)
+หลังแก้และเพิ่ม boundary tests: 13 pass/0 fail (after.tap)
+หลังติดตั้งไฟล์จริง: node /mnt/d/OneDrive/AunauN Oracle/oracles/axiom-oracle/trading-lab/tests/regression.cjs -> 13 pass/0 fail (installed.tap); node --check app.js ผ่าน
+ไฟล์ติดตั้งทั้งห้าตรงกับ staging ที่ทดสอบ byte-for-byte และ CSS เดิมไม่เปลี่ยน (installed-hashes.json)
+
+Browser จริง:
+- Chromium 156 ผ่าน Playwright ใน WSL; ใช้ Lightweight Charts v4.2.3 จริงที่ดาวน์โหลดไว้ และ market responses แบบ fixture สังเคราะห์เฉพาะทดสอบ
+- ผ่าน quota write failure, ปิดซ้ำ/ลองใหม่, guard start/reload เมื่อถือ position, pending/failed/successful reload, Long/Short arithmetic, localStorage persistence หลัง reload, JSON download จริง, corrupt raw recovery download จริง และไม่มี pageerror
+- viewport 390x844 ไม่พบ horizontal overflow และ chart canvas ไม่เกิน 420px; screenshot browser/mobile.png
+- browser/results.json เก็บผล; tests/browser.cjs มีคำสั่ง/การตั้งค่าให้ทำซ้ำได้ใน README
+- widget และ Google Fonts ถูก block โดยตั้งใจในการทดสอบ deterministic จึงไม่ยืนยัน TradingView symbols, data delay, Binance สดหรือ browser CORS กับ endpoint จริง ฟอนต์ไทย fallback ใน WSL แสดงกล่องใน screenshot จึงยังไม่รับรอง typography/visual acceptance
+
+Environment:
+ติดตั้ง Playwright/Chromium และแตกไลบรารี libnspr4/libnss3/libasound2t64 เฉพาะ /tmp/axiom-browser-ready ไม่มีติดตั้งแพ็กเกจลงระบบ
+ครั้งแรก Chromium ขาด shared libraries และ apt update-version URL ตอบ 404; ใช้แพ็กเกจ libnss3 เวอร์ชัน repository หลักแทนใน /tmp จนทดสอบสำเร็จ
+server ของ browser test เปิดเฉพาะ 127.0.0.1 ชั่วคราวและปิดใน finally ไม่มี server/deploy ที่เปิดค้าง
+
+ข้อจำกัดที่ยังมี:
+- ไม่ใช่ Futures account engine ครบถ้วน ไม่มี margin/leverage/liquidation/funding/slippage หรือ backtest อัตโนมัติ
+- open position/account/replay state ยังไม่ persist ข้ามการปิดหน้า; journal recovery มี raw export แต่ไม่มี automatic repair/import
+- ใช้จำลองครั้งละหนึ่งแท็บ; guard ตรวจการเปลี่ยน storage ช่วยไม่เขียนทับที่ตรวจพบ แต่ localStorage ไม่ใช่ transaction database ข้ามแท็บ
+- ไม่ทดสอบตลาดสด/hosting/access settings ไม่ deploy ไม่เชื่อมบัญชีหรือคำสั่งเงินจริง ไม่ commit หรือแก้งานอื่น
+
+รักษาประวัติ:
+original/ เก็บต้นฉบับ app.js, dist/app.js, dist/index.html, README.md ก่อนเขียนจริง
+install.py ตรวจ hash เทียบ source-hashes รอบรายงานเดิมและปฏิเสธการทับงานที่เปลี่ยนหรือ test ที่มีอยู่ก่อน
+รายงาน AXIOM-LAB-20261101-TOOLS เดิมกับ probe.cjs ใน directory เก่าเป็นหลักฐานของ source ก่อนแก้ อย่าใช้ probe ที่คาดว่า bug ต้องเกิดเป็น regression ของฉบับปัจจุบัน ให้ใช้ tests ที่เพิ่มใน trading-lab
+สรุปส่ง AunauN ผ่านเซสชันนี้ตามคำสั่ง ไม่มีส่งข้อความภายนอก
