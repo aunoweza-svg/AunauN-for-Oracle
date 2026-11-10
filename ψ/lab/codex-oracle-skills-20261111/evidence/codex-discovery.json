@@ -1,0 +1,84 @@
+{
+  "skills": [
+    {
+      "name": "forward",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/forward/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Save a next-session handoff when asked for /forward, $forward or context transfer. Capture goals, decisions, files, unfinished work and next actions; no retrospective or publication by default."
+    },
+    {
+      "name": "herdr",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Inspect or control Herdr panes, tabs, workspaces and agents when Herdr is named or the user asks to interact with a running Oracle. Requires inherited HERDR_ENV=1; companion skills cover identity, neighbors, reading, messaging and structure."
+    },
+    {
+      "name": "herdr-hey",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-hey/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Send the user's question to a verified running Oracle through Herdr and read its actual reply. Use ask PRISM, talk to Lumina or message an agent; does not create a substitute agent or merely inspect silently."
+    },
+    {
+      "name": "herdr-neighbors",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-neighbors/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Read-only survey of geometric Herdr neighbors and current workspace panes, distinguishing agents from shells. Use to see who is around; does not message or create a buddy."
+    },
+    {
+      "name": "herdr-peek",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-peek/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Read recent terminal output from a verified running Oracle or neighboring Herdr agent without messaging or interruption. Use to inspect activity; herdr-hey handles requests to talk or ask."
+    },
+    {
+      "name": "herdr-structure",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-structure/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Show a read-only tree of current Herdr workspaces, tabs, panes and agents, marking this caller. Use for team layout or who runs where; does not reorganize or move the team."
+    },
+    {
+      "name": "herdr-whoami",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-whoami/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Identify this Herdr caller's pane, workspace, repository, branch and Codex conversation ID. Use for where this agent runs; herdr-structure covers the whole team."
+    },
+    {
+      "name": "learn",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/learn/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Study a specified repository, codebase or lesson collection and save source-grounded notes under ψ/learn. Use /learn or requests to study a known target; use trace to locate unknown targets."
+    },
+    {
+      "name": "rrr",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/rrr/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Write a retrospective, lessons and metrics when asked for /rrr, $rrr or a session retrospective. In AunauN-for-Oracle include task-scoped commit/push unless overridden. Discussing installation or testing rrr does not request publication of the real workspace."
+    },
+    {
+      "name": "trace",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/trace/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Locate a project, file, prior decision or knowledge source using files, Oracle memory and Git. Use /trace or requests to find where something was recorded; learn studies known targets and where-we-are summarizes current progress."
+    },
+    {
+      "name": "where-we-are",
+      "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/where-we-are/SKILL.md",
+      "enabled": true,
+      "scope": "repo",
+      "description": "Summarize this session's goal, completed work, active work, parked items and next step for /where-we-are or current progress questions. Does not mine past sessions or inspect another agent's live status."
+    }
+  ],
+  "errors": [],
+  "method": "skills/list",
+  "created_model_turns": 0
+}

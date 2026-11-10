@@ -1,0 +1,18 @@
+{
+  "yfinance": {
+    "status": "passed",
+    "provider": "Yahoo Finance",
+    "test_ticker": "SPY",
+    "rows": 5,
+    "last_observation": "2026-11-10 00:00:00"
+  },
+  "hyperliquid": {
+    "status": "passed",
+    "endpoint": "https://api.hyperliquid.xyz/info",
+    "request_type": "allMids",
+    "retrieved_at": "2026-11-10T18:48:46.442554+00:00",
+    "test_coin": "BTC",
+    "positive_mid_received": true
+  },
+  "checked_at": "2026-11-10T18:48:46.462916+00:00"
+}

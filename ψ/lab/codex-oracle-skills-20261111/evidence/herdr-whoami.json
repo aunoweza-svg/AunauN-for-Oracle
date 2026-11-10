@@ -1,0 +1,16 @@
+{
+  "caller": {
+    "pane_id": "w2:pM",
+    "workspace_id": "w2",
+    "tab_id": "w2:tM",
+    "kind": "codex",
+    "status": "working",
+    "cwd": "/mnt/d/OneDrive/AunauN Oracle",
+    "conversation_id": "01a1c68d-a207-7011-8a01-2c0840997d39"
+  },
+  "executor_cwd": "/mnt/d/OneDrive/AunauN Oracle",
+  "git": {
+    "root": "/mnt/d/OneDrive/AunauN Oracle",
+    "branch": "main"
+  }
+}

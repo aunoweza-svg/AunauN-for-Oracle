@@ -1,0 +1,12 @@
+{
+  "caller": "w2:pM",
+  "target": {
+    "pane_id": "w2:pJ",
+    "workspace_id": "w2",
+    "tab_id": "w2:tJ",
+    "kind": "codex",
+    "status": "idle",
+    "cwd": "/mnt/d/OneDrive/AunauN Oracle/oracles/prism-oracle",
+    "conversation_id": "01a1c68a-c00a-7233-ad3b-b00042f9f815"
+  }
+}

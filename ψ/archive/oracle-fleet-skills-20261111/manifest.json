@@ -1,0 +1,3488 @@
+[
+  {
+    "role": "prism",
+    "path": ".agents/skills/code-review/SKILL.md",
+    "size": 1742,
+    "sha256": "1ef8db86fdb2873c710675e574fd18b2b9f811abde072d1e7689c009f3f15130"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/code-review/agents/openai.yaml",
+    "size": 103,
+    "sha256": "3f72329747a916ac8ab2b4004490c79e1be6774a8a83e5b258d6ddc7e866abfe"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/code-review/references/upstream.md",
+    "size": 6670,
+    "sha256": "09eb147f793e4647949edd32dbad278f0554dfb56e0d46b699cd4c2c55bf0357"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/diagnosing-bugs/SKILL.md",
+    "size": 1682,
+    "sha256": "f05655d13e945ed2101a42c5a5c3f4a1e7bcbeea0b1b0ae0ae996cccf476361a"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/diagnosing-bugs/agents/openai.yaml",
+    "size": 106,
+    "sha256": "167ab1659754b8c53706ecca7502ccc7fb219ff14f0c36bfb1db05ae31a8ac58"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/diagnosing-bugs/references/upstream.md",
+    "size": 8664,
+    "sha256": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/diagnosing-bugs/scripts/hitl-loop.template.sh",
+    "size": 1360,
+    "sha256": "063ef14e7212113c7778258172e7c76e963926963e448934048f505d6e576e8f"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/forward/SKILL.md",
+    "size": 1344,
+    "sha256": "337a5ef2d0d7ec686cc7776ca46a41496581288d873683a8c1add44010c85c13"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr/SKILL.md",
+    "size": 2147,
+    "sha256": "6debde629d4d7cf6b322c70d8a30188cc2bd244d0ac91c5c347a8839d34ab0fd"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr/scripts/herdr_inspect.py",
+    "size": 5693,
+    "sha256": "115547a247569d92f69ce62b40e4b20fa8b63ec944b5ceb8f7fbb5cb711b606e"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr-hey/SKILL.md",
+    "size": 1495,
+    "sha256": "ec6fc3c4b21606c0f51315276ccdb1d5528c9540861f9412c54d99a567dfdcd2"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr-neighbors/SKILL.md",
+    "size": 796,
+    "sha256": "b13b9e50c5455d6f172cb474a33fef81ab43a9bf02bbbf66fa8fc7e844cf567c"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr-peek/SKILL.md",
+    "size": 944,
+    "sha256": "f34e0f7e488c9b87e4c89aa6ab01a91594803e96657e1f76d25026eee331d678"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr-pr/SKILL.md",
+    "size": 1360,
+    "sha256": "b7ca13dbdd4c4438850d2fe82dd2ad603efa8213deb27317ae414f52cde9a167"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr-structure/SKILL.md",
+    "size": 891,
+    "sha256": "cd2fdce91501cc606dc944810e95c07ed098ed572a39903275e9ce186f7cb0a4"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr-ticket/SKILL.md",
+    "size": 1308,
+    "sha256": "5ff393233cfba42137d54400afe0526a58f7488b6ccecdeddbc48ea032263cf6"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr-whoami/SKILL.md",
+    "size": 715,
+    "sha256": "d2822793f04e7e698ff33d55246191cf36ca1cc574de4a9551134e4d5a5eea83"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/herdr-wt/SKILL.md",
+    "size": 1443,
+    "sha256": "a3b6a48be4506044e3b8a847a2eafe9ec41d1edbe5be41335ee047f5372d3e41"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/learn/SKILL.md",
+    "size": 1796,
+    "sha256": "0406cf3f87fff6feb46106e1fac3d1977f384c68567b2e968f8b834832e53a5b"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/prototype/LOGIC.md",
+    "size": 6103,
+    "sha256": "8d7e31de7ce73b8e62f207e3f3ecbd90a7a54fdc728f8965f5f0739976f9959a"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/prototype/SKILL.md",
+    "size": 1455,
+    "sha256": "8ce6ccc21cb34326b99f84c263054559813cf634573cf0a5ec8ceb5fb17aa8bf"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/prototype/UI.md",
+    "size": 7025,
+    "sha256": "5ea83263ba72174c9055d58045f053d6577c0db6802c1e15bd1468dd16f78a0b"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/prototype/agents/openai.yaml",
+    "size": 103,
+    "sha256": "cc1ce1ceaba1442c431dc76abb84b271ad72ecb94dcefee53130df742dc11787"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/prototype/references/upstream.md",
+    "size": 2937,
+    "sha256": "8cd35a07730e2a3ebecfdd6c1bfa0a01c63efcd91f16c4f46db3e664dcceaa3e"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/rrr/SKILL.md",
+    "size": 2663,
+    "sha256": "5df8f02329a7f2a3932e600938db44ebe7374a4885fdc4efc8a7c5afd0b99092"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/rrr/references/template.md",
+    "size": 1694,
+    "sha256": "4e349ed29a28ade1cd214febdc5e062ec2a1fafac95fe6b07513418ab59d67f2"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/rrr/scripts/stage-metrics-row.py",
+    "size": 3622,
+    "sha256": "dd6ffc2651cc586c86a08b9924169b0b8e1d3b062544ba5c552780f38f599867"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/tdd/SKILL.md",
+    "size": 1631,
+    "sha256": "2c3c5f3e3a3248258be63a285bff1a6560749060ae8a740dc0ef802aa5a39bb3"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/tdd/agents/openai.yaml",
+    "size": 90,
+    "sha256": "f8e2afc1fbcd6a6e1178c30f290ca9f2286c949a0b74b8b68fd14f198b78ebac"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/tdd/mocking.md",
+    "size": 1540,
+    "sha256": "73a10b6a26b56197c738a764c1e4205af98c74553f4a713795997f6bc35b917d"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/tdd/references/upstream.md",
+    "size": 3635,
+    "sha256": "c996d0fbfd2b6ed8bc9e4d830160d40a6e0362f15d55012d6a889ed64d4128b0"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/tdd/tests.md",
+    "size": 2291,
+    "sha256": "0b401f98bd3684d2fea6440d6946afcf8f5f68ac6a65599dd7a2b90dd9f02eb5"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/trace/SKILL.md",
+    "size": 1470,
+    "sha256": "8f1af5af4c64387dc90111458fc5619bee0ed5adcb2f464ede55bfaa1c98d126"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/SKILL.md",
+    "size": 1711,
+    "sha256": "9f72a9aa105200ffc6e581a38dda9e59f7c5c2248d47d9761e69333b5e7d2ef2"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/app-interface.csv",
+    "size": 11079,
+    "sha256": "f502a372b25ebd186dc850a77462b1a7c0a95c02595122cd6d55a629739073af"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/catalog-summary.json",
+    "size": 2470,
+    "sha256": "804ceaa425ac951a2028fb1030ddd44d44f3c2ecccb1aa924f56b8fa6339e70e"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/charts.csv",
+    "size": 23391,
+    "sha256": "1fd649c00516a24b193940902548d2584381f1e3cfa048490c9f88cddcf65bb4"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/colors.csv",
+    "size": 38133,
+    "sha256": "1c7527d81842b386fbb066376e1e449b05c4bb5db72e6842b51db752801b6fc0"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/data-provenance.json",
+    "size": 38034,
+    "sha256": "f171af8a6981559f1feca34e65347515035dc6b983661e0ab1698078e12836d7"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/google-font-licenses.json",
+    "size": 453312,
+    "sha256": "7c35e410dd8b5853ca86c3e0e3d3cfb73db1ffa3d9a2fa688c182bc44cd9a8d7"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/google-fonts.csv",
+    "size": 749176,
+    "sha256": "d03194d2c35a2cdc4c6846ddde9beb54fdd1f81a3ddc80fead3c0ba2842b75fb"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/icons.csv",
+    "size": 58051,
+    "sha256": "272ccf0eb60e50ba7af55de3ef5c195d92e1862d411b6cb80d81dec4fe56deee"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/landing.csv",
+    "size": 25484,
+    "sha256": "9efd4568de12dc9e9e4c5b7c1743f3643243232d2dbb9257d30d88613d4bb8fc"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/motion.csv",
+    "size": 14697,
+    "sha256": "854b30af6fdd40a735eeed077eabec3a6917923627220bc5062ea8a15165ef6b"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/phosphor-icons-upstream.json",
+    "size": 856515,
+    "sha256": "81c37fb3583eb43a91e93f1a62c4da3b4ff089624c06bfe53950b8205b54974d"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/products.csv",
+    "size": 75816,
+    "sha256": "c3ef558cf2987e145e90ab22ff71dbe769d38d2c83999bfd63d7dd58b477f73d"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/react-performance.csv",
+    "size": 15125,
+    "sha256": "4dc9b897a2150a8f30b4ad18f67ebc62074d1706bde9849c189b7f511fb821d2"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/angular.csv",
+    "size": 19914,
+    "sha256": "9fc11f2b1c9efe6aac4e0416f2a022389c1ee005551523fc6a776cd39494eb2c"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/astro.csv",
+    "size": 14645,
+    "sha256": "85ddebda566b2814a6088140d06af2b729d582d5df73ba5f954a9009e17b3a5d"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/avalonia.csv",
+    "size": 27384,
+    "sha256": "a7ea4a448bb26e50b8eb69f8c191ecb374aaa4ddea6b39deadf2ad5d482e71d9"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/flutter.csv",
+    "size": 14245,
+    "sha256": "be5422f81892515ea4646460a7a77c95a4e22db0d112b05d5885757fd5c16016"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+    "size": 16611,
+    "sha256": "4004df03af7cf4cdd635d7a2127f6da4f94f6718af6556bee6bc2a14e6093cb8"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/javafx.csv",
+    "size": 33653,
+    "sha256": "f1d83197228e5265f80a8cb9598c03c76d4280bfb2804aca6eef841f5972b449"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+    "size": 12348,
+    "sha256": "3e39065aa4c08e88117905558979a6bad799f691f72dc570b82b6d206b627a1d"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/laravel.csv",
+    "size": 20214,
+    "sha256": "2491ee000953ae99b929bcf9a3937672a8c4e0cc89d4737e12cb5fbe6d46d96d"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/nextjs.csv",
+    "size": 18749,
+    "sha256": "ece292708d2d4d41aaa6f339640f4ffc1adf5d052a7d633cc0201d5a79307c37"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+    "size": 28777,
+    "sha256": "5b76f8506e34369d23ea70c79f96c6292db91d8c5df52cf6534c7b36b22a4127"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+    "size": 23082,
+    "sha256": "ebe9bfe54cb1ee6e26c6776d72fa2290e7ba289d116afd6857e4d68a21475bb4"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/react-native.csv",
+    "size": 14101,
+    "sha256": "1f7c99ea422ecd84ba3b0df5920c25f315ca9f3a15cf862a9a7183ed50e9a5e9"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/react.csv",
+    "size": 21233,
+    "sha256": "6a4cb8e26393afe21f5a5ec171c6ed1c9438b46a5330923cc3d83bc99406cee6"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/shadcn.csv",
+    "size": 23253,
+    "sha256": "14d303b0adef425c388367e6825b92808cacbc0846e554889507c288b9e8e53d"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/svelte.csv",
+    "size": 15134,
+    "sha256": "59af6ab78a0550313489441fffe17d7317de5a819aa992b1e2dca73ecb0a82d6"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/swiftui.csv",
+    "size": 15374,
+    "sha256": "29b62817abfc03a0789180247ce98ac6fe00b7e54632c328c71af707e68d6915"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/threejs.csv",
+    "size": 46823,
+    "sha256": "d690c41d86d87747d6b7be6e6e8cd95432d31edb31f19497c0e56e8997b35cfc"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/uno.csv",
+    "size": 30151,
+    "sha256": "a52939b4c3c0fa604ab91d32216b7dba28fcd7b4b03a2e7f46b79749e3241228"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/uwp.csv",
+    "size": 24748,
+    "sha256": "ba334d0f2f478d73a7d80528b940f9e2f4ec6a8a7acafae92d69f0fb10837170"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/vue.csv",
+    "size": 12863,
+    "sha256": "bb492b870b5bc7abff86dfebe73adad36c811a10907709f6a2da19c388f4edbf"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/winui.csv",
+    "size": 27950,
+    "sha256": "0a2b7a991adc8f126a31a953b8ad211a8162889fcc4e66c1484328847b206849"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/stacks/wpf.csv",
+    "size": 24215,
+    "sha256": "1b98ddc6354f7e3f05071679dae1c1f49dbda7639e48d5ceb2378e82cd3e2594"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/styles.csv",
+    "size": 149567,
+    "sha256": "667595149f49cc894ac4b7b3468e7b9c6b0c2795ebea26dce20ca3f92044d517"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/typography.csv",
+    "size": 50072,
+    "sha256": "5c32783790714baaa0f870131aacff021b865495008ed8ab65e7ddf894862581"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/ui-reasoning.csv",
+    "size": 77553,
+    "sha256": "8c45627a7ac18cc57b8abe909d840aae3cf9a9f3ef15b8a6e1bf6c64fb02ed64"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/data/ux-guidelines.csv",
+    "size": 27636,
+    "sha256": "0552e850d47fb5b5cf0b2e35784e1d44f6b2aea52c9255193f7eb2588c2c9f4b"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/references/pro-rules.md",
+    "size": 11026,
+    "sha256": "b64961a5f324bf0c480dd06c6154787298c4baa6d07fdcd8dab1fee7058c09f8"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/references/quick-reference.md",
+    "size": 24782,
+    "sha256": "b3ada267d3fa7c6237834683748bc0b486c7c15ebf6f0590ce38bf6b988595d5"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/references/upstream.md",
+    "size": 15969,
+    "sha256": "ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/core.py",
+    "size": 42235,
+    "sha256": "e135340a60b6aa555ee1f31017ef90a6d054d6280cecf9847c1a51580761d1c7"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/design_system.py",
+    "size": 73205,
+    "sha256": "64457f35d085208d5075f9a519cfc502089a7630ca43976df07652b97566cc41"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/reasoning_contract.py",
+    "size": 5947,
+    "sha256": "094c8d35e7e69b243f57c4be5d61096634f8e2144fa03afd2b18c5f97de1cffb"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/search.py",
+    "size": 9550,
+    "sha256": "0e106775eed61e2954c0af41e9ed73b816c3bfbb2de936e07957907db846b7d6"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-api.json",
+    "size": 1115,
+    "sha256": "503a0d00ebf5621b70a1035425701d7204f18998b8a983b8aaf53e69848fcc8c"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-catalog.json",
+    "size": 1805,
+    "sha256": "b83a59f0374fbb771b37288cacca3b9525a1c6c435c8b51f34da4e8f7315eb11"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-existing.csv",
+    "size": 483,
+    "sha256": "a897ec8bdccd93f416ec51797e7bd58ecb7009d0fb74b3bca615b1a073b50435"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-metadata.json",
+    "size": 345,
+    "sha256": "12b4a4c05fdb56fa720a01bd83abc3da4a7dde2295998cab59d73a47b9428c10"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/google-overrides.json",
+    "size": 104,
+    "sha256": "507032ab4482cc5079e427280e904ee89c9f255a0474ff7d32947cc0d75bc541"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/icons-curated.csv",
+    "size": 499,
+    "sha256": "e04ac4ef7d95a09276fec3311759206675609c1358300ea4e960214d6c1accfc"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-core.json",
+    "size": 594,
+    "sha256": "d22fc37d9e2f7db33ee6284590b87adc6664a251748d9ff9a0f9f78eaee5de33"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-package.json",
+    "size": 383,
+    "sha256": "186bfa5abdd5dd1f1629be711dcee8c95edb5c0bd3679c05ce84bd4e927bfde7"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-exports.json",
+    "size": 91,
+    "sha256": "2818efb3acdcfb68632b483928458f500c470bb70b53461f426101bd95b0fa10"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/catalogs/phosphor-react-package.json",
+    "size": 86,
+    "sha256": "c46b8f1a61cbf9211d1b3b6ae6dfd781533e7bbd6c9808cc90fa89d72de4911e"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/relevance-baseline.json",
+    "size": 92792,
+    "sha256": "f1cab931dc0fe61c8e668fbf8b16ae0d3a7374fc9db3481b49624e42aa8a4097"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/relevance-cases.json",
+    "size": 36845,
+    "sha256": "9ebf970dd96c5ffb62e1c533f344362c7becf4c8773c2956554578986fb4ffb1"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/fixtures/relevance-thresholds.json",
+    "size": 5179,
+    "sha256": "e7bc4b5fbd9f36d234277ce8a25bc4620a75e63d435603f44f1397bba45c2dae"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_catalog_refresh.py",
+    "size": 19820,
+    "sha256": "8f006f97be04669a8c08aec20fcea3c02f54d0e047cbffb4f962b78d1f66a3f4"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_catalog_summary_line_endings.py",
+    "size": 3025,
+    "sha256": "273e1843cf64e129b7ca964b36c44bf7bb364d83e30d0a14e9522c3980264ad6"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_core.py",
+    "size": 17023,
+    "sha256": "2487a5d776ac2d8070d12686357124523dc0aec94d38acbfdd677e40c51a3857"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_core_data_quality.py",
+    "size": 9152,
+    "sha256": "c1e58089471d86667656c2453da49b4adcac1e81d6e84eaddcc4a39fde509ee8"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_data_contracts.py",
+    "size": 19934,
+    "sha256": "0dfa5544bd5a2bd06a93e9a027dd2bbae0ad6351c37e9b7fb64e5aea78d76aae"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_design_system_mode.py",
+    "size": 10048,
+    "sha256": "27554cfbcd375ce8f5b4ac97a0ab420bab182a264bf7d96aa37d3207abdb12c8"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_design_system_stack.py",
+    "size": 2322,
+    "sha256": "0f9efc89b66a360933f0e748bbb0ff1a1845f74249632a29b50964825dbe3c6c"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_native_desktop_stack_freshness.py",
+    "size": 8554,
+    "sha256": "7fa718a4dc5472fdbe6767eb0fb08e660f9ddad8e27669cb9716e6e950b9857c"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_relevance_evaluator.py",
+    "size": 8612,
+    "sha256": "b5aef6bbdefd7b72ca3d23f6331a13671cf40ecbe3fbb20cb735c201e78f8f5a"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_skill_script_paths.py",
+    "size": 4387,
+    "sha256": "e9ddd562c16d577675707d9534a01b5237b6a4960a5fffa15c920d9a5b2858e2"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_style_taxonomy.py",
+    "size": 7600,
+    "sha256": "1257b28c39f2173289214f9462b780cb296467ba93e382560d076a4792b0df90"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_text_layout_resilience.py",
+    "size": 5994,
+    "sha256": "da649f4c3e7ca751b8b5c76495c411f9efd137b78f17ca6e4ad35d831a8326b7"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/tests/test_web_stack_freshness.py",
+    "size": 8479,
+    "sha256": "974d5cdf50b47dbd6586e17425622a29f0ce0633bd235c40b78fa2cd35e60c9d"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/ui-ux-pro-max/scripts/validate_data.py",
+    "size": 53325,
+    "sha256": "0a40f854159a855133d08e73795abf94a8cb30f84c02f4d6e1d1c7a62225b2b6"
+  },
+  {
+    "role": "prism",
+    "path": ".agents/skills/where-we-are/SKILL.md",
+    "size": 985,
+    "sha256": "675b976e0e4db80961fae7557cc6fe6ed5679fdd591f346252234dade0907fef"
+  },
+  {
+    "role": "prism",
+    "path": "ψ/memory/learnings/2026-11-11_codex-role-skills.md",
+    "size": 3250,
+    "sha256": "6edb19e401dfd60a9e23b9d688e3f768fd332f085bda6444d515361b8f70487a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/SKILL.md",
+    "size": 1546,
+    "sha256": "e54085ddbb0f40a010f88e82a34c141af4c7511d57a0f0d0e22e92993caa872e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/assets/creative-review-template.html",
+    "size": 26092,
+    "sha256": "0ca7cce4fa809235aee776606205925d8dc01bde8a8325e2af7197d86394d3b7"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/evals/evals.json",
+    "size": 29040,
+    "sha256": "10bf9d717c3605aeea348aa1cdd42c46e20585d7f0a7a0220c2125e7d5d8f892"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/awareness-headlines.md",
+    "size": 6765,
+    "sha256": "0f9b2408e402ad03956ff84bf31e5c594371dd3e2974c5390c42af4e3c60ed4d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/creative-review-page.md",
+    "size": 9602,
+    "sha256": "03518911b1648bce12a3d579c5979b97442af50de24ff74809a43ba3395dcb3a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/creative-roadmap.md",
+    "size": 9010,
+    "sha256": "a0be737841d8a73f0cf02094c9ed1e3f7c050e1c6f867794b1fa8b64dbf3b50e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/generative-tools.md",
+    "size": 23286,
+    "sha256": "f4dc366913c5d20d45442d7df91cfbfedd746946d2a51d20977db7e938ab652f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/hook-system.md",
+    "size": 8335,
+    "sha256": "b697d670a2b0c65dfd0fdd0a367b292909c60ba74357853454fc8168173c76ad"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/imessage-video-ads.md",
+    "size": 19899,
+    "sha256": "8b798cc2249188a4c1679eea33a2bd7736b2eb02fe5de41e3fc8eb6fa2de16f4"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/meta-creative-formats.md",
+    "size": 10686,
+    "sha256": "09720c4550761365a8c93c8587fe629c87718dbb331677312d93e5b2faa9761f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/motion-video-ads.md",
+    "size": 11801,
+    "sha256": "c64e83199f0316e12e7811667f09a6475a34044c8eec2e3ba549faf9c33fc28c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/platform-specs.md",
+    "size": 6525,
+    "sha256": "de69753161071a8d3e4d244280562810a6c4d6ae2696c5a21940f983abd0aa8e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/short-form-video-specs.md",
+    "size": 19389,
+    "sha256": "1aa1cc498e350ed00ec4783b60d2eddee5bc98f25750761f6086742d0758f953"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/static-ad-templates.md",
+    "size": 23710,
+    "sha256": "fc93d3f5fa6b3442cc1c6785eda05979da0d299c640d5f0a277033209d68e651"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ad-creative/references/upstream.md",
+    "size": 26846,
+    "sha256": "6a748af47d72533978080110ddb0e1fe9c01772d208bba8cea90e48b79070dd9"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/content-strategy/SKILL.md",
+    "size": 1527,
+    "sha256": "2419eac8d7b3ff5d673ba364392647b902313e9abbbe8925346e5cf3145c6c89"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/content-strategy/evals/evals.json",
+    "size": 10190,
+    "sha256": "10167e7125ee77cbabe4f03953750dd99ea147f7461027fdbb0cf8e089e5506d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/content-strategy/references/content-distribution.md",
+    "size": 5576,
+    "sha256": "1861a1aab0627ab29c279000879a9889242da1ba85e677acdc759c66a6241778"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/content-strategy/references/headless-cms.md",
+    "size": 8583,
+    "sha256": "efc796ae9596d1efcb876683db2d9b7c10c83e76e1cb69e527097907d5b4fc3f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/content-strategy/references/upstream.md",
+    "size": 19180,
+    "sha256": "053611df1d6e5c07a5b39e912465cf8d0e4aac8d5d0a9163a777f764347c24d6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/copywriting/SKILL.md",
+    "size": 1525,
+    "sha256": "193c13d52531082421c8ee3bb3235f6837987225d3a1b91821450545de0fcc27"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/copywriting/evals/evals.json",
+    "size": 11550,
+    "sha256": "c365b3208b3e07b97520bce9acca496fc5f939e3e1d70fec54bf1e8f9f92b0d7"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/copywriting/references/ai-tells.md",
+    "size": 15617,
+    "sha256": "048a436d35d011313a4dd49dd1c6a6fb9f05203a2e40b8970ff88e7a2c548591"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/copywriting/references/copy-frameworks.md",
+    "size": 14352,
+    "sha256": "352122944bf9e891ceb0e003adce41591d111e9d97057700626249919dfe430d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/copywriting/references/natural-transitions.md",
+    "size": 5561,
+    "sha256": "9bd61b0de5be2c4de4ce130c68236b4f290b12737823827a458bb2b4c8584683"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/copywriting/references/upstream.md",
+    "size": 11536,
+    "sha256": "0ec4dec8a608bfaa7c600818995fc03d390fe3543b5b7cbe06e6a1018318a6ff"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/build-artifacts/SKILL.md",
+    "size": 8443,
+    "sha256": "1892c6f51a8702264125509c9843de7b5b6aece4c2de84021ee33f61b54ad18d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/ci-pipeline-synthesizer/SKILL.md",
+    "size": 4533,
+    "sha256": "c348b5a408bc6e6cab54da7b6d258976c0ef2a446395e5c8b37b43397ae16a18"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/ci-pipeline-synthesizer/assets/github-actions-go.yml",
+    "size": 635,
+    "sha256": "65001d9dd83f133015fd19eb42698e651a7ca9bcc9f6f0d503b069d7fbf75bcd"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/ci-pipeline-synthesizer/assets/github-actions-nodejs.yml",
+    "size": 644,
+    "sha256": "f00fceed46065d5fd597373d3a6a103e98145189c7ac923ec24cd70dc75b16c8"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/ci-pipeline-synthesizer/assets/github-actions-python.yml",
+    "size": 726,
+    "sha256": "203ca1b6aa458a524a0337ad81a20aeab10aa861c5aba97810885c252a9d8050"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/ci-pipeline-synthesizer/assets/github-actions-rust.yml",
+    "size": 1147,
+    "sha256": "335e3356c1055756999fd50133c628567429728a4f89483229f9b7bbfd1d9758"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/code-review/SKILL.md",
+    "size": 9078,
+    "sha256": "3e44f82c0a2fb0dead4ceb3fb287a80454a6ef292124d758d3c45ad01543a548"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/code-review/references/result-honesty.md",
+    "size": 4942,
+    "sha256": "57d6cf4a755c65b2dcbe5e27a3cf20b23356b220b583582faba7de48f9a47d76"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/code-review/references/review-checklist.md",
+    "size": 3529,
+    "sha256": "d88ce43e98586fe8cc2021d4932362c80f97c6eb1c071189210808f93e6e1e7f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/code-review/references/surfaces.md",
+    "size": 3352,
+    "sha256": "f52616c8ae462c1a114941528a97581ca540fe1b82b7e8e46542a0df5ce83637"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/concurrent-branches/SKILL.md",
+    "size": 11268,
+    "sha256": "07b9d877010b56a92079e581146ab516f88a9d5a4f50ee74bc5de95b4e39a6b2"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/cross-surface-changes/SKILL.md",
+    "size": 11903,
+    "sha256": "73553113a452b0de4bf59ac79b65e5065f93f5638ceacdcc76a988025101282f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/defect-reports/SKILL.md",
+    "size": 12200,
+    "sha256": "774bb1a56a01efbcb6ba8e2c925fc416ac3477d8167a974a40d794054359b720"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/destructive-operations/SKILL.md",
+    "size": 10543,
+    "sha256": "06decc8e6d2580632255d1562ca79b50ab597afb32beec2d84e28371f07fc29d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/git-hygiene/SKILL.md",
+    "size": 8508,
+    "sha256": "c6e74fcf819196746d9385b3f310987aaa10816e4528310c2b1b694590dbab9a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/github-actions/SKILL.md",
+    "size": 13202,
+    "sha256": "2e5d7039e1f8cd85816b82147be001fe66a0ad092bbcfb573c52591ee5c17314"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/mcp-server-design/SKILL.md",
+    "size": 12922,
+    "sha256": "edafa832aa275ac8c8b6dd782cbc3fd51965e28d2840c06366e100c6e5321cae"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/release-management/SKILL.md",
+    "size": 4253,
+    "sha256": "f6664dd183294b146553e28cb7225a302c5b6aec71a19e71ecbfa0123ca76805"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/reproducing-ci-locally/SKILL.md",
+    "size": 11440,
+    "sha256": "ace4670d4720f5655b79737ab8633d17935495797ba6f587c025698401524485"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude/skills/verifying-external-behavior/SKILL.md",
+    "size": 10913,
+    "sha256": "212ee8a1246a05ef580820ff7d759f83c81ec235b6a2f73a7d6c08e007b12671"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude-plugin/marketplace.json",
+    "size": 485,
+    "sha256": "861ae9fa4537ba53f7aca6e9a068637186fffa850c4cfbed2d7442b4771ff461"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.claude-plugin/plugin.json",
+    "size": 898,
+    "sha256": "535905f006727cf537b1f872af6cf40ecaee179c2fc3df544ff68ebe87a080d8"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/FUNDING.yml",
+    "size": 17,
+    "sha256": "9abab93f37373a83c71522c3fabc7940e78bed2e4bd76d897e581de13e20f461"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/ISSUE_TEMPLATE/bug_report.md",
+    "size": 791,
+    "sha256": "13e1acf679fe72e800a33889d6cc3fd13d1f02562c787523270d76a418417b66"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/ISSUE_TEMPLATE/config.yml",
+    "size": 245,
+    "sha256": "19dfc8e1eef3b06c9cf5714a5bdcbbdd9e8de4b0781a5c3b9b65e27c6900aecd"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/ISSUE_TEMPLATE/feature_request.md",
+    "size": 515,
+    "sha256": "8066fc495896f07e342c1e62ecdafa60420006f045c0815ea65622c6a7265b67"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/dependabot.yml",
+    "size": 572,
+    "sha256": "e0420c571b668f790e93054c552582d1e6de2774fcd464f92499806ba53c80ee"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/pull_request_template.md",
+    "size": 415,
+    "sha256": "e8983d7aa5d12d7be2603e5570c361b8e4a69dcef55d6449fef1f8838d394142"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/release-drafter.yml",
+    "size": 2540,
+    "sha256": "9d7ddb017a0515950d0df56416ab03e07c6b8105dee38375adb293827e1ad697"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/scripts/build_pages.py",
+    "size": 6218,
+    "sha256": "51de4eac5f1a521c5660975bc5ef2bc76e3e9e67be8f1bdc3cad60751df8c7fe"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/scripts/bump_contract_md.py",
+    "size": 2052,
+    "sha256": "966167336c45aa5102d55dd3b1289f11bd669f0104ba6ff8b554c415ccc0526e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/scripts/bump_roadmap_md.py",
+    "size": 2298,
+    "sha256": "c505c62359e1892c04cfeb375d26be8472273cafb87cd1c785a11005a3390245"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/scripts/design_decisions_index.py",
+    "size": 2581,
+    "sha256": "59decb43d5614f6e54734dff0e02c94c775df9820c3106007a4de7f13783d0be"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/scripts/pages_layout.html",
+    "size": 3303,
+    "sha256": "a7ea2af65f545fa55d852bf1ada7f9955d0ff9f0a758c2b04c89963bd9c54a73"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/scripts/resolve_version.py",
+    "size": 5433,
+    "sha256": "84f6aa9175498f0569ab5f51eba6993c1f7bed0820b79f00a4d2f6c1c5a3e94d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/workflows/ci.yml",
+    "size": 11440,
+    "sha256": "d00a07404bc15c661af2faef99cbc344e95eb8310243eac313d2a297ae7a5431"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/workflows/codeql.yml",
+    "size": 1408,
+    "sha256": "f2278d1b850f5f89a4d44148e2a9553feb837068499293c630eb89b06bb0c75f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/workflows/dependabot-auto-merge.yml",
+    "size": 1513,
+    "sha256": "4fad2367da26fa70ddb7fdd3716d12aabc38d77bb0bf6d1c05ae9fce705e4a1c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/workflows/pages.yml",
+    "size": 1329,
+    "sha256": "e13b6cdbf0924b1909aacf280f1a58f856579dea54514224e1b7f4e2a63b9f8f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/workflows/release-drafter.yml",
+    "size": 2449,
+    "sha256": "1046f4d4fdbbc9f0599df7d894833a5c8d3ed38fdb520c10079632d1d7509473"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.github/workflows/release.yml",
+    "size": 17613,
+    "sha256": "3c204bb4638fcf544408c835353f69e8b9034dbedeae13112279ba2edc2738a1"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.gitignore",
+    "size": 379,
+    "sha256": "dcd70d6427ddcfc4b628f58fa7da0225ba5463a1aa0757fc40de4f26e196602c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/.npmignore",
+    "size": 494,
+    "sha256": "f8c9328edaab42c2fdc4e266612120b2b008caf2ca7c2b93084181e50910675f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/AGENTS.md",
+    "size": 949,
+    "sha256": "605f07f1ffb7cb521cd74e44ec28815d8656f40e7db82c37bc4090e0aae3f727"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/CHANGELOG.md",
+    "size": 301033,
+    "sha256": "3802139e2c859d9b7d4c52ff8c5b64949869300704aa5b7aeeb145a761bb9685"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/CODE_OF_CONDUCT.md",
+    "size": 507,
+    "sha256": "f77f3912ac802a2e9176ae819de7bb89ccf42a23a0a192db646b31a3c4b47fee"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/CONTRIBUTING.md",
+    "size": 6157,
+    "sha256": "df9ba4b0e63e6d23da062d60ecc4bdbb26c4a6d3345bca571c07720ddaa1a42c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/LICENSE",
+    "size": 1065,
+    "sha256": "7522b29e4d6e90f2a8fab15f07d224b1064c70692a872be9996ac1a88cf474e9"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/README.md",
+    "size": 92789,
+    "sha256": "e8dc658e64044649b23362c50b2349441d0074a622fa15e304dbe7b75aa64d9f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/SECURITY.md",
+    "size": 1060,
+    "sha256": "f8b4192a2735a4e8df1d5d97aeb868fee38282c92f982b8447b529e41a47a4d9"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/SKILL.md",
+    "size": 1713,
+    "sha256": "42fd078ccff09e09a2431c13422940b4243fc51cbf903cd04a61b456a0913167"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/assets/demo.gif",
+    "size": 1647658,
+    "sha256": "35dc6f07a43909f46db9f8acd0548f8ab92cd6095de32e1a9243eaf06af0a8bb"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/assets/icon.png",
+    "size": 592660,
+    "sha256": "45f39351bbf2bb7923f3203323d9d75ed8b7ec131841731cbca57a5d355ec88b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/assets/logo.png",
+    "size": 374426,
+    "sha256": "b5ca078afcb43685653163104e0fd2704694846d95d08b935b3d700a73fc3adf"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/assets/social-preview.png",
+    "size": 632619,
+    "sha256": "7a6b44b52317d4624a83e3d8d682581b621a76316d55842706613ca5a140eb81"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/bin/install.js",
+    "size": 10916,
+    "sha256": "c2b36eca7c1f32a082f123245ad4d76e7f5c4aeae8761de1690e4debaa5f044d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/brand/app-icon-dark.png",
+    "size": 65439,
+    "sha256": "840607914b248621fc6701d52c7626d4113c0bf45022a2416db70ef50598198a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/brand/app-icon.png",
+    "size": 64805,
+    "sha256": "94a1a7c45b856f959667129a569bcf9807368ee35371067dd5420cc4660dcc0c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/brand/ffmpeg-skill.icon/Assets/in-out.svg",
+    "size": 372,
+    "sha256": "0c93f1e345212929cd17aa18f19ad703dd810009f3a8a5bd6a92fdb362b85729"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/brand/ffmpeg-skill.icon/Assets/playhead.svg",
+    "size": 359,
+    "sha256": "e76968487123e949e4c2815e94ab8b06c0e40e382c966e4bc880070cc3a863b2"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/brand/ffmpeg-skill.icon/icon.json",
+    "size": 1753,
+    "sha256": "2fe266f1bedade5af7caa96fbca4cdc5fad86079902000162be97e6ce051cd4f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/brand/logo/ffmpeg-skill-wordmark-black.svg",
+    "size": 4216,
+    "sha256": "684010543dda76c4b7d94304652b4401f26744705965b93d35e50be0080f6a16"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/brand/logo/ffmpeg-skill-wordmark-white.svg",
+    "size": 4216,
+    "sha256": "d098eeaf215c7cfde3faf77066df5b1dbc49bd29303d1e6dc9e6d2ddf873a37a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/demos/CI.md",
+    "size": 6512,
+    "sha256": "514de2300805772ed5141b8c93bf4bffcaf79aa812c3c3e665f528548e5cd93c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/demos/build.py",
+    "size": 99650,
+    "sha256": "377405cf5bf1cf712ac186dd8bc75c2e0186f8c3d9a0b6b0b75d4c0c25ed4d22"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/contract.md",
+    "size": 90014,
+    "sha256": "d060eaab3c22e7e00e4ed903795a4016030a346986df44937961d75dc02a28d9"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/audiogram.gif",
+    "size": 195129,
+    "sha256": "287376e5c189e62b27f41b73cb4f7a74eb8952717143ec1a8144c7077a3e3a69"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/beats_snap.gif",
+    "size": 10384,
+    "sha256": "e2c6222ff488bbf0d3825c1c82bc0323040c6d8f0068f3f48bbf62450c8d874f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/bgm_ducking.gif",
+    "size": 14755,
+    "sha256": "a1961f88ed1b2f893fbbed5f78e75c70e2905c6d32a823e3c0a73867457985d5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/broll_cutaway.gif",
+    "size": 217470,
+    "sha256": "ec6f2e072129478777e7423c94c6715265a1a08f9d9472ef516a345b716dabf6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_ar.gif",
+    "size": 246564,
+    "sha256": "5588d04df45ec1324d80cc3806acd0392753a9eeed5198507be18018a44c0c45"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_emoji.gif",
+    "size": 219624,
+    "sha256": "2ecc72156451ff61ebdb90afe124d72cefc2bf44ba57de1d6a136e7cf3e8d7e7"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_en.gif",
+    "size": 216723,
+    "sha256": "7dc579b8ccca0118aeb185e56ae39eea6f2d7636de37b52c18f93e5a7365884d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_fitsize.gif",
+    "size": 142056,
+    "sha256": "61bd813a52694b6d308ae3b06f16b2362e6747ce8dcf24dd830a8543e1c7d56a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_ja.gif",
+    "size": 200664,
+    "sha256": "bfd4d6c0f658166e2373e5c6d0e62aa9115b7ddfc28a75f07a9fa37c6787ec5f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_ko.gif",
+    "size": 255794,
+    "sha256": "b4e1b8e63de37a9f80cb16e978175bcc4c13c371f91766d62fe1403c4ae75203"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_multitrack.gif",
+    "size": 223697,
+    "sha256": "af1520f6702f8509bb37bc560eab4fef70d2b84f53a99654b662759a83356a8e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_phrase.gif",
+    "size": 196271,
+    "sha256": "ae59b54f6c51c05868e4688cfef345afaf3132fd3f14019169dd6fd4e80490fd"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_pop_karaoke.gif",
+    "size": 220093,
+    "sha256": "926bbd344df43a988b2b79018d59e1d831a4b6cdc0725814dd87812f9511ac81"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/captions_zh.gif",
+    "size": 255446,
+    "sha256": "0b99ffd7d5494b7c39e581cd74bed0410726107a70d13d2b44969513050b31ca"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/color_correct.gif",
+    "size": 251845,
+    "sha256": "dfc9273d9816080f1616a2519ebf0bf11b10d01a0aa94f18912c128310037cf5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/color_lut.gif",
+    "size": 236174,
+    "sha256": "b3c76594625c394323b9348b7cd4e62b283d48f6aef9af46aed7152217a3d156"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/contact_sheet.gif",
+    "size": 233762,
+    "sha256": "df0ac18bc2ddb67955d29224f21e242acd3f50a7c8b22bd0771f1fab5acf3124"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/crop_rect.gif",
+    "size": 152168,
+    "sha256": "e65331736a597e2be666d8ffee5d0e19fd2d6ee4bee3081189b106388fc9b5bb"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/cropdetect_crop.gif",
+    "size": 240057,
+    "sha256": "1939282e7464ccf94b27492e1198ba0586674c26a9a12638c13b3dfa243e2e77"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/cut_accurate.gif",
+    "size": 169175,
+    "sha256": "8da352aecd1888ea00c19d6502f0d6baa101ede69084023ad9892def21cc754e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/cut_edit_list.gif",
+    "size": 172269,
+    "sha256": "9c00ba2e4b190ed2b82ade613610bd4f11541a09421392f9aa1df1cc3d3f570c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/deinterlace.gif",
+    "size": 230026,
+    "sha256": "20077744dec590769717f4396615336d34bcc593be3d1a2acc5bd6eb436a7ce6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/delogo.gif",
+    "size": 243761,
+    "sha256": "286c6ab7dafb46e1e7c802e53a275b47137b7bbcef7cf441299006d847c29a72"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/denoise.gif",
+    "size": 255876,
+    "sha256": "8e19c63f68cc75437de34e3fe7ca100da22c100d8d38f393c8906693a9e34be5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/downmix_51.gif",
+    "size": 13621,
+    "sha256": "79f9d7382b22c17c0ae2a4b4ffc9200cf5f7fb57c607d26017eff334d87c440d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/export_reels.gif",
+    "size": 197557,
+    "sha256": "a2ef3cc485919384d2a5e72da08d6e3320a5da6f22761d5e19ca9b2c6650382c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/fit_blur.gif",
+    "size": 184031,
+    "sha256": "ddfdc1eca55b9b046b6599f8e290711fa041514ecc436f5f0a1c0a0b4b20bb37"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/freeze_hold.gif",
+    "size": 226696,
+    "sha256": "0915f701d0fca121dd3458882d656044129359433bee1858555c385c1d5ff989"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/greenscreen.gif",
+    "size": 236324,
+    "sha256": "f3f1124c9f0086566bd786390a53442870cca2914d74d1a68169ef3af8303c42"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/grid_2x2.gif",
+    "size": 197971,
+    "sha256": "ea8f4b7d411cfdba36378b58e83b925cc8e611d36da376631525b96a4e3f7cac"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/hdr_tonemap.gif",
+    "size": 192072,
+    "sha256": "6846605a8c1382232f5d87c5b258b66c462c219bd55fa6b600891b95f0b79de5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/insert_still.gif",
+    "size": 252756,
+    "sha256": "0a66cbbeb42fe1e487d0dfa9749d0e2c22a56d2a80378f3a26ff3568948f7956"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/join_fade.gif",
+    "size": 203232,
+    "sha256": "c43c2b6ac2bbcae55fd986c258e1b3cd8a7ffed1c3a1111bb5a08c0cddac8ac5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/join_fadeblack.gif",
+    "size": 203232,
+    "sha256": "c43c2b6ac2bbcae55fd986c258e1b3cd8a7ffed1c3a1111bb5a08c0cddac8ac5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/logo_overlay.gif",
+    "size": 253024,
+    "sha256": "65de6ef05a0e33617ec89d58318937a0b31b32b3bed4aaa43f4e6c16514f0b24"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/loop_times.gif",
+    "size": 199497,
+    "sha256": "4d6f7db650cb5748abf691928827d5b5e94b8a546cc48b769c08e29b92e1ee12"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/loudness.gif",
+    "size": 13015,
+    "sha256": "2c1b36e4bb9997e7f5217ca9c073c5d3b0272002fbf4b88277e8bae88c098e1a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/lower_third.gif",
+    "size": 215362,
+    "sha256": "bc60cf482425575d95dc43a2932bddb86d12b787c0c9caea231c25f28cb46342"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/lower_third_hindi.gif",
+    "size": 213711,
+    "sha256": "65c936857bb02d6b197d6a54b69bf02a0b16743bfe2cfd17f887ac76e7839a73"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/metadata_auto_chapters.gif",
+    "size": 219215,
+    "sha256": "2a7bb0022bee300dc264df95bea334faa1da6202085974d5ae87a77a30a9f7cb"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/metadata_chapters.gif",
+    "size": 219511,
+    "sha256": "ff53e85a9ce9c6da58a597747a2e8527755456620fc55a57d4ff1de381a0d387"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/motion_centre_crop.gif",
+    "size": 35248,
+    "sha256": "52c95fa927efec7d0edd03f6454c7f13cae46f21317449b5dda11db526f33d93"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/multicam_switch.gif",
+    "size": 232232,
+    "sha256": "189ce2c0b01b97b4d1964cad2ef8b210a140824299e76ec08006a92cb335d3ac"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/multicam_switch_energy.gif",
+    "size": 217926,
+    "sha256": "efc188c2b59a53ee2551f2f5e451e2b91a2d519bf1ad4574fca2f08b3760a244"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/overlay_place.gif",
+    "size": 172094,
+    "sha256": "8c39707144e9a6072a4b01a3fe2071893a4784fdf8b3ed497f60f766633f7dc6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/pad_timeline.gif",
+    "size": 254443,
+    "sha256": "3594156d64c322b56bca23f7cd3fb7dc3dae6e9e9f2b9897aa52f77ef99e79f5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/proxy.gif",
+    "size": 148909,
+    "sha256": "dedb9db5139b5cb4c0c5f24dd501e633f0d1fca9d05745f2b99a6a64b1c14e6d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/redact_blur.gif",
+    "size": 168407,
+    "sha256": "91906666d9acc74432c3b005e77e26fa86903777e30dc92b884784bc93c27dfd"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/reframe_crop.gif",
+    "size": 199423,
+    "sha256": "b84b0294729acbe383bdb2c94e508dd3ad77c7fed060b53f09fa8deae46032c3"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/reframe_pad.gif",
+    "size": 197828,
+    "sha256": "6e58a88e02e123b9755f306cebe5ba5b0d7dbc2732edc7b676962bbd9606432b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/render_pip.gif",
+    "size": 223728,
+    "sha256": "02c5ef67ded4f51931d9e02d079f739d8e0c5f77097f109eb3145cb1a12e3291"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/render_project.gif",
+    "size": 172530,
+    "sha256": "edf6e37d4058469a0d6c30d82cd27a2d298243974ace6ca2e321bc03ad2d5501"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/reverse.gif",
+    "size": 214530,
+    "sha256": "55e2925be14b385a3ffc6c14fe8a5cf3ed140e95c6458cd58b178b4944e6b4e8"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/scenes_highlights.gif",
+    "size": 217820,
+    "sha256": "42700a59b8d200333825d6dde6d78f7bc7e71ad94660a530bf3aae3608e7a93b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/scenes_shots.gif",
+    "size": 216949,
+    "sha256": "f543e17608c1efc0eb2bab1fb76f855b6e487f7b954d17d982c34bf88b5e40ff"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/sequence_frames.gif",
+    "size": 182062,
+    "sha256": "d223ecaa3a2076108fd3cf0771b61edf2a5be88039edcc504bac57ac56775ec6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/silence_removal.gif",
+    "size": 209051,
+    "sha256": "76fc8e78cbb7d206b21e778d83b10c2776857f43dd427db543949eca37f0904d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/silence_speech_aware.gif",
+    "size": 13048,
+    "sha256": "bbd8728e4f4599b3401b78602209e480839ade1d211544ba18e8f4cd4a5c883d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/speed_up.gif",
+    "size": 199080,
+    "sha256": "17cec245f3cdd3094ab698195c891ad0b37f0c634a5a1233bd3230632ba393fa"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/speedramp.gif",
+    "size": 147702,
+    "sha256": "1388ff864ef3803cfae40186d286f73b591ada49124e31b790a8bd76b5c2b57d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/sphere_flat.gif",
+    "size": 206662,
+    "sha256": "2c27700a496e872fb9973194bb4dadc67db113722f1c20777a1f9368ad4472de"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/stabilize.gif",
+    "size": 199986,
+    "sha256": "b100c89c8d468f7e3e3acccbbca66b4d88cec294fc3f71895226232545ab8656"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/straighten.gif",
+    "size": 149112,
+    "sha256": "0971843a35feebfdd3b3e096240395ac766081a17544d954e0b465ad20813499"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/sync_mic.gif",
+    "size": 12819,
+    "sha256": "86255870ee5b083207a63e922ecbd306f97947400e68c28f456e8999267dab77"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/template_tiktok.gif",
+    "size": 195829,
+    "sha256": "691ebb43f01f586aa4e681bfeb3f7375a37e4e738414139a242d3ead4c3b973d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/title_card.gif",
+    "size": 118758,
+    "sha256": "9024bb7953d076514bc4927f9cfd54fed27d990d1717d0ee40e3a4fc60d83ebe"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos/waveform_render.gif",
+    "size": 184706,
+    "sha256": "edd884bc58b3427506b2788b64aabd8bb8ae4e9c9d29bf0dd1080f4800b8951e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/demos.md",
+    "size": 36500,
+    "sha256": "19c356185d92252769b81dffdd9d9e0c331941608b182f328a40012f2464aee0"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/design-decisions.md",
+    "size": 178928,
+    "sha256": "54d7df0d68e04ee1c1a3df1aeb86dcfcdcfeb2cae391e259d3d0fbccc789c037"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/docs/roadmap.md",
+    "size": 61431,
+    "sha256": "5098224caedb0ec5ee7b73bbcffa633abc9cb5495bd58fbd00944bbff4c0eb01"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/README.md",
+    "size": 21437,
+    "sha256": "3c16276534d9bf5432cf883c636794e310c36289bf9d8602dd30e1d522a00730"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/agent_prompts.json",
+    "size": 1943,
+    "sha256": "4110698211d4e5ba0e9282cfe5939d9639cccaf02a518e958f15843fa52bd12e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/agent_prompts_24.json",
+    "size": 47138,
+    "sha256": "325642547528d1942d88834cd308fcc16077296dca8bab7a3c86c7dc174a11f9"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/agent_prompts_25.json",
+    "size": 2554,
+    "sha256": "022bd8b14ce29c262a0460ed24f530d0dfdfeea63f885c7e90162c077f99c21b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/agent_prompts_audio.json",
+    "size": 1389,
+    "sha256": "fded88bb97170181fb90759762eb5ce58d2bf7fb3c06e5fc637efb3911a811d7"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/agent_prompts_audio2.json",
+    "size": 1793,
+    "sha256": "fb0afeb813a35abf04a47b79307e3c9e9828fe28b4fff206599660cee35bdf8a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/agent_prompts_exec.json",
+    "size": 3369,
+    "sha256": "028eb70ee8d43d13af7d3d802b55a7ff043ccc46200e93c05b4ce2b0159c3a12"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/contract/README.md",
+    "size": 986,
+    "sha256": "3267b1c372ab4634589fb0b8bdab04785c51f67d6605ea8e6d5c92e706d88d70"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/contract/check.py",
+    "size": 3203,
+    "sha256": "d9419d57f48a3089e11937d81fc13d0be06f4d9407b65a3dd6be5b8ba174c428"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/contract/questions.json",
+    "size": 2668,
+    "sha256": "e30949a2985cf9f0cf8ccc6a0712f02e929578a495b9c0a8e867d4f94dba1fad"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/grade_runs.py",
+    "size": 2144,
+    "sha256": "f5795425e93de34e72b39ff541f622c1fb94a9b02cda139f728b70eb891662a5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/grade_runs_24.py",
+    "size": 23151,
+    "sha256": "d50a60e6625885be12b0f68ed3fa43b5db7e3ab8f7e8f3d89ef9d72f5ade74d7"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/grade_runs_25.py",
+    "size": 6688,
+    "sha256": "785cdb1806b5999db8ebc8084b97d9fe6658a1bc56bd620b422b614be28c0703"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/audio-2.json",
+    "size": 1167,
+    "sha256": "49084a571c9921e32b7b4ca44ebeb273945b95538d85cd51126a7a805644185f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/audio-only-1.json",
+    "size": 1039,
+    "sha256": "81102ebbdac732f5258ef1af70b09594a6e42090b2546b41e308b4d3ef645737"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/contract-2026-09-04.json",
+    "size": 794,
+    "sha256": "c6de1ebe7be9ede0b3f389da5f60f9a2c406544c78db9c6bb8eb03917a34a7e1"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/corpus-2026-09-13-1.10.0.md",
+    "size": 4914,
+    "sha256": "9a40e4d99cb44d8383f42c2edac071dab7a5ca019f347645205653602efa6e27"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/exec-1.json",
+    "size": 1980,
+    "sha256": "ee3ae8ef44ef89e88b895b9a43c334bad54c8a9412f1ad2f952bcc7e8fdf0688"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-1.json",
+    "size": 1440,
+    "sha256": "83d9478918ce3f687c8255e91f741f898a7ca977375580023615d0a4594622d3"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-10-independent-grades.json",
+    "size": 18119,
+    "sha256": "b752c03cd55ac8e5c394e698dfe215be0890bbe16f669a20f1fa748ea0650681"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-10.json",
+    "size": 8961,
+    "sha256": "2158bb0774787185cfd098701135c24b9268656161c48ede1685c1d4dae605c9"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-11-independent-grades.json",
+    "size": 13693,
+    "sha256": "6a4384856b805ef0d76e91a33b3c3a8b010324b97358b5f80a40777467d4b35e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-11.json",
+    "size": 11960,
+    "sha256": "3430a42bc197c463d8aff1bf7c7a2cae3d32e21d1d1e5dd44866b73bb8df9ab1"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-12-independent-grades.json",
+    "size": 11557,
+    "sha256": "c05ef8f394d9cdbb3ddcda6d306fb1f44176b66c2f8ae8ef21fb6829291b90a0"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-12.json",
+    "size": 9775,
+    "sha256": "0f472084388f43d3745620dd8753cb99f64e8db4d32ed2a2b25fc31230eb1fff"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-13-independent-grades.json",
+    "size": 14611,
+    "sha256": "c1201674fde46333313b02fad824e226bd16a1f0fc293f770d2cf3ef4f52aaf0"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-13.json",
+    "size": 7379,
+    "sha256": "fe85a4f6f88d7068cf2b82db3a9df3edc3a6c75b553792cac956597cf33d1d54"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-14-independent-grades.json",
+    "size": 27247,
+    "sha256": "e69e7ba087eac717c6f473b3322995322baec8e76660734b41665a0ffb690dc1"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-14.json",
+    "size": 9964,
+    "sha256": "88f422061403dcd32e5be9ac99e97aae64d1bf1d070047fc464e3a2d4693cab0"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-15-independent-grades.json",
+    "size": 21515,
+    "sha256": "68f346868b32f3834a539ff0a41bd3d486ea644b0853be23bd60d3053c4eeb77"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-15.json",
+    "size": 9527,
+    "sha256": "3d7f2c2b4af23cac27c36e6fbcea8e210ac0992937681ba171744622978e70d2"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-16-independent-grades.json",
+    "size": 28813,
+    "sha256": "983582fc79716c4b8467386038b533d5a46b0ec2ce8520fb4144f02aa8442ab7"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-16.json",
+    "size": 15637,
+    "sha256": "16de3a86d2d42f6911ab34c19e553e894ffa3de4d38918782c009848ff7edc77"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-17-independent-grades.json",
+    "size": 41327,
+    "sha256": "4869ec4409c95c5f28661e1dc18768ac98b5947fb84c39c30060d2eb23a218f4"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-17.json",
+    "size": 18790,
+    "sha256": "6a4bc52ba181fb8bde4c117486b46a0daf30e6f74793480f5a4ae90e1b2a2e45"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-18-independent-grades.json",
+    "size": 22163,
+    "sha256": "a96af2c4b9610bd6e5508d43f59c8dd076df61c80974bc55eba624caf37aa805"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-18.json",
+    "size": 21184,
+    "sha256": "fe0702eab5e94621b9037bf7dc3bbc83a696807ed67b1243d640129557b9490c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-19-independent-grades.json",
+    "size": 24846,
+    "sha256": "a36e2a130911c63adc8ced26b0fe39ca724b79af8c1a63f56878460a9c85e5f8"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-19.json",
+    "size": 19205,
+    "sha256": "05130cda129a12d3eb3c9114e5e15fc776690b2078142ef03ec03ee7462b852c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-2-4-independent-grades.json",
+    "size": 24897,
+    "sha256": "8b637f256b8de71ef0ceaa23ca09cef00d4ab7d076ada4c5eff0b72d8813c82c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-2-4.json",
+    "size": 1648,
+    "sha256": "cb556f39abf22d9ef8d3daa53ec0f0c1e128ba6c603bdb4d7cde91a552a0682d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-2.json",
+    "size": 1545,
+    "sha256": "4b7d60b46584587a4d3a8e40cf075a099cf1c400683a87e93573e1883e1e20cf"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-20-independent-grades.json",
+    "size": 7677,
+    "sha256": "c84e7cc88384dc93effada2245ceca26e44cf5c6b2bb61df7e6e146e90f3c0d4"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-20.json",
+    "size": 11200,
+    "sha256": "1b72f0a48a6a0ee15f4336a78939e9d432d83a49d0bad6534956e3c11dde3318"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-21.json",
+    "size": 6820,
+    "sha256": "d11e61101024ca8043a8754263142996da29c70d947c097082d2a1f332c4e52e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-22.json",
+    "size": 10382,
+    "sha256": "9f38e5920b2fc803b0008c67022e8cbd7bf6005a1c4215d54f38924ac9f7b006"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-23-partial.json",
+    "size": 5005,
+    "sha256": "6b64b80691d33fe7174207b43f21596bc94ba464579a8e680efe7b6704fad71d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-23b/ff1/with_skill/outputs/run.md",
+    "size": 1348,
+    "sha256": "04af28e88973d3254f0310a99d908f2227ef2876b7d9be8980e267d5a44cca3f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-23b/kw1/with_skill/outputs/run.md",
+    "size": 2418,
+    "sha256": "a377f938b758efc81f96f413efe4567f857b4406b89d78ffd1cb755cf4c30825"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-23b.json",
+    "size": 6070,
+    "sha256": "29156761d1806ad1d0161170ffec113e33d61d1b10a0fa0a2866bcf4937131d8"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-24/h1/with_skill/outputs/run.md",
+    "size": 2107,
+    "sha256": "cd1ea4480510bd39cf3a013c05189f8079dba65620b579ccc661e7b537cafd1b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-24/h2/with_skill/outputs/run.md",
+    "size": 3314,
+    "sha256": "7303fc5177a9ca92b9df4715508397142ec25035e93025504a5547296cfefd8e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-24/ow1/with_skill/outputs/run.md",
+    "size": 3460,
+    "sha256": "db2dea67e9895939e7c192d511c6cb5fca30fcc3ded1eb00b93f626d102f639b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-24/ow2/with_skill/outputs/run.md",
+    "size": 2249,
+    "sha256": "f2d72b795513298e305f6ebc3ad0de7fe1efdd903aa175372da9ba0c3f306509"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-24/q1/with_skill/outputs/run.md",
+    "size": 2526,
+    "sha256": "e39684841d104690738f6d33d84808c9d7eb88ef815b53f1dd636935b4c9c9d6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-24.json",
+    "size": 3107,
+    "sha256": "f4a695be125b58642bd0b9b7216b5d4e334fb478b3abddeb018381f505e96020"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-25.json",
+    "size": 5822,
+    "sha256": "7613ba589dbe6882dd9cbd4bb262c96debb6b45b949f87ac766bd1a136abf1ef"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-5.json",
+    "size": 3640,
+    "sha256": "b6cd62a018de02fda24b166f76662208ecede3ec427d788345f46e0dbc64ab2f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-6.json",
+    "size": 3819,
+    "sha256": "1211af06c875607e2edb3f57f6b30a28a028b735c807ee64f05e42eeff99318c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-7-independent-grades.json",
+    "size": 32094,
+    "sha256": "ccdd80a479c91bb75ac5fa919295b61bd50fb7f3ecf146a3e899408fbb7e4cb9"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-7.json",
+    "size": 7789,
+    "sha256": "1f77ebc52e8803b0123eca2d987c2f55bd543223c08eafc2b46cbc32ea79e201"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-8-independent-grades.json",
+    "size": 32126,
+    "sha256": "2211b281ee667cabaaed1f3e0ba2df03687261ff427fbce9d88a5db271e132d3"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-8.json",
+    "size": 12309,
+    "sha256": "db3cd4e2fcb56e93d063c60a4d474d991cfc07fe31f37be5e7236c7612f2ed64"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-9-independent-grades.json",
+    "size": 35873,
+    "sha256": "718276b5a589b094b0b286b27a0ee6df337276c9d0d7e49eb972e95be709758e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/results/iteration-9.json",
+    "size": 13437,
+    "sha256": "2b8355f0ec0f4e7c37d2e4ac62c2c2e91035620a27dc1e92aa598300fe5394ec"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/run.py",
+    "size": 7121,
+    "sha256": "122aad01f4fba0fe0b078bf5b469ae7116179384cc9528df3309312e7e3d1786"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/run_agents_25.sh",
+    "size": 1245,
+    "sha256": "d7baa3c4fbd62bce552e44db612c3e4442c5fc689afab7e4d94b706e84400262"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/tasks.json",
+    "size": 4646,
+    "sha256": "42eaa663ece33fc82e14582142b42fa756fcbc10c74830d9fc750fe45effcf2b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/README.md",
+    "size": 3952,
+    "sha256": "f3f9808b8dfd9304cdf5294b2131747b81e8bb178c2ff754f4cfdb438b7391f3"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/prompts.json",
+    "size": 8841,
+    "sha256": "82644e1187e10fe767e7ed75cd02696dc00af47edce33773062f6983d86c8e81"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/prompts_25.json",
+    "size": 626,
+    "sha256": "235a183d01080170ea679bee15da628b501e821e8a63fc583196fc21f03be126"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-04.json",
+    "size": 5624,
+    "sha256": "6d813017c3ca41e2c592514bd0d8244424f90f6e67c08a7c45d405ed07a7a4e5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-11.json",
+    "size": 6665,
+    "sha256": "0ea5f573f7d3375b21e34c2c7af02ba0d9d1263294c3ce9cf3cb248951aaebf6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-12-it7.json",
+    "size": 6494,
+    "sha256": "9275ff48a000bb80b3c51b038cc74c8c6088ceb107ceb7492147622fbe33d8cd"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-12-it8.json",
+    "size": 5724,
+    "sha256": "2488fec015b0b6256417bcca64a47218def05dda20ea5870353e24fd57417eca"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-12-it9.json",
+    "size": 5799,
+    "sha256": "e1d64c74d132ff9709f2a8e676f669d88f5a10bb2981b14da32554b3664d7f70"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-12.json",
+    "size": 6461,
+    "sha256": "bbf0e311b2d5bf65b2e09d5f31b40ac21a450a5843bbe27351d8087e79eaa7bd"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-13-it10.json",
+    "size": 5800,
+    "sha256": "e97ae86ec75abb993e4a197e0b3e8d67e2bfbdfe716a04ff3693fd27b02f99e3"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-13-it11.json",
+    "size": 5818,
+    "sha256": "f998bb7eadee7ccf79ea3f7a4c0bd5b25f8d2c09742ddcf9200db4b3e5a7c0a3"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-13-it12.json",
+    "size": 5818,
+    "sha256": "4f9f5df21bc924058b038d289e9203f6205ff98da88e8377551806c0f9f4ec8e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-13-it13.json",
+    "size": 7981,
+    "sha256": "576d8b7b28a50789ab5ecf49f40410f368ef91e5b7776f2d718466c5801ff85b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-13-it14.json",
+    "size": 9524,
+    "sha256": "9e17d25b47f9d8b3aa44f68bcb329bfe1fab9b26283e251cec83d98d1dd596ae"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-13-it15.json",
+    "size": 9517,
+    "sha256": "307209a835ddfc4f6f4ac4ad6281a50082a81e1c0bdab6a764c7a63211ccc59b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-13-it16.json",
+    "size": 10119,
+    "sha256": "2d78e615974e74c4748c1a5c8ef07ccb69490a540708e6d694d84933544b576d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-14-it17.json",
+    "size": 11370,
+    "sha256": "e5596dc552dc8ad2b271517f22cfe48f002b17300426d6feb47f54a82b013b8a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-14-it18.json",
+    "size": 12579,
+    "sha256": "08421b1e0f1d6bba4019f4ae7da7462c2ccfad35d01a9200e0144cd7e01f1dca"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-14-it19.json",
+    "size": 12539,
+    "sha256": "176b1c683a2e864836b44bb0b7832ceceb107aa669eab3c46a776f0a214ed47c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-14-it20.json",
+    "size": 14355,
+    "sha256": "7f502575f6d5904c4350ea118df43617b5686b61c207d40381ab35560a4796b2"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/trigger/results-2026-09-24-it25.json",
+    "size": 720,
+    "sha256": "cb126685b94e772014d94458e33cf35dc9c6146132b5848be1c711f3e000be0d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/evals/write_fixtures.py",
+    "size": 10140,
+    "sha256": "3ba16c40ed5f6e6d17b288cae9035bf4e123d053719e03935e4bd91b664fb1c6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/examples/README.md",
+    "size": 10175,
+    "sha256": "d98759f19f02597937018c0e1eb552fcc0d99ec3e32a9a8706bfde26d6f6e032"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/examples/brand.json",
+    "size": 500,
+    "sha256": "a6752ccd1b5317673cce628260907272a7a1a80c2dc91fc03066c7b06dd3bfd5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/examples/make_demo.sh",
+    "size": 6220,
+    "sha256": "fe824c06a8706b3060591219b9b0bd59ba9fa330a485fef50c49ad91fb0f5c0f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/mcp/server.py",
+    "size": 12141,
+    "sha256": "1a4489175476fbaa468498107dba04a3a6dce62785ab3a12b45d3eefaa9147a2"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/package.json",
+    "size": 1967,
+    "sha256": "ed8d913ba8fd9756dacfaf31b145f72cfa56343c105d567d9a5e98521cd32314"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/references/ci-platform-pitfalls.md",
+    "size": 13931,
+    "sha256": "225fcdd7e16f02ba8e2bb350827b73923d44a88ea2e6841eb55018bd16d4dfb8"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/references/devices.md",
+    "size": 2957,
+    "sha256": "7c2133aa6b6c0067b71c7634cd2663c6015c9a2343d1032bad4888e232588c05"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/references/gotchas.md",
+    "size": 23012,
+    "sha256": "0830748638086aa0d9fc7f5e9c8f015cfc0fa4835fde51c7def22f2533c66ab3"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/references/process-pitfalls.md",
+    "size": 16910,
+    "sha256": "431c3f7bd34f416be9848a4b5033bbc15f309874bd19bb3b5c3c4d2b7dfc9b2a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/references/scripts.md",
+    "size": 124773,
+    "sha256": "b351901874c849d91334e9368f061554eebb5c79202a503d29cb301dc0844cad"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/references/upstream.md",
+    "size": 30036,
+    "sha256": "746cdfc459106b02ced2a4eb75d8720b7e259aec1490c5a118840139546f92ff"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_ass_overlay.py",
+    "size": 7770,
+    "sha256": "01d98d2a07d28f78ec695479173fae2e4ee9382a1739a3a3c2e4f83bba29432e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/__init__.py",
+    "size": 16957,
+    "sha256": "97df629103cd3a8dedb7e90ff908ed7d702b48d11d7d4d82ffd1044fef0cbcd5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/asr.py",
+    "size": 61029,
+    "sha256": "2715b731b5f50406ae71a76d24b88bd27c00ef5bba0d9b886e416e85d80829ed"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/color.py",
+    "size": 16414,
+    "sha256": "bcd80511336f0f2687dab494a682e6f58f1683c511fe354789b2dc81fb42d34d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/decision.py",
+    "size": 71185,
+    "sha256": "814b6eaa6a41e892d0b84ea56347504262dadd05c7ab5d0af57d27c172eb2d32"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/drawtext.py",
+    "size": 11597,
+    "sha256": "b02628bbd2413af36b6abadb977930ef024380217e2967ceda4c09fd39b404ca"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/emit.py",
+    "size": 32672,
+    "sha256": "a566234cce5f41ccbde0d8c3c03d05bb944e396269780103dd4e0e9b240e1ebb"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/emoji.py",
+    "size": 16609,
+    "sha256": "6708dd48e49a37f1c0d9c5374e696c2291221c88833415e179f8cd2b29055999"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/fonts.py",
+    "size": 27974,
+    "sha256": "db276f013c32ab9c73e92ecde02a51de3a1a5974557186eaa4b5b821260e66f6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/probe.py",
+    "size": 37714,
+    "sha256": "79343a86b4b750a02d1ead57e52fd01226cb6ac8f42f5e1de8c8a900a0f533cb"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/runner.py",
+    "size": 85783,
+    "sha256": "b70ac2125724fd697d07ddb91ab03b6d5047cee231caebe2c8c3f605e5177ced"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/text.py",
+    "size": 3971,
+    "sha256": "bb05514c53e736d8d16abad37ab7da4fcf13f19785d0c28205f16c1e394f0496"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/timeline.py",
+    "size": 30059,
+    "sha256": "3525562b3b06dc04aba9e206fd555fe64b66f375c353d2d9a4737ebf1f7955b8"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_common/wrap.py",
+    "size": 42348,
+    "sha256": "49259773eee98c6276c455ead8e5db10da48bd39e29cb687601010a084132aff"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_contract.py",
+    "size": 169955,
+    "sha256": "c5ac86579861cb1b5ad54c243998e38f2ed73750c7dc981d9c59432f153d1dd7"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/_platforms.py",
+    "size": 12218,
+    "sha256": "3b06a2c1cda1f106e9ae7699e9e6b4b0d490352655f8eebeb9336b4f4b524ae8"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/audio.py",
+    "size": 27193,
+    "sha256": "2c2b512a4b8ee48e68beb4ce6abeb9a25770c5f6f4298921c54da6de7edcae92"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/background.py",
+    "size": 4652,
+    "sha256": "0f314601e8617454c63d5183dab50edcaefc79303aeff15d15c487c19df766c8"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/batch.py",
+    "size": 42226,
+    "sha256": "a940d3e40c3ce39ec15b3734b692b0fe33374ec257b357ca032f62e4fcb2244d"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/broll.py",
+    "size": 9882,
+    "sha256": "86262e72cdba415371e9fbee8198ef986a8e50d0a168246e5f0541309b2ea33f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/caption.py",
+    "size": 100798,
+    "sha256": "089ac39acd01cb56921479868e2a69766ab584053402a7c13e6b199c74b54276"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/check.py",
+    "size": 22122,
+    "sha256": "a6cdae8a81d47bb03d98132d47c76976b154d34d42ca35070cef2f9002cc66b6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/color.py",
+    "size": 30410,
+    "sha256": "eb4d70414df756c982bd7a2cc27bcd9aa35fa7b912d2d3e24ebd023b50c87b39"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/crop.py",
+    "size": 3835,
+    "sha256": "b209f617da1af72b0fa213c2bafe361838a48826cb963f12c23609a52f4ea55e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/cropdetect.py",
+    "size": 10272,
+    "sha256": "ec04ab5564ee508f42466388eb7b1932e757cc29477bb6dd4498c43580c9b7e4"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/cut.py",
+    "size": 101413,
+    "sha256": "3bf06863c86329d1c2e6a8aee9e68162ef214c485a8355a3d20323b8cd9d74e4"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/deinterlace.py",
+    "size": 4084,
+    "sha256": "e7f49973222570ef285abc37c3e485492714e5efc47e6b4672fd3fe20e2b0cff"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/denoise.py",
+    "size": 4871,
+    "sha256": "ca27a98d9a18ad4b6b1ad823e0f944c329d8095c09d866839eff48f9833b904e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/export.py",
+    "size": 22664,
+    "sha256": "b9b8a9c77b9e8a4ba6d865d98ecfdbe83cbc3987e69ba977a8f8cddfefc19b66"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/fit.py",
+    "size": 14316,
+    "sha256": "097ff44fd42e1bc1ecb007589a8eff18853cfc5f2f0319a43245965785d16649"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/freeze.py",
+    "size": 6524,
+    "sha256": "be3613f5a952c5d0a4b4512c482818e875cc0e130f66841ba864ad37d619dea7"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/graphics.py",
+    "size": 46955,
+    "sha256": "488191d59b71bc6936199366eab0ccaf3723587be3637cf47e64a9016ae2d3d0"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/grid.py",
+    "size": 10327,
+    "sha256": "8ff01075028a2d244caa976d62bce30edaa707d1a8aa0b8535f9eda5638278bd"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/insert.py",
+    "size": 6094,
+    "sha256": "b2124a5e96c59079ac5d4b7368428d8c7d079c421fada652491cb6efec79fe49"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/join.py",
+    "size": 34907,
+    "sha256": "52b5f22df480f25c7550fe1b7d1321b9e68a6778d4ca830253b50fb851589b7b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/look.py",
+    "size": 16432,
+    "sha256": "bca2ef742e337f2bf9bdbae9c75d2260f004f4f1a4b8480968f161e570ba2373"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/loop.py",
+    "size": 8393,
+    "sha256": "42ffd1d80fa3f063a98358ffd82f0544c37c3a7bbcf6d70cde4b92cc2e610f29"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/loudness.py",
+    "size": 10154,
+    "sha256": "f669f8b7c38c2e106fb93706191ab6b02f3efc1ec1fe20064f11f901821e3930"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/metadata.py",
+    "size": 14771,
+    "sha256": "36e6e5fd200e771d8b550e98e6be926b3b6b4eb75d1418f5e8905ffa212c4eeb"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/multicam.py",
+    "size": 17699,
+    "sha256": "40ad292a50d4f560777ac800f88e5e4d1965bd8f67eb3ac7b6ec9ee41d35779c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/overlay.py",
+    "size": 31405,
+    "sha256": "37667616df483e8e0efb60d4a5b6f6f5a7f76f1ff0be3ffc1b35869a5506b3b1"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/pad.py",
+    "size": 4455,
+    "sha256": "6a5970e26e66af8befe3f2913c8f66c92289b470e12ae17ef2b29df537fe2b37"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/probe.py",
+    "size": 2733,
+    "sha256": "e2fd1390bc9976d5086e06e0a9ea64bd966638273339709ee7c2a0fa53210063"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/proxy.py",
+    "size": 3793,
+    "sha256": "1323a89caf31d68c27008b51fc636895e465b14ba6b69ea2442273257a15303e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/redact.py",
+    "size": 7504,
+    "sha256": "cf09b6dc33d572aa041ed876256851fb92d78f32e030404fbde4577007cc715b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/render.py",
+    "size": 96414,
+    "sha256": "b17cd3f57f72742816e141bcd73a49cf94de0fa4f519000aa2d1de0ce74135e0"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/report.py",
+    "size": 17097,
+    "sha256": "8a94b39f177d364e88d346c81d81f112f9a96ed18929f045417e3047f33bc4e2"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/reverse.py",
+    "size": 2443,
+    "sha256": "8bba3e8df23dabd1797a6737bfcfa8566a9ad88ab59fcb310631d89893e3beb3"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/scenes.py",
+    "size": 17602,
+    "sha256": "44d1ec1e79fa715ddd707664848ab6d0ddba15d2738df17d61e3e38cebec833a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/sequence.py",
+    "size": 7133,
+    "sha256": "05c0f920ca2318572ba569bd49a5d52cfb8c98e617b5bf3ed0cc4bca64424cbc"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/silence.py",
+    "size": 26323,
+    "sha256": "2f1f93053fa363519222179aaf2efed37d9ae53f77bf73b5c1ca1f54e52aa79e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/speedramp.py",
+    "size": 6131,
+    "sha256": "374a3136918b2aefae4ec00400f96b3d480f4d9732f1e12f2d936ebb24d05213"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/sphere.py",
+    "size": 7302,
+    "sha256": "a69aa312e978ee8677b51e178164635f78c36f9c3bf1ee6078dca33d7b31f862"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/stabilize.py",
+    "size": 5338,
+    "sha256": "4971a6dc90d2dab35fd19662529450c8f2a32d1bd9c3aa4d7df6f4a1443887e5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/straighten.py",
+    "size": 5342,
+    "sha256": "395a7084eefc141a3a65c2d40d367e8cd5c408de1bace5422139deafb7a89c27"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/sync.py",
+    "size": 22937,
+    "sha256": "fd507ad0a031700ac9c2cd7f529e43e9365c21b3d97bff0c272b05fbf97dce7f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/verify.py",
+    "size": 14145,
+    "sha256": "79a5ee0f1a6f659d953403179ef82e9b4bb067d3f9d7e1db2a000b446ce2b3fd"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/scripts/waveform.py",
+    "size": 21772,
+    "sha256": "afeb802e62e11616bef89ddd7104bbd42d743da78c71274a12c80448548cefbe"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/audiogram.json",
+    "size": 461,
+    "sha256": "62b861085141ac92774378460c4eaac553802a47068db4774ce3fac583a35dc5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/facebook.json",
+    "size": 702,
+    "sha256": "19b6f7d63a101773905db4a2eae89cfc4e08e6473513ef8600fbdbf61c3ee73e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/linkedin.json",
+    "size": 702,
+    "sha256": "e743f911b9a81d6dbd67e04755307d6ee0f0526e9962521fd0b250875a1a114e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/podcast.json",
+    "size": 310,
+    "sha256": "52ac44d93104e3403248f4855279e23857b9810e50e857d5b9ac1a80b125b4c1"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/reels.json",
+    "size": 686,
+    "sha256": "4babffa264c53f637a10c844713d88db09941663baa72de2a2b61a925a73137c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/shorts.json",
+    "size": 689,
+    "sha256": "00e25cac9bb574ac74089c985f3c2ed34db09963add32d308bbdc21b3f60f312"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/tiktok.json",
+    "size": 689,
+    "sha256": "c346c9e4c6f82c4b40b009ceb3e4ddb0df21ef5083ab6d301dc22906c8170e12"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/x.json",
+    "size": 681,
+    "sha256": "f8d7936f365aea4a9a63e4b0ad419b1effc4836b47b0d491a82e436fac4379a9"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/youtube-shorts.json",
+    "size": 697,
+    "sha256": "abf2c39ce09f5fc100730351b0340498e07f6e21c9d1bf7e3283c07f86b64951"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/templates/youtube.json",
+    "size": 699,
+    "sha256": "0221caab867bb9a0b28766af35cb9c9761e3d1dd7d0c080a105ae167daf5506a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/_fixtures.py",
+    "size": 25214,
+    "sha256": "dfb9a7600e7f8626fb2e795cf57e1624f74998863aff07e43b49a32bbf9d4d01"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/bench_scenes.py",
+    "size": 5158,
+    "sha256": "85bdfe35ac28fd77d96a921beac03a7e42713a8b2753c2358d59ed9cd55bdbb6"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/bench_silence.py",
+    "size": 5738,
+    "sha256": "64df5ec6677e7c46941ca78d7e9c7d6e585f919d91808c701c4979b217830e0a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/bench_sync.py",
+    "size": 6968,
+    "sha256": "1c4fdff838f2fa866258b3b4104f4ebf01203513c6a764ff68a2817c35cb3a8a"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/bench_vt.py",
+    "size": 11240,
+    "sha256": "8c20986ce168cc4f7c6a25ea32afdac821ec4d0bf7137053cb427473b7318ab7"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/corpus.py",
+    "size": 10059,
+    "sha256": "2953b0981c73aff2f7a4dbfb08cbb1e3d1408a880421f7775121d6625684e9d1"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/README.md",
+    "size": 2619,
+    "sha256": "9531a0bab38d1eab99aa23fb95951fcda03ba640c1a11d5ee23659fb94395490"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/caption_1_16_1_fitsize_off.ass",
+    "size": 916,
+    "sha256": "4edcb5b7fce46cc25c0f9ceef70b87b34f2380fa6018af4b3267e74a66052555"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_bsfs_6.1.txt",
+    "size": 608,
+    "sha256": "94db24ae3b3ccc61fe9125cbfba4a5e39edefa6c37be27151e598daa1de8c6ab"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_bsfs_8.1.2_macos.txt",
+    "size": 695,
+    "sha256": "0758b8cdcc26545f9cf080fd14f6ceac25666107a0f65b66b2c33873e1e766d5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_bsfs_9.0.1_windows.txt",
+    "size": 759,
+    "sha256": "3353d2f8728453d1df65eaff733af517b0000911f389596ca9c077b683386549"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_encoders_6.1.txt",
+    "size": 13199,
+    "sha256": "a713d6fa85b46256874a86dc4bd185d5b7b3865193b0b32a1b446ae566e35dbf"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_encoders_6.1_no_aac.txt",
+    "size": 13142,
+    "sha256": "31ead8c32e373c773b3ab1da08f6d67b7b5838ba1ab6f0b6e520d4b083570006"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_encoders_8.1.2_macos.txt",
+    "size": 11102,
+    "sha256": "38b11441f5ffe17fd32539030ba9290b81e730878bb0cffe1af5084e2b7b8879"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_encoders_9.0.1_windows.txt",
+    "size": 13322,
+    "sha256": "2e02f2f5b3386629d3b5318d516a61340fb982a55c8a69310d95839216ae5521"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_filters_6.1.txt",
+    "size": 40185,
+    "sha256": "2916dc58c6b9753633e832a0047c1b4c372b707404205a489cef8789981e215f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_filters_7.1_constructed.txt",
+    "size": 40185,
+    "sha256": "2916dc58c6b9753633e832a0047c1b4c372b707404205a489cef8789981e215f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_filters_8.1.2_macos.txt",
+    "size": 34502,
+    "sha256": "99d09bd15beceda441f405aac80a37a0c6e83be483360a9cede252025e7664f5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_filters_9.0.1_windows.txt",
+    "size": 38394,
+    "sha256": "836f70e9f556f0b5d860222355583bab158edd06df2e369ae73433200c3d0a26"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/ffmpeg_filters_garbage.txt",
+    "size": 75,
+    "sha256": "92bc7c597a24804b6f76faae2a1fb9794e2df74e7ad4b7c392464e677178986e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/fixtures/mcp_tools.json",
+    "size": 16759,
+    "sha256": "5f5ea123aace32ab45953785d9a636cacd6137381d6f2fc22c69c82d7272bf72"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/release_check.sh",
+    "size": 6616,
+    "sha256": "7db50aa0805e1913285243a53e644f38fedb792f1d3c3910f65b96017ff892da"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_accel.py",
+    "size": 84671,
+    "sha256": "5720fedc8c2a02283db6024ccb88b8bb027954232a6efbbf86e298e382bd947c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_all.py",
+    "size": 1596,
+    "sha256": "f825f02330fd87e2c4071f9f74984e5e001ebfa44aa813d058a4cd5542e50344"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_analysis.py",
+    "size": 71139,
+    "sha256": "ea6b36305c55c45aa258702c95316d1e7956f54ce10f35d3705b72703181f205"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_asr.py",
+    "size": 76040,
+    "sha256": "4c029762acebe767f7711d07ce7a096a58fde5a6d9eb4951e79292b179623683"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_audio.py",
+    "size": 52354,
+    "sha256": "1b4d5268d57bc63b36183adb15eb0a06d201f9183ac32f3ff30898ac8f085ea2"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_contract.py",
+    "size": 382560,
+    "sha256": "085d4d7cad561079be82090c6f7cb5197b71b8a376fa5d7d00ef89a75c072941"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_cut_copy.py",
+    "size": 132840,
+    "sha256": "1cdf41472bf6ce9e7c8be558ce6a3d10e7e8b546726d0a54ed025fb820088e88"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_delivery.py",
+    "size": 26726,
+    "sha256": "fc96e476efe96845cf6b819eb89c891d034681a6e326fc8d015ab856b62c2028"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_editing.py",
+    "size": 160170,
+    "sha256": "a4b0adefb995e2277ee3feb67efde462f12a26ab6b2bdcdbb516e5f6b203dcc0"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_orchestration.py",
+    "size": 163998,
+    "sha256": "b2f56265378cdcc080339c38b31383c50d86621c8b2d38a9e4d576d981ec1792"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/ffmpeg-skill/tests/test_picture.py",
+    "size": 306711,
+    "sha256": "53400e38c8a380a260eb3386f8f44ad80d8bee20d69a00c0e8300e1208b8f983"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/forward/SKILL.md",
+    "size": 1344,
+    "sha256": "337a5ef2d0d7ec686cc7776ca46a41496581288d873683a8c1add44010c85c13"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/herdr/SKILL.md",
+    "size": 2147,
+    "sha256": "6debde629d4d7cf6b322c70d8a30188cc2bd244d0ac91c5c347a8839d34ab0fd"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/herdr/scripts/herdr_inspect.py",
+    "size": 5693,
+    "sha256": "115547a247569d92f69ce62b40e4b20fa8b63ec944b5ceb8f7fbb5cb711b606e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/herdr-hey/SKILL.md",
+    "size": 1495,
+    "sha256": "ec6fc3c4b21606c0f51315276ccdb1d5528c9540861f9412c54d99a567dfdcd2"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/herdr-neighbors/SKILL.md",
+    "size": 796,
+    "sha256": "b13b9e50c5455d6f172cb474a33fef81ab43a9bf02bbbf66fa8fc7e844cf567c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/herdr-peek/SKILL.md",
+    "size": 944,
+    "sha256": "f34e0f7e488c9b87e4c89aa6ab01a91594803e96657e1f76d25026eee331d678"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/herdr-structure/SKILL.md",
+    "size": 891,
+    "sha256": "cd2fdce91501cc606dc944810e95c07ed098ed572a39903275e9ce186f7cb0a4"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/herdr-whoami/SKILL.md",
+    "size": 715,
+    "sha256": "d2822793f04e7e698ff33d55246191cf36ca1cc574de4a9551134e4d5a5eea83"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/learn/SKILL.md",
+    "size": 1796,
+    "sha256": "0406cf3f87fff6feb46106e1fac3d1977f384c68567b2e968f8b834832e53a5b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/rrr/SKILL.md",
+    "size": 2664,
+    "sha256": "8d3e99a90f6e0409ecb522d08674c534e1191ced89c9f8859669fa78022da030"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/rrr/references/template.md",
+    "size": 1694,
+    "sha256": "4e349ed29a28ade1cd214febdc5e062ec2a1fafac95fe6b07513418ab59d67f2"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/rrr/scripts/stage-metrics-row.py",
+    "size": 3622,
+    "sha256": "dd6ffc2651cc586c86a08b9924169b0b8e1d3b062544ba5c552780f38f599867"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/SKILL.md",
+    "size": 1572,
+    "sha256": "4b1dbb0b3a00cfb43d20fd37b34450f67f56bd1890bc0a4291e1f3637181fc1b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/evals/evals.json",
+    "size": 11871,
+    "sha256": "1d2592a0cfc6378ba8742ce6e19f5974663b1d8018c4f136e5f529373bf17198"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/carousel-frameworks.md",
+    "size": 11124,
+    "sha256": "e703aa530ec9f68cdf5b58e8e0d4d1a5cc3f22b9e2d3e3222f16a9763d423247"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/listening-sources-template.md",
+    "size": 3479,
+    "sha256": "c68bc6f57b0a48c432b1ce72c9324d41a04d0e7784d0bab91afb4a6065a43e38"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/listening.md",
+    "size": 12268,
+    "sha256": "f905f772ac782872143fda477c0049973b2477d1ec165377b164250dabe3bac0"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/platform-limits.md",
+    "size": 2830,
+    "sha256": "6ecc6b40ff82b95c48906341f7d3c58337671d4d94f624c858764f1ed5a77c3c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/platforms.md",
+    "size": 8313,
+    "sha256": "a070eda1f54bdba103a9c89613d83331fc5c53c9e8a48543e0198f1a2995cb0c"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/post-templates.md",
+    "size": 4016,
+    "sha256": "9cca4680c95801daedfd8acadf9089d0083784c2567784888807569896f71d9b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/reverse-engineering.md",
+    "size": 5551,
+    "sha256": "c27bef59d463b3b11331c1770f4a23e9e6bbce7d7c8db1e7f7f4f14ba206243f"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/short-form-video.md",
+    "size": 6517,
+    "sha256": "5e782aa064fe0916b9c432d3317628de961678f1503103a4450ad0d20e94bf46"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/upstream.md",
+    "size": 18337,
+    "sha256": "d4a541acca23ed2b03cad1573886fadd339f74a2d68bc13068ac90b9e47e2a8b"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/social/references/x-algorithm.md",
+    "size": 7113,
+    "sha256": "943b2c5a819aad53ebf62a1652adc47956d6fdf738e18cd98eeb609819a66180"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/trace/SKILL.md",
+    "size": 1470,
+    "sha256": "8f1af5af4c64387dc90111458fc5619bee0ed5adcb2f464ede55bfaa1c98d126"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/video/SKILL.md",
+    "size": 1590,
+    "sha256": "c9cfa92460ad17dfe24d4deacc425ef0ac0f3303fc4a6055be8d20627f5ae3bb"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/video/evals/evals.json",
+    "size": 11901,
+    "sha256": "a10440bdf4dc0fbeb95a31b5e33d76bbf7f5fc31ea52f5c1004f9ed98f87ab19"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/video/references/ai-video-prompting.md",
+    "size": 5258,
+    "sha256": "210eaecc05367aacbaf35660ed7352809e31fb326123d0cfd6ab03c09681d13e"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/video/references/edit-anatomy.md",
+    "size": 7593,
+    "sha256": "3d59e1f01d46eb04bcdbf88e2165bbf5aa80f626beb955522432ec4aede3c9fb"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/video/references/product-demo-recording.md",
+    "size": 10635,
+    "sha256": "4bbc44e02f963df8c36e06d96ae195d3e8af911f604cb08fd7b7ea72c974fba5"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/video/references/upstream.md",
+    "size": 15137,
+    "sha256": "62683ffb76415a74e5765021859d648fee4437c8a3e10216f8a4aca7cf6902f0"
+  },
+  {
+    "role": "lumina",
+    "path": ".agents/skills/where-we-are/SKILL.md",
+    "size": 985,
+    "sha256": "675b976e0e4db80961fae7557cc6fe6ed5679fdd591f346252234dade0907fef"
+  },
+  {
+    "role": "lumina",
+    "path": "tools/ffmpeg-WSL.md",
+    "size": 972,
+    "sha256": "889be4c928d23b76507951cfd950c044e4a76b9178e3619a4e864b3b48d34603"
+  },
+  {
+    "role": "lumina",
+    "path": "tools/fonts/NotoSansThai.ttf",
+    "size": 218652,
+    "sha256": "5a1c559bb539583c8a1fd99d1c5b9491e5e14478c9cd2bd0970d5c3096cc9ef8"
+  },
+  {
+    "role": "lumina",
+    "path": "tools/fonts/OFL.txt",
+    "size": 4380,
+    "sha256": "2e98fd23a52d253db8612cd5942c8f2ff4111b21d2367050fdca91d8ccc374a0"
+  },
+  {
+    "role": "lumina",
+    "path": "tools/fonts/fonts.conf",
+    "size": 249,
+    "sha256": "36ec85100a0206b9461057227797b6b392f3dbcec2ce469dfc476bca2ed88e97"
+  },
+  {
+    "role": "lumina",
+    "path": "tools/media.py",
+    "size": 1285,
+    "sha256": "512cba658af4fb052e48ef29735327abda079be6e4cb56806b290c4961a3913f"
+  },
+  {
+    "role": "lumina",
+    "path": "ψ/memory/learnings/2026-11-11_codex-role-skills.md",
+    "size": 3324,
+    "sha256": "52081b687739df80dc4eafcebd85b4f90ad258565061a298c4f60564880bfe9b"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/company-valuation/README.md",
+    "size": 2174,
+    "sha256": "84d37e76e5279c062aec6e4489e0c5e842f6327894e9e26252a52439257db7ce"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/company-valuation/SKILL.md",
+    "size": 1649,
+    "sha256": "3fc3c27f6c103d9361733162201027bffb8fb0900d78250c6f42fc9fdb04b023"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/company-valuation/references/dcf.md",
+    "size": 7515,
+    "sha256": "71b4fb10de0cdddf8ada7170ad37b50db2262a853fd4afd5de60dfefee7331d2"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/company-valuation/references/relative_valuation.md",
+    "size": 5670,
+    "sha256": "7fd32e31223d2a03bb404bcb390256d325d41e31f70e564141d0a2203581db7b"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/company-valuation/references/sotp.md",
+    "size": 5588,
+    "sha256": "6d7f0a8e36c503639c0ead9f99d4b92da79f96e76f3fce62ce5a929ffa25353d"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/company-valuation/references/upstream.md",
+    "size": 13140,
+    "sha256": "1400498965479ff2253747ddcfc22bf82a2ef709fbc02e30b6d38c464855675c"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/company-valuation/references/wacc_erp_rates.md",
+    "size": 6846,
+    "sha256": "7a77f82bdf6460485ab371c58a0cf411638b78d0617029bd905861e2e4a68037"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/earnings-preview/README.md",
+    "size": 1142,
+    "sha256": "0e3e1435e6a71d8930d78ece790faf300fab60cff2a04b209f80846d43c7722a"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/earnings-preview/SKILL.md",
+    "size": 1500,
+    "sha256": "1bc2a7d685c03ad8177cb58860a03978ff0afb7f1a4e9a8f0f58ea7bb715c186"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/earnings-preview/references/api_reference.md",
+    "size": 4795,
+    "sha256": "9a5feb45fec2580f530ded1e542aa1fcad5f0bd824c3fd9768babc5c35f9df71"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/earnings-preview/references/upstream.md",
+    "size": 5806,
+    "sha256": "180fed962bf293b1e008d8ed8e657c37eca84e2ddd4c5b60dde66cfc8ce9acfb"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/earnings-recap/README.md",
+    "size": 1156,
+    "sha256": "03e23a8ae675322acf780e07275965bd8296c0ee517c4b904ce4da9300aa29a5"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/earnings-recap/SKILL.md",
+    "size": 1493,
+    "sha256": "e8305ccb9df8c5e9512ff577e5950f872ff911a3b1959fc1bc4323dd7c488214"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/earnings-recap/references/api_reference.md",
+    "size": 5130,
+    "sha256": "100f0b61c0c1d4632e0edcc624eee2f3c5310ee0099d930b79e06a2058fedb1e"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/earnings-recap/references/upstream.md",
+    "size": 6935,
+    "sha256": "6f1b9e05798beed8aed7996c28fde7b09455bbafb7063edfcde8c0365404fb3a"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/etf-premium/README.md",
+    "size": 2251,
+    "sha256": "cdd612487d21519b92d171fa7bcbdf01aedc8cddbeac06e4215d84cdc60c75a1"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/etf-premium/SKILL.md",
+    "size": 1531,
+    "sha256": "509c54e50b9d6617b6f96fa9d5cdb931839e02f217d62b31367bb000ac9001e1"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/etf-premium/references/etf_premium_reference.md",
+    "size": 7862,
+    "sha256": "c8f4658e33ff351cbfa8079d50cdede3d7e886fbd278137b7dfb6d08f9acf76d"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/etf-premium/references/gamma_squeeze_reference.md",
+    "size": 9942,
+    "sha256": "a69caa8d16b35a822e31b6897b7d9fba08de9aacf9ab6889a7449c838dff1099"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/etf-premium/references/upstream.md",
+    "size": 20942,
+    "sha256": "08ef8457d52540946cfdd6abd6231c5052f9196ee067fe4230dcd1c8a291dbd4"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/forward/SKILL.md",
+    "size": 1344,
+    "sha256": "337a5ef2d0d7ec686cc7776ca46a41496581288d873683a8c1add44010c85c13"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/herdr/SKILL.md",
+    "size": 2147,
+    "sha256": "6debde629d4d7cf6b322c70d8a30188cc2bd244d0ac91c5c347a8839d34ab0fd"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/herdr/scripts/herdr_inspect.py",
+    "size": 5693,
+    "sha256": "115547a247569d92f69ce62b40e4b20fa8b63ec944b5ceb8f7fbb5cb711b606e"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/herdr-hey/SKILL.md",
+    "size": 1495,
+    "sha256": "ec6fc3c4b21606c0f51315276ccdb1d5528c9540861f9412c54d99a567dfdcd2"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/herdr-neighbors/SKILL.md",
+    "size": 796,
+    "sha256": "b13b9e50c5455d6f172cb474a33fef81ab43a9bf02bbbf66fa8fc7e844cf567c"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/herdr-peek/SKILL.md",
+    "size": 944,
+    "sha256": "f34e0f7e488c9b87e4c89aa6ab01a91594803e96657e1f76d25026eee331d678"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/herdr-structure/SKILL.md",
+    "size": 891,
+    "sha256": "cd2fdce91501cc606dc944810e95c07ed098ed572a39903275e9ce186f7cb0a4"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/herdr-whoami/SKILL.md",
+    "size": 715,
+    "sha256": "d2822793f04e7e698ff33d55246191cf36ca1cc574de4a9551134e4d5a5eea83"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/hyperliquid-reader/README.md",
+    "size": 2745,
+    "sha256": "4c3fb23b3d019c136c04c738959976b36f48df61b9ad11a92c5c15f5f0cba144"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/hyperliquid-reader/SKILL.md",
+    "size": 1632,
+    "sha256": "1633e1c22cd215dc0166d15b1f33ff0715359b2060f1c6f54a24e39f57d69801"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/hyperliquid-reader/references/commands.md",
+    "size": 6714,
+    "sha256": "de8f62dbfc7b09f50f2f3070977beb073091423a54e6fea6dffb3aa70ea4f343"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/hyperliquid-reader/references/upstream.md",
+    "size": 9411,
+    "sha256": "429d8c311a72b11c5e456b7a535b120ce9f31d21a6c5c67c6b062c6f746f01db"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/hyperliquid-reader/scripts/public_info.py",
+    "size": 3138,
+    "sha256": "fdcb2bcc3123933004239413d3a88362cc2e3d64814f4c06b63bb1d809c05387"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/learn/SKILL.md",
+    "size": 1796,
+    "sha256": "0406cf3f87fff6feb46106e1fac3d1977f384c68567b2e968f8b834832e53a5b"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/options-payoff/README.md",
+    "size": 2036,
+    "sha256": "2aa9fe011eb9bb72b04b0c2e0b22fe91ea28b743fe46fbc20c9ffd209ef21ce6"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/options-payoff/SKILL.md",
+    "size": 1690,
+    "sha256": "f35b8d96f28d6d0b83d565d37d2867f07bfcd4fcf58f211cb6d79efbe21b74db"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/options-payoff/references/bs_code.md",
+    "size": 2168,
+    "sha256": "c40b2b1103706e704aa0e82f2cef8e154fe69ace4fb9ff56421cdab33b478f57"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/options-payoff/references/strategies.md",
+    "size": 4858,
+    "sha256": "2dbeae37e3cfedd72fb12cab77906cd6ac90aa8207c99264590497e4a59e1d0a"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/options-payoff/references/upstream.md",
+    "size": 7172,
+    "sha256": "9bbfdc9f6ea6c25269f9c71277ef9b4b8a465c4a00b30b0776104994b740f9e6"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/rrr/SKILL.md",
+    "size": 2663,
+    "sha256": "922627940f9c1bd42f32b3bc70d163d966b7b3ae8e273c958ee7f5cb00a9f36e"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/rrr/references/template.md",
+    "size": 1694,
+    "sha256": "4e349ed29a28ade1cd214febdc5e062ec2a1fafac95fe6b07513418ab59d67f2"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/rrr/scripts/stage-metrics-row.py",
+    "size": 3622,
+    "sha256": "dd6ffc2651cc586c86a08b9924169b0b8e1d3b062544ba5c552780f38f599867"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/README.md",
+    "size": 2591,
+    "sha256": "212b2d9f1fe419dc52973eaeed39a0a20736efca314e76dd02bcd358fc351905"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/SKILL.md",
+    "size": 1516,
+    "sha256": "f5ce9ee40579d4116a926b6823f8c5d667ccfc83ff2c1701599812e1ac16b1ed"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/references/entry-rules.md",
+    "size": 3789,
+    "sha256": "7f682cc72d3afef2e645975676fc7eae36af36644a785d2f58e987ead85a3281"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/references/fundamentals.md",
+    "size": 3703,
+    "sha256": "b077e99aa1bbce347f10cfd4d9ba9a304dbe56cd2cd478ceb683899dc7b16340"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/references/market-environment.md",
+    "size": 3437,
+    "sha256": "0788217ee8f5c85ba2c9641a2f2a4ce81ae0e885675340ce94a92dcbebbb4e2e"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/references/patterns.md",
+    "size": 5383,
+    "sha256": "c29837ff797105ac210dc24591bf77133347548ce172c3e5b79d24cb15ebed3c"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/references/position-sizing.md",
+    "size": 6660,
+    "sha256": "09a9253c47762d3a795bebf088c6593ee7dfdb6fe5d49d4a412e61fd5b59c5c5"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/references/stage-analysis.md",
+    "size": 2768,
+    "sha256": "4bfa452168ef956b2eba4cd3ee91e929982869825e0b4e89d826b3f6dcb93e1a"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/references/trend-template.md",
+    "size": 3319,
+    "sha256": "9d0695c971cd34f3b550185697d68b77a54b110515460386e5136d46dcd8e64a"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/sepa-strategy/references/upstream.md",
+    "size": 12855,
+    "sha256": "00ee8f4b473ca038b17fd5000f3691afcf3c3cc1781c6920b66cce4ec9920c4b"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/stock-correlation/README.md",
+    "size": 2172,
+    "sha256": "820411eb1b06186ab8533d1c671b44c56a85ea17ccd82178abadfb768da80376"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/stock-correlation/SKILL.md",
+    "size": 1555,
+    "sha256": "28dd17e62a6d4582ee11f8a9360f1c1bad6f0622d0adf5159dbd96bb7af06072"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/stock-correlation/references/sector_universes.md",
+    "size": 3747,
+    "sha256": "7a3c06b416265a360bbcecb6020fec057deba282252fd19e4cd90b600c30f227"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/stock-correlation/references/upstream.md",
+    "size": 13437,
+    "sha256": "28811c4800188122151b2ce20d7e3e38cc94b78e12c297c4c59929db399d59bd"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/stock-liquidity/README.md",
+    "size": 1476,
+    "sha256": "b8684b1ae073838d5b5a7b3c7230534f8701b05947d4fea6d78bde6e4c8ecb13"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/stock-liquidity/SKILL.md",
+    "size": 1511,
+    "sha256": "f459f5dc9a2df7380b9b423249d7ed717b52390608e8ccdff83e310d63c798cb"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/stock-liquidity/references/liquidity_reference.md",
+    "size": 13685,
+    "sha256": "cfde788a0695b764806f28cec6d8722aece7ef22e64ad8922de40bac5b30fc3e"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/stock-liquidity/references/upstream.md",
+    "size": 19769,
+    "sha256": "c5276aa1dc06a8e23d7150f5431c250024a3743fa9caa8a14bcc565de3bae08a"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/trace/SKILL.md",
+    "size": 1470,
+    "sha256": "8f1af5af4c64387dc90111458fc5619bee0ed5adcb2f464ede55bfaa1c98d126"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/where-we-are/SKILL.md",
+    "size": 985,
+    "sha256": "675b976e0e4db80961fae7557cc6fe6ed5679fdd591f346252234dade0907fef"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/yfinance-data/README.md",
+    "size": 1790,
+    "sha256": "3ce2f944f7260f898e6451905404dd29601ea3c56a2359d5ff8b67e7f512edf3"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/yfinance-data/SKILL.md",
+    "size": 1584,
+    "sha256": "2fc7817480e957381c2dcb96d5d0ee42b4a6284cd567c4280c0bc4d95a2dc4f3"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/yfinance-data/references/api_reference.md",
+    "size": 9393,
+    "sha256": "5303690532bd4a110a8a893673c757630b46900bcb89022c00ab62b4397204d7"
+  },
+  {
+    "role": "axiom",
+    "path": ".agents/skills/yfinance-data/references/upstream.md",
+    "size": 5036,
+    "sha256": "258750d51191249a5cbca5992694adfa690de9a013bb12d5e347027a30136a13"
+  },
+  {
+    "role": "axiom",
+    "path": "tools/finance/README.md",
+    "size": 1063,
+    "sha256": "9cc4f708308cf7c7c98f7c1d30d15cc0c7a5ea2133deb91238f18c86f1d63e59"
+  },
+  {
+    "role": "axiom",
+    "path": "tools/finance/python",
+    "size": 484,
+    "sha256": "967ed2bedac3ed375641a99c1ec33944c5c26acc677d048213781205a6849953"
+  },
+  {
+    "role": "axiom",
+    "path": "tools/finance/requirements.lock.txt",
+    "size": 523,
+    "sha256": "45ef6e8879d2857bcaaf7d80d4ad5d8b1fe0e451e1c07a8e7a7646be21f7ce92"
+  },
+  {
+    "role": "axiom",
+    "path": "ψ/memory/learnings/2026-11-11_codex-role-skills.md",
+    "size": 3287,
+    "sha256": "b941e3046f8a315ee124f83db8a05308e4854a6ebfeaae4055bdf73a6b6196e1"
+  }
+]

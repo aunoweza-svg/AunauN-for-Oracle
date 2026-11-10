@@ -1,0 +1,55 @@
+{
+  "caller": {
+    "pane_id": "w2:pM",
+    "workspace_id": "w2",
+    "tab_id": "w2:tM",
+    "kind": "codex",
+    "status": "blocked",
+    "cwd": "/mnt/d/OneDrive/AunauN Oracle",
+    "conversation_id": "01a1c68d-a207-7011-8a01-2c0840997d39"
+  },
+  "geometric_neighbors": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+  },
+  "workspace_panes": [
+    {
+      "pane_id": "w2:pM",
+      "workspace_id": "w2",
+      "tab_id": "w2:tM",
+      "kind": "codex",
+      "status": "blocked",
+      "cwd": "/mnt/d/OneDrive/AunauN Oracle",
+      "conversation_id": "01a1c68d-a207-7011-8a01-2c0840997d39"
+    },
+    {
+      "pane_id": "w2:p4",
+      "workspace_id": "w2",
+      "tab_id": "w2:t4",
+      "kind": "codex",
+      "status": "idle",
+      "cwd": "/mnt/d/OneDrive/AunauN Oracle/oracles/lumina-oracle",
+      "conversation_id": null
+    },
+    {
+      "pane_id": "w2:pJ",
+      "workspace_id": "w2",
+      "tab_id": "w2:tJ",
+      "kind": "codex",
+      "status": "idle",
+      "cwd": "/mnt/d/OneDrive/AunauN Oracle/oracles/prism-oracle",
+      "conversation_id": "01a1c68a-c00a-7233-ad3b-b00042f9f815"
+    },
+    {
+      "pane_id": "w2:pK",
+      "workspace_id": "w2",
+      "tab_id": "w2:tK",
+      "kind": "codex",
+      "status": "idle",
+      "cwd": "/mnt/d/OneDrive/AunauN Oracle/oracles/axiom-oracle",
+      "conversation_id": "01a1c68c-729b-7be2-a732-04b9a9cc9a6c"
+    }
+  ]
+}

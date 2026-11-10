@@ -1,0 +1,39 @@
+# AIExpo Oracle lessons
+
+> Step-by-step guides for the AI Expo workshop "ARRA Oracle & Multi-Agent Workflow" (6 Nov 2026), in workshop order. Written by AI, for AI. Each lesson has its own llms.txt, three signed editions (base64, Thai, English) and raw command captures.
+
+## Lessons
+
+- [Install Claude and ChatGPT, ready for the workshop](2026-10-30_claude-chatgpt-install-guide/llms.txt): Claude Code, the Codex CLI or claude.ai on the web, then the Oracle skills that really load. Markdown: [2026-10-30_claude-chatgpt-install-guide/README.en.md](2026-10-30_claude-chatgpt-install-guide/README.en.md)
+- [Install ego(lite) so your AI agent gets a browser of its own](2026-10-30_ego-lite-guide/llms.txt): From lite.ego.app to Claude Code finishing its first browser task. Markdown: [2026-10-30_ego-lite-guide/README.en.md](2026-10-30_ego-lite-guide/README.en.md)
+- [Connect claude.ai and ChatGPT to the lessons MCP](2026-10-30_mcp-connect-guide/llms.txt): Let the AI in your chat search and read the lessons itself: Claude Code, Codex, claude.ai and ChatGPT. Markdown: [2026-10-30_mcp-connect-guide/README.en.md](2026-10-30_mcp-connect-guide/README.en.md)
+- [Make an Oracle tell its own story on film](2026-10-31_phukhao-film-guide/llms.txt): Paxa voice line by line, Codex scene images, seamless loops on GB300, with every prompt. Markdown: [2026-10-31_phukhao-film-guide/README.en.md](2026-10-31_phukhao-film-guide/README.en.md)
+- [Phukhao's story, and the Oracle family's journey](2026-10-31_phukhao-oracle-journey/llms.txt): From its birth on 21 Jan 2026 to the AI Expo stage on 6 Nov 2026, from Phukhao's public site. Markdown: [2026-10-31_phukhao-oracle-journey/README.en.md](2026-10-31_phukhao-oracle-journey/README.en.md)
+- [One room, many agents: herdr-room in / out](2026-10-31_herdr-room-lesson/llms.txt): Pull agents onto one page and back to their own spaces with no restart, with the full source, the full skill and install steps. Markdown: [2026-10-31_herdr-room-lesson/README.en.md](2026-10-31_herdr-room-lesson/README.en.md)
+- [Build your own MCP: turn lessons into tools for AI](2026-11-02_build-mcp-lesson/llms.txt): From a 59-line MCP to the real one on a Cloudflare Worker and npx from GitHub, with the full code and the traps we hit. Markdown: [2026-11-02_build-mcp-lesson/README.en.md](2026-11-02_build-mcp-lesson/README.en.md)
+- [Use the Antigravity CLI (agy) with the lessons MCP](2026-11-02_agy-mcp-lesson/llms.txt): Install Google's agy, sign in once, then connect both lessons MCP servers, with the invalid_scope trap and the pre-ticked box. Markdown: [2026-11-02_agy-mcp-lesson/README.en.md](2026-11-02_agy-mcp-lesson/README.en.md)
+- [One MCP hands out skills, voice and video](2026-11-04_skills-media-mcp-lesson/llms.txt): Full Oracle skills as .md files, clips with words and times, and a real run in claude.ai: /awaken → work → /rrr → /forward. Markdown: [2026-11-04_skills-media-mcp-lesson/README.en.md](2026-11-04_skills-media-mcp-lesson/README.en.md)
+- [A tour of relic5: the agent-history hub's web UI](2026-11-04_relic5-ui-tour/llms.txt): Search every session on every machine, live, agent knowledge, the Oracle family, a map by meaning and the hub's health, from the real UI on white. Markdown: [2026-11-04_relic5-ui-tour/README.en.md](2026-11-04_relic5-ui-tour/README.en.md)
+- [An Oracle team: from a picture on the web, to a charter, to a team at work](2026-11-05_team-ecosystem-lesson/llms.txt): team.buildwithoracle.com draws the roles, the manager-team and rd-team charters write them down, herdr opens them as a team. Markdown: [2026-11-05_team-ecosystem-lesson/README.en.md](2026-11-05_team-ecosystem-lesson/README.en.md)
+- [herdr ⌘J and ⌘L: one line, to the right agents](2026-11-05_herdr-cmd-j-lesson/llms.txt): ⌘J once for the tab, twice for other machines, three times for the whole session, ⌘L for the whole repo, with the full code. Markdown: [2026-11-05_herdr-cmd-j-lesson/README.en.md](2026-11-05_herdr-cmd-j-lesson/README.en.md)
+- [Install relic5: every machine's history in one hub](2026-11-04_relic5-install/llms.txt): From the GitHub source to the CLI, 25 MCP tools and relic5 import, which sends a machine's history to the hub; every command ran. Markdown: [2026-11-04_relic5-install/README.en.md](2026-11-04_relic5-install/README.en.md)
+- [The lessons' digital signature: how it is built and how it works](2026-11-04_signature-lesson/llms.txt): sha256 of three files, EIP-191, checks from a terminal and the browser, a throwaway-key signing, and one changed word that breaks it. Markdown: [2026-11-04_signature-lesson/README.en.md](2026-11-04_signature-lesson/README.en.md)
+- [The herdr skill map: 52 skills, and how they grew](2026-11-08_herdr-skill-map/llms.txt): All 52 /herdr-* skills in 7 groups by job, one line each, a relic5 timeline, and which skill to use when. Markdown: [2026-11-08_herdr-skill-map/README.en.md](2026-11-08_herdr-skill-map/README.en.md)
+- [One piece of work, start to finish: /herdr-wt → rename → pr → dissolve](2026-11-08_herdr-wt-lifecycle/llms.txt): Issue first, its own worktree, a signed PR, save before closing: the real 3 Nov demo, issue #129 to PR #130. Markdown: [2026-11-08_herdr-wt-lifecycle/README.en.md](2026-11-08_herdr-wt-lifecycle/README.en.md)
+- [Put agents to sleep, wake them where they were: herdr-sleep, team-wake, herdr-vacation](2026-11-08_herdr-sleep-wake/llms.txt): Put the media team to sleep to free RAM, keep their spaces, wake only Pigment with its own bookmark; Discord !wake; team-wake after a reboot. Markdown: [2026-11-08_herdr-sleep-wake/README.en.md](2026-11-08_herdr-sleep-wake/README.en.md)
+- [herdr bring, move, promote: move agents between sessions without losing the conversation](2026-11-08_herdr-bring-promote/llms.txt): Move agents between herdr sessions: end it where it runs, resume it elsewhere with the same id. Real Neo round trip. Markdown: [2026-11-08_herdr-bring-promote/README.en.md](2026-11-08_herdr-bring-promote/README.en.md)
+- [herdr on many machines: add a machine, move a team to white, talk across](2026-11-08_herdr-machines/llms.txt): Local on top, machines below, over tailscale: files cross machines, and ccdc-team moves to white in one command. Markdown: [2026-11-08_herdr-machines/README.en.md](2026-11-08_herdr-machines/README.en.md)
+- [Every herdr skill, full text](2026-11-08_herdr-skills-full/llms.txt): All 52 /herdr-* skills word for word in 7 groups, with every script, ready to copy into ~/.claude/skills/. Markdown: [2026-11-08_herdr-skills-full/README.en.md](2026-11-08_herdr-skills-full/README.en.md)
+- [Book: herdr, four skills: open, bring, sign, close](2026-11-08_herdr-four-skills-book/llms.txt): /herdr-wt /herdr-bring /herdr-pr /herdr-dissolve as a 100-page book: every capture ran for real, full code included; read on the web or get the PDF. Markdown: [2026-11-08_herdr-four-skills-book/README.en.md](2026-11-08_herdr-four-skills-book/README.en.md)
+
+## No MCP? Plain GET
+
+- https://aiexpo.buildwithoracle.com/ai.md : the AI brief, one page that tells any AI what it can do with these lessons (base64: ai.b64.txt)
+- https://aiexpo.buildwithoracle.com/api/search?q=...&lang=th|en&k=5 : top sections as JSON (same hybrid search as MCP search)
+- https://aiexpo.buildwithoracle.com/oracle/full/<skill>.md : a whole ARRA Oracle skill (awaken, rrr, forward, workshop, awaken-app, where-we-are; recap is Claude Code only), every file of it, with ZIP links (MCP: get_skill)
+- https://aiexpo.buildwithoracle.com/media.json : the videos and narrated lessons with timed transcripts (MCP: list_media, get_media)
+- https://aiexpo.buildwithoracle.com/api/fetch?id=<id> : one section or a whole lesson ('<lesson>/<lang>'), with image URLs
+
+## MCP
+
+- https://aiexpo.buildwithoracle.com/mcp : read-only remote MCP (Streamable HTTP, no auth). Tools: search {query, lang?, lesson?, topic?}, fetch {id}, get_image {id, start?}, list_lessons

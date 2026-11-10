@@ -1,0 +1,346 @@
+{
+  "available": [
+    "bsf:av1_metadata",
+    "bsf:filter_units",
+    "bsf:h264_metadata",
+    "bsf:hevc_metadata",
+    "bsf:mpeg2_metadata",
+    "bsf:vp9_metadata",
+    "encoder:aac",
+    "encoder:flac",
+    "encoder:gif",
+    "encoder:libmp3lame",
+    "encoder:libopus",
+    "encoder:libsvtav1",
+    "encoder:libvorbis",
+    "encoder:libx264",
+    "encoder:libx265",
+    "encoder:mov_text",
+    "encoder:prores_ks",
+    "encoder:srt",
+    "encoder:webvtt",
+    "ffmpeg",
+    "ffprobe",
+    "filter:acompressor",
+    "filter:acrossfade",
+    "filter:afftdn",
+    "filter:agate",
+    "filter:alimiter",
+    "filter:amix",
+    "filter:areverse",
+    "filter:ass",
+    "filter:blackdetect",
+    "filter:boxblur",
+    "filter:chromakey",
+    "filter:colorbalance",
+    "filter:colorlevels",
+    "filter:colortemperature",
+    "filter:cropdetect",
+    "filter:curves",
+    "filter:deesser",
+    "filter:delogo",
+    "filter:drawbox",
+    "filter:drawtext",
+    "filter:eq",
+    "filter:exposure",
+    "filter:extrastereo",
+    "filter:freezedetect",
+    "filter:gradients",
+    "filter:hqdn3d",
+    "filter:loop",
+    "filter:loudnorm",
+    "filter:lut3d",
+    "filter:minterpolate",
+    "filter:overlay",
+    "filter:palettegen",
+    "filter:reverse",
+    "filter:rotate",
+    "filter:scdet",
+    "filter:showspectrum",
+    "filter:showwaves",
+    "filter:sidechaincompress",
+    "filter:signalstats",
+    "filter:silencedetect",
+    "filter:subtitles",
+    "filter:tile",
+    "filter:tonemap",
+    "filter:tpad",
+    "filter:v360",
+    "filter:vidstabdetect",
+    "filter:vidstabtransform",
+    "filter:xfade",
+    "filter:xstack",
+    "filter:yadif",
+    "filter:zoompan",
+    "filter:zscale"
+  ],
+  "covered_by": {},
+  "detection": {
+    "bsfs": {
+      "count": 51,
+      "detail": "51 entries",
+      "status": "parsed"
+    },
+    "encoders": {
+      "count": 229,
+      "detail": "229 entries",
+      "status": "parsed"
+    },
+    "filters": {
+      "count": 564,
+      "detail": "564 entries",
+      "status": "parsed"
+    }
+  },
+  "errors": [],
+  "ffmpeg": "n9.0.2-48-gd4070a14ce-20261110",
+  "ffmpeg_path": "/mnt/d/OneDrive/AunauN Oracle/oracles/lumina-oracle/tools/ffmpeg/bin/ffmpeg",
+  "ffmpeg_security": {
+    "checked": "2026-10-22",
+    "ffmpeg": {
+      "advisories": [],
+      "status": "not_older",
+      "version": "n9.0.2-48-gd4070a14ce-20261110"
+    },
+    "ffprobe": {
+      "advisories": [],
+      "status": "not_older",
+      "version": "n9.0.2-48-gd4070a14ce-20261110"
+    },
+    "source": "https://ffmpeg.org/security.html",
+    "warnings": []
+  },
+  "ffmpeg_source": "path",
+  "ffprobe": "n9.0.2-48-gd4070a14ce-20261110",
+  "ffprobe_path": "/mnt/d/OneDrive/AunauN Oracle/oracles/lumina-oracle/tools/ffmpeg/bin/ffprobe",
+  "ffprobe_source": "path",
+  "fonts": {
+    "default_font": "DejaVu Sans",
+    "detail": "fc-match resolves 'DejaVu Sans' to itself",
+    "emoji": {
+      "assets": null,
+      "color_font": null,
+      "color_font_file": null,
+      "detail": "no colour emoji family installed and no --emoji-assets directory",
+      "fix": "point --emoji-assets at a directory of PNGs named by code point (1f389.png): twemoji/assets/72x72 (Twemoji, CC-BY 4.0) or noto-emoji/png/128 (Noto Emoji, OFL/Apache-2.0) are the two people already have. The skill has no network at runtime, so the assets must already exist on this machine -- nothing is ever downloaded",
+      "libass_color": false,
+      "mode": "none"
+    },
+    "scripts": {
+      "ar": {
+        "file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "status": "available"
+      },
+      "bn": {
+        "file": null,
+        "status": "missing"
+      },
+      "el": {
+        "file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "status": "available"
+      },
+      "he": {
+        "file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "status": "available"
+      },
+      "hi": {
+        "file": null,
+        "status": "missing"
+      },
+      "ja": {
+        "file": null,
+        "status": "missing"
+      },
+      "ko": {
+        "file": null,
+        "status": "missing"
+      },
+      "lo": {
+        "file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "status": "available"
+      },
+      "ru": {
+        "file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "status": "available"
+      },
+      "ta": {
+        "file": null,
+        "status": "missing"
+      },
+      "th": {
+        "file": "/mnt/d/OneDrive/AunauN Oracle/oracles/lumina-oracle/tools/fonts/NotoSansThai.ttf",
+        "status": "available"
+      },
+      "zh": {
+        "file": null,
+        "status": "missing"
+      }
+    },
+    "status": "available"
+  },
+  "gpu_encoders": {
+    "present": [
+      "av1_amf",
+      "av1_nvenc",
+      "av1_qsv",
+      "av1_vaapi",
+      "h264_amf",
+      "h264_nvenc",
+      "h264_qsv",
+      "h264_vaapi",
+      "hevc_amf",
+      "hevc_nvenc",
+      "hevc_qsv",
+      "hevc_vaapi",
+      "mjpeg_qsv",
+      "mjpeg_vaapi",
+      "mpeg2_qsv",
+      "mpeg2_vaapi",
+      "vp8_vaapi",
+      "vp9_qsv",
+      "vp9_vaapi"
+    ],
+    "status": "parsed"
+  },
+  "hw": {
+    "default_on": false,
+    "platform_ok": false
+  },
+  "missing": [],
+  "missing_optional": [
+    "external:parakeet",
+    "external:whisper"
+  ],
+  "ok": true,
+  "python": "3.14.4",
+  "tools": {
+    "audio": {
+      "usable": "yes"
+    },
+    "background": {
+      "usable": "yes"
+    },
+    "batch": {
+      "usable": "yes"
+    },
+    "broll": {
+      "usable": "yes"
+    },
+    "caption": {
+      "usable": "yes"
+    },
+    "check": {
+      "usable": "yes"
+    },
+    "color": {
+      "usable": "yes"
+    },
+    "crop": {
+      "usable": "yes"
+    },
+    "cropdetect": {
+      "usable": "yes"
+    },
+    "cut": {
+      "usable": "yes"
+    },
+    "deinterlace": {
+      "usable": "yes"
+    },
+    "denoise": {
+      "usable": "yes"
+    },
+    "export": {
+      "usable": "yes"
+    },
+    "fit": {
+      "usable": "yes"
+    },
+    "freeze": {
+      "usable": "yes"
+    },
+    "graphics": {
+      "usable": "yes"
+    },
+    "grid": {
+      "usable": "yes"
+    },
+    "insert": {
+      "usable": "yes"
+    },
+    "join": {
+      "usable": "yes"
+    },
+    "look": {
+      "usable": "yes"
+    },
+    "loop": {
+      "usable": "yes"
+    },
+    "loudness": {
+      "usable": "yes"
+    },
+    "metadata": {
+      "usable": "yes"
+    },
+    "multicam": {
+      "usable": "yes"
+    },
+    "overlay": {
+      "usable": "yes"
+    },
+    "pad": {
+      "usable": "yes"
+    },
+    "probe": {
+      "usable": "yes"
+    },
+    "proxy": {
+      "usable": "yes"
+    },
+    "redact": {
+      "usable": "yes"
+    },
+    "render": {
+      "usable": "yes"
+    },
+    "report": {
+      "usable": "yes"
+    },
+    "reverse": {
+      "usable": "yes"
+    },
+    "scenes": {
+      "usable": "yes"
+    },
+    "sequence": {
+      "usable": "yes"
+    },
+    "silence": {
+      "usable": "yes"
+    },
+    "speedramp": {
+      "usable": "yes"
+    },
+    "sphere": {
+      "usable": "yes"
+    },
+    "stabilize": {
+      "usable": "yes"
+    },
+    "straighten": {
+      "usable": "yes"
+    },
+    "sync": {
+      "usable": "yes"
+    },
+    "verify": {
+      "usable": "yes"
+    },
+    "waveform": {
+      "usable": "yes"
+    }
+  },
+  "unknown": [],
+  "version": "2.17.2"
+}

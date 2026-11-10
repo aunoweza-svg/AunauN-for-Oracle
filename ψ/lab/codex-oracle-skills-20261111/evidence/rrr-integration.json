@@ -1,0 +1,17 @@
+{
+  "test": "rrr scoped local sync",
+  "remote_type": "disposable local bare repository",
+  "production_github_push": false,
+  "remote_head_equals_commit": true,
+  "task_paths": [
+    "ψ/memory/learnings/session-metrics.md",
+    "ψ/memory/retrospectives/2026-11/11/fixture.md"
+  ],
+  "unrelated_staged_preserved": true,
+  "working_files_preserved": true,
+  "foreign_metrics_excluded": true,
+  "crlf_preserved": true,
+  "duplicate_row_refused": true,
+  "preexisting_metrics_staging_refused": true,
+  "commit": "5442994b65d1e719b8fb1801a9af203c80326bb2"
+}

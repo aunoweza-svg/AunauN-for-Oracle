@@ -1,0 +1,33 @@
+{
+  "files_verified": 189,
+  "roles": {
+    "aunaun": {
+      "required_role_skills": 16,
+      "repo_discovered": 20,
+      "total_enabled": 25,
+      "system_imagegen": true,
+      "discovery_errors": 0
+    },
+    "prism": {
+      "required_role_skills": 19,
+      "repo_discovered": 19,
+      "total_enabled": 24,
+      "system_imagegen": true,
+      "discovery_errors": 0
+    },
+    "lumina": {
+      "required_role_skills": 17,
+      "repo_discovered": 17,
+      "total_enabled": 22,
+      "system_imagegen": true,
+      "discovery_errors": 0
+    },
+    "axiom": {
+      "required_role_skills": 21,
+      "repo_discovered": 21,
+      "total_enabled": 26,
+      "system_imagegen": true,
+      "discovery_errors": 0
+    }
+  }
+}

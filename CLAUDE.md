@@ -112,6 +112,15 @@
 
 ตรวจความพร้อมจากรายการสกิลของเซสชันและไฟล์จริงก่อนเรียกใช้ การมีไฟล์สกิลไม่ได้ยืนยันว่าเครื่องมือประกอบพร้อมทั้งหมด อัปเดตรายการพร้อมวันที่เมื่อมีการเปลี่ยนแปลง
 
+### Codex WSL project skills — verified 2026-11-11
+
+เพิ่มชุดเฉพาะ repository ที่ `.agents/skills/` จำนวน 11 ตัว โดยรักษาชุดเดิมบน Windows และตัวตน AunauN:
+
+- ความจำ: `rrr`, `forward`, `learn`, `trace`, `where-we-are`
+- ประสานทีม: `herdr`, `herdr-whoami`, `herdr-neighbors`, `herdr-peek`, `herdr-hey`, `herdr-structure`
+- ปรับสำหรับ Codex โดยไม่บังคับโมเดล/Claude paths และไม่สร้าง agent อัตโนมัติ; `rrr` ใช้ข้อตกลง commit/push เฉพาะงานของ repo นี้
+- Native Codex discovery พบครบทั้ง 11 ตัว การทดสอบ Git sync ใช้ local remote ทดลอง ส่วน Herdr ตรวจเป้าหมายและคุย PRISM ไปกลับจริง รายละเอียดและข้อจำกัด: [รายงานติดตั้ง/ทดสอบ](ψ/lab/codex-oracle-skills-20261111/REPORT.md)
+
 ## Tourism Marketing Skills — installed 2026-10-15
 
 ติดตั้งสกิลทั้ง 50 ตัวจาก `aunoweza-svg/marketingskills` ที่ commit `c7d7dfb6b460fc376b4b2204b78a9c9fd5ca6467` ลง `C:/Users/aunow/.codex/skills` แล้ว ตรวจไฟล์ 322 ไฟล์ตรงกับ source ทุกไฟล์ จัดเป็นหมวด **Tourism Marketing** ของ AunauN Oracle โดยรักษาชื่อสกิลต้นฉบับ
@@ -212,3 +221,11 @@
 - `/philosophy` — ทบทวนหลักการ
 - `/who-are-you` — ตรวจตัวตน
 - `/forward` — ส่งต่อ context ไป session ถัดไป
+
+## Codex/WSL skills — verified 2026-11-11
+
+ติดตั้งชุดบทบาท 16 ตัวแล้ว: พื้นฐาน 11 และเฉพาะงาน 5 ตัว ดูรายการและวิธีใช้ใน [บันทึกการติดตั้ง](ψ/memory/learnings/2026-11-11_codex-role-skills.md) ตรวจ native discovery และเครื่องมือจริงก่อนอ้างผลใน session ใหม่
+
+ชุดการตลาดเป็น instructions และ references; ตรวจข้อมูลกลุ่มเป้าหมาย/ตัวชี้วัดก่อนสรุป ไม่เชื่อมบัญชีโฆษณาจากการติดตั้งนี้
+
+เมื่อผู้ใช้เรียก `/rrr` ให้บันทึกความจำ แล้ว commit/push เฉพาะไฟล์งานตาม AGENTS.md และ workflow เดิม ตรวจ remote และผล push จริง

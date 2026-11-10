@@ -1,0 +1,22 @@
+{
+  "data": "synthetic fixtures only",
+  "versions": {
+    "yfinance": "1.8.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "dcf": 99.99999999999997,
+  "earnings_surprise_pct": 10.000000000000009,
+  "return_correlation": 1.0,
+  "spread_bps": 200.0,
+  "call_expiry_payoff": [
+    -500,
+    -500,
+    500
+  ],
+  "etf_premium_pct": 2.0000000000000018,
+  "trend_ma_order": true,
+  "account_and_write_api_requests_rejected": true
+}

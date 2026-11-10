@@ -1,0 +1,313 @@
+{
+  "aunaun": {
+    "cwd": "/mnt/d/OneDrive/AunauN Oracle",
+    "errors": [],
+    "skills": [
+      {
+        "name": "aunaun",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/aunaun/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Connect with AunauN Oracle for tourism marketing, analysis and project coordination."
+      },
+      {
+        "name": "axiom",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/axiom/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Connect with AXIOM Oracle for research and analysis of stocks and cryptocurrency."
+      },
+      {
+        "name": "forward",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/forward/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Save a next-session handoff when asked for /forward, $forward or context transfer. Capture goals, decisions, files, unfinished work and next actions; no retrospective or publication by default."
+      },
+      {
+        "name": "herdr",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Inspect or control Herdr panes, tabs, workspaces and agents when Herdr is named or the user asks to interact with a running Oracle. Requires inherited HERDR_ENV=1; companion skills cover identity, neighbors, reading, messaging and structure."
+      },
+      {
+        "name": "herdr-hey",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-hey/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Send the user's question to a verified running Oracle through Herdr and read its actual reply. Use ask PRISM, talk to Lumina or message an agent; does not create a substitute agent or merely inspect silently."
+      },
+      {
+        "name": "herdr-neighbors",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-neighbors/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Read-only survey of geometric Herdr neighbors and current workspace panes, distinguishing agents from shells. Use to see who is around; does not message or create a buddy."
+      },
+      {
+        "name": "herdr-peek",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-peek/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Read recent terminal output from a verified running Oracle or neighboring Herdr agent without messaging or interruption. Use to inspect activity; herdr-hey handles requests to talk or ask."
+      },
+      {
+        "name": "herdr-structure",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-structure/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Show a read-only tree of current Herdr workspaces, tabs, panes and agents, marking this caller. Use for team layout or who runs where; does not reorganize or move the team."
+      },
+      {
+        "name": "herdr-whoami",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/herdr-whoami/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Identify this Herdr caller's pane, workspace, repository, branch and Codex conversation ID. Use for where this agent runs; herdr-structure covers the whole team."
+      },
+      {
+        "name": "learn",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/learn/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Study a specified repository, codebase or lesson collection and save source-grounded notes under ψ/learn. Use /learn or requests to study a known target; use trace to locate unknown targets."
+      },
+      {
+        "name": "lumina",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/lumina/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Connect with Lumina Oracle for creative content, scripts, imagery, storyboards and video work."
+      },
+      {
+        "name": "prism",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/prism/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Connect with PRISM Oracle for coding, UI/UX and interactive systems work."
+      },
+      {
+        "name": "rrr",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/rrr/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Write a retrospective, lessons and metrics when asked for /rrr, $rrr or a session retrospective. In AunauN-for-Oracle include task-scoped commit/push unless overridden. Discussing installation or testing rrr does not request publication of the real workspace."
+      },
+      {
+        "name": "trace",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/trace/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Locate a project, file, prior decision or knowledge source using files, Oracle memory and Git. Use /trace or requests to find where something was recorded; learn studies known targets and where-we-are summarizes current progress."
+      },
+      {
+        "name": "where-we-are",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/.agents/skills/where-we-are/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Summarize this session's goal, completed work, active work, parked items and next step for /where-we-are or current progress questions. Does not mine past sessions or inspect another agent's live status."
+      },
+      {
+        "name": "imagegen",
+        "path": "/home/aunaun/.codex/skills/.system/imagegen/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas."
+      },
+      {
+        "name": "openai-docs",
+        "path": "/home/aunaun/.codex/skills/.system/openai-docs/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Use for Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, customization, automations, and self-knowledge—including 'you,' 'your,' 'this app,' or 'this coding agent' when they refer to Codex—and for OpenAI APIs/products and ChatGPT Work. Also use for model choice/migration, prompting, SDKs, Responses, Realtime, agents, evals, and Chat/Work/Codex comparisons. Do not use for generic app/software tasks that merely mention Codex."
+      },
+      {
+        "name": "review-agent",
+        "path": "/home/aunaun/.codex/skills/.system/review-agent/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Perform a read-only, defect-first review of a specified code change and return every actionable finding. Use when another agent delegates review of uncommitted changes, a base-branch diff, a commit, or custom review instructions."
+      },
+      {
+        "name": "skill-creator",
+        "path": "/home/aunaun/.codex/skills/.system/skill-creator/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Create or update a Codex skill with appropriately scoped instructions and any needed supporting resources."
+      },
+      {
+        "name": "skill-installer",
+        "path": "/home/aunaun/.codex/skills/.system/skill-installer/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos)."
+      }
+    ]
+  },
+  "prism": {
+    "cwd": "/mnt/d/OneDrive/AunauN Oracle/oracles/prism-oracle",
+    "errors": [],
+    "skills": [
+      {
+        "name": "code-review",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/oracles/prism-oracle/.agents/skills/code-review/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\"."
+      },
+      {
+        "name": "diagnosing-bugs",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/oracles/prism-oracle/.agents/skills/diagnosing-bugs/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow."
+      },
+      {
+        "name": "prototype",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/oracles/prism-oracle/.agents/skills/prototype/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like."
+      },
+      {
+        "name": "tdd",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/oracles/prism-oracle/.agents/skills/tdd/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests."
+      },
+      {
+        "name": "ui-ux-pro-max",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/oracles/prism-oracle/.agents/skills/ui-ux-pro-max/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "UI/UX design intelligence for web, mobile, and desktop. This skill should be used when designing, building, reviewing, or fixing interfaces, including pages, components, design systems, accessibility, interaction, responsive layout, typography, color, charts, and stack-specific UI implementation. Searchable local data: 79 searchable styles (50 active), 192 product palettes and reasoning profiles, 74 font pairings, 119 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, and 22 stacks."
+      },
+      {
+        "name": "imagegen",
+        "path": "/home/aunaun/.codex/skills/.system/imagegen/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas."
+      },
+      {
+        "name": "openai-docs",
+        "path": "/home/aunaun/.codex/skills/.system/openai-docs/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Use for Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, customization, automations, and self-knowledge—including 'you,' 'your,' 'this app,' or 'this coding agent' when they refer to Codex—and for OpenAI APIs/products and ChatGPT Work. Also use for model choice/migration, prompting, SDKs, Responses, Realtime, agents, evals, and Chat/Work/Codex comparisons. Do not use for generic app/software tasks that merely mention Codex."
+      },
+      {
+        "name": "review-agent",
+        "path": "/home/aunaun/.codex/skills/.system/review-agent/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Perform a read-only, defect-first review of a specified code change and return every actionable finding. Use when another agent delegates review of uncommitted changes, a base-branch diff, a commit, or custom review instructions."
+      },
+      {
+        "name": "skill-creator",
+        "path": "/home/aunaun/.codex/skills/.system/skill-creator/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Create or update a Codex skill with appropriately scoped instructions and any needed supporting resources."
+      },
+      {
+        "name": "skill-installer",
+        "path": "/home/aunaun/.codex/skills/.system/skill-installer/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos)."
+      }
+    ]
+  },
+  "lumina": {
+    "cwd": "/mnt/d/OneDrive/AunauN Oracle/oracles/lumina-oracle",
+    "errors": [],
+    "skills": [
+      {
+        "name": "ffmpeg-skill:ffmpeg-skill",
+        "path": "/mnt/d/OneDrive/AunauN Oracle/oracles/lumina-oracle/.agents/skills/ffmpeg-skill/SKILL.md",
+        "enabled": true,
+        "scope": "repo",
+        "description": "Edit video and audio with local FFmpeg from natural-language requests: cut, trim, join, resize/reframe (9:16, 1:1), speed change, captions and subtitles (SRT/ASS, animated, karaoke), logos and text overlays, lower-thirds and titles, silence removal, multicam and external-mic sync, loudness normalisation, HDR/Dolby Vision to SDR, LUTs, background music with ducking, platform exports (YouTube, Reels, TikTok, X), compliance checks, scene detection and highlight reels, contact sheets to inspect results, and whole-edit project files. Use this skill whenever the user mentions a video or audio file (mp4, mov, mkv, wav, m4a), footage, a clip, captions, subtitles, a reel or short, YouTube/Instagram/TikTok delivery, LUFS, sync, transcoding, ffmpeg, or asks to make something \"60 seconds\", \"vertical\", \"louder\", \"captioned\" — even when they do not say \"edit\". Python 3.10+ standard library only (3.9 deprecated), no cloud, no API keys."
+      },
+      {
+        "name": "imagegen",
+        "path": "/home/aunaun/.codex/skills/.system/imagegen/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas."
+      },
+      {
+        "name": "openai-docs",
+        "path": "/home/aunaun/.codex/skills/.system/openai-docs/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Use for Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, customization, automations, and self-knowledge—including 'you,' 'your,' 'this app,' or 'this coding agent' when they refer to Codex—and for OpenAI APIs/products and ChatGPT Work. Also use for model choice/migration, prompting, SDKs, Responses, Realtime, agents, evals, and Chat/Work/Codex comparisons. Do not use for generic app/software tasks that merely mention Codex."
+      },
+      {
+        "name": "review-agent",
+        "path": "/home/aunaun/.codex/skills/.system/review-agent/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Perform a read-only, defect-first review of a specified code change and return every actionable finding. Use when another agent delegates review of uncommitted changes, a base-branch diff, a commit, or custom review instructions."
+      },
+      {
+        "name": "skill-creator",
+        "path": "/home/aunaun/.codex/skills/.system/skill-creator/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Create or update a Codex skill with appropriately scoped instructions and any needed supporting resources."
+      },
+      {
+        "name": "skill-installer",
+        "path": "/home/aunaun/.codex/skills/.system/skill-installer/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos)."
+      }
+    ]
+  },
+  "axiom": {
+    "cwd": "/mnt/d/OneDrive/AunauN Oracle/oracles/axiom-oracle",
+    "errors": [],
+    "skills": [
+      {
+        "name": "imagegen",
+        "path": "/home/aunaun/.codex/skills/.system/imagegen/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas."
+      },
+      {
+        "name": "openai-docs",
+        "path": "/home/aunaun/.codex/skills/.system/openai-docs/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Use for Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, customization, automations, and self-knowledge—including 'you,' 'your,' 'this app,' or 'this coding agent' when they refer to Codex—and for OpenAI APIs/products and ChatGPT Work. Also use for model choice/migration, prompting, SDKs, Responses, Realtime, agents, evals, and Chat/Work/Codex comparisons. Do not use for generic app/software tasks that merely mention Codex."
+      },
+      {
+        "name": "review-agent",
+        "path": "/home/aunaun/.codex/skills/.system/review-agent/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Perform a read-only, defect-first review of a specified code change and return every actionable finding. Use when another agent delegates review of uncommitted changes, a base-branch diff, a commit, or custom review instructions."
+      },
+      {
+        "name": "skill-creator",
+        "path": "/home/aunaun/.codex/skills/.system/skill-creator/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Create or update a Codex skill with appropriately scoped instructions and any needed supporting resources."
+      },
+      {
+        "name": "skill-installer",
+        "path": "/home/aunaun/.codex/skills/.system/skill-installer/SKILL.md",
+        "enabled": true,
+        "scope": "system",
+        "description": "Install Codex skills into $CODEX_HOME/skills from a curated list or a GitHub repo path. Use when a user asks to list installable skills, install a curated skill, or install a skill from another repo (including private repos)."
+      }
+    ]
+  }
+}

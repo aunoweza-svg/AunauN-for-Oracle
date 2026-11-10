@@ -1,0 +1,100 @@
+{
+  "verified_at": "2026-11-10T18:22:26.959522+00:00",
+  "scope": "repository .agents/skills",
+  "adaptation": "AunauN Oracle for Codex; not byte-identical to upstream",
+  "upstream_oracle_revision": "9feea093cc853fa0cb4feeb83fcf4b90e0a9c24f",
+  "files": [
+    {
+      "path": ".agents/skills/forward/SKILL.md",
+      "sha256": "337a5ef2d0d7ec686cc7776ca46a41496581288d873683a8c1add44010c85c13",
+      "bytes": 1344
+    },
+    {
+      "path": ".agents/skills/herdr/SKILL.md",
+      "sha256": "6debde629d4d7cf6b322c70d8a30188cc2bd244d0ac91c5c347a8839d34ab0fd",
+      "bytes": 2147
+    },
+    {
+      "path": ".agents/skills/herdr/scripts/herdr_inspect.py",
+      "sha256": "115547a247569d92f69ce62b40e4b20fa8b63ec944b5ceb8f7fbb5cb711b606e",
+      "bytes": 5693
+    },
+    {
+      "path": ".agents/skills/herdr-hey/SKILL.md",
+      "sha256": "ec6fc3c4b21606c0f51315276ccdb1d5528c9540861f9412c54d99a567dfdcd2",
+      "bytes": 1495
+    },
+    {
+      "path": ".agents/skills/herdr-neighbors/SKILL.md",
+      "sha256": "b13b9e50c5455d6f172cb474a33fef81ab43a9bf02bbbf66fa8fc7e844cf567c",
+      "bytes": 796
+    },
+    {
+      "path": ".agents/skills/herdr-peek/SKILL.md",
+      "sha256": "f34e0f7e488c9b87e4c89aa6ab01a91594803e96657e1f76d25026eee331d678",
+      "bytes": 944
+    },
+    {
+      "path": ".agents/skills/herdr-structure/SKILL.md",
+      "sha256": "cd2fdce91501cc606dc944810e95c07ed098ed572a39903275e9ce186f7cb0a4",
+      "bytes": 891
+    },
+    {
+      "path": ".agents/skills/herdr-whoami/SKILL.md",
+      "sha256": "d2822793f04e7e698ff33d55246191cf36ca1cc574de4a9551134e4d5a5eea83",
+      "bytes": 715
+    },
+    {
+      "path": ".agents/skills/learn/SKILL.md",
+      "sha256": "0406cf3f87fff6feb46106e1fac3d1977f384c68567b2e968f8b834832e53a5b",
+      "bytes": 1796
+    },
+    {
+      "path": ".agents/skills/rrr/SKILL.md",
+      "sha256": "43351ca96e82e74ea1271a77590ae1ed99f7cbf3d871677fc6672ec1e38dee28",
+      "bytes": 3983
+    },
+    {
+      "path": ".agents/skills/rrr/references/template.md",
+      "sha256": "4e349ed29a28ade1cd214febdc5e062ec2a1fafac95fe6b07513418ab59d67f2",
+      "bytes": 1694
+    },
+    {
+      "path": ".agents/skills/rrr/scripts/stage-metrics-row.py",
+      "sha256": "dd6ffc2651cc586c86a08b9924169b0b8e1d3b062544ba5c552780f38f599867",
+      "bytes": 3622
+    },
+    {
+      "path": ".agents/skills/trace/SKILL.md",
+      "sha256": "8f1af5af4c64387dc90111458fc5619bee0ed5adcb2f464ede55bfaa1c98d126",
+      "bytes": 1470
+    },
+    {
+      "path": ".agents/skills/where-we-are/SKILL.md",
+      "sha256": "675b976e0e4db80961fae7557cc6fe6ed5679fdd591f346252234dade0907fef",
+      "bytes": 985
+    }
+  ],
+  "oracle_source_references": [
+    {
+      "path": ".oracle-skills-source/skills/rrr/SKILL.md",
+      "sha256": "9b9ab7e141a88c78eed43bc80e9502c4f726045e7bffa6f0570f3a1cb27a01bb"
+    },
+    {
+      "path": ".oracle-skills-source/skills/forward/SKILL.md",
+      "sha256": "d37b6ebe4b0c8680bb63bb45bb722ba93970f4245f1eb3308168d13db027b650"
+    },
+    {
+      "path": ".oracle-skills-source/skills/learn/SKILL.md",
+      "sha256": "ea22ace9edfce4d0f52522bba0b22aa95dcbd4377901363500c5271816c96119"
+    },
+    {
+      "path": ".oracle-skills-source/skills/trace/SKILL.md",
+      "sha256": "06c65f74f9fe549379b068330a06cecc63df5b38c6ab4cc5099b6c3cc0a6dda4"
+    },
+    {
+      "path": ".oracle-skills-source/skills/where-we-are/SKILL.md",
+      "sha256": "5c888305b8ae03f5a8152a57f8473c30d3e9ed9e19cfc36152881e60ac67ff36"
+    }
+  ]
+}
