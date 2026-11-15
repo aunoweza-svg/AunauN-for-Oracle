@@ -1,0 +1,20 @@
+{
+  "scratch": "/tmp/axiom-install-check-4bi57e5r",
+  "checks": [
+    {
+      "check": "patch applies to preserved original",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "check": "installer creates originals backup and writes staged in scratch only",
+      "exit": 0,
+      "stdout": "{\n  \"mode\": \"apply\",\n  \"target\": \"/tmp/axiom-install-check-4bi57e5r/trading-lab\",\n  \"files\": [\n    \"README.md\",\n    \"dist/NOTICE.txt\",\n    \"dist/app.js\",\n    \"dist/index.html\",\n    \"dist/model.js\",\n    \"dist/style.css\",\n    \"tests/browser.cjs\",\n    \"tests/model.cjs\",\n    \"tests/regression.cjs\"\n  ]\n}\n{\n  \"installed\": 9,\n  \"backup\": \"/tmp/axiom-install-check-4bi57e5r/trading-lab/.prism-backups/AXIOM-PRISM-20261115-20261115T153825710440Z\"\n}\n"
+    },
+    {
+      "check": "second application refuses changed target",
+      "exit": 1,
+      "stderr": "Target changed or already installed; review manually: README.md\n"
+    }
+  ]
+}

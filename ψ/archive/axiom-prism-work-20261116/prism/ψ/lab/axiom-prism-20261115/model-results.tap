@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: Long ledger includes both fees once and locks entry rate
+ok 1 - Long ledger includes both fees once and locks entry rate
+  ---
+  duration_ms: 6.298132
+  type: 'test'
+  ...
+# Subtest: Short ledger includes both fees once and locks entry rate
+ok 2 - Short ledger includes both fees once and locks entry rate
+  ---
+  duration_ms: 1.070342
+  type: 'test'
+  ...
+# Subtest: round-trip open session preserves dataset, index, position and balance
+ok 3 - round-trip open session preserves dataset, index, position and balance
+  ---
+  duration_ms: 2.991196
+  type: 'test'
+  ...
+# Subtest: same-candle round trip charges both fees; zero fee supported
+ok 4 - same-candle round trip charges both fees; zero fee supported
+  ---
+  duration_ms: 0.74189
+  type: 'test'
+  ...
+# Subtest: end of data blocks next but allows close; reset cannot discard open position
+ok 5 - end of data blocks next but allows close; reset cannot discard open position
+  ---
+  duration_ms: 1.039245
+  type: 'test'
+  ...
+# Subtest: reject gaps, duplicates, inverted OHLC, invalid time, boundaries
+ok 6 - reject gaps, duplicates, inverted OHLC, invalid time, boundaries
+  ---
+  duration_ms: 1.350241
+  type: 'test'
+  ...
+# Subtest: schema import rejects tampered ledger/fee/price/index/version/limitations
+ok 7 - schema import rejects tampered ledger/fee/price/index/version/limitations
+  ---
+  duration_ms: 2.452031
+  type: 'test'
+  ...
+# Subtest: invalid quantities, fees and overflow rejected; no notional/margin assumption
+ok 8 - invalid quantities, fees and overflow rejected; no notional/margin assumption
+  ---
+  duration_ms: 1.630926
+  type: 'test'
+  ...
+# Subtest: legacy arithmetic checked and original records retained separately
+ok 9 - legacy arithmetic checked and original records retained separately
+  ---
+  duration_ms: 1.192497
+  type: 'test'
+  ...
+# Subtest: import rejects future/incomplete datasets and future fetchedAt
+ok 10 - import rejects future/incomplete datasets and future fetchedAt
+  ---
+  duration_ms: 0.918409
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 83.455017

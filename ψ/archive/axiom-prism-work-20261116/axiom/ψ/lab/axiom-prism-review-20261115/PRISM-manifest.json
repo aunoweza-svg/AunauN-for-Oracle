@@ -1,0 +1,51 @@
+{
+  "task": "AXIOM-PRISM-20261115",
+  "status": "staged for independent review, not installed or accepted",
+  "files": [
+    {
+      "path": "README.md",
+      "before": "34d7e8c6b3496b540915f3a1ea989eaea5f64fac73c7c689efa4af99dbf5c6b6",
+      "after": "62d912882a6fa311f59d0401d1d3f2084b14e6e2c722c4647e346c6420ce192b"
+    },
+    {
+      "path": "dist/NOTICE.txt",
+      "before": null,
+      "after": "22c69e3142d013c1a26205719dafdb07a430097f385575c214aa6672c4baa322"
+    },
+    {
+      "path": "dist/app.js",
+      "before": "7b7a129824148da0cbb1866b911449f1787cdc675c9345f4017d72f643666a08",
+      "after": "cf43b5253d5a0816ba7363effe16caf1d1ea47a3a5cdd12fd4e9f518d903a76e"
+    },
+    {
+      "path": "dist/index.html",
+      "before": "4f18d3ba0302f867749db983dbd3f7debaa87e6c61460ddd155474ac9cefee84",
+      "after": "f5d14bfaa749c982b59d91ca56141c909ee7b02733bb1db3e65776c0330d3aff"
+    },
+    {
+      "path": "dist/model.js",
+      "before": null,
+      "after": "3ebb6595d72a2fb28a3e2cdf2c4e16133170754fc8793cd20c520d2dd25d3c94"
+    },
+    {
+      "path": "dist/style.css",
+      "before": "59aa7b904243174ef6bf5f6e33dde7c85bfc195d741acbbfb87bda09444e8c51",
+      "after": "9b922b0037cf7ec951e20e0ac7e8e60be886d14552893b7a296b255b4b680571"
+    },
+    {
+      "path": "tests/browser.cjs",
+      "before": "42e9a27bf0122dbbae1f9d37995119a1a22482c1e607e189e175f714ca7f5420",
+      "after": "f4d268382874e1f714056bccdf4248051a1c9e6a31a1bda36b7c91b770a9a5b8"
+    },
+    {
+      "path": "tests/model.cjs",
+      "before": null,
+      "after": "478274b2a4a57a216b46c5f7bb114baf35d5bca6e09bd507b50a20a290f61abf"
+    },
+    {
+      "path": "tests/regression.cjs",
+      "before": "3edcf50497da166894fb6df98f7867814d23872d78f0e0d231aa6295068ed08b",
+      "after": "b9228017613100c51a72306a7696f9b2162c13244a2ad900d27ec9d0abcdf590"
+    }
+  ]
+}

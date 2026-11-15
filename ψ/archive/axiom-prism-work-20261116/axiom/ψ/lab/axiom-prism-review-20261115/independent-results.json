@@ -1,0 +1,12 @@
+{
+  "dist": "/mnt/d/onedrive/aunaun oracle/oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/dist",
+  "results": [
+    "Long fee arithmetic and open session reload PASS",
+    "same-candle Short fees PASS",
+    "real JSON export includes dataset and assumptions PASS",
+    "tampered import preserves snapshot PASS",
+    "pending import cannot discard concurrently opened position PASS",
+    "mobile overflow and pageerror PASS"
+  ],
+  "errors": []
+}

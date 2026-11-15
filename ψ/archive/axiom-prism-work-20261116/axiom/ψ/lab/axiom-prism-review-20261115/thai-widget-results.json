@@ -1,0 +1,38 @@
+[
+  {
+    "symbol": "SET:SET",
+    "iframe": {
+      "top": 486.59375,
+      "height": 538
+    },
+    "box": {
+      "top": 485.59375,
+      "height": 540
+    },
+    "text": "1m\n30m\n1h\n15m\nIndicators\nS\nSET:SET\n15\nO\n∅\nH\n∅\nL\n∅\nC\n∅\n∅ (∅%)\nThis symbol doesn't exist\nTry picking another one for your analysis, and you'll see the data here.\nChange symbol\nNotification\nThis symbol is only available on TradingView.\nOk\nclose"
+  },
+  {
+    "symbol": "SET:PTT",
+    "iframe": {
+      "top": 486.59375,
+      "height": 538
+    },
+    "box": {
+      "top": 485.59375,
+      "height": 540
+    },
+    "text": "1m\n30m\n1h\n15m\nIndicators\nP\nSET:PTT\n15\nO\n∅\nH\n∅\nL\n∅\nC\n∅\n∅ (∅%)\nThis symbol doesn't exist\nTry picking another one for your analysis, and you'll see the data here.\nChange symbol\nNotification\nThis symbol is only available on TradingView.\nOk\nclose"
+  },
+  {
+    "symbol": "SET:ADVANC",
+    "iframe": {
+      "top": 486.59375,
+      "height": 538
+    },
+    "box": {
+      "top": 485.59375,
+      "height": 540
+    },
+    "text": "1m\n30m\n1h\n15m\nIndicators\nA\nSET:ADVANC\n15\nO\n∅\nH\n∅\nL\n∅\nC\n∅\n∅ (∅%)\nThis symbol doesn't exist\nTry picking another one for your analysis, and you'll see the data here.\nChange symbol\nNotification\nThis symbol is only available on TradingView.\nOk\nclose"
+  }
+]

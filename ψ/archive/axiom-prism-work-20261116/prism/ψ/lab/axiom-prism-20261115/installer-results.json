@@ -1,0 +1,22 @@
+{
+  "scratch": "/tmp/axiom-overflow-install-check-g4e37swq",
+  "checks": [
+    {
+      "check": "patch check",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "check": "scratch install",
+      "exit": 0,
+      "stdout": "{\n  \"mode\": \"apply\",\n  \"target\": \"/tmp/axiom-overflow-install-check-g4e37swq/trading-lab\",\n  \"files\": [\n    \"README.md\",\n    \"dist/NOTICE.txt\",\n    \"dist/app.js\",\n    \"dist/index.html\",\n    \"dist/model.js\",\n    \"dist/style.css\",\n    \"tests/browser.cjs\",\n    \"tests/model.cjs\",\n    \"tests/regression.cjs\"\n  ]\n}\n{\n  \"installed\": 9,\n  \"backup\": \"/tmp/axiom-overflow-install-check-g4e37swq/trading-lab/.prism-backups/AXIOM-PRISM-20261115-20261115T154310659132Z\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "check": "repeat refuses changed target",
+      "exit": 1,
+      "stderr": "Target changed or already installed; review manually: README.md\n"
+    }
+  ]
+}

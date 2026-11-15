@@ -1,0 +1,18 @@
+{
+  "iframes": [
+    {
+      "src": "https://www.tradingview-widget.com/embed-widget/advanced-chart/?locale=th#%7B%22autosize%22%3Atrue%2C%22symbol%22%3A%22BINANCE%3ABTCUSDT.P%22%2C%22interval%22%3A%2215%22%2C%22timezone%22%3A%22Asia%2FBangkok%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%221%22%2C%22allow_symbol_change%22%3Afalse%2C%22hide_side_toolbar%22%3Afalse%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22utm_source%22%3A%22127.0.0.1%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22advanced-chart%22%2C%22page-uri%22%3A%22127.0.0.1%3A45389%2F%22%7D",
+      "width": 1222,
+      "height": 538,
+      "top": 486.59375,
+      "parent": "<div class=\"tradingview-widget-container\" style=\"height: 100%; width: 100%;\"><iframe scrolling=\"no\" allowtransparency=\"true\" frameborder=\"0\" src=\"https://www.tradingview-widget.com/embed-widget/advanced-chart/?locale=th#%7B%22autosize%22%3Atrue%2C%22symbol%22%3A%22BINANCE%3ABTCUSDT.P%22%2C%22interval%22%3A%2215%22%2C%22timezone%22%3A%22Asia%2FBangkok%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%221%22%2C%22allow_symbol_change%22%3Afalse%2C%22hide_side_toolbar%22%3Afalse%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22utm_source%22%3A%22127.0.0.1%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22advanced-chart%22%2C%22page-uri%22%3A%22127.0.0.1%3A45389%2F%22%7D\" title=\"advanced chart TradingView widget\" lang=\"en\" style=\"user-select: none; box-sizing: border-box; display: block; height: 100%; width: 100%;\"></iframe><style>\n\t.tradingview-widget-copyright {\n\t\tfont-size: 13px !important;\n\t\tline-height: 32px !important;\n\t\ttext-align: center !important;\n\t\tvertical-align: middle !important;\n\t\t/* @mixin sf-pro-display-font; */\n\t\tfont-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;\n\t\tcolor: #B2B5BE !important;\n\t}\n\n\t.tradingview-widget-copyright .blue-text {\n\t\tcolor: #2962FF !important;\n\t}\n\n\t.tradingview-widget-copyright a {\n\t\ttext-decoration: none !important;\n\t\tcolor: #B2B5BE !important;\n\t}\n\n\t.tradingview-widget-copyright a:visited {\n\t\tcolor: #B2B5BE !important;\n\t}\n\n\t.tradingview-widget-copyright a:hover .blue-text {\n\t\tcolor: #1E53E5 !important;\n\t}\n\n\t.tradingview-widget-copyright a:active .blue-text {\n\t\tcolor: #1848CC !important;\n\t}\n\n\t.tradingview-widget-copyright a:visited .blue-text {\n\t\tcolor: #2962FF !important;\n\t}\n\t</style></div>"
+    }
+  ],
+  "frames": [
+    {
+      "url": "https://www.tradingview-widget.com/embed-widget/advanced-chart/?locale=th#%7B%22autosize%22%3Atrue%2C%22symbol%22%3A%22BINANCE%3ABTCUSDT.P%22%2C%22interval%22%3A%2215%22%2C%22timezone%22%3A%22Asia%2FBangkok%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%221%22%2C%22allow_symbol_change%22%3Afalse%2C%22hide_side_toolbar%22%3Afalse%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22utm_source%22%3A%22127.0.0.1%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22advanced-chart%22%2C%22page-uri%22%3A%22127.0.0.1%3A45389%2F%22%7D",
+      "text": "1m\n30m\n1h\n15m\nIndicators\nB\nBitcoin / TetherUS PERPETUAL CONTRACT\n15\nBinance\nO\n64,608.7\nH\n64,750.0\nL\n64,576.2\nC\n64,701.4\n+93.4 (+0.14%)\nVol · BTC\n289",
+      "canvas": 7
+    }
+  ]
+}

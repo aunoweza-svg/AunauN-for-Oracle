@@ -1,0 +1,881 @@
+--- a/README.md
++++ b/README.md
+@@ -1,50 +1,69 @@
+-# AXIOM Trading Lab — ต้นแบบ
++# AXIOM Trading Lab — personal prototype v2
+ 
+-เปิด `dist/index.html` ในเว็บเบราว์เซอร์ที่เชื่อมอินเทอร์เน็ต กราฟ TradingView และ Lightweight Charts โหลดจากภายนอก และ replay เรียกข้อมูล 15 นาที BTCUSDT USDⓈ-M Futures จาก Binance โดยตรง หาก browser, เครือข่าย หรือภูมิภาคปฏิเสธการเชื่อมต่อ ระบบจะแจ้งข้อผิดพลาด
++งาน AXIOM-PRISM-20261115 · implementation โดย PRISM · ต้องให้ AXIOM ตรวจรับก่อนแจ้งว่าเสร็จ
+ 
+-เลือกกราฟในหน้าภาพตลาด กดโหลดข้อมูลในหน้าฝึกเทรด แล้วเริ่มรอบใหม่ ระบบเปิดเผยข้อมูลทีละแท่ง ปิดสถานะเพื่อบันทึกใน localStorage และส่งออก JSON จากหน้าบันทึก ข้อมูลบันทึกอยู่ในเบราว์เซอร์และอาจสูญหายหากล้างข้อมูลเบราว์เซอร์
+-
+-## ขอบเขต
+-
+-- แบบฝึกคำนวณ P&L เชิงเส้นและค่าธรรมเนียมที่ผู้ใช้กำหนด โดยใช้ราคาปิดแท่งปัจจุบัน ไม่จำลองคำสั่งจริง
+-- ยังไม่มี leverage, margin, liquidation, funding, slippage, stop loss, take profit หรือการจับคู่คำสั่งที่สมจริง ผลจึงไม่ใช่การจำลอง Futures อย่างครบถ้วน
+-- การเริ่มรอบใหม่เริ่มที่แท่งที่ 200 ยังเลือกวันเริ่มต้นไม่ได้ และยังไม่มี backtest อัตโนมัติ
+-- กราฟ TradingView เป็น widget แยกจากข้อมูล Binance ของระบบ replay ราคาและเวลาจึงอาจต่างกัน
+-- ตรวจจับช่องว่างในแท่งเทียน แต่ยังไม่ได้ตรวจความสอดคล้องของราคากับแหล่งที่สอง
+-- เว็บไซต์ Sites ถูกลงทะเบียนแบบส่วนตัว แต่ยังไม่ได้เผยแพร่
+-
+-## การป้องกันข้อมูลและสถานะ
+-
+-- ต้องปิดสถานะและบันทึกสำเร็จก่อนเริ่มรอบใหม่หรือโหลด dataset ใหม่ ปุ่มและ handler จะไม่ทิ้งสถานะที่ยังเปิด
+-- ระหว่างโหลด ปุ่มเริ่ม/เดินแท่ง/ซื้อขายถูกพักไว้ โหลดล้มเหลวจะเก็บรอบเดิมให้ฝึกต่อ โหลดสำเร็จต้องกดเริ่มรอบใหม่ก่อนเทรด
+-- ปิดสถานะจะเขียน journal ให้สำเร็จก่อนเปลี่ยนยอดเงิน หากพื้นที่เต็มหรือเขียนไม่ได้ สถานะและยอดเดิมยังอยู่ ให้แก้การเก็บข้อมูลแล้วลองปิดอีกครั้ง อย่าเพิ่งปิดหน้า
+-- หาก JSON หรือโครงสร้าง journal เสีย ระบบยังเปิดหน้าและเดิน replay ได้ แต่หยุดเปิดสถานะใหม่เพื่อไม่เขียนทับต้นฉบับ ปุ่มส่งออก JSON จะส่งออกไฟล์ `axiom-trading-journal-recovery.txt` ตามข้อมูลเดิม การกู้คืน/นำเข้ายังต้องจัดการแยก ไม่ได้ล้างหรือซ่อมข้อมูลอัตโนมัติ
+-- ใช้เทรดจำลองครั้งละหนึ่งแท็บ หากตรวจพบ journal เปลี่ยนจากอีกแท็บจะไม่เขียนทับ; ยังไม่มีฐานข้อมูลหรือ transaction ข้ามแท็บ และสถานะเปิด/ยอดเงิน/replay ไม่ถูกบันทึกข้ามการปิดหน้า
+-
+-## เปิดผ่าน local server
+-
+-เรียกจากโฟลเดอร์ `trading-lab` แล้วเข้า `http://localhost:8000`:
++เปิดจากโฟลเดอร์ `trading-lab` ด้วย browser รุ่นปัจจุบัน:
+ 
+ ```sh
+ python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
+ ```
+ 
+-ต้องใช้อินเทอร์เน็ตสำหรับ CDN, TradingView และ Binance ไม่มี API key หรือการเชื่อมบัญชีจริง
++เข้า `http://localhost:8000` โดยใช้ hostname/port เดิมทุกครั้ง (localStorage แยก origin รวม localhost กับ 127.0.0.1) ต้องรองรับ Web Locks และ Web Crypto บน localhost หรือ secure context จึงบันทึกได้ ไม่แนะนำ file:// ต้องใช้อินเทอร์เน็ตสำหรับ Binance, TradingView และ CDN กราฟ/ฟอนต์ ไม่มี API key ไม่มีการเชื่อมบัญชีหรือส่งคำสั่งเงินจริง ไม่ได้ deploy หรือเปลี่ยน Sites ที่ลงทะเบียนไว้
+ 
+-## ทดสอบ regression
++## วิธีฝึกและกติกา
+ 
+-ใช้ Node.js โดยไม่ต้องติดตั้ง dependencies เพิ่ม:
++1. หน้า market เลือก BTC หรือหุ้นไทยที่มีในรายการ กราฟ TradingView เป็น iframe แยกกับ replay มีข้อความแหล่งข้อมูล เวลาร้องขอ และข้อจำกัด แอปอ่านสถานะราคา/ความล่าช้าภายใน iframe ไม่ได้ ตรวจเวลาแท่ง/สัญลักษณ์ delayed ใน widget เอง เวลา request ไม่ใช่เวลาอัปเดตราคา **ผลตรวจ 15 พ.ย. 2026: SET:SET, SET:PTT, SET:ADVANC ถูก widget ปฏิเสธ (only available on TradingView / symbol does not exist) จึงไม่มีกราฟหุ้นไทยทั้งสามภายในแอป** ข้อความไทยแจ้งทันทีเมื่อเลือก SET พร้อมลิงก์เปิด symbol บน TradingView ภายนอก ผู้ให้บริการกำหนดสิทธิ์/ความล่าช้า ไม่มีราคาสังเคราะห์ทดแทน และไม่ได้จัดหา provider แบบเสียเงิน
++2. หน้า replay โหลดแท่งปิด BTCUSDT/15m จาก Binance USDⓈ-M public klines ย้อน 90 วัน โดยปัดปลายช่วงลง boundary 15 นาที ต้องได้ 8,640 แท่งเรียงต่อเนื่องครบช่วง ตรวจ open/close time, OHLC, gap, duplicate และ pagination หากขาดแม้ต้น/ท้ายจะปฏิเสธชุดใหม่พร้อมเก็บรอบเดิมไว้ ไม่มีการเติมช่องว่าง
++3. อ่านข้อจำกัดและติ๊กยอมรับ เลือกเวลา **เปิดแท่งเริ่มต้นเป็น UTC** ทุก 15 นาทีที่มีจริง ระบุทุนและชื่อ/เป้าหมายรอบ แล้วเริ่มรอบใหม่ ใช้แท่งก่อนหน้าที่มีเป็น warm-up กราฟแสดง prefix ถึงแท่งที่เลือกเท่านั้น เวลาเข้าออกเป็นเวลาปิดแท่ง = เวลาเปิด +15 นาที แกนกราฟ UTC เช่นกัน
++4. กดเดินทีละแท่ง เปิด Long/Short ได้หนึ่งสถานะ ค่าธรรมเนียม % ต่อด้านและจำนวน BTC ระบุตอนเข้าและล็อกในรายการนั้น เปลี่ยนช่อง fee ภายหลังไม่เปลี่ยน fee ของสถานะเดิม ปิดสถานะที่ท้ายชุดข้อมูลได้ แต่เดินต่อไม่ได้
++5. การเริ่มรอบ/เดินแท่ง/เปิด/ปิด ต้องบันทึก snapshot สำเร็จก่อนเปลี่ยนยอดและสถานะ ถ้า quota เต็มหรือข้อมูลเปลี่ยนจากแท็บอื่นจะไม่ commit การกระทำนั้น ส่งออกข้อมูลก่อนแก้ storage แล้วลองใหม่ การโหลดข้อมูลสำเร็จต้องเริ่มรอบใหม่ก่อนเทรด ส่วนโหลดล้มเหลวฝึกต่อจากรอบเดิมได้
++
++ราคาที่ใช้ทั้งเข้าและออกคือ close ของแท่งที่เห็น หลังแท่งปิดทันที ไม่มี execution จริง:
++
++- `entryFee = entry × qtyBTC × feePercent / 100`
++- `exitFee = exit × qtyBTC × feePercent / 100`
++- `gross = (exit − entry) × qtyBTC × direction` โดย Long = +1, Short = −1
++- `net = gross − entryFee − exitFee`
++- เงินสดหลังเข้า = เงินสดเดิม − entryFee; หลังปิด = เงินสดหลังเข้า + gross − exitFee
++- ตัวอย่างทุน 10,000, qty 1 BTC, ราคา 100→110, fee 0.05%: Long gross 10, fee 0.05+0.055, net 9.895, balance 10009.895; Short net −10.105, balance 9989.895
++- เข้าและปิดในแท่งเดียวกันยังคิด fee สองด้าน ไม่มีขั้นต่ำ tick/lot หรือการปัดทศนิยมตาม exchange การคำนวณใช้ JavaScript Number และ UI ปัดเพื่อแสดงผล ข้อมูล export เก็บเลขเต็มที่คำนวณได้
++
++**นี่คือแบบฝึก P&L เชิงเส้น ไม่ใช่บัญชี Futures สมจริงหรือ backtest อัตโนมัติ** BTCUSDT USDⓈ-M Perpetual ยังเป็นสมมติฐานต้นแบบ ไม่กันทุนตาม notional และยอดอาจติดลบ ไม่มี leverage, margin, liquidation, funding, spread, slippage, partial fills, stops หรือ take profit การ fill หลังเห็น close อาจมองโลกในแง่ดี Dataset ทั้งหมดอยู่ใน browser และหน้า market ดูแยกได้ จึงไม่ใช่ blind research ข้อจำกัดเดียวกันแสดงก่อนเริ่มและใน export
++
++## Journal, session และ backup
++
++`dist/model.js` เป็นโมเดล/validator แยกจาก DOM; `dist/app.js` ดูแลข้อมูล กราฟ และ persistence
++
++- Snapshot key `axiom_lab_v2`, schema `2`, engine `2.0.0` เก็บข้อจำกัด, datasets (OHLC+source+symbol+interval+UTC+ช่วง+fetchedAt+SHA256), runs (ID/ชื่อ/ทุน/วันเริ่ม/ตำแหน่ง replay/ยอด/สถานะเปิด/รายการ/เหตุผล), activeRunId และ legacyRecords รายการอ้าง dataset ผ่าน run
++- Persist snapshot เดียวแบบ atomic ต่อ key ทั้ง journal, ยอด, สถานะเปิดและ replay เมื่อสำเร็จ Reload จึงกู้รอบและสถานะเปิดจาก dataset เดิมโดยไม่ต้องโหลดตลาดใหม่ ไม่รับประกันความคงทนระดับฐานข้อมูลเมื่ออุปกรณ์พังหรือ browser ล้างข้อมูล และข้อความที่ยังไม่ได้เปิดเป็นรายการไม่ใช่ draft ที่บันทึกแล้ว
++- Web Locks กัน writer จากแอปรุ่นนี้ซ้อนกัน ตรวจ raw snapshot และ legacy key อีกครั้งใน lock รวม storage events เพื่อหยุดแท็บเก่าที่ข้อมูลเปลี่ยน ใช้ฝึกทีละหนึ่งแท็บเป็นหลัก ซอฟต์แวร์อื่น/แอปรุ่นเก่าที่ไม่ใช้ lock ยังอาจเปลี่ยน storage ได้ จึงไม่ใช่ฐานข้อมูล multi-client
++- Journal รุ่นเดิม `axiom_records` เก็บต้นฉบับไว้ ตรวจสูตรและนำมาเป็น legacyRecords เมื่อไม่มี v2 พร้อมระบุว่าขาด dataset/session context ไม่แต่งบริบทหรือ timestamp เพิ่ม
++- ส่งออก JSON รวม session ที่ยังเปิด, dataset ทั้งชุด และข้อจำกัด สำรองลงไฟล์ภายนอกทุกครั้งก่อนล้าง browser/ย้ายเครื่อง ไม่มี sync หรือ cloud backup
++- นำเข้า snapshot v2 ได้เท่านั้น (ไฟล์ recovery/raw หรือ array รุ่นเก่าไม่ใช่ไฟล์ import v2) ตรวจ JSON, schema/engine, source, OHLC/continuity, SHA256, เวลาแท่งต้องปิดก่อน fetchedAt และ fetchedAt ต้องไม่เป็นอนาคต, ลำดับการเทรด/ราคา/fee/ยอด ledger ก่อนแสดง confirm แทนข้อมูลทั้งชุด ไม่มี merge
++- ปิดสถานะปัจจุบันก่อน import/restore; import ล็อกตั้งแต่ File.text ผ่าน checksum/confirmation/commit จึงไม่ทิ้ง position ที่เปิดแทรก ต้องเขียน backup ของ raw snapshot ก่อน import ให้สำเร็จจึงเขียนข้อมูลใหม่ ถ้าล้มเหลว state ปัจจุบันไม่เปลี่ยน (backup อาจเขียนสำเร็จแล้ว)
++- Backup key `axiom_lab_v2_backup` เก็บก่อน import หนึ่งชุด ปุ่มคืน backup ใช้ validator เดียวกันและเก็บ snapshot ปัจจุบันเป็น backup แทน จึงสลับกลับได้ Backup ใน browser อาจสูญหายเช่นเดียวกัน ต้องมี export ภายนอก ถ้า backup เป็น raw ที่เสียจะปฏิเสธ restore
++- ถ้า snapshot เสีย หยุดเขียนและส่งออก recovery ที่เก็บ raw v2/legacy ได้ สามารถ import ไฟล์ v2 ที่ตรวจผ่านเพื่อกู้กลับ โดยสำรอง raw ที่เสียก่อน ไม่ลบ legacy ต้นฉบับ หาก storage อ่านไม่ได้จะไม่พยายามเขียนหรืออ้างว่ากู้ได้
++- ขอบเขต validator: ไม่เกิน 12 MiB ของข้อความ JSON, 100 datasets/100 runs, 100,000 แท่งต่อ dataset และ 10,000 trades ต่อ run/legacy; localStorage จริงมักเต็มก่อนขีดจำกัดนี้ ให้สำรองและใช้ origin แยกหากต้องเก็บงานมาก ยังไม่มี archive/delete UI ขนาดใหญ่
++- SHA256 ตรวจการเปลี่ยนข้อมูลและช่วยทำซ้ำ ไม่ใช่ลายเซ็นรับรองแหล่งที่มา ผู้แก้ไฟล์แล้วคำนวณ hash ใหม่ยังทำได้ ต้องเก็บไฟล์ต้นฉบับที่เชื่อถือได้เอง นาฬิกาเครื่องต้องถูกต้องสำหรับการตรวจแท่งปิด
++
++## Tests
++
++ไม่ต้องติดตั้ง dependency สำหรับ model/ledger tests:
+ 
+ ```sh
+ node tests/regression.cjs
+ ```
+ 
+-ทดสอบ app.js ผ่าน click handlers/ผลที่แสดง ด้วย DOM/chart/network/storage stubs: การบันทึกล้มเหลวและลองซ้ำ, guard สถานะเปิด, reload, JSON/โครงสร้างเสีย, storage เข้าไม่ได้, เก็บรายการเดิม และการเปลี่ยนข้อมูลจากอีกแท็บ นี่ไม่ใช่ browser acceptance
+-
+-มี `tests/browser.cjs` สำหรับ Chromium จริง ต้องมี Playwright และ Chromium runtime ก่อน ใช้ `PLAYWRIGHT_MODULE` ระบุ package ถ้าไม่ได้ติดตั้งอยู่ใน module path และ `PLAYWRIGHT_BROWSERS_PATH` ตามตำแหน่ง runtime โดยไม่ต้องเพิ่ม dependencies ในต้นแบบ:
++Chromium acceptance ต้องเตรียม Playwright, Chromium และ shared libraries:
+ 
+ ```sh
+-PLAYWRIGHT_MODULE=/path/to/playwright node tests/browser.cjs
++PLAYWRIGHT_MODULE=/path/to/playwright AXIOM_CHART_BUNDLE=/path/to/lightweight-charts.standalone.production.js node tests/browser.cjs
+ ```
+ 
+-Browser suite ใช้แท่งราคาสังเคราะห์เฉพาะทดสอบและ block TradingView/fonts เพื่อตรวจ state, localStorage, download และมือถือแบบทำซ้ำได้; โหลด chart library จริงจาก CDN หรือกำหนด `AXIOM_CHART_BUNDLE=/path/to/lightweight-charts.standalone.production.js` ที่เป็น v4.2.3 จึงไม่ยืนยันข้อมูล/symbol ของ TradingView หรือ Binance สด ค่าเริ่มต้น artifact อยู่ `/tmp/axiom-browser-results`
++ใช้ `PLAYWRIGHT_BROWSERS_PATH`/`LD_LIBRARY_PATH` หาก runtime อยู่ใน /tmp, `AXIOM_DIST` เพื่อทดสอบ dist อื่น และ `AXIOM_BROWSER_ARTIFACTS` เพื่อเลือก directory หลักฐาน ค่าเริ่มต้น `/tmp/axiom-browser-results-v2` เปิด server ชั่วคราวที่ 127.0.0.1 และปิดใน finally
++
++Suite ใช้ chart library v4.2.3 จริง และ **ราคาสังเคราะห์เฉพาะทดสอบ** ทดสอบ start/hidden future, Long/Short/fee/การปิดซ้ำ, quota และ guards, reload สถานะเปิด, gap/duplicate/เวลาแท่ง, schema/ledger/hash/อนาคต, import/backup/recovery, หน่วง digest เพื่อทดสอบ race, conflict สองแท็บ และ desktop→mobile resize เมื่อกราฟมีข้อมูล ทั้งชื่อรอบไม่เว้นวรรค 200 ตัวและชื่อว่างที่แสดง UUID; รอ animation frames และเงื่อนไข account/canvas containment ก่อน assert โดยไม่ใช้ screenshot เป็น delay Widget/fonts ถูก block ใน deterministic suite จึงไม่ใช่ผลตรวจ feed/symbol/CORS สด ดูผล live probe แยกใน review report
++
++กราฟ replay ใช้ Lightweight Charts 4.2.3 จาก CDN มีลิงก์ attribution ไป TradingView ในหน้า UI; market widget โหลดจาก TradingView เอง ไม่มีการนำข้อมูล widget มาคำนวณ P&L
++
++Live widget ใช้ wrapper ภายใน #tv ที่มีความสูงคงที่ 540px/420px เพื่อให้ embed script จัด iframe ใน tradingview-widget-container ได้ถูกต้อง; footer แสดง NOTICE ของ Lightweight Charts v4.2.3 พร้อมลิงก์ต้นทาง
+--- /dev/null
++++ b/dist/NOTICE.txt
+@@ -0,0 +1,6 @@
++TradingView Lightweight Charts™
++Copyright (с) 2024 TradingView, Inc. https://www.tradingview.com/
++
++Unmodified Lightweight Charts v4.2.3 loaded from unpkg.com.
++Source NOTICE: https://github.com/tradingview/lightweight-charts/blob/v4.2.3/NOTICE
++License: Apache-2.0 https://github.com/tradingview/lightweight-charts/blob/v4.2.3/LICENSE
+--- a/dist/app.js
++++ b/dist/app.js
+@@ -1,155 +1,145 @@
+-const $=s=>document.querySelector(s), status=$('#status');
+-document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.view').forEach(x=>x.classList.toggle('hidden',x.id!==b.dataset.view));if(b.dataset.view==='journal') renderRecords();if(b.dataset.view==='replay'&&chart) chart.applyOptions({width:$('#chart').clientWidth});});
+-function tv(){const el=$('#tv');el.replaceChildren();const inner=document.createElement('div');inner.className='tradingview-widget-container__widget';inner.style.height='100%';el.append(inner);const script=document.createElement('script');script.src='https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';script.async=true;script.text=JSON.stringify({autosize:true,symbol:$('#symbol').value,interval:'15',timezone:'Asia/Bangkok',theme:'dark',style:'1',locale:'th',allow_symbol_change:true,hide_side_toolbar:false});el.append(script)}
++'use strict';
++const M=LabModel,$=s=>document.querySelector(s),KEY='axiom_lab_v2',BACKUP='axiom_lab_v2_backup',OLD='axiom_records';
++let state=M.empty(),raw=null,oldRaw=null,readable=false,verifiedState=false,storageAccess=false,busy=true,loading=false,loaded=null,awaitingStart=false,chart,series;
++const status=$('#status'),storageStatus=$('#storage-status');
++const clone=s=>JSON.parse(JSON.stringify(s));
++const uid=()=>crypto.randomUUID().replaceAll('-','_');
++const utc=t=>new Date(t*1000).toISOString().replace('.000Z',' UTC');
++const say=m=>{storageStatus.textContent=m};
++async function digest(candles){const bytes=new TextEncoder().encode(JSON.stringify(candles));return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');}
++async function verify(s){M.validate(s);for(const d of s.datasets)if(await digest(d.candles)!==d.sha256)throw Error('dataset checksum ไม่ตรง');return s;}
++function parse(text){if(typeof text!=='string'||text.length>12*1024*1024)throw Error('ไฟล์ต้องไม่เกิน 12 MiB');return JSON.parse(text);}
++function current(){return M.active(state)}
++function trading(){return readable&&!busy&&!loading&&!awaitingStart&&!!current()}
++function controls(){const r=current(),p=r?.position,ready=trading();
++ $('#load').disabled=busy||loading||!!p;
++ $('#start').disabled=!readable||busy||loading||!!p||!(loaded||M.data(state));
++ $('#next').disabled=!ready||r.index>=M.data(state).candles.length-1;
++ $('#long').disabled=$('#short').disabled=!ready||!!p;
++ $('#close').disabled=!ready||!p;
++ $('#import').disabled=!storageAccess||busy||loading||!!p;
++ $('#restore').disabled=!storageAccess||busy||loading||!!p;
++ $('#replay-date').disabled=busy||loading||!!p;
++ $('#capital').disabled=busy||loading||!!p;
++ $('#export').disabled=busy;
++}
++function makeChart(){if(chart)return;if(!window.LightweightCharts)throw Error('โหลดกราฟไม่ได้ ตรวจอินเทอร์เน็ตแล้วโหลดหน้าใหม่ (session ยังอยู่ใน browser)');
++ chart=LightweightCharts.createChart($('#chart'),{width:$('#chart').clientWidth,height:$('#chart').clientHeight,layout:{background:{color:'#101c29'},textColor:'#aabbc8'},grid:{vertLines:{color:'#1c3040'},horzLines:{color:'#1c3040'}},timeScale:{timeVisible:true},rightPriceScale:{borderColor:'#304454'}});
++ series=chart.addCandlestickSeries({upColor:'#51c8a8',downColor:'#ef7580',borderVisible:false,wickUpColor:'#51c8a8',wickDownColor:'#ef7580'});
++}
++function resize(){if(chart)chart.applyOptions({width:$('#chart').clientWidth,height:$('#chart').clientHeight})}
++window.addEventListener('resize',resize);
++function draw(){const r=current();if(!r)return;try{makeChart();series.setData(M.data(state).candles.slice(0,r.index+1));}catch(e){status.textContent=e.message}}
++function render(){const r=current(),d=M.data(state);
++ if(!r){$('#clock').textContent='ยังไม่เริ่ม';$('#account').textContent='เริ่มรอบใหม่เพื่อจำลอง'}
++ if(r){const c=d.candles[r.index],p=r.position,pnl=p?(c.close-p.entry)*p.qty*(p.side==='Long'?1:-1):0;
++ $('#clock').textContent=`แท่งเปิด ${utc(c.time)} · ตัดสินใจหลังปิด ${utc(c.time+M.STEP)} · close ${c.close} USDT`;
++ $('#account').textContent=`รอบ ${r.label||r.id} · เงินสดจำลอง ${r.balance.toFixed(2)} USDT · ${p?p.side+' '+p.qty+' BTC | P&L ยังไม่ปิด '+pnl.toFixed(2):'ไม่มีสถานะ'} · มูลค่าก่อน fee ปิด ${(r.balance+pnl).toFixed(2)} USDT${r.index===d.candles.length-1?' · ท้ายข้อมูล (ยังปิดสถานะได้)':''}`;
++ }
++ const shown=loaded||d;if(shown){$('#dataset-info').textContent=`Binance public USDⓈ-M klines · BTCUSDT / 15m · ${shown.candles.length} แท่งปิด · ${utc(shown.start)} ถึง ${utc(shown.end)} (ไม่รวมปลายช่วง) · ดึง ${new Date(shown.fetchedAt).toISOString()} · SHA256 ${shown.sha256}`;
++ $('#replay-date').min=new Date(shown.start*1000).toISOString().slice(0,16);$('#replay-date').max=new Date((shown.end-M.STEP)*1000).toISOString().slice(0,16);
++ }
++ renderRecords();controls();
++}
++// Web Locks serializes origin writers. Compare the entire saved snapshot inside the lock.
++// Persist before replacing live state; quota/conflict failures never change the account.
++async function transact(change,{backup=false,recovery=false}={}){
++ if((!readable&&!recovery)||!storageAccess||busy||loading)return false;busy=true;controls();
++ try{
++  await navigator.locks.request(KEY,{mode:'exclusive'},async()=>{
++   if(localStorage.getItem(KEY)!==raw||localStorage.getItem(OLD)!==oldRaw)throw Error('ข้อมูลเปลี่ยนจากอีกแท็บ กรุณาส่งออก snapshot ของแท็บนี้แล้วโหลดหน้าใหม่');
++   const next=clone(state);await change(next);M.validate(next);
++   const text=JSON.stringify(next);if(text.length>12*1024*1024)throw Error('snapshot เกิน 12 MiB กรุณาสำรองและเริ่ม origin แยก');
++   if(backup)localStorage.setItem(BACKUP,raw===null?JSON.stringify(state):raw);
++   localStorage.setItem(KEY,text);raw=text;state=next;readable=true;verifiedState=true;
++  });
++  say('บันทึก snapshot สำเร็จ · ควรส่งออก JSON เก็บภายนอกเป็นประจำ');return true;
++ }catch(e){say('บันทึกไม่สำเร็จ สถานะ/ยอดเดิมยังอยู่: '+e.message);return false;}
++ finally{busy=false;render()}
++}
++async function boot(){
++ try{raw=localStorage.getItem(KEY);oldRaw=localStorage.getItem(OLD);storageAccess=!!navigator.locks&&!!crypto.subtle;
++  if(raw!==null)state=await verify(parse(raw));
++  else if(oldRaw!==null){const old=parse(oldRaw);if(!Array.isArray(old))throw Error('legacy journal ไม่ใช่รายการ');old.forEach(M.legacyRecord);state=M.empty(old)}
++  if(!navigator.locks||!crypto.subtle)throw Error('ต้องเปิดผ่าน localhost และ browser ที่รองรับ Web Locks/Web Crypto เพื่อเก็บ session อย่างปลอดภัย');
++  readable=true;verifiedState=true;const r=current();if(r){loaded=M.data(state);$('#capital').value=r.initial;$('#replay-date').value=new Date(loaded.candles[r.startIndex].time*1000).toISOString().slice(0,16);draw();status.textContent='กู้คืน session และ dataset จาก snapshot แล้ว รวมสถานะที่ยังเปิด';}
++  say(oldRaw!==null?'เก็บ journal รุ่นเดิมไว้ ไม่แก้ต้นฉบับ; รายการเก่าระบุว่าขาดบริบท dataset':'เก็บ snapshot ใน browser/origin นี้เท่านั้น ส่งออก JSON เพื่อสำรองภายนอก');
++ }catch(e){readable=false;say('อ่าน/ตรวจข้อมูลไม่ได้ หยุดเขียนเพื่อรักษาต้นฉบับ: '+e.message+' · ส่งออกไฟล์ recovery ก่อนจัดการข้อมูล ห้ามล้าง browser');}
++ busy=false;render();
++}
++document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
++ document.querySelectorAll('nav button').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});
++ document.querySelectorAll('.view').forEach(x=>x.classList.toggle('hidden',x.id!==b.dataset.view));if(b.dataset.view==='replay'){draw();resize()}if(b.dataset.view==='journal')renderRecords();
++});
++function tv(){const symbol=$('#symbol').value;
++ $('#market-availability').textContent=symbol.startsWith('SET:')?'ผลตรวจ 15 พ.ย. 2026: TradingView widget นี้ไม่รองรับ SET:SET, SET:PTT และ SET:ADVANC จึงไม่มีกราฟหุ้นไทยเหล่านี้ในแอป เปิดกราฟบน TradingView ภายนอกจากลิงก์ด้านล่าง สิทธิ์และความล่าช้ายังขึ้นกับผู้ให้บริการ':'BTC widget จาก TradingView; ตรวจเวลาแท่งและสถานะข้อมูลในกราฟก่อนใช้';
++ $('#market-link').href='https://www.tradingview.com/chart/?symbol='+encodeURIComponent(symbol);$('#market-link').textContent='เปิดกราฟ '+symbol+' บน TradingView ภายนอก';
++ const el=$('#tv');el.replaceChildren();const container=document.createElement('div');container.className='tradingview-widget-container';container.style.height='100%';container.style.width='100%';el.append(container);
++ const inner=document.createElement('div');inner.className='tradingview-widget-container__widget';inner.style.height='100%';inner.style.width='100%';container.append(inner);
++ const script=document.createElement('script');script.src='https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';script.async=true;script.text=JSON.stringify({autosize:true,symbol:$('#symbol').value,interval:'15',timezone:'Asia/Bangkok',theme:'dark',style:'1',locale:'th',allow_symbol_change:false,hide_side_toolbar:false});
++ $('#market-status').textContent=`ขอ widget ${$('#symbol').value} จาก TradingView เวลา ${new Date().toISOString()} · นี่คือเวลาร้องขอ ไม่ใช่เวลาอัปเดตราคา ดูเวลาแท่ง/สถานะ delayed ใน widget; แอปอ่านหรือยืนยัน feed ใน iframe ไม่ได้`;
++ script.onerror=()=>{$('#market-status').textContent='โหลด TradingView script ไม่สำเร็จ ตรวจเครือข่าย/ภูมิภาค; ไม่มีข้อมูลทดแทนจำลอง'};container.append(script);
++}
+ $('#symbol').onchange=tv;tv();
+-let chart,series,candles=[],index=-1,position=null,balance=0,initial=0;
+-let loading=false,running=false,records=[],journalWritable=false,journalRaw=null;
+-
+-function validRecord(r){
+-  return r && typeof r==='object' && ['Long','Short'].includes(r.side)
+-    && ['qty','entry','exit','opened','closed','gross','net','entryFee','exitFee','fee','startingCapital'].every(k=>Number.isFinite(r[k]))
+-    && r.qty>0 && r.entry>0 && r.exit>0 && r.opened>=0 && r.closed>=r.opened
+-    && r.fee>=0 && r.entryFee>=0 && r.exitFee>=0 && r.startingCapital>0
+-    && typeof r.reason==='string';
++$('#load').onclick=async()=>{
++ if(loading||busy||current()?.position)return;loading=true;controls();status.textContent='กำลังโหลดแท่งปิด 90 วันจาก Binance…';
++ try{const end=Math.floor(Date.now()/900000)*900000,begin=end-90*86400000;let cursor=begin,rows=[];
++  while(cursor<end){const u=new URL('https://fapi.binance.com/fapi/v1/klines');u.search=new URLSearchParams({symbol:'BTCUSDT',interval:'15m',startTime:String(cursor),endTime:String(end-1),limit:'1000'});
++   const res=await fetch(u,{signal:AbortSignal.timeout(20000)});if(!res.ok)throw Error('Binance HTTP '+res.status);const page=await res.json();
++   if(!Array.isArray(page)||page.length>1000)throw Error('รูปแบบ Binance ไม่ถูกต้อง');if(!page.length)break;
++   for(const r of page){if(!Array.isArray(r)||r.length<7||!Number.isSafeInteger(r[0])||r[0]<cursor||r[0]>=end||r[6]!==r[0]+899999)throw Error('เวลาแท่งไม่ถูกต้อง/ซ้ำ/แท่งยังไม่ปิด');rows.push(r)}
++   const next=page.at(-1)[0]+900000;if(next<=cursor)throw Error('pagination ไม่เดินหน้า');cursor=next;
++  }
++  const candles=rows.map(r=>({time:r[0]/1000,open:Number(r[1]),high:Number(r[2]),low:Number(r[3]),close:Number(r[4])}));
++  if(candles.length!==8640||candles[0]?.time!==begin/1000||candles.at(-1)?.time!==(end-900000)/1000)throw Error(`ข้อมูลขาด: ต้องมี 8640 แท่งปิดใน ${new Date(begin).toISOString()} ถึง ${new Date(end).toISOString()} ได้ ${candles.length}; ไม่เติมราคาทดแทน`);
++  const d={id:'ds_'+uid(),source:'Binance public USDⓈ-M klines',symbol:'BTCUSDT',interval:'15m',timezone:'UTC',fetchedAt:Date.now(),start:begin/1000,end:end/1000,candles,sha256:await digest(candles)};M.dataset(d);
++  makeChart();series.setData([]);loaded=d;awaitingStart=true;
++  $('#replay-date').value=new Date(candles[Math.min(199,candles.length-1)].time*1000).toISOString().slice(0,16);
++  status.textContent='ตรวจครบ 90 วัน ไม่พบข้อมูลขาด/ซ้ำ · เลือกวันเริ่ม UTC แล้วเริ่มรอบใหม่ก่อนเทรด';
++ }catch(e){status.textContent='โหลดไม่สำเร็จ: '+e.message+' · เก็บรอบเดิมไว้ ไม่มีราคาสังเคราะห์ทดแทน';}
++ finally{loading=false;render()}
++};
++$('#start').onclick=async()=>{
++ if(!readable||busy||loading||current()?.position)return;
++ if(!$('#ack').checked){status.textContent='อ่านและยอมรับข้อจำกัดของแบบฝึกก่อนเริ่มรอบ';return}
++ const d=loaded||M.data(state);if(!d)return;
++ const input=$('#replay-date').value;const t=Date.parse(input+'Z')/1000,i=d.candles.findIndex(c=>c.time===t);
++ if(!input||i<0){status.textContent='เลือกเวลาเปิดแท่ง UTC ที่มีจริงใน dataset และตรง 00/15/30/45 นาที';return}
++ try{makeChart()}catch(e){status.textContent=e.message;return}
++ const capital=Number($('#capital').value),label=$('#run-label').value;
++ const ok=await transact(s=>M.start(s,d,capital,i,label,uid(),Date.now()));if(ok){awaitingStart=false;draw();chart.timeScale().fitContent();status.textContent='เริ่มรอบแล้ว แสดงเฉพาะแท่งถึงวันเริ่ม (รวมแท่งปัจจุบัน)';render()}
++};
++$('#next').onclick=async()=>{if(trading()&&current().index<M.data(state).candles.length-1){if(await transact(M.next))draw()}};
++async function open(side){if(!trading()||current().position)return;await transact(s=>M.open(s,side,Number($('#qty').value),Number($('#fee').value),$('#reason').value))}
++$('#long').onclick=()=>open('Long');$('#short').onclick=()=>open('Short');
++$('#close').onclick=async()=>{if(trading()&&current().position)await transact(M.close)};
++function renderRecords(){const el=$('#records');el.replaceChildren();if(!readable){el.textContent='หยุดอ่านบันทึกเพื่อรักษาข้อมูลเดิม ส่งออก recovery ได้';return}
++ for(const r of [...state.runs].reverse()){
++  const d=document.createElement('div');d.className='record';d.textContent=`รอบ ${r.label||r.id} · dataset ${r.datasetId} · ทุน ${r.initial} → เงินสด ${r.balance.toFixed(2)} USDT · เริ่ม ${utc(M.data(state,r).candles[r.startIndex].time)} · ${r.position?'มีสถานะเปิด':'ไม่มีสถานะเปิด'}`;el.append(d);
++  for(const t of r.trades){const row=document.createElement('div');row.className='record';row.textContent=`${t.side} ${t.qty} BTC | ${utc(t.opened)} → ${utc(t.closed)} | ${t.entry} → ${t.exit} | gross ${t.gross.toFixed(4)} − fee ${t.entryFee.toFixed(4)} − ${t.exitFee.toFixed(4)} = net ${t.net.toFixed(4)} USDT | เหตุผล: ${t.reason||'ไม่ได้ระบุ'}`;el.append(row)}
++ }
++ for(const t of state.legacyRecords){const row=document.createElement('div');row.className='record';row.textContent=`LEGACY: ไม่มี dataset/session context ยืนยันทำซ้ำไม่ได้ · ${t.side} ${t.qty} BTC · net ${t.net} · ${t.reason}`;el.append(row)}
++ if(!state.runs.length&&!state.legacyRecords.length)el.textContent='ยังไม่มีรอบฝึก';
+ }
+-try{
+-  journalRaw=localStorage.getItem('axiom_records');
+-  const parsed=journalRaw===null?[]:JSON.parse(journalRaw);
+-  if(!Array.isArray(parsed)||!parsed.every(validRecord))throw Error('รูปแบบบันทึกไม่ถูกต้อง');
+-  records=parsed;
+-  journalWritable=true;
+-}catch(e){
+-  $('#storage-status').textContent=journalRaw===null
+-    ?'อ่านบันทึกในเบราว์เซอร์ไม่ได้ กรุณาอนุญาตการเก็บข้อมูลแล้วโหลดหน้าใหม่ ระหว่างนี้ดูกราฟและเดิน replay ได้ แต่เปิดสถานะใหม่ไม่ได้'
+-    :'บันทึกเดิมเสียหรือรูปแบบไม่ถูกต้อง ระบบเก็บต้นฉบับไว้และหยุดเปิดสถานะใหม่ กดส่งออก JSON ในหน้าบันทึกเพื่อสำรองต้นฉบับสำหรับกู้คืน';
++function download(text,name,type='application/json'){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
++$('#export').onclick=()=>{
++ if(verifiedState)download(JSON.stringify({...state,exportedAt:new Date().toISOString()},null,2),'axiom-trading-lab-v2.json');
++ else download(JSON.stringify({warning:'RAW RECOVERY ONLY ไม่ใช่ไฟล์สำหรับ import; เก็บต้นฉบับไว้',v2:raw,legacy:oldRaw},null,2),'axiom-trading-lab-recovery.json');
++};
++async function replace(readText){
++ if(!storageAccess||busy||loading||current()?.position)return;
++ busy=true;controls();
++ try{const text=typeof readText==='function'?await readText():readText;const imported=await verify(parse(text));
++  if(!confirm('แทน snapshot ทั้งหมดด้วยไฟล์นี้? ระบบจะสำรอง snapshot ปัจจุบันใน browser ก่อน แต่ควรส่งออก JSON เก็บภายนอกด้วย'))return;
++  busy=false;
++  const ok=await transact(s=>{if(M.active(s)?.position)throw Error('ปิดสถานะก่อนนำเข้า');for(const k of Object.keys(s))delete s[k];Object.assign(s,imported)},{backup:true,recovery:true});
++  if(ok){loaded=M.data(state);awaitingStart=false;if(loaded){const r=current();$('#capital').value=r.initial;$('#replay-date').value=new Date(loaded.candles[r.startIndex].time*1000).toISOString().slice(0,16);draw()}else if(series)series.setData([]);status.textContent='นำเข้า snapshot ผ่าน schema, ledger และ SHA256 แล้ว';render()}
++ }catch(e){say('นำเข้าไม่สำเร็จ ข้อมูลเดิมยังอยู่: '+e.message)}
++ finally{busy=false;render()}
+ }
+-
+-function canTrade(){return !loading&&running&&!!candles[index]}
+-function syncControls(){
+-  const ready=canTrade();
+-  $('#load').disabled=loading||!!position;
+-  $('#start').disabled=loading||!!position||!candles.length;
+-  $('#next').disabled=!ready||index>=candles.length-1;
+-  $('#long').disabled=$('#short').disabled=!ready||!!position||!journalWritable;
+-  $('#close').disabled=!ready||!position;
+-  $('#export').disabled=!journalWritable&&journalRaw===null;
+-}
+-function makeChart(){
+-  if(!window.LightweightCharts)throw Error('โหลดกราฟไม่สำเร็จ ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต');
+-  if(chart)return;
+-  chart=LightweightCharts.createChart($('#chart'),{width:$('#chart').clientWidth,height:$('#chart').clientHeight,layout:{background:{color:'#101c29'},textColor:'#aabbc8'},grid:{vertLines:{color:'#1c3040'},horzLines:{color:'#1c3040'}},timeScale:{timeVisible:true,secondsVisible:false},rightPriceScale:{borderColor:'#304454'}});
+-  series=chart.addCandlestickSeries({upColor:'#51c8a8',downColor:'#ef7580',borderVisible:false,wickUpColor:'#51c8a8',wickDownColor:'#ef7580'});
+-}
+-window.addEventListener('resize',()=>{if(chart)chart.applyOptions({width:$('#chart').clientWidth,height:$('#chart').clientHeight})});
+-$('#load').onclick=async()=>{
+-  if(loading)return;
+-  if(position)return alert('กรุณาปิดสถานะและบันทึกให้สำเร็จก่อนโหลดข้อมูลใหม่');
+-  loading=true;
+-  syncControls();
+-  status.textContent='กำลังโหลดแท่งเทียน Binance ย้อนหลัง 90 วัน…';
+-  try{
+-    const end=Date.now(),begin=end-90*86400000;
+-    let cursor=begin,rows=[];
+-    while(cursor<end){
+-      const u=new URL('https://fapi.binance.com/fapi/v1/klines');
+-      u.search=new URLSearchParams({symbol:'BTCUSDT',interval:'15m',startTime:String(cursor),endTime:String(end),limit:'1000'});
+-      const res=await fetch(u);
+-      if(!res.ok)throw Error('Binance ตอบกลับ HTTP '+res.status);
+-      const data=await res.json();
+-      if(!Array.isArray(data))throw Error('รูปแบบข้อมูลแท่งเทียนไม่ถูกต้อง');
+-      if(!data.length)break;
+-      if(data.some(r=>!Array.isArray(r)||r.length<7||!Number.isFinite(r[0])||!Number.isFinite(r[6])))throw Error('ข้อมูลเวลาไม่ถูกต้อง');
+-      rows.push(...data.filter(r=>r[6]<end));
+-      const next=data[data.length-1][0]+900000;
+-      if(next<=cursor)throw Error('ข้อมูลเวลาไม่ต่อเนื่อง');
+-      cursor=next;
+-    }
+-    const nextCandles=rows.map(r=>({time:r[0]/1000,open:+r[1],high:+r[2],low:+r[3],close:+r[4]}));
+-    if(nextCandles.length<201)throw Error('ข้อมูลไม่เพียงพอ');
+-    for(let i=0;i<nextCandles.length;i++){
+-      const c=nextCandles[i];
+-      if(![c.open,c.high,c.low,c.close].every(v=>Number.isFinite(v)&&v>0)||c.low>Math.min(c.open,c.close)||c.high<Math.max(c.open,c.close)||c.low>c.high)throw Error('ราคาแท่งเทียนไม่ถูกต้อง');
+-      if(i&&c.time-nextCandles[i-1].time!==900)throw Error('พบช่องว่างในข้อมูลแท่งเทียน ไม่สามารถเริ่ม replay อย่างน่าเชื่อถือ');
+-    }
+-    // Keep the previous run intact until the replacement dataset and chart are ready.
+-    makeChart();
+-    series.setData([]);
+-    candles=nextCandles;
+-    index=-1;running=false;balance=initial=0;
+-    $('#clock').textContent='ยังไม่เริ่ม';
+-    $('#account').textContent='เริ่มรอบใหม่เพื่อจำลอง';
+-    status.textContent=`โหลดแล้ว ${candles.length.toLocaleString()} แท่ง · ${new Date(candles[0].time*1000).toLocaleString('th-TH')} ถึง ${new Date(candles.at(-1).time*1000).toLocaleString('th-TH')} · Binance Futures`;
+-  }catch(e){
+-    status.textContent='โหลดไม่สำเร็จ: '+e.message+(candles.length?' · เก็บรอบเดิมไว้ สามารถฝึกต่อหรือลองโหลดอีกครั้ง':' · ลองโหลดอีกครั้งหลังตรวจเครือข่ายและการเข้าถึง Binance');
+-  }finally{
+-    loading=false;
+-    syncControls();
+-  }
+-};
+-function update(){
+-  if(!running||!candles[index])return syncControls();
+-  const c=candles[index],pnl=position?(c.close-position.entry)*position.qty*(position.side==='Long'?1:-1):0;
+-  $('#clock').textContent=new Date(c.time*1000).toLocaleString('th-TH',{timeZone:'Asia/Bangkok'})+' · ปิด '+c.close.toLocaleString()+' USDT';
+-  $('#account').textContent=`เงินสดจำลอง ${balance.toFixed(2)} USDT · ${position?position.side+' '+position.qty+' BTC | P&L ยังไม่ปิด '+pnl.toFixed(2)+' USDT':'ไม่มีสถานะ'} · มูลค่าประมาณ ${(balance+pnl).toFixed(2)} USDT`;
+-  syncControls();
+-}
+-$('#start').onclick=()=>{
+-  if(loading||!candles.length)return;
+-  if(position)return alert('กรุณาปิดสถานะและบันทึกให้สำเร็จก่อนเริ่มรอบใหม่');
+-  const v=Number($('#capital').value);
+-  if(!Number.isFinite(v)||v<=0)return alert('ระบุเงินทุนมากกว่า 0');
+-  index=199;balance=initial=v;running=true;
+-  series.setData(candles.slice(0,index+1));
+-  chart.timeScale().fitContent();
+-  update();
+-};
+-$('#next').onclick=()=>{
+-  if(canTrade()&&index<candles.length-1){index++;series.update(candles[index]);update()}
+-};
+-function open(side){
+-  if(!canTrade()||position||!journalWritable)return;
+-  const qty=Number($('#qty').value),fee=Number($('#fee').value);
+-  if(!Number.isFinite(qty)||qty<=0||!Number.isFinite(fee)||fee<0)return alert('ตรวจสอบขนาดสถานะและค่าธรรมเนียม');
+-  const price=candles[index].close,entryFee=price*qty*fee/100;
+-  if(!Number.isFinite(price*qty)||!Number.isFinite(entryFee)||entryFee>=balance)return alert('เงินทุนไม่เพียงพอหรือขนาดสถานะสูงเกินคำนวณ');
+-  balance-=entryFee;
+-  position={side,qty,entry:price,entryFee,fee,reason:$('#reason').value,opened:candles[index].time};
+-  update();
+-}
+-$('#long').onclick=()=>open('Long');
+-$('#short').onclick=()=>open('Short');
+-$('#close').onclick=()=>{
+-  if(!canTrade()||!position||!journalWritable)return;
+-  const price=candles[index].close,exitFee=price*position.qty*position.fee/100,gross=(price-position.entry)*position.qty*(position.side==='Long'?1:-1),net=gross-position.entryFee-exitFee;
+-  const record={...position,exit:price,closed:candles[index].time,gross,net,exitFee,startingCapital:initial};
+-  if(!validRecord(record)||!Number.isFinite(balance+gross-exitFee))return alert('คำนวณรายการไม่ได้ กรุณาตรวจขนาดสถานะ');
+-  const nextRecords=[record,...records];
+-  let serialized;
+-  try{
+-    // Persist first: a failed write must leave balance, records and position untouched.
+-    // Refuse to overwrite another tab's changes or externally damaged journal.
+-    if(localStorage.getItem('axiom_records')!==journalRaw)throw Error('บันทึกถูกเปลี่ยนจากอีกหน้าต่าง กรุณาสำรองข้อมูลก่อนโหลดหน้าใหม่');
+-    serialized=JSON.stringify(nextRecords);
+-    localStorage.setItem('axiom_records',serialized);
+-  }catch(e){
+-    $('#storage-status').textContent='บันทึกปิดสถานะไม่สำเร็จ ยอดเงินและสถานะยังไม่เปลี่ยน: '+e.message+' · สำรองบันทึกเดิมด้วยส่งออก JSON แล้วแก้การเก็บข้อมูลก่อนลองปิดอีกครั้ง อย่าเพิ่งปิดหน้า';
+-    return;
+-  }
+-  journalRaw=serialized;records=nextRecords;balance+=gross-exitFee;position=null;
+-  $('#storage-status').textContent='บันทึกปิดสถานะสำเร็จ';
+-  update();
+-};
+-function renderRecords(){
+-  const el=$('#records');el.replaceChildren();
+-  if(!journalWritable){el.textContent='อ่านบันทึกไม่ได้ ต้นฉบับไม่ได้ถูกแก้ไข ดูข้อความแจ้งเตือนด้านบน';return}
+-  if(!records.length){el.textContent='ยังไม่มีรายการที่ปิดสถานะ';return}
+-  for(const r of records){const d=document.createElement('div');d.className='record';d.textContent=`${r.side} ${r.qty} BTC | ${new Date(r.opened*1000).toLocaleString('th-TH')} → ${new Date(r.closed*1000).toLocaleString('th-TH')} | ${r.entry} → ${r.exit} USDT | ผลสุทธิ ${r.net.toFixed(2)} USDT | เหตุผล: ${r.reason||'ไม่ได้ระบุ'}`;el.append(d)}
+-}
+-$('#export').onclick=()=>{
+-  if(!journalWritable&&journalRaw===null)return;
+-  const a=document.createElement('a');
+-  a.href=URL.createObjectURL(new Blob([journalWritable?JSON.stringify(records,null,2):journalRaw],{type:journalWritable?'application/json':'text/plain'}));
+-  a.download=journalWritable?'axiom-trading-journal.json':'axiom-trading-journal-recovery.txt';
+-  a.click();URL.revokeObjectURL(a.href);
+-};
+-syncControls();
++$('#import').onclick=()=>{const f=$('#import-file').files[0];if(!f)return say('เลือกไฟล์ JSON ก่อน');if(f.size>12*1024*1024)return say('ไฟล์เกิน 12 MiB');return replace(()=>f.text())};
++$('#restore').onclick=async()=>{try{const saved=localStorage.getItem(BACKUP);if(!saved)return say('ยังไม่มี backup ก่อน import');await replace(saved)}catch(e){say('อ่าน backup ไม่สำเร็จ: '+e.message)}};
++window.addEventListener('storage',e=>{if(e.key===KEY||e.key===OLD||e.key===null){readable=false;say('ข้อมูลเปลี่ยนจากอีกแท็บ หยุดเขียนเพื่อรักษาข้อมูล ส่งออก snapshot ของแท็บนี้ก่อนโหลดหน้าใหม่');controls()}});
++window.addEventListener('beforeunload',e=>{if(busy||loading){e.preventDefault();e.returnValue=''}});
++$('#limitations').textContent=M.LIMITATIONS.join('\n');
++controls();boot();
+--- a/dist/index.html
++++ b/dist/index.html
+@@ -1,3 +1,3 @@
+ <!doctype html>
+ <html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AXIOM Trading Lab</title><link rel="stylesheet" href="style.css"><script src="https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script></head>
+-<body><header><div><span class="eyebrow">AXIOM ORACLE / PERSONAL RESEARCH</span><h1>Trading Lab <span>จำลอง</span></h1><p>ติดตามตลาด · ฝึกตัดสินใจ · เก็บบทเรียน</p></div><div class="badge">SIMULATION ONLY</div></header><main><nav><button class="active" data-view="market">ภาพตลาด</button><button data-view="replay">ฝึกเทรด BTC</button><button data-view="journal">บันทึกการฝึก</button></nav><p id="storage-status" class="note" role="status" aria-live="polite"></p><section id="market" class="view"><div class="heading"><div><small>MARKET OVERVIEW</small><h2>กราฟ TradingView</h2><p>กราฟสำหรับติดตามตลาด ข้อมูลและความล่าช้าขึ้นกับ TradingView และตลาดต้นทาง</p></div><select id="symbol"><option value="BINANCE:BTCUSDT.P">BTCUSDT Perpetual · Binance</option><option value="SET:SET">SET Index</option><option value="SET:PTT">PTT</option><option value="SET:ADVANC">ADVANC</option></select></div><div class="widget" id="tv"></div><div class="note">กราฟนี้แสดงข้อมูลของ TradingView แยกจากข้อมูล Binance ที่ใช้ในโหมดฝึกเทรด</div></section><section id="replay" class="view hidden"><div class="heading"><div><small>REPLAY / BTCUSDT PERPETUAL</small><h2>ฝึกเทรดด้วยข้อมูลย้อนหลัง</h2><p>แท่ง 15 นาที · เปิดเผยข้อมูลทีละแท่ง · Binance USDⓈ-M Futures</p></div><button id="load">โหลดข้อมูล 90 วัน</button></div><p id="status" class="note" role="status" aria-live="polite">กดโหลดข้อมูลก่อนเริ่มฝึก ระบบไม่ใช้ API key และไม่เชื่อมบัญชี</p><div class="grid"><div><div id="chart"></div><div class="controls"><button id="start" disabled>เริ่มรอบใหม่</button><button id="next" disabled>แท่งถัดไป →</button><span id="clock">ยังไม่เริ่ม</span></div></div><aside><h3>คำสั่งจำลอง</h3><label>เงินทุนเริ่มต้น (USDT)<input id="capital" type="number" value="10000" min="1"></label><label>ขนาดสถานะ (BTC)<input id="qty" type="number" value="0.001" min="0.000001" step="0.001"></label><label>ค่าธรรมเนียมต่อด้าน (%)<input id="fee" type="number" value="0.05" min="0" step="0.01"></label><label>เหตุผล / กลยุทธ์<textarea id="reason" placeholder="บันทึกเหตุผลก่อนเข้าเทรด"></textarea></label><div class="controls"><button id="long" disabled>Long</button><button id="short" disabled>Short</button><button id="close" disabled>ปิดสถานะ</button></div><div id="account" class="account">เริ่มรอบใหม่เพื่อจำลอง</div><p class="small">ราคาจำลองใช้ราคาปิดแท่งปัจจุบัน ไม่มี leverage, margin, liquidation, funding หรือ slippage จึงไม่ใช่แบบจำลอง Futures ที่ครบถ้วน</p></aside></div></section><section id="journal" class="view hidden"><div class="heading"><div><small>DECISION JOURNAL</small><h2>บันทึกการฝึก</h2><p>บันทึกเก็บในเบราว์เซอร์เครื่องนี้เท่านั้น</p></div><button id="export">ส่งออก JSON</button></div><div id="records" class="records"></div></section></main><footer>AXIOM · สร้างพื้นที่สำหรับคิด ทดลอง และเรียนรู้</footer><script src="app.js"></script></body></html>
++<body><header><div><span class="eyebrow">AXIOM ORACLE / PERSONAL RESEARCH</span><h1>Trading Lab <span>จำลอง</span></h1><p>ติดตามตลาด · ฝึกตัดสินใจ · เก็บบทเรียน</p></div><div class="badge">SIMULATION ONLY</div></header><main><nav><button class="active" data-view="market">ภาพตลาด</button><button data-view="replay">ฝึกเทรด BTC</button><button data-view="journal">บันทึกการฝึก</button></nav><p id="storage-status" class="note" role="status" aria-live="polite"></p><section id="market" class="view"><div class="heading"><div><small>MARKET OVERVIEW</small><h2>กราฟ TradingView</h2><p>กราฟสำหรับติดตามตลาด ข้อมูลและความล่าช้าขึ้นกับ TradingView และตลาดต้นทาง</p></div><select id="symbol" aria-label="เลือกตลาดจาก TradingView"><option value="BINANCE:BTCUSDT.P">BTCUSDT Perpetual · Binance</option><option value="SET:SET">SET Index</option><option value="SET:PTT">PTT</option><option value="SET:ADVANC">ADVANC</option></select></div><p id="market-availability" class="note" role="status" aria-live="polite"></p><a id="market-link" target="_blank" rel="noopener">เปิดกราฟบน TradingView ภายนอก</a><p id="market-status" class="note" role="status"></p><div class="widget" id="tv"></div><p class="note">หุ้นไทยอาจล่าช้าหรือ symbol ใช้ไม่ได้ตามสิทธิ์ตลาด/ภูมิภาค ตรวจสถานะใน widget ก่อนใช้ ข้อมูลนี้ไม่ใช้คำนวณผลฝึก ระบบไม่ยืนยันราคาปัจจุบันและไม่เติมราคาทดแทน</p><a href="https://www.tradingview.com/" target="_blank" rel="noopener">Charts by TradingView</a><div class="note">กราฟนี้แสดงข้อมูลของ TradingView แยกจากข้อมูล Binance ที่ใช้ในโหมดฝึกเทรด</div></section><section id="replay" class="view hidden"><div class="heading"><div><small>REPLAY / BTCUSDT PERPETUAL</small><h2>ฝึกเทรดด้วยข้อมูลย้อนหลัง</h2><p>แท่ง 15 นาที · เปิดเผยข้อมูลทีละแท่ง · Binance USDⓈ-M Futures</p></div><button id="load">โหลดข้อมูล 90 วัน</button></div><p id="status" class="note" role="status" aria-live="polite">กดโหลดข้อมูลก่อนเริ่มฝึก ระบบไม่ใช้ API key และไม่เชื่อมบัญชี</p><details open class="limitations"><summary>ข้อจำกัดและกติกาก่อนฝึก</summary><p id="limitations"></p><label class="check"><input id="ack" type="checkbox"> ฉันอ่านกติกาและข้อจำกัดแล้ว เริ่มแบบฝึกส่วนตัว</label></details><p id="dataset-info" class="note"></p><label>เวลาเปิดแท่งเริ่ม replay (UTC, ทุก 15 นาที)<input id="replay-date" type="datetime-local" step="900"></label><label>ชื่อ / เป้าหมายรอบฝึก<input id="run-label" maxlength="200" placeholder="เช่น ฝึกตัดสินใจตามกฎที่กำหนดเอง"></label><div class="grid"><div><div id="chart"></div><p class="note">แกนเวลา replay เป็น UTC; ปุ่มเข้า/ออกใช้ราคาปิด ณ เวลาเปิดแท่ง +15 นาที เห็นเพียงแท่งถึงเวลาปัจจุบันของ replay</p><a href="https://www.tradingview.com/" target="_blank" rel="noopener">Replay chart: TradingView Lightweight Charts</a><div class="controls"><button id="start" disabled>เริ่มรอบใหม่</button><button id="next" disabled>แท่งถัดไป →</button><span id="clock">ยังไม่เริ่ม</span></div></div><aside><h3>คำสั่งจำลอง</h3><label>เงินทุนเริ่มต้น (USDT)<input id="capital" type="number" value="10000" min="1"></label><label>ขนาดสถานะ (BTC)<input id="qty" type="number" value="0.001" min="0.000001" step="0.001"></label><label>ค่าธรรมเนียมต่อด้าน (%)<input id="fee" type="number" value="0.05" min="0" step="0.01"></label><label>เหตุผล / กลยุทธ์<textarea id="reason" placeholder="บันทึกเหตุผลก่อนเข้าเทรด"></textarea></label><div class="controls"><button id="long" disabled>Long</button><button id="short" disabled>Short</button><button id="close" disabled>ปิดสถานะ</button></div><div id="account" class="account">เริ่มรอบใหม่เพื่อจำลอง</div><p class="small">ราคาจำลองใช้ราคาปิดแท่งปัจจุบัน ไม่มี leverage, margin, liquidation, funding หรือ slippage จึงไม่ใช่แบบจำลอง Futures ที่ครบถ้วน</p></aside></div></section><section id="journal" class="view hidden"><div class="heading"><div><small>DECISION JOURNAL</small><h2>บันทึกการฝึก</h2><p>snapshot รวม dataset, session ที่เปิดค้าง, ledger และข้อจำกัด เก็บใน browser/origin นี้เท่านั้น ส่งออกเก็บภายนอกก่อนล้างข้อมูล/ย้ายเครื่อง</p></div><button id="export">ส่งออก JSON</button></div><div class="controls"><label>เลือก snapshot JSON v2 (ไม่เกิน 12 MiB)<input id="import-file" type="file" accept="application/json,.json"></label><button id="import">นำเข้าแทน snapshot</button><button id="restore">คืน backup ก่อน import</button></div><p class="note">นำเข้าตรวจ schema / version / ราคา / ledger / SHA256 และไม่รับไฟล์รุ่นที่ไม่รองรับ ไม่มี merge อัตโนมัติ การนำเข้าจะเก็บ snapshot เดิมเป็น backup หนึ่งชุดใน browser; backup ก็อาจหายเมื่อล้างข้อมูล จึงต้องส่งออก JSON ภายนอกด้วย ใช้งานหนึ่งแท็บเป็นหลัก แท็บอื่นที่ข้อมูลเก่าจะหยุดเขียน</p><div id="records" class="records"></div></section></main><footer>AXIOM · สร้างพื้นที่สำหรับคิด ทดลอง และเรียนรู้<br>TradingView Lightweight Charts™ · Copyright (с) 2024 TradingView, Inc. · <a href="https://www.tradingview.com/" target="_blank" rel="noopener">TradingView</a> · <a href="NOTICE.txt">NOTICE</a></footer><script src="model.js"></script><script src="app.js"></script></body></html>
+--- /dev/null
++++ b/dist/model.js
+@@ -0,0 +1,89 @@
++/* AXIOM personal replay model. No account connectivity or automatic strategies. */
++(function(root,factory){const api=factory();if(typeof module==='object')module.exports=api;else root.LabModel=api;})(globalThis,()=>{
++'use strict';
++const VERSION='2.0.0',SCHEMA=2,STEP=900;
++const LIMITATIONS=Object.freeze([
++ 'แบบฝึก P&L เชิงเส้นเท่านั้น ไม่ใช่บัญชี Futures หรือ backtest อัตโนมัติ',
++ 'BTCUSDT USDⓈ-M Perpetual เป็นสมมติฐานต้นแบบ ยังไม่ยืนยันประเภทสัญญาจากผู้ใช้',
++ 'เปิดและปิดที่ราคาปิดแท่งที่เห็นทันทีหลังแท่งปิด ไม่มี order book หรือการจับคู่จริง อาจมองโลกในแง่ดี',
++ 'ค่าธรรมเนียม % ต่อด้าน = ราคา × BTC × อัตรา/100 ล็อกอัตราตอนเข้า; net = gross − fee เข้า − fee ออก',
++ 'ไม่จำลอง leverage, margin, liquidation, funding, spread, slippage, partial fills, stop loss หรือ take profit; ไม่กันเงินต้นตาม notional และยอดอาจติดลบ',
++ 'ซ่อนแท่งอนาคตเฉพาะใน replay; dataset ทั้งหมดอยู่ใน browser และภาพตลาดดูแยกได้ ไม่ใช่ blind research',
++ 'ข้อมูลจาก Binance public USDⓈ-M klines; TradingView แยกแหล่ง/เวลาและอาจล่าช้า ไม่ตรวจเทียบราคากับแหล่งที่สอง',
++ 'เก็บเฉพาะ browser/origin นี้ ไม่ซิงก์ข้ามเครื่อง พื้นที่เต็มหรือล้าง browser อาจสูญหาย ต้องสำรอง JSON ภายนอก'
++]);
++function ensure(ok,msg){if(!ok)throw Error(msg);}
++const finite=n=>typeof n==='number'&&Number.isFinite(n);
++const near=(a,b)=>finite(a)&&finite(b)&&Math.abs(a-b)<=1e-8*Math.max(1,Math.abs(a),Math.abs(b));
++const str=(s,max=10000)=>typeof s==='string'&&s.length<=max;
++const id=s=>str(s,100)&&/^[a-zA-Z0-9_-]+$/.test(s);
++function same(a,b){return JSON.stringify(a)===JSON.stringify(b);}
++function dataset(d){
++ ensure(d&&id(d.id)&&d.source==='Binance public USDⓈ-M klines'&&d.symbol==='BTCUSDT'&&d.interval==='15m'&&d.timezone==='UTC'&&finite(d.fetchedAt),'dataset metadata ไม่ถูกต้อง');
++ ensure(Array.isArray(d.candles)&&d.candles.length>=2&&d.candles.length<=100000,'จำนวนแท่งไม่ถูกต้อง');
++ d.candles.forEach((c,i)=>{
++  ensure(c&&Number.isSafeInteger(c.time)&&c.time>=0&&c.time%STEP===0&&['open','high','low','close'].every(k=>finite(c[k])&&c[k]>0)&&c.low<=Math.min(c.open,c.close)&&c.high>=Math.max(c.open,c.close)&&c.low<=c.high,'OHLC/เวลาไม่ถูกต้องที่แท่ง '+i);
++  if(i)ensure(c.time-d.candles[i-1].time===STEP,'ข้อมูลขาด/ซ้ำ/เรียงผิดที่ '+new Date(c.time*1000).toISOString());
++ });
++ ensure(d.start===d.candles[0].time&&d.end===d.candles.at(-1).time+STEP,'ขอบเขต dataset ไม่ตรง');
++ ensure(Number.isSafeInteger(d.fetchedAt)&&d.fetchedAt>=d.end*1000&&d.fetchedAt<=Date.now(),'dataset มีแท่งอนาคต/ยังไม่ปิด หรือ fetchedAt อยู่ในอนาคต');
++ ensure(typeof d.sha256==='string'&&/^[a-f0-9]{64}$/.test(d.sha256),'dataset SHA256 ไม่ถูกต้อง');
++ return d;
++}
++function costs(side,qty,entry,exit,fee){
++ const entryFee=entry*qty*fee/100,exitFee=exit*qty*fee/100;
++ const gross=(exit-entry)*qty*(side==='Long'?1:-1),net=(gross-entryFee-exitFee)||0;
++ ensure([entryFee,exitFee,gross,net].every(finite),'คำนวณเกินขอบเขต');return {entryFee,exitFee,gross,net};
++}
++function position(p,d){
++ ensure(p&&['Long','Short'].includes(p.side)&&finite(p.qty)&&p.qty>0&&finite(p.fee)&&p.fee>=0&&p.fee<=100&&str(p.reason),'ขนาด/ด้าน/fee/เหตุผล ไม่ถูกต้อง');
++ ensure(Number.isInteger(p.entryIndex)&&!!d.candles[p.entryIndex]&&p.entry===d.candles[p.entryIndex].close&&p.opened===d.candles[p.entryIndex].time+STEP,'ราคา/เวลาเข้าไม่ตรงกับ dataset');
++ ensure(near(p.entryFee,p.entry*p.qty*p.fee/100),'ค่าธรรมเนียมเข้าไม่ตรง');
++}
++function legacyRecord(r){
++ ensure(r&&['Long','Short'].includes(r.side)&&['qty','entry','exit','opened','closed','gross','net','entryFee','exitFee','fee','startingCapital'].every(k=>finite(r[k]))&&r.qty>0&&r.entry>0&&r.exit>0&&r.opened>=0&&r.closed>=r.opened&&r.fee>=0&&r.fee<=100&&r.startingCapital>0&&str(r.reason),'legacy journal ไม่ถูกต้อง');
++ const c=costs(r.side,r.qty,r.entry,r.exit,r.fee);for(const k of Object.keys(c))ensure(near(r[k],c[k]),'legacy arithmetic ไม่ตรง');return r;
++}
++function validate(s){
++ ensure(s&&s.schemaVersion===SCHEMA&&s.engineVersion===VERSION&&same(s.limitations,LIMITATIONS),'schema/engine/ข้อจำกัดไม่ตรงกับเวอร์ชันนี้');
++ ensure(Array.isArray(s.datasets)&&s.datasets.length<=100&&Array.isArray(s.runs)&&s.runs.length<=100&&Array.isArray(s.legacyRecords)&&s.legacyRecords.length<=10000,'โครงสร้าง journal ไม่ถูกต้อง');
++ s.legacyRecords.forEach(legacyRecord);
++ const ds=new Map();s.datasets.forEach(d=>{dataset(d);ensure(!ds.has(d.id),'dataset ID ซ้ำ');ds.set(d.id,d)});
++ const ids=new Set();
++ s.runs.forEach(r=>{
++  ensure(r&&id(r.id)&&!ids.has(r.id)&&ds.has(r.datasetId),'run ID/dataset ไม่ถูกต้อง');ids.add(r.id);
++  const d=ds.get(r.datasetId);
++  ensure(finite(r.createdAt)&&finite(r.initial)&&r.initial>0&&finite(r.balance)&&Number.isInteger(r.startIndex)&&r.startIndex>=0&&Number.isInteger(r.index)&&r.index>=r.startIndex&&r.index<d.candles.length&&str(r.label,200)&&Array.isArray(r.trades)&&r.trades.length<=10000,'run settings ไม่ถูกต้อง');
++  let cash=r.initial,previous=r.startIndex;
++  for(const t of r.trades){
++   position(t,d);
++   ensure(t.entryIndex>=previous&&Number.isInteger(t.exitIndex)&&t.exitIndex>=t.entryIndex&&t.exitIndex<=r.index&&t.exit===d.candles[t.exitIndex].close&&t.closed===d.candles[t.exitIndex].time+STEP,'เวลา/ราคาปิดไม่ตรง');
++   const c=costs(t.side,t.qty,t.entry,t.exit,t.fee);for(const k of Object.keys(c))ensure(near(t[k],c[k]),'trade arithmetic ไม่ตรง');
++   ensure(t.entryFee<cash,'เงินไม่พอจ่าย fee เข้า');cash+=t.net;previous=t.exitIndex;
++  }
++  if(r.position){position(r.position,d);ensure(r.position.entryIndex>=previous&&r.position.entryIndex<=r.index&&r.position.entryFee<cash,'สถานะเปิดไม่ถูกต้อง');cash-=r.position.entryFee;}
++  ensure(near(cash,r.balance),'ยอดเงินไม่ตรง ledger');
++ });
++ ensure(s.activeRunId===null||ids.has(s.activeRunId),'active run ไม่พบ');
++ ensure(s.runs.every(r=>!r.position||r.id===s.activeRunId),'มีสถานะเปิดใน run ที่พักอยู่');
++ return s;
++}
++function empty(legacyRecords=[]){return {schemaVersion:SCHEMA,engineVersion:VERSION,limitations:[...LIMITATIONS],datasets:[],runs:[],activeRunId:null,legacyRecords};}
++function active(s){return s.runs.find(r=>r.id===s.activeRunId)||null;}
++function data(s,r=active(s)){return r?s.datasets.find(d=>d.id===r.datasetId):null;}
++function start(s,d,capital,startIndex,label,runId,now){
++ ensure(!active(s)?.position,'ปิดสถานะก่อนเริ่มรอบใหม่');dataset(d);
++ ensure(finite(capital)&&capital>0&&Number.isInteger(startIndex)&&startIndex>=0&&startIndex<d.candles.length,'ทุน/วันเริ่มไม่ถูกต้อง');
++ if(!s.datasets.some(x=>x.id===d.id))s.datasets.push(d);
++ s.runs.push({id:runId,datasetId:d.id,createdAt:now,label,initial:capital,balance:capital,startIndex,index:startIndex,position:null,trades:[]});s.activeRunId=runId;return validate(s);
++}
++function next(s){const r=active(s),d=data(s);ensure(r&&r.index<d.candles.length-1,'ถึงท้ายข้อมูลแล้ว');r.index++;return validate(s);}
++function open(s,side,qty,fee,reason){const r=active(s),d=data(s);ensure(r&&!r.position,'ยังไม่พร้อมเปิดสถานะ');const c=d.candles[r.index];
++ const p={side,qty,fee,reason,entryIndex:r.index,entry:c.close,opened:c.time+STEP,entryFee:c.close*qty*fee/100};position(p,d);
++ ensure(p.entryFee<r.balance,'เงินไม่พอจ่าย fee เข้า');r.balance-=p.entryFee;r.position=p;return validate(s);
++}
++function close(s){const r=active(s),d=data(s);ensure(r?.position,'ไม่มีสถานะเปิด');const p=r.position,c=d.candles[r.index],calc=costs(p.side,p.qty,p.entry,c.close,p.fee);
++ r.trades.push({...p,...calc,exit:c.close,exitIndex:r.index,closed:c.time+STEP});r.balance+=calc.gross-calc.exitFee;r.position=null;return validate(s);
++}
++return {VERSION,SCHEMA,STEP,LIMITATIONS,validate,dataset,legacyRecord,empty,active,data,start,next,open,close,costs};
++});
+--- a/dist/style.css
++++ b/dist/style.css
+@@ -1,2 +1,6 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap');
+ :root{color-scheme:dark;font-family:'IBM Plex Sans Thai',sans-serif;background:#08101a;color:#e6edf2}*{box-sizing:border-box}body{margin:0}header,main,footer{max-width:1440px;margin:auto;padding:28px 5%}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #253240}h1{font-size:32px;margin:4px 0}h1 span{font-size:14px;color:#f0b85a;border:1px solid #805e2d;border-radius:30px;padding:4px 10px}p{color:#9aafbd;margin:6px 0}.eyebrow,small{letter-spacing:.15em;color:#d5aa63;font-size:11px}.badge{color:#7bd5c4;border:1px solid #325d59;border-radius:30px;padding:8px 13px;font-size:12px}nav{display:flex;gap:10px;border-bottom:1px solid #253240;margin-bottom:28px}button,select,input,textarea{font:inherit;color:inherit;background:#142333;border:1px solid #324455;border-radius:7px;padding:10px 14px}button{cursor:pointer}button:hover,.active{border-color:#d7af6c;color:#f1cc8b}button:disabled{opacity:.4;cursor:not-allowed}nav button{border:0;background:transparent;border-radius:0;padding:12px}.active{border-bottom:2px solid #d7af6c}h2{margin:4px 0;font-size:24px}h3{margin-top:0}.heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:20px}.widget,#chart{height:540px;background:#101c29;border:1px solid #263949;border-radius:10px;overflow:hidden}.grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:18px}aside{background:#101c29;border:1px solid #263949;border-radius:10px;padding:20px}label{display:block;color:#aabbc8;font-size:13px;margin:13px 0}input,textarea{display:block;width:100%;margin-top:5px}textarea{min-height:70px;resize:vertical}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:15px 0}.note,.small{font-size:13px;line-height:1.6}.note{color:#91aabb;margin:12px 0}.small{color:#d5aa63}.account,.records{line-height:1.8}.record{padding:15px;border:1px solid #263949;border-radius:8px;margin:10px 0}.hidden{display:none}footer{font-size:12px;color:#71879a;border-top:1px solid #253240}@media(max-width:800px){.grid{grid-template-columns:1fr}.heading{align-items:start;flex-direction:column}.widget,#chart{height:420px}header{gap:15px}h1{font-size:26px}}
++
++:focus-visible{outline:3px solid #7bd5c4;outline-offset:3px}a{color:#7bd5c4}.limitations{border:1px solid #805e2d;border-radius:8px;padding:16px;margin:16px 0}.limitations p{white-space:pre-line;line-height:1.8;color:#d5bd94}.check{display:flex;gap:10px;align-items:center}.check input{width:auto;margin:0;min-width:22px;min-height:22px}.note,.record,.account,#clock{overflow-wrap:anywhere}select{max-width:100%}button{min-height:44px}nav{flex-wrap:wrap}.badge{flex-shrink:0}#dataset-info{font-size:12px}@media(max-width:480px){header{flex-wrap:wrap}nav{gap:0}nav button{padding:12px 8px}input,select,textarea{max-width:100%}}
++
++.grid>*{min-width:0}#chart{min-width:0;width:100%}@media(max-width:800px){.grid{grid-template-columns:minmax(0,1fr)}}
+--- a/tests/browser.cjs
++++ b/tests/browser.cjs
+@@ -1,108 +1,149 @@
+-// Optional: PLAYWRIGHT_MODULE=/path/to/playwright node tests/browser.cjs
+-// Real Chromium + chart bundle; deterministic network fixtures, not a live-market test.
+-const {chromium}=require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+-const assert=require('node:assert/strict');
+-const fs=require('node:fs');
+-const path=require('node:path');
+-const http=require('node:http');
+-const dist=process.env.AXIOM_DIST || path.join(__dirname,'../dist');
+-const artifacts=process.env.AXIOM_BROWSER_ARTIFACTS || '/tmp/axiom-browser-results';
+-const chartBundle=process.env.AXIOM_CHART_BUNDLE;
+-const results=[];
++// Chromium acceptance with real chart v4.2.3; synthetic prices ONLY in this suite.
++const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
++const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),http=require('node:http');
++const dist=process.env.AXIOM_DIST||path.join(__dirname,'../dist'),artifacts=process.env.AXIOM_BROWSER_ARTIFACTS||'/tmp/axiom-browser-results-v2';
++const KEY='axiom_lab_v2',BACKUP='axiom_lab_v2_backup',results=[],errors=[];
++results.push=function(s){console.log(s);return Array.prototype.push.call(this,s)};
+ fs.mkdirSync(artifacts,{recursive:true});
+-const server=http.createServer((req,res)=>{
+-  const name=req.url==='/'?'index.html':req.url.slice(1);
+-  if(!['index.html','app.js','style.css'].includes(name)){res.writeHead(404);res.end();return}
+-  res.setHeader('Content-Type',name.endsWith('.js')?'text/javascript':name.endsWith('.css')?'text/css':'text/html');
+-  res.end(fs.readFileSync(path.join(dist,name)));
+-});
+-(async()=>{
+-  let browser;
+-  try{
+-    await new Promise(r=>server.listen(0,'127.0.0.1',r));
+-    const origin=`http://127.0.0.1:${server.address().port}`;
+-    browser=await chromium.launch({headless:true});
+-    const context=await browser.newContext({viewport:{width:1280,height:900},acceptDownloads:true});
+-    const page=await context.newPage(),errors=[];
+-    page.on('pageerror',e=>errors.push(e.message));
+-    let pending=null,hold=false,fail=false;
+-    const base=Math.floor((Date.now()-90*86400000)/900000)*900000+900000;
+-    const rows=Array.from({length:202},(_,i)=>[base+i*900000,'100','111','89',i<200?'100':'110','1',base+(i+1)*900000-1]);
+-    await context.route('**/*',async route=>{
+-      const u=new URL(route.request().url());
+-      if(u.hostname==='127.0.0.1')return route.continue();
+-      if(u.hostname==='unpkg.com'){
+-        if(chartBundle)return route.fulfill({path:chartBundle,contentType:'text/javascript'});
+-        return route.continue();
+-      }
+-      if(u.hostname==='fapi.binance.com'){
+-        if(hold)await new Promise(r=>{pending=r});
+-        if(fail)return route.fulfill({status:503,body:'unavailable',headers:{'access-control-allow-origin':'*'}});
+-        return route.fulfill({json:rows.filter(r=>r[0]>=Number(u.searchParams.get('startTime'))),headers:{'access-control-allow-origin':'*'}});
+-      }
+-      return route.abort(); // Widget/fonts intentionally outside deterministic regression scope.
+-    });
+-    await page.goto(origin);
+-    await page.click('[data-view="replay"]');
+-    await page.fill('#qty','1');
+-    await page.click('#load');await page.waitForFunction(()=>!document.querySelector('#start').disabled);
+-    await page.click('#start');await page.click('#long');await page.click('#next');
+-    const before=await page.locator('#account').innerText();
+-    await page.evaluate(()=>{
+-      window.originalSetItem=Storage.prototype.setItem;
+-      Storage.prototype.setItem=function(k,v){if(k==='axiom_records'&&window.failJournal)throw new DOMException('Storage full','QuotaExceededError');return window.originalSetItem.call(this,k,v)};
+-      window.failJournal=true;
+-    });
+-    await page.click('#close');await page.click('#close');
+-    assert.equal(await page.locator('#account').innerText(),before);
+-    assert.equal(await page.evaluate(()=>localStorage.getItem('axiom_records')),null);
+-    assert.equal(await page.locator('#load').isDisabled(),true);
+-    assert.equal(await page.locator('#start').isDisabled(),true);
+-    page.on('dialog',d=>d.dismiss());
+-    await page.evaluate(()=>{document.querySelector('#start').onclick();document.querySelector('#load').onclick()});
+-    assert.equal(await page.locator('#account').innerText(),before);
+-    await page.evaluate(()=>{window.failJournal=false});await page.click('#close');
+-    assert.match(await page.locator('#account').innerText(),/10009\.90/);
+-    assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('axiom_records')).length),1);
+-    results.push('quota failure/repeated close/retry and open-position reset/reload guards: PASS');
++const server=http.createServer((req,res)=>{const file=req.url==='/'?'index.html':req.url.slice(1);if(!['index.html','app.js','model.js','style.css'].includes(file)){res.writeHead(404);return res.end()};res.setHeader('Content-Type',file.endsWith('.js')?'text/javascript':file.endsWith('.css')?'text/css':'text/html');res.end(fs.readFileSync(path.join(dist,file)))});
++(async()=>{let browser;try{
++ await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin=`http://127.0.0.1:${server.address().port}`;
++ browser=await chromium.launch({headless:true});
++ const ctx=await browser.newContext({viewport:{width:1280,height:900},acceptDownloads:true});
++ let mode='ok',hold=false,releaseNetwork;
++ const end=Math.floor(Date.now()/900000)*900000,base=end-90*86400000;
++ const rows=Array.from({length:8640},(_,i)=>[base+i*900000,'100','120','80',i<200?'100':'110','1',base+(i+1)*900000-1]);
++ await ctx.route('**/*',async route=>{const u=new URL(route.request().url());if(u.hostname==='127.0.0.1')return route.continue();
++  if(u.hostname==='unpkg.com')return process.env.AXIOM_CHART_BUNDLE?route.fulfill({path:process.env.AXIOM_CHART_BUNDLE,contentType:'text/javascript'}):route.continue();
++  if(u.hostname==='fapi.binance.com'){
++   if(hold)await new Promise(r=>releaseNetwork=r);
++   if(mode==='http')return route.fulfill({status:503,body:'test failure'});
++   let fixture=rows;if(mode==='gap')fixture=rows.filter((_,i)=>i!==202);
++   if(mode==='duplicate')fixture=[...rows.slice(0,202),rows[201],...rows.slice(202)];
++   if(mode==='badClose')fixture=rows.map((r,i)=>i===201?[...r.slice(0,6),r[6]+1]:r);
++   return route.fulfill({json:fixture.filter(r=>r[0]>=Number(u.searchParams.get('startTime'))).slice(0,1000)});
++  }return route.abort(); // deterministic suite never claims live widget/feed success
++ });
++ const page=await ctx.newPage();let confirms=0;page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>{confirms++;d.accept()});
++ const click=async id=>{await page.click('#'+id);await page.waitForFunction(()=>!document.querySelector('#export').disabled)};
++ const snap=()=>page.evaluate(k=>localStorage.getItem(k),KEY);
++ const state=async()=>JSON.parse(await snap());
++ async function load(){await page.click('#load');await page.waitForFunction(()=>!document.querySelector('#load').disabled)}
++ async function importJSON(obj){await page.setInputFiles('#import-file',{name:'snapshot.json',mimeType:'application/json',buffer:Buffer.from(typeof obj==='string'?obj:JSON.stringify(obj))});await click('import')}
++ await page.goto(origin);await page.waitForFunction(()=>!document.querySelector('#export').disabled);
++ for(const symbol of ['SET:SET','SET:PTT','SET:ADVANC']){await page.selectOption('#symbol',symbol);assert.match(await page.locator('#market-availability').innerText(),/ไม่รองรับ/);assert.equal(new URL(await page.locator('#market-link').getAttribute('href')).searchParams.get('symbol'),symbol)}
++ results.push('SET restriction displayed immediately with exact external TradingView symbol links even when embed network blocked: PASS');
++ await page.click('[data-view="replay"]');
++ await page.fill('#qty','1');await load();await click('start');assert.equal(await snap(),null); // explicit acknowledgement
++ await page.check('#ack');await click('start');
++ assert.equal((await state()).runs[0].index,199);
++ assert.equal(await page.evaluate(()=>series.data().length),200); // future hidden in actual chart series
++ const selected=new Date(base+250*900000).toISOString().slice(0,16);
++ await page.fill('#replay-date',selected);await click('start');assert.equal((await state()).runs.at(-1).startIndex,250);
++ const invalid=new Date(base+251*900000+60000).toISOString().slice(0,16);await page.fill('#replay-date',invalid);const beforeDate=await snap();await click('start');assert.equal(await snap(),beforeDate);
++ await page.fill('#replay-date',new Date(base+199*900000).toISOString().slice(0,16));await click('start');
++ results.push('UTC start selection/exact quarter hour, acknowledgement, real chart prefix without future candles: PASS');
++ await click('long');await click('next');const open=await snap(),before=await page.locator('#account').innerText();
++ await page.evaluate(()=>{window.originalSet=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k==='axiom_lab_v2'&&window.failWrite)throw Error('QuotaExceededError');return window.originalSet.call(this,k,v)};window.failWrite=true});
++ await click('close');await click('close');assert.equal(await snap(),open);assert.equal(await page.locator('#account').innerText(),before);
++ await page.evaluate(()=>{document.querySelector('#start').onclick();document.querySelector('#load').onclick()});assert.equal(await snap(),open);
++ await page.reload();await page.waitForFunction(()=>!document.querySelector('#export').disabled);await page.click('[data-view="replay"]');assert.equal(await snap(),open);assert.match(await page.locator('#account').innerText(),/Long 1 BTC/);
++ await click('close');await page.evaluate(()=>document.querySelector('#close').onclick());assert.equal((await state()).runs.at(-1).trades.length,1);assert.equal((await state()).runs.at(-1).trades[0].net,9.895);
++ await page.fill('#qty','1');await click('short');await page.fill('#fee','9');await click('close');assert.equal((await state()).runs.at(-1).trades[1].net,-0.11);
++ results.push('quota/retry/double close, reset/load open-position guards, reload preserves open position, Long/Short and frozen entry fee: PASS');
++ const prior=await snap();hold=true;mode='http';await page.click('#load');await page.waitForFunction(()=>document.querySelector('#start').disabled);
++ await page.evaluate(()=>{document.querySelector('#start').onclick();document.querySelector('#long').onclick();document.querySelector('#next').onclick()});assert.equal(await snap(),prior);
++ while(!releaseNetwork)await new Promise(r=>setTimeout(r,10));hold=false;releaseNetwork();await page.waitForFunction(()=>!document.querySelector('#load').disabled);assert.equal(await snap(),prior);
++ for(const failure of ['gap','duplicate','badClose']){mode=failure;await load();assert.match(await page.locator('#status').innerText(),/โหลดไม่สำเร็จ/);assert.equal(await snap(),prior)}
++ mode='ok';await load();assert.equal(await page.locator('#long').isDisabled(),true);
++ await page.check('#ack');await click('start');
++ results.push('pending/failed reload guards; missing, duplicate and malformed close-time datasets rejected without replacing run: PASS');
++ await page.click('[data-view="journal"]');const dl=page.waitForEvent('download');await click('export');const exported=JSON.parse(fs.readFileSync(await (await dl).path(),'utf8'));
++ assert.equal(exported.schemaVersion,2);assert.ok(exported.limitations.some(s=>s.includes('liquidation')));assert.ok(exported.datasets[0].sha256);
++ const beforeImport=await snap();await importJSON('{bad');assert.equal(await snap(),beforeImport);
++ const invalidCases=[s=>s.schemaVersion=99,s=>s.runs[0].balance+=1,s=>s.datasets[0].candles[0].close+=1,s=>s.datasets[0].fetchedAt=s.datasets[0].end*1000-1,s=>s.datasets[0].fetchedAt=Date.now()+3600000];
++ for(const edit of invalidCases){const bad=JSON.parse(JSON.stringify(exported));edit(bad);await importJSON(bad);assert.equal(await snap(),beforeImport)}
++ await importJSON(exported);assert.equal(await page.evaluate(k=>localStorage.getItem(k),BACKUP),beforeImport);
++ await click('restore');assert.equal(JSON.parse(await snap()).runs.length,exported.runs.length);
++ results.push('JSON download has dataset/schema/limitations; invalid JSON/version/ledger/checksum/future candles rejected; validated import and pre-import backup restore: PASS');
++ // Hold SHA256 to reproduce the reviewer-reported import race, then invoke handlers directly.
++ await page.setInputFiles('#import-file',{name:'snapshot.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(exported))});
++ await page.evaluate(()=>{window.realDigest=crypto.subtle.digest.bind(crypto.subtle);crypto.subtle.digest=async(...args)=>{await new Promise(r=>window.releaseDigest=r);return window.realDigest(...args)}});
++ const preRace=await snap(),confirmsBefore=confirms;
++ await page.evaluate(()=>{document.querySelector('#import').onclick()});await page.waitForFunction(()=>typeof window.releaseDigest==='function');
++ await page.click('[data-view="replay"]');assert.equal(await page.locator('#long').isDisabled(),true);
++ await page.evaluate(()=>{document.querySelector('#long').onclick();document.querySelector('#start').onclick();document.querySelector('#next').onclick();document.querySelector('#restore').onclick();document.querySelector('#import').onclick()});
++ assert.equal(await snap(),preRace);
++ await page.evaluate(()=>{crypto.subtle.digest=window.realDigest;window.releaseDigest()});await page.waitForFunction(()=>!document.querySelector('#export').disabled);
++ assert.equal(confirms,confirmsBefore+1);assert.equal((await state()).runs.at(-1).position,null);
++ await page.fill('#qty','1');await click('long');const held=await snap();
++ await page.evaluate(()=>{document.querySelector('#import').onclick();document.querySelector('#restore').onclick()});assert.equal(await snap(),held);await click('close');
++ results.push('delayed SHA256 import locks direct trade/start/next/import/restore handlers; one confirmation only; existing position blocks import/restore: PASS');
++ // Multi-tab conflict uses actual Web Locks and storage events.
++ const other=await ctx.newPage();other.on('pageerror',e=>errors.push(e.message));await other.goto(origin);await other.waitForFunction(()=>!document.querySelector('#export').disabled);
++ await click('next');await other.waitForFunction(()=>document.querySelector('#storage-status').textContent.includes('อีกแท็บ'));
++ const shared=await snap();await other.evaluate(()=>{document.querySelector('#long').onclick();document.querySelector('#start').onclick()});assert.equal(await snap(),shared);await other.close();
++ results.push('second tab detects external snapshot and stale handlers cannot overwrite it: PASS');
++ // File.text is async too: lock before reading, not just before digest.
++ await page.click('[data-view="journal"]');
++ await page.evaluate(()=>{window.realFileText=File.prototype.text;File.prototype.text=async function(){await new Promise(r=>window.releaseFileRead=r);return window.realFileText.call(this)}});
++ const beforeRead=await snap();
++ await page.evaluate(()=>{document.querySelector('#import').onclick()});await page.waitForFunction(()=>typeof window.releaseFileRead==='function');
++ await page.evaluate(()=>{document.querySelector('#long').onclick();document.querySelector('#import').onclick();document.querySelector('#restore').onclick()});
++ assert.equal(await snap(),beforeRead);
++ await page.evaluate(()=>{File.prototype.text=window.realFileText;window.releaseFileRead()});await page.waitForFunction(()=>!document.querySelector('#export').disabled);
++ assert.equal((await state()).runs.at(-1).position,null);
++ results.push('delayed File.text also locks trading and duplicate import/restore before validation: PASS');
++ // Block all writes in each account transition: no action may partially commit.
++ await page.click('[data-view="replay"]');await page.check('#ack');
++ await page.evaluate(()=>{window.realStorageWrite=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k==='axiom_lab_v2'&&window.rejectWrite)throw Error('test quota');return window.realStorageWrite.call(this,k,v)};window.rejectWrite=true});
++ const noWrite=await snap();await click('start');await click('next');await click('long');assert.equal(await snap(),noWrite);
++ await page.evaluate(()=>window.rejectWrite=false);
++ await page.click('[data-view="journal"]');const beforeBackup=await snap();
++ await page.evaluate(()=>{window.backupStorageWrite=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k==='axiom_lab_v2_backup')throw Error('backup quota');return window.backupStorageWrite.call(this,k,v)}});
++ await importJSON(exported);assert.equal(await snap(),beforeBackup);
++ await page.evaluate(()=>Storage.prototype.setItem=window.backupStorageWrite);
++ results.push('start/next/open write failure and pre-import backup failure leave current snapshot untouched: PASS');
++ await page.click('[data-view="replay"]');
+ 
+-    const closedAccount=await page.locator('#account').innerText();
+-    hold=true;fail=true;await page.click('#load');
+-    await page.waitForFunction(()=>document.querySelector('#load').disabled);
+-    for(const id of ['start','next','long','short','close'])assert.equal(await page.locator('#'+id).isDisabled(),true,id);
+-    await page.evaluate(()=>{document.querySelector('#start').onclick();document.querySelector('#long').onclick();document.querySelector('#next').onclick()});
+-    assert.equal(await page.locator('#account').innerText(),closedAccount);
+-    while(!pending)await new Promise(r=>setTimeout(r,10));hold=false;pending();pending=null;
+-    await page.waitForFunction(()=>document.querySelector('#status').textContent.includes('เก็บรอบเดิม'));
+-    assert.equal(await page.locator('#account').innerText(),closedAccount);
+-    fail=false;await page.click('#load');await page.waitForFunction(()=>!document.querySelector('#start').disabled);
+-    assert.equal(await page.locator('#long').isDisabled(),true);
+-    await page.click('#start');await page.click('#short');await page.click('#next');await page.click('#close');
+-    assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('axiom_records'))[0].net),-10.105);
+-    results.push('pending/failed/successful dataset reload and Short arithmetic: PASS');
+-
+-    await page.click('[data-view="journal"]');
+-    const download=page.waitForEvent('download');await page.click('#export');
+-    const saved=await download;assert.equal(JSON.parse(fs.readFileSync(await saved.path(),'utf8')).length,2);
+-    await page.reload();await page.click('[data-view="journal"]');assert.equal(await page.locator('.record').count(),2);
+-    await page.setViewportSize({width:390,height:844});await page.click('[data-view="replay"]');
+-    await page.click('#load');await page.waitForFunction(()=>!document.querySelector('#start').disabled);await page.click('#start');
+-    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+-    const canvasHeight=await page.locator('#chart canvas').first().evaluate(e=>e.getBoundingClientRect().height);
+-    assert.ok(canvasHeight>0&&canvasHeight<=420);
+-    await page.screenshot({path:path.join(artifacts,'mobile.png'),fullPage:true});
+-    results.push('real localStorage reload, JSON download and mobile chart sizing: PASS');
+-
+-    await context.addInitScript(()=>localStorage.setItem('axiom_records','{damaged'));
+-    await page.reload();await page.click('[data-view="replay"]');await page.click('#load');
+-    await page.waitForFunction(()=>!document.querySelector('#start').disabled);await page.click('#start');
+-    assert.equal(await page.locator('#long').isDisabled(),true);assert.equal(await page.locator('#next').isDisabled(),false);
+-    assert.equal(await page.evaluate(()=>localStorage.getItem('axiom_records')),'{damaged');
+-    await page.click('[data-view="journal"]');const recovery=page.waitForEvent('download');await page.click('#export');
+-    const raw=await recovery;assert.equal(fs.readFileSync(await raw.path(),'utf8'),'{damaged');
+-    assert.equal(errors.length,0,errors.join('\n'));
+-    results.push('corrupt journal preserves/exports raw original, replay still works; no page errors: PASS');
+-    console.log(JSON.stringify({scope:'Chromium with real chart library, fixture market responses; widget/fonts blocked',results},null,2));
+-    fs.writeFileSync(path.join(artifacts,'results.json'),JSON.stringify({results,errors},null,2));
+-  }finally{if(browser)await browser.close();server.close()}
++ // Wait for resize handlers and chart layout, then assert measurable containment.
++ // Screenshots are artifacts only; none are used as a layout delay.
++ async function settledLayout(){
++  await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
++  await page.waitForFunction(()=>{
++   const chart=document.querySelector('#chart'),account=document.querySelector('#account');
++   const canvas=chart.querySelector('canvas');if(!canvas)return false;
++   const c=chart.getBoundingClientRect(),a=canvas.getBoundingClientRect();
++   return document.documentElement.scrollWidth<=innerWidth&&account.scrollWidth<=account.clientWidth
++     &&a.width>0&&a.height>0&&a.right<=c.right+1&&a.bottom<=c.bottom+1;
++  },null,{polling:'raf',timeout:5000});
++ }
++ const layouts=[];
++ for(const label of ['W'.repeat(200),'']){
++  await page.setViewportSize({width:1280,height:900});
++  await page.fill('#run-label',label);await click('start');
++  assert.equal((await state()).runs.at(-1).label,label);
++  for(const viewport of [{width:1280,height:900},{width:390,height:844}]){
++   await page.setViewportSize(viewport);await settledLayout();
++   const box=await page.evaluate(()=>({viewport:innerWidth,scroll:document.documentElement.scrollWidth,accountWidth:document.querySelector('#account').clientWidth,accountScroll:document.querySelector('#account').scrollWidth,chartHeight:document.querySelector('#chart canvas').getBoundingClientRect().height}));
++   assert.equal(box.scroll<=box.viewport,true);assert.equal(box.accountScroll<=box.accountWidth,true);
++   assert.ok(box.chartHeight>0&&box.chartHeight<=(viewport.width===390?420:540));
++   layouts.push({label:label?'200 unbroken W characters':'empty label / generated UUID',...box});
++  }
++ }
++ fs.writeFileSync(path.join(artifacts,'layout-results.json'),JSON.stringify(layouts,null,2));
++ await page.locator('#next').focus();await page.keyboard.press('Enter');await page.waitForFunction(()=>!document.querySelector('#export').disabled);await settledLayout();
++ await page.screenshot({path:path.join(artifacts,'mobile.png'),fullPage:true});
++ await page.setViewportSize({width:1280,height:900});await settledLayout();
++ await page.screenshot({path:path.join(artifacts,'desktop.png'),fullPage:true});
++ results.push('200-character unbroken run label and empty-label UUID fit desktop/mobile after chart-filled resize settles; keyboard activation: PASS');
++ // Fresh context with damaged originals: export raw and recover through validated import without deleting old data.
++ await page.evaluate(()=>{localStorage.setItem('axiom_records','{legacy-damaged');localStorage.setItem('axiom_lab_v2','{v2-damaged')});await page.reload();await page.waitForFunction(()=>!document.querySelector('#export').disabled);
++ await page.click('[data-view="journal"]');const rawDL=page.waitForEvent('download');await click('export');const recovery=JSON.parse(fs.readFileSync(await (await rawDL).path(),'utf8'));assert.equal(recovery.v2,'{v2-damaged');assert.equal(recovery.legacy,'{legacy-damaged');
++ await importJSON(exported);assert.equal(await page.evaluate(()=>localStorage.getItem('axiom_records')),'{legacy-damaged');assert.equal(await page.evaluate(k=>localStorage.getItem(k),BACKUP),'{v2-damaged');
++ assert.equal((await state()).schemaVersion,2);
++ results.push('damaged v2/legacy originals exported exactly; validated recovery import preserves original legacy and backup of damaged snapshot: PASS');
++ assert.deepEqual(errors,[]);
++ fs.writeFileSync(path.join(artifacts,'results.json'),JSON.stringify({scope:'Chromium, actual chart, synthetic Binance fixtures, external widget/fonts blocked',results,errors},null,2));console.log(JSON.stringify({results,errors},null,2));
++ }finally{if(browser)await browser.close();server.close()}
+ })().catch(e=>{console.error(e);process.exitCode=1});
+--- /dev/null
++++ b/tests/model.cjs
+@@ -0,0 +1,15 @@
++const {test}=require('node:test'),assert=require('node:assert/strict'),crypto=require('node:crypto');
++const M=require('../dist/model.js');
++const copy=s=>JSON.parse(JSON.stringify(s));
++function dataset(){const candles=Array.from({length:5},(_,i)=>({time:900000+i*900,open:100,high:120,low:80,close:i<2?100:110}));return {id:'fixture',source:'Binance public USDⓈ-M klines',symbol:'BTCUSDT',interval:'15m',timezone:'UTC',fetchedAt:(candles.at(-1).time+900)*1000,start:candles[0].time,end:candles.at(-1).time+900,candles,sha256:crypto.createHash('sha256').update(JSON.stringify(candles)).digest('hex')}}
++function run(){const s=M.empty();M.start(s,dataset(),10000,1,'test','run_1',1);return s}
++for(const [side,expected] of [['Long',9.895],['Short',-10.105]])test(side+' ledger includes both fees once and locks entry rate',()=>{const s=run();M.open(s,side,1,0.05,'reason');assert.equal(M.active(s).balance,9999.95);M.next(s);M.close(s);assert.ok(Math.abs(M.active(s).balance-(10000+expected))<1e-9);assert.equal(M.active(s).trades[0].net,expected);assert.throws(()=>M.close(s));M.validate(s)});
++test('round-trip open session preserves dataset, index, position and balance',()=>{const s=run();M.open(s,'Short',1,0.05,'x');M.next(s);const restored=copy(s);M.validate(restored);assert.deepEqual(restored,s);M.close(restored);assert.equal(M.active(restored).trades[0].net,-10.105)});
++test('same-candle round trip charges both fees; zero fee supported',()=>{const s=run();M.open(s,'Long',1,0.05,'');M.close(s);assert.equal(M.active(s).trades[0].net,-0.1);M.open(s,'Short',1,0,'');M.close(s);assert.equal(M.active(s).trades[1].net,0)});
++test('end of data blocks next but allows close; reset cannot discard open position',()=>{const s=run();M.open(s,'Long',1,0,'');assert.throws(()=>M.start(s,dataset(),1,0,'','other',1));while(M.active(s).index<4)M.next(s);assert.throws(()=>M.next(s));M.close(s);M.validate(s)});
++test('reject gaps, duplicates, inverted OHLC, invalid time, boundaries',()=>{for(const edit of [d=>d.candles[2].time+=900,d=>d.candles[2].time=d.candles[1].time,d=>d.candles[0].low=200,d=>d.candles[0].time+=1,d=>d.end+=900]){const d=dataset();edit(d);assert.throws(()=>M.dataset(d))}});
++test('schema import rejects tampered ledger/fee/price/index/version/limitations',()=>{const s=run();M.open(s,'Long',1,0.05,'');M.next(s);M.close(s);for(const edit of [s=>s.schemaVersion=99,s=>s.engineVersion='bad',s=>s.limitations=[],s=>s.runs[0].balance+=1,s=>s.runs[0].trades[0].net+=1,s=>s.runs[0].trades[0].exit=900,s=>s.runs[0].trades[0].entryFee=0,s=>s.runs[0].index=0,s=>s.runs.push(s.runs[0])]){const bad=copy(s);edit(bad);assert.throws(()=>M.validate(bad))}});
++test('invalid quantities, fees and overflow rejected; no notional/margin assumption',()=>{for(const [qty,fee] of [[0,0],[-1,0],[Infinity,0],[1,-1],[1,101],[1,NaN],[Number.MAX_VALUE,1]])assert.throws(()=>M.open(run(),'Long',qty,fee,''));const s=run();M.open(s,'Short',100000,0,'no margin model');M.next(s);M.close(s);assert.ok(M.active(s).balance<0);M.validate(s)});
++test('legacy arithmetic checked and original records retained separately',()=>{const s=run();M.open(s,'Long',1,0.05,'old');M.next(s);M.close(s);const t={...M.active(s).trades[0],startingCapital:10000};M.legacyRecord(t);M.validate(M.empty([t]));t.net+=1;assert.throws(()=>M.legacyRecord(t))});
++
++test('import rejects future/incomplete datasets and future fetchedAt',()=>{for(const edit of [d=>d.fetchedAt=d.end*1000-1,d=>d.fetchedAt=Date.now()+3600000]){const d=dataset();edit(d);assert.throws(()=>M.dataset(d))}});
+--- a/tests/regression.cjs
++++ b/tests/regression.cjs
+@@ -1,80 +1,2 @@
+-const {test} = require('node:test');
+-const assert = require('node:assert/strict');
+-const fs = require('node:fs');
+-const vm = require('node:vm');
+-const path = require('node:path');
+-const source = fs.readFileSync(process.env.AXIOM_APP || path.join(__dirname, '../dist/app.js'), 'utf8');
+-
+-// Stub only browser/service boundaries; drive actual click handlers and visible output.
+-function browser(stored = '[]', options = {}) {
+-  const nodes = new Map(), alerts = [], blobs = [];
+-  const values = {capital:'10000', qty:'1', fee:'0.05', reason:'regression', symbol:'BINANCE:BTCUSDT.P'};
+-  function node(id) {
+-    if (!nodes.has(id)) nodes.set(id, {value:values[id] || '', textContent:'', disabled:['start','next','long','short','close'].includes(id), clientWidth:800, style:{}, children:[], classList:{toggle(){}}, append(c){this.children.push(c)}, replaceChildren(){this.children=[]}, click(){this.clicked=true}});
+-    return nodes.get(id);
+-  }
+-  let saved=stored, failWrite=false, failRead=!!options.failRead, fetches=0;
+-  const now=Date.now(), base=Math.floor((now-90*86400000)/900000)*900000+900000;
+-  const rows=Array.from({length:202},(_,i)=>[base+i*900000,'100','111','89',i<200?'100':'110','1',base+(i+1)*900000-1]);
+-  const nav={dataset:{view:'journal'},classList:{toggle(){}}};
+-  const chart={remove(){},applyOptions(){},timeScale(){return {fitContent(){}}},addCandlestickSeries(){return {setData(){},update(){}}}};
+-  const URLStub=class extends URL {};
+-  URLStub.createObjectURL=b=>{blobs.push(b);return 'blob:fixture'};URLStub.revokeObjectURL=()=>{};
+-  const ctx={URL:URLStub,URLSearchParams,Blob,console,window:{LightweightCharts:{},addEventListener(){}},document:{querySelector:s=>node(s.slice(1)),querySelectorAll:s=>s==='nav button'?[nav]:[],createElement:tag=>node('created-'+tag)},LightweightCharts:{createChart:()=>chart},localStorage:{getItem(){if(failRead)throw Error('SecurityError');return saved},setItem(k,v){if(failWrite)throw Error('QuotaExceededError');saved=v}},alert:m=>alerts.push(m),fetch:async u=>{fetches++;return {ok:true,json:async()=>rows.filter(r=>r[0]>=Number(new URL(u).searchParams.get('startTime')))}}};
+-  function boot(){vm.runInNewContext(source,ctx)}
+-  boot();
+-  return {node,ctx,alerts,blobs,nav,boot,stored:()=>saved,fetches:()=>fetches,failWrite:v=>{failWrite=v},failRead:v=>{failRead=v},async load(){await node('load').onclick()},click:id=>node(id).onclick(),async start(){await this.load();this.click('start')},account:()=>node('account').textContent};
+-}
+-
+-test('journal write failure keeps account unchanged; retry closes once',async()=>{
+-  const b=browser();await b.start();b.click('long');b.click('next');const before=b.account();
+-  b.failWrite(true);assert.doesNotThrow(()=>b.click('close'));assert.doesNotThrow(()=>b.click('close'));
+-  assert.equal(b.account(),before);assert.equal(b.stored(),'[]');assert.equal(b.node('close').disabled,false);
+-  b.failWrite(false);b.click('close');assert.match(b.account(),/10009\.90/);assert.equal(JSON.parse(b.stored()).length,1);
+-  b.click('close');assert.equal(JSON.parse(b.stored()).length,1);
+-});
+-test('new round and reload cannot discard an open position',async()=>{
+-  const b=browser();await b.start();b.click('long');const before=b.account(), count=b.fetches();
+-  b.click('start');await b.load();assert.equal(b.account(),before);assert.equal(b.fetches(),count);
+-  b.click('close');assert.equal(JSON.parse(b.stored()).length,1);
+-});
+-test('loading blocks controls and handlers; failed reload restores the previous run',async()=>{
+-  const b=browser();await b.start();const before=b.account();let resolve;
+-  b.ctx.fetch=()=>new Promise(r=>{resolve=r});const pending=b.load();
+-  for(const id of ['start','next','long','short','close'])assert.equal(b.node(id).disabled,true,id);
+-  b.click('start');b.click('long');b.click('next');assert.equal(b.account(),before);
+-  resolve({ok:false,status:503});await pending;assert.equal(b.account(),before);assert.equal(b.node('long').disabled,false);
+-  b.click('long');b.click('close');assert.equal(JSON.parse(b.stored()).length,1);
+-});
+-test('successful reload requires starting a new run before trading',async()=>{
+-  const b=browser();await b.start();await b.load();assert.equal(b.node('start').disabled,false);
+-  for(const id of ['next','long','short','close'])assert.equal(b.node(id).disabled,true,id);
+-  b.click('long');assert.equal(b.stored(),'[]');b.click('start');b.click('short');b.click('next');b.click('close');
+-  assert.equal(JSON.parse(b.stored())[0].net,-10.105);
+-});
+-for(const damaged of ['{bad','{}','null','[null]','[{"side":"Long","net":"invalid"}]']){
+-  test(`invalid journal ${damaged} keeps original and lets user export recovery`,async()=>{
+-    let b;assert.doesNotThrow(()=>{b=browser(damaged)});await b.start();b.nav.onclick();
+-    assert.match(b.node('storage-status').textContent,/บันทึก/);assert.equal(b.node('long').disabled,true);
+-    b.click('long');assert.equal(b.stored(),damaged);b.click('export');assert.equal(await b.blobs[0].text(),damaged);
+-  });
+-}
+-test('unavailable localStorage does not abort startup or allow unsafe journal writes',async()=>{
+-  let b;assert.doesNotThrow(()=>{b=browser('[]',{failRead:true})});await b.start();assert.equal(b.node('long').disabled,true);
+-});
+-test('valid historical journal remains readable and new trades retain it',async()=>{
+-  const b=browser();await b.start();b.click('long');b.click('next');b.click('close');const saved=b.stored();
+-  const restored=browser(saved);restored.nav.onclick();assert.equal(restored.node('records').children.length,1);
+-  await restored.start();restored.click('short');restored.click('close');assert.equal(JSON.parse(restored.stored()).length,2);
+-});
+-test('first load failure leaves trading disabled and retry recovers',async()=>{
+-  const b=browser(),fetch=b.ctx.fetch;b.ctx.fetch=async()=>({ok:false,status:503});await b.load();
+-  for(const id of ['start','next','long','short','close'])assert.equal(b.node(id).disabled,true,id);
+-  assert.doesNotThrow(()=>{b.click('start');b.click('long');b.click('close')});
+-  b.ctx.fetch=fetch;await b.start();assert.equal(b.node('long').disabled,false);
+-});
+-test('another tab changing storage is preserved when closing',async()=>{
+-  const b=browser();await b.start();b.click('long');const before=b.account();
+-  b.ctx.localStorage.setItem('axiom_records','{external');b.click('close');
+-  assert.equal(b.stored(),'{external');assert.equal(b.account(),before);assert.equal(b.node('close').disabled,false);
+-});
++// Model/ledger regression; real DOM/storage coverage is in browser.cjs.
++require('./model.cjs');

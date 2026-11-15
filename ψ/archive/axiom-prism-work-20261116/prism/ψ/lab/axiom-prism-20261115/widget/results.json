@@ -1,0 +1,265 @@
+{
+  "checkedAt": "2026-11-15T15:37:44.770Z",
+  "scope": "actual TradingView iframe/layout and visible text; not price validation against second feed",
+  "results": [
+    {
+      "symbol": "BINANCE:BTCUSDT.P",
+      "viewport": {
+        "width": 1360,
+        "height": 960
+      },
+      "outer": {
+        "left": 68,
+        "top": 557.390625,
+        "right": 1292,
+        "bottom": 1097.390625,
+        "width": 1224,
+        "height": 540
+      },
+      "iframe": {
+        "left": 69,
+        "top": 558.390625,
+        "right": 1291,
+        "bottom": 1096.390625,
+        "width": 1222,
+        "height": 538
+      },
+      "scroll": 1360,
+      "width": 1360,
+      "canvas": 7,
+      "text": "1m\n30m\n1h\n15m\nIndicators\nB\nBitcoin / TetherUS PERPETUAL CONTRACT\n15\nBinance\nO\n64,608.7\nH\n64,760.0\nL\n64,576.2\nC\n64,613.3\n+5.3 (+0.01%)\nVol · BTC\n572"
+    },
+    {
+      "symbol": "BINANCE:BTCUSDT.P",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "outer": {
+        "left": 19.5,
+        "top": 828.375,
+        "right": 370.5,
+        "bottom": 1248.375,
+        "width": 351,
+        "height": 420
+      },
+      "iframe": {
+        "left": 20.5,
+        "top": 829.375,
+        "right": 369.5,
+        "bottom": 1247.375,
+        "width": 349,
+        "height": 418
+      },
+      "scroll": 390,
+      "width": 390,
+      "canvas": 7,
+      "text": "1m\n30m\n1h\n15m\nB\nBitcoin / TetherUS PERPETUAL CONTRACT\nC\n64,613.3\n+5.3 (+0.01%)\nVol · BTC\n572"
+    },
+    {
+      "symbol": "SET:SET",
+      "viewport": {
+        "width": 1360,
+        "height": 960
+      },
+      "outer": {
+        "left": 68,
+        "top": 557.390625,
+        "right": 1292,
+        "bottom": 1097.390625,
+        "width": 1224,
+        "height": 540
+      },
+      "iframe": {
+        "left": 69,
+        "top": 558.390625,
+        "right": 1291,
+        "bottom": 1096.390625,
+        "width": 1222,
+        "height": 538
+      },
+      "scroll": 1360,
+      "width": 1360,
+      "canvas": 7,
+      "text": "1m\n30m\n1h\n15m\nIndicators\nS\nSET:SET\n15\nO\n∅\nH\n∅\nL\n∅\nC\n∅\n∅ (∅%)\nThis symbol doesn't exist\nTry picking another one for your analysis, and you'll see the data here.\nChange symbol\nNotification\nThis symbol is only available on TradingView.\nOk\nclose"
+    },
+    {
+      "symbol": "SET:SET",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "outer": {
+        "left": 19.5,
+        "top": 842.96875,
+        "right": 370.5,
+        "bottom": 1262.96875,
+        "width": 351,
+        "height": 420
+      },
+      "iframe": {
+        "left": 20.5,
+        "top": 843.96875,
+        "right": 369.5,
+        "bottom": 1261.96875,
+        "width": 349,
+        "height": 418
+      },
+      "scroll": 390,
+      "width": 390,
+      "canvas": 7,
+      "text": "1m\n30m\n1h\n15m\nS\nSET:SET\nC\n∅\n∅ (∅%)\nThis symbol doesn't exist\nTry picking another one for your analysis, and you'll see the data here.\nNotification\nThis symbol is only available on TradingView.\nOk\nclose"
+    },
+    {
+      "symbol": "SET:PTT",
+      "viewport": {
+        "width": 1360,
+        "height": 960
+      },
+      "outer": {
+        "left": 68,
+        "top": 557.390625,
+        "right": 1292,
+        "bottom": 1097.390625,
+        "width": 1224,
+        "height": 540
+      },
+      "iframe": {
+        "left": 69,
+        "top": 558.390625,
+        "right": 1291,
+        "bottom": 1096.390625,
+        "width": 1222,
+        "height": 538
+      },
+      "scroll": 1360,
+      "width": 1360,
+      "canvas": 7,
+      "text": "1m\n30m\n1h\n15m\nIndicators\nP\nSET:PTT\n15\nO\n∅\nH\n∅\nL\n∅\nC\n∅\n∅ (∅%)\nThis symbol doesn't exist\nTry picking another one for your analysis, and you'll see the data here.\nChange symbol\nNotification\nThis symbol is only available on TradingView.\nOk\nclose"
+    },
+    {
+      "symbol": "SET:PTT",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "outer": {
+        "left": 19.5,
+        "top": 842.96875,
+        "right": 370.5,
+        "bottom": 1262.96875,
+        "width": 351,
+        "height": 420
+      },
+      "iframe": {
+        "left": 20.5,
+        "top": 843.96875,
+        "right": 369.5,
+        "bottom": 1261.96875,
+        "width": 349,
+        "height": 418
+      },
+      "scroll": 390,
+      "width": 390,
+      "canvas": 7,
+      "text": "1m\n30m\n1h\n15m\nP\nSET:PTT\nC\n∅\n∅ (∅%)\nThis symbol doesn't exist\nTry picking another one for your analysis, and you'll see the data here.\nNotification\nThis symbol is only available on TradingView.\nOk\nclose"
+    },
+    {
+      "symbol": "SET:ADVANC",
+      "viewport": {
+        "width": 1360,
+        "height": 960
+      },
+      "outer": {
+        "left": 68,
+        "top": 557.390625,
+        "right": 1292,
+        "bottom": 1097.390625,
+        "width": 1224,
+        "height": 540
+      },
+      "iframe": {
+        "left": 69,
+        "top": 558.390625,
+        "right": 1291,
+        "bottom": 1096.390625,
+        "width": 1222,
+        "height": 538
+      },
+      "scroll": 1360,
+      "width": 1360,
+      "canvas": 7,
+      "text": "1m\n30m\n1h\n15m\nIndicators\nA\nSET:ADVANC\n15\nO\n∅\nH\n∅\nL\n∅\nC\n∅\n∅ (∅%)\nThis symbol doesn't exist\nTry picking another one for your analysis, and you'll see the data here.\nChange symbol\nNotification\nThis symbol is only available on TradingView.\nOk\nclose"
+    },
+    {
+      "symbol": "SET:ADVANC",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "outer": {
+        "left": 19.5,
+        "top": 842.96875,
+        "right": 370.5,
+        "bottom": 1262.96875,
+        "width": 351,
+        "height": 420
+      },
+      "iframe": {
+        "left": 20.5,
+        "top": 843.96875,
+        "right": 369.5,
+        "bottom": 1261.96875,
+        "width": 349,
+        "height": 418
+      },
+      "scroll": 390,
+      "width": 390,
+      "canvas": 7,
+      "text": "1m\n30m\n1h\n15m\nA\nSET:ADVANC\nC\n∅\n∅ (∅%)\nThis symbol doesn't exist\nTry picking another one for your analysis, and you'll see the data here.\nNotification\nThis symbol is only available on TradingView.\nOk\nclose"
+    }
+  ],
+  "errors": [],
+  "failures": [
+    {
+      "url": "https://www.tradingview-widget.com/embed-widget/advanced-chart/?locale=th",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.tradingview-widget.com/support/support-portal-problems/?language=en",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://telemetry.tradingview.com/site-widget/report",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://telemetry.tradingview.com/widget/report",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.tradingview-widget.com/support/support-portal-problems/?language=en",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://telemetry.tradingview.com/widget/report",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://telemetry.tradingview.com/site-widget/report",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://www.tradingview-widget.com/support/support-portal-problems/?language=en",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://telemetry.tradingview.com/widget/report",
+      "error": "net::ERR_ABORTED"
+    },
+    {
+      "url": "https://telemetry.tradingview.com/site-widget/report",
+      "error": "net::ERR_ABORTED"
+    }
+  ]
+}

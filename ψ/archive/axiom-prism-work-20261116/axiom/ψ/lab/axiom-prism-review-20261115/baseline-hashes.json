@@ -1,0 +1,10 @@
+{
+  "PRISM-BRIEF.md": "801d557f4619262fae2cb5aabd5e533070f0fe6eb40fca3a24a917be6d037418",
+  "README.md": "34d7e8c6b3496b540915f3a1ea989eaea5f64fac73c7c689efa4af99dbf5c6b6",
+  ".openai/hosting.json": "632ee39a21b3645519b1ac4abbc6f6af18cd9ec113787bfce31092048a966cd7",
+  "dist/app.js": "7b7a129824148da0cbb1866b911449f1787cdc675c9345f4017d72f643666a08",
+  "dist/index.html": "4f18d3ba0302f867749db983dbd3f7debaa87e6c61460ddd155474ac9cefee84",
+  "dist/style.css": "59aa7b904243174ef6bf5f6e33dde7c85bfc195d741acbbfb87bda09444e8c51",
+  "tests/browser.cjs": "42e9a27bf0122dbbae1f9d37995119a1a22482c1e607e189e175f714ca7f5420",
+  "tests/regression.cjs": "3edcf50497da166894fb6df98f7867814d23872d78f0e0d231aa6295068ed08b"
+}

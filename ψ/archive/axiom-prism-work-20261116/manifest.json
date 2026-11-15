@@ -1,0 +1,826 @@
+{
+  "captured_at": "2026-11-16T00:10:23.186237+07:00",
+  "scope": "AXIOM/PRISM Trading Lab v2 source, review evidence, relevant 15-16 Nov memory and indicator design only",
+  "files": [
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/.openai/hosting.json",
+      "snapshot": "axiom/trading-lab/.openai/hosting.json",
+      "bytes": 88,
+      "sha256": "632ee39a21b3645519b1ac4abbc6f6af18cd9ec113787bfce31092048a966cd7"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/PRISM-BRIEF.md",
+      "snapshot": "axiom/trading-lab/PRISM-BRIEF.md",
+      "bytes": 10399,
+      "sha256": "801d557f4619262fae2cb5aabd5e533070f0fe6eb40fca3a24a917be6d037418"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/README.md",
+      "snapshot": "axiom/trading-lab/README.md",
+      "bytes": 15460,
+      "sha256": "62d912882a6fa311f59d0401d1d3f2084b14e6e2c722c4647e346c6420ce192b"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/dist/NOTICE.txt",
+      "snapshot": "axiom/trading-lab/dist/NOTICE.txt",
+      "bytes": 336,
+      "sha256": "22c69e3142d013c1a26205719dafdb07a430097f385575c214aa6672c4baa322"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/dist/app.js",
+      "snapshot": "axiom/trading-lab/dist/app.js",
+      "bytes": 18717,
+      "sha256": "cf43b5253d5a0816ba7363effe16caf1d1ea47a3a5cdd12fd4e9f518d903a76e"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/dist/index.html",
+      "snapshot": "axiom/trading-lab/dist/index.html",
+      "bytes": 7826,
+      "sha256": "f5d14bfaa749c982b59d91ca56141c909ee7b02733bb1db3e65776c0330d3aff"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/dist/model.js",
+      "snapshot": "axiom/trading-lab/dist/model.js",
+      "bytes": 9536,
+      "sha256": "3ebb6595d72a2fb28a3e2cdf2c4e16133170754fc8793cd20c520d2dd25d3c94"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/dist/style.css",
+      "snapshot": "axiom/trading-lab/dist/style.css",
+      "bytes": 3036,
+      "sha256": "9b922b0037cf7ec951e20e0ac7e8e60be886d14552893b7a296b255b4b680571"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/tests/browser.cjs",
+      "snapshot": "axiom/trading-lab/tests/browser.cjs",
+      "bytes": 16707,
+      "sha256": "f4d268382874e1f714056bccdf4248051a1c9e6a31a1bda36b7c91b770a9a5b8"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/tests/model.cjs",
+      "snapshot": "axiom/trading-lab/tests/model.cjs",
+      "bytes": 3542,
+      "sha256": "478274b2a4a57a216b46c5f7bb114baf35d5bca6e09bd507b50a20a290f61abf"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/trading-lab/tests/regression.cjs",
+      "snapshot": "axiom/trading-lab/tests/regression.cjs",
+      "bytes": 97,
+      "sha256": "b9228017613100c51a72306a7696f9b2162c13244a2ad900d27ec9d0abcdf590"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/PRISM-REVIEW-REPORT.md",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/PRISM-REVIEW-REPORT.md",
+      "bytes": 23943,
+      "sha256": "8ab2743a60520ee35df9350fbb7d128c9e99808419f5bfba9aabd724ff7c5910"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/PRISM-installer-results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/PRISM-installer-results.json",
+      "bytes": 957,
+      "sha256": "95e18dd413fb6d6c7a637201f8a7435192107cc54b87fb741cc78d0d415fa073"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/PRISM-layout-results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/PRISM-layout-results.json",
+      "bytes": 672,
+      "sha256": "4e056856ba107a36077e7addadf37db9097057fbe7cd3c3249238dfa3e67f4ed"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/PRISM-manifest.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/PRISM-manifest.json",
+      "bytes": 1842,
+      "sha256": "04518a8a9d1b4a299e61064e2a64dd7b219aeb22fa8a9bcda37871bb457b257a"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/PRISM-model-results.tap",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/PRISM-model-results.tap",
+      "bytes": 2153,
+      "sha256": "293cc7790b0858ad1cb57995bdc0a4da2f47cde4cbdf6abe2cd5b3be398601f8"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/PRISM-widget-results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/PRISM-widget-results.json",
+      "bytes": 7530,
+      "sha256": "86355a9e459463db09d83f98ce8b425f37a9ea47dd3f08d11f4a186572d8ca89"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/REPORT.txt",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/REPORT.txt",
+      "bytes": 6279,
+      "sha256": "a55bb9afe697bf650612255b965f865e90bb3fae965f1b9df4d0dca651a598db"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/acceptance.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/acceptance.json",
+      "bytes": 709,
+      "sha256": "942b77c863e791a9ed85b34f1ed090fc4004f93e2e25d8d5a1b0091395118fd9"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/baseline/.openai/hosting.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/baseline/.openai/hosting.json",
+      "bytes": 88,
+      "sha256": "632ee39a21b3645519b1ac4abbc6f6af18cd9ec113787bfce31092048a966cd7"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/baseline/PRISM-BRIEF.md",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/baseline/PRISM-BRIEF.md",
+      "bytes": 10399,
+      "sha256": "801d557f4619262fae2cb5aabd5e533070f0fe6eb40fca3a24a917be6d037418"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/baseline/README.md",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/baseline/README.md",
+      "bytes": 7157,
+      "sha256": "34d7e8c6b3496b540915f3a1ea989eaea5f64fac73c7c689efa4af99dbf5c6b6"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/baseline/dist/app.js",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/baseline/dist/app.js",
+      "bytes": 12484,
+      "sha256": "7b7a129824148da0cbb1866b911449f1787cdc675c9345f4017d72f643666a08"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/baseline/dist/index.html",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/baseline/dist/index.html",
+      "bytes": 4387,
+      "sha256": "4f18d3ba0302f867749db983dbd3f7debaa87e6c61460ddd155474ac9cefee84"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/baseline/dist/style.css",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/baseline/dist/style.css",
+      "bytes": 2289,
+      "sha256": "59aa7b904243174ef6bf5f6e33dde7c85bfc195d741acbbfb87bda09444e8c51"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/baseline/tests/browser.cjs",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/baseline/tests/browser.cjs",
+      "bytes": 7665,
+      "sha256": "42e9a27bf0122dbbae1f9d37995119a1a22482c1e607e189e175f714ca7f5420"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/baseline/tests/regression.cjs",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/baseline/tests/regression.cjs",
+      "bytes": 6480,
+      "sha256": "3edcf50497da166894fb6df98f7867814d23872d78f0e0d231aa6295068ed08b"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/baseline-hashes.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/baseline-hashes.json",
+      "bytes": 714,
+      "sha256": "180739a6a5457356bca9103dac88855680487a502737373986952aba844a4d4e"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/candidate-hashes.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/candidate-hashes.json",
+      "bytes": 798,
+      "sha256": "6ba428b89e327923d861070c713b44286ba1d26f071021e7f4586532ddce9d7d"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/candidate-suite/desktop.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/candidate-suite/desktop.png",
+      "bytes": 166478,
+      "sha256": "68e6d8cd296fdc5cebe81b0e00a6b01da4fef982e83954a247639f50d9cd456c"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/candidate-suite/mobile.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/candidate-suite/mobile.png",
+      "bytes": 170851,
+      "sha256": "facb911cc35691d6f9ae48dc004a50349a027645cfe0249ac8804844833ae953"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/candidate-suite/results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/candidate-suite/results.json",
+      "bytes": 1361,
+      "sha256": "ba74d23e4f66bc9d5a19073a0bbe06a6e89a0f4c60b3f055dcf890e30ae7af1a"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/independent-browser.cjs",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/independent-browser.cjs",
+      "bytes": 6255,
+      "sha256": "eda63d7fc211e766af4c6639a352745c4bafa13fa7df9df550ba097414b61843"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/independent-mobile.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/independent-mobile.png",
+      "bytes": 176515,
+      "sha256": "2ba157025abc9891b905ceebe860a6bcfcefb9495e0a382d8c8f4730729c60bb"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/independent-results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/independent-results.json",
+      "bytes": 454,
+      "sha256": "119ac797739d2c38851406b1e9aa2a60e193aa4bd05667aa3eb8c8c1c7a28a6b"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/installed-browser/desktop.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/installed-browser/desktop.png",
+      "bytes": 164145,
+      "sha256": "9b029cdee377e49cd435fd7735e59dc271a8baf4e771121a857d377203aaf8f2"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/installed-browser/layout-results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/installed-browser/layout-results.json",
+      "bytes": 672,
+      "sha256": "4e056856ba107a36077e7addadf37db9097057fbe7cd3c3249238dfa3e67f4ed"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/installed-browser/mobile.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/installed-browser/mobile.png",
+      "bytes": 167802,
+      "sha256": "47ff065fec953d1f7cb27307ed006d211fc093bd6508f0f8ae0c84d323485a35"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/installed-browser/results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/installed-browser/results.json",
+      "bytes": 1531,
+      "sha256": "b04d8f44656b6d39eda9514c065a7dc51e8cc741fff2dd164938354bb0df5cb8"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/installed-hashes.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/installed-hashes.json",
+      "bytes": 798,
+      "sha256": "6ba428b89e327923d861070c713b44286ba1d26f071021e7f4586532ddce9d7d"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/layout.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/layout.json",
+      "bytes": 53,
+      "sha256": "7ed030d19a6c1cf7f22563a4796036c199b043f0ed6c3acd9808876a34ab1d16"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/live-browser.cjs",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/live-browser.cjs",
+      "bytes": 2344,
+      "sha256": "a6d357691975fbd325cfda33f19477026d67d0eaa079c6e9833ba39822c355ae"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/live-market.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/live-market.png",
+      "bytes": 68673,
+      "sha256": "2082e952b09cd9239affcec0dd61387433ebd02c57c5f41b2192bb335cda0a62"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/live-replay.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/live-replay.png",
+      "bytes": 194038,
+      "sha256": "0f359c181d319505caef2783b02f2b3a1cc0d7fa854644ab81babe919154e6cb"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/live-results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/live-results.json",
+      "bytes": 3176,
+      "sha256": "81fd11c256e084c1669c567d6bce2c133bb24402e39314026299efce25ce9527"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/notification.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/notification.json",
+      "bytes": 760,
+      "sha256": "2eb163cb28408365e8e8406cef9dfc23c09ef8119c461885a6f1cb14da1ccbc4"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/resize-review/desktop.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/resize-review/desktop.png",
+      "bytes": 166314,
+      "sha256": "b4523670970057ccac7c0807a0600fde4f1198743b108ebb8f50dab908288ae3"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/resize-review/layout-failure.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/resize-review/layout-failure.json",
+      "bytes": 53,
+      "sha256": "7ed030d19a6c1cf7f22563a4796036c199b043f0ed6c3acd9808876a34ab1d16"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/resize-review/mobile.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/resize-review/mobile.png",
+      "bytes": 171479,
+      "sha256": "f26358a80c1e3d0721b81ed2a15a2d795726bd70311d42338e898d61740aca6b"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/resize-review/resize-review.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/resize-review/resize-review.png",
+      "bytes": 170756,
+      "sha256": "cedd11f3549946a5708f3dc1152a6c2d890cd0b70f3acd17373f9c639bd513cb"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/resize-review/results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/resize-review/results.json",
+      "bytes": 1489,
+      "sha256": "035b6097b4eb93051cf912ddf0c4f813aceb71265f23a0fb526e032269f24157"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/thai-widget-results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/thai-widget-results.json",
+      "bytes": 1376,
+      "sha256": "e54898498976fcc4d5087ecf682c037241815aeaf4bc6fc65af4cef00869572d"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/widget-after-wait.png",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/widget-after-wait.png",
+      "bytes": 124973,
+      "sha256": "fcf89fe1ba02f6d50e39f51cf2af6822cdd1e1346aab04a8cb115597d1812e26"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/widget-check.cjs",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/widget-check.cjs",
+      "bytes": 2399,
+      "sha256": "13eeecb2921bdabab275fea304f58d51ab751d0db5759607fb53d54c9f1a0a43"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/lab/axiom-prism-review-20261115/widget-results.json",
+      "snapshot": "axiom/ψ/lab/axiom-prism-review-20261115/widget-results.json",
+      "bytes": 3322,
+      "sha256": "f8bb8fbf8fae4489e2a4b41d49377c8fd19870a8ca88d4c0f75b53b4b6d0de85"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/memory/learnings/2026-11-15_trading-lab-review-evidence.md",
+      "snapshot": "axiom/ψ/memory/learnings/2026-11-15_trading-lab-review-evidence.md",
+      "bytes": 1085,
+      "sha256": "9b43a65c893b59898d7d9dd6ff7f45f841c10ae93cae1cc8ddd1ac327d651fb4"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/memory/learnings/2026-11-16_indicator-replay-parity.md",
+      "snapshot": "axiom/ψ/memory/learnings/2026-11-16_indicator-replay-parity.md",
+      "bytes": 1078,
+      "sha256": "2b3f10bc2c8e519603e3b6e6ce5b3bc4d6b60946301d729aa0a9c132fbf8ac37"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/memory/learnings/session-metrics.md",
+      "snapshot": "axiom/ψ/memory/learnings/session-metrics.md",
+      "bytes": 740,
+      "sha256": "b175d300aa89c7c404e70588fe72326047a946af107ee5490d92f2c9c209ee55"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/memory/retrospectives/2026-11/15/23.27_trading-lab-review.md",
+      "snapshot": "axiom/ψ/memory/retrospectives/2026-11/15/23.27_trading-lab-review.md",
+      "bytes": 5939,
+      "sha256": "14bba25c7d42973b60338fe3f0cded30666891e03d00dacce358b5997909d1cb"
+    },
+    {
+      "role": "axiom",
+      "source": "oracles/axiom-oracle/ψ/memory/retrospectives/2026-11/16/00.04_indicator-planning-prism.md",
+      "snapshot": "axiom/ψ/memory/retrospectives/2026-11/16/00.04_indicator-planning-prism.md",
+      "bytes": 4655,
+      "sha256": "39f7814ed05b42896102533afd5d6126a1307992075f7ef91c454a543e00d3f9"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/REVIEW-REPORT-before-overflow.md",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/REVIEW-REPORT-before-overflow.md",
+      "bytes": 20455,
+      "sha256": "70331f4bb0148e3bf909811719cff51244ef72402dc0397b13e9a4382daa7c20"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/REVIEW-REPORT.md",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/REVIEW-REPORT.md",
+      "bytes": 23943,
+      "sha256": "8ab2743a60520ee35df9350fbb7d128c9e99808419f5bfba9aabd724ff7c5910"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/browser/desktop.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/browser/desktop.png",
+      "bytes": 164987,
+      "sha256": "8baa0402016afe2b205057aa2f66b3b8a71e0a41664b047299825b96c3a9b108"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/browser/layout-results.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/browser/layout-results.json",
+      "bytes": 672,
+      "sha256": "4e056856ba107a36077e7addadf37db9097057fbe7cd3c3249238dfa3e67f4ed"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/browser/mobile.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/browser/mobile.png",
+      "bytes": 168456,
+      "sha256": "76c30527ab4c3b834825f6995dc6a6a4400bee585d981ca8e5464f78a1af88a8"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/browser/results.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/browser/results.json",
+      "bytes": 1531,
+      "sha256": "b04d8f44656b6d39eda9514c065a7dc51e8cc741fff2dd164938354bb0df5cb8"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/browser-overflow-before/reproduction.txt",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/browser-overflow-before/reproduction.txt",
+      "bytes": 347,
+      "sha256": "d73c7c871a22b7b1966cae1f43786377f564c0a68b0d38f5a0dac3311aae686b"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/browser-overflow-pass1/desktop.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/browser-overflow-pass1/desktop.png",
+      "bytes": 165318,
+      "sha256": "b5d0999d0e41c95ce4dbb25ecd6b02a4340cc6e43cd62fb8f0891ecdca618ba9"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/browser-overflow-pass1/layout-results.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/browser-overflow-pass1/layout-results.json",
+      "bytes": 672,
+      "sha256": "4e056856ba107a36077e7addadf37db9097057fbe7cd3c3249238dfa3e67f4ed"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/browser-overflow-pass1/mobile.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/browser-overflow-pass1/mobile.png",
+      "bytes": 168867,
+      "sha256": "387b06420adea0b93560163d471b76ebc3071bd6195e4e3815011ce13777396c"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/browser-overflow-pass1/results.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/browser-overflow-pass1/results.json",
+      "bytes": 1531,
+      "sha256": "b04d8f44656b6d39eda9514c065a7dc51e8cc741fff2dd164938354bb0df5cb8"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/changes.patch",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/changes.patch",
+      "bytes": 114221,
+      "sha256": "0d90571370a212031eb9dee90fc987a9141bcbb200299cc54723dc858471e5b8"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/install.py",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/install.py",
+      "bytes": 2902,
+      "sha256": "ed39fb310713a89d863f59e2f0d67c70fbbb11338caa5a164c0e4c0bdebca064"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/installer-results-before-overflow.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/installer-results-before-overflow.json",
+      "bytes": 979,
+      "sha256": "090163e3abc9649d6d7c6ac9365803a4fcaa9543b33359fe6032c273e4ffd4d2"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/installer-results.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/installer-results.json",
+      "bytes": 957,
+      "sha256": "95e18dd413fb6d6c7a637201f8a7435192107cc54b87fb741cc78d0d415fa073"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/live/live-market.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/live/live-market.png",
+      "bytes": 68600,
+      "sha256": "c31af9cf837ac3665fe77aaba4e5fb0c51bdb8b8aefe6a53b1f1e913ff550fe5"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/live/live-replay.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/live/live-replay.png",
+      "bytes": 192108,
+      "sha256": "761811582d15fd17ac85bfbf5102f49e1e4ec4a934d80e67feb4b07527c0a257"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/live/live-results.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/live/live-results.json",
+      "bytes": 3176,
+      "sha256": "d81669a6ea8e0e126dff5115f39da6956dd1f8ce5bded9f54892f1a998b862ca"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/live-browser.cjs",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/live-browser.cjs",
+      "bytes": 2411,
+      "sha256": "3fa156074abbab22c587764e4ce42a9984212c22aaf6f24c422596286ef35b46"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/manifest-before-overflow.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/manifest-before-overflow.json",
+      "bytes": 1842,
+      "sha256": "220b8c4454b83857ab9036139ba629ed06d41ad0f6734aa43cc07e2f2fbb09f6"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/manifest.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/manifest.json",
+      "bytes": 1842,
+      "sha256": "04518a8a9d1b4a299e61064e2a64dd7b219aeb22fa8a9bcda37871bb457b257a"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/model-results.tap",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/model-results.tap",
+      "bytes": 2153,
+      "sha256": "293cc7790b0858ad1cb57995bdc0a4da2f47cde4cbdf6abe2cd5b3be398601f8"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/original/.openai/hosting.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/original/.openai/hosting.json",
+      "bytes": 88,
+      "sha256": "632ee39a21b3645519b1ac4abbc6f6af18cd9ec113787bfce31092048a966cd7"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/original/PRISM-BRIEF.md",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/original/PRISM-BRIEF.md",
+      "bytes": 10399,
+      "sha256": "801d557f4619262fae2cb5aabd5e533070f0fe6eb40fca3a24a917be6d037418"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/original/README.md",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/original/README.md",
+      "bytes": 7157,
+      "sha256": "34d7e8c6b3496b540915f3a1ea989eaea5f64fac73c7c689efa4af99dbf5c6b6"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/original/dist/app.js",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/original/dist/app.js",
+      "bytes": 12484,
+      "sha256": "7b7a129824148da0cbb1866b911449f1787cdc675c9345f4017d72f643666a08"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/original/dist/index.html",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/original/dist/index.html",
+      "bytes": 4387,
+      "sha256": "4f18d3ba0302f867749db983dbd3f7debaa87e6c61460ddd155474ac9cefee84"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/original/dist/style.css",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/original/dist/style.css",
+      "bytes": 2289,
+      "sha256": "59aa7b904243174ef6bf5f6e33dde7c85bfc195d741acbbfb87bda09444e8c51"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/original/tests/browser.cjs",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/original/tests/browser.cjs",
+      "bytes": 7665,
+      "sha256": "42e9a27bf0122dbbae1f9d37995119a1a22482c1e607e189e175f714ca7f5420"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/original/tests/regression.cjs",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/original/tests/regression.cjs",
+      "bytes": 6480,
+      "sha256": "3edcf50497da166894fb6df98f7867814d23872d78f0e0d231aa6295068ed08b"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/.openai/hosting.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/.openai/hosting.json",
+      "bytes": 88,
+      "sha256": "632ee39a21b3645519b1ac4abbc6f6af18cd9ec113787bfce31092048a966cd7"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/PRISM-BRIEF.md",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/PRISM-BRIEF.md",
+      "bytes": 10399,
+      "sha256": "801d557f4619262fae2cb5aabd5e533070f0fe6eb40fca3a24a917be6d037418"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/README.md",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/README.md",
+      "bytes": 15460,
+      "sha256": "62d912882a6fa311f59d0401d1d3f2084b14e6e2c722c4647e346c6420ce192b"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/dist/NOTICE.txt",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/dist/NOTICE.txt",
+      "bytes": 336,
+      "sha256": "22c69e3142d013c1a26205719dafdb07a430097f385575c214aa6672c4baa322"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/dist/app.js",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/dist/app.js",
+      "bytes": 18717,
+      "sha256": "cf43b5253d5a0816ba7363effe16caf1d1ea47a3a5cdd12fd4e9f518d903a76e"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/dist/index.html",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/dist/index.html",
+      "bytes": 7826,
+      "sha256": "f5d14bfaa749c982b59d91ca56141c909ee7b02733bb1db3e65776c0330d3aff"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/dist/model.js",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/dist/model.js",
+      "bytes": 9536,
+      "sha256": "3ebb6595d72a2fb28a3e2cdf2c4e16133170754fc8793cd20c520d2dd25d3c94"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/dist/style.css",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/dist/style.css",
+      "bytes": 3036,
+      "sha256": "9b922b0037cf7ec951e20e0ac7e8e60be886d14552893b7a296b255b4b680571"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/tests/browser.cjs",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/tests/browser.cjs",
+      "bytes": 16707,
+      "sha256": "f4d268382874e1f714056bccdf4248051a1c9e6a31a1bda36b7c91b770a9a5b8"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/tests/model.cjs",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/tests/model.cjs",
+      "bytes": 3542,
+      "sha256": "478274b2a4a57a216b46c5f7bb114baf35d5bca6e09bd507b50a20a290f61abf"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/tests/regression.cjs",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/staged/tests/regression.cjs",
+      "bytes": 97,
+      "sha256": "b9228017613100c51a72306a7696f9b2162c13244a2ad900d27ec9d0abcdf590"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget/BINANCE_BTCUSDT.P-1360.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget/BINANCE_BTCUSDT.P-1360.png",
+      "bytes": 127618,
+      "sha256": "778b0548128c67c50ea23c0702b5f2e2dc112113b26afd5f44262118a41790ad"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget/BINANCE_BTCUSDT.P-390.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget/BINANCE_BTCUSDT.P-390.png",
+      "bytes": 108216,
+      "sha256": "79c6e45b602c82ca846ad489758fcf9efc33fedeb4c8fb5347ad2b857a05348e"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget/SET_ADVANC-1360.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget/SET_ADVANC-1360.png",
+      "bytes": 108392,
+      "sha256": "ffbeace541fa18ebed0306d5916893f75ab0c0d9a6d9dd89554ad0bcc05717ab"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget/SET_ADVANC-390.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget/SET_ADVANC-390.png",
+      "bytes": 97816,
+      "sha256": "30136d45ca05faced3edb23dc9f7775b0f4a46c4a6a4c6ddb9deecdb451dfc43"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget/SET_PTT-1360.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget/SET_PTT-1360.png",
+      "bytes": 105644,
+      "sha256": "346f7db6edba338ea56eeda041640af4cbfa6d9874f2ab390539808648600285"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget/SET_PTT-390.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget/SET_PTT-390.png",
+      "bytes": 95152,
+      "sha256": "b8e49f8ba1cbb7bad6e464ff87065e222b27eeb9b6532356bcf92a9cad304170"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget/SET_SET-1360.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget/SET_SET-1360.png",
+      "bytes": 106092,
+      "sha256": "cfb2d43d5ab888f7fb4684be2d4f2da7b43c0c0edcf7e664bac5ea45c662dc9e"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget/SET_SET-390.png",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget/SET_SET-390.png",
+      "bytes": 95761,
+      "sha256": "012cc47aa56daa5e985cf94dfc0001a99746829f44ceaa36ca34bf07286a4d44"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget/results.json",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget/results.json",
+      "bytes": 7530,
+      "sha256": "86355a9e459463db09d83f98ce8b425f37a9ea47dd3f08d11f4a186572d8ca89"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/lab/axiom-prism-20261115/widget-browser.cjs",
+      "snapshot": "prism/ψ/lab/axiom-prism-20261115/widget-browser.cjs",
+      "bytes": 3838,
+      "sha256": "99139ecc3d83febf84235c0fff05cef34d7420b5a6b744f3f14267809210e337"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/memory/learnings/2026-11-15_trading-lab-atomic-snapshots-and-browser-boundaries.md",
+      "snapshot": "prism/ψ/memory/learnings/2026-11-15_trading-lab-atomic-snapshots-and-browser-boundaries.md",
+      "bytes": 3103,
+      "sha256": "2e86edd5927a90f80b0cfa04c40a67d606d4a21e0d9c0af9142d1c997213cd07"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/memory/learnings/2026-11-16_indicator-parity-requires-source-and-causal-time.md",
+      "snapshot": "prism/ψ/memory/learnings/2026-11-16_indicator-parity-requires-source-and-causal-time.md",
+      "bytes": 2646,
+      "sha256": "a6a41bec6c125709907a108b43d8c9524d833f10d4b4ae6b328471f944f8fe6a"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/memory/learnings/session-metrics.md",
+      "snapshot": "prism/ψ/memory/learnings/session-metrics.md",
+      "bytes": 794,
+      "sha256": "633da94d80b905365691c035abea445cfa2f830c57a029e7fdbbceea1e35a701"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/memory/retrospectives/2026-11/15/23.29_four-rrr-axiom-trading-lab.md",
+      "snapshot": "prism/ψ/memory/retrospectives/2026-11/15/23.29_four-rrr-axiom-trading-lab.md",
+      "bytes": 16110,
+      "sha256": "8190800c4ded05bf2cc9d02b7323bbb2410fde0bb6efa8588e915a1cc8ee6a6b"
+    },
+    {
+      "role": "prism",
+      "source": "oracles/prism-oracle/ψ/memory/retrospectives/2026-11/16/00.06_indicator-plan-and-requested-push.md",
+      "snapshot": "prism/ψ/memory/retrospectives/2026-11/16/00.06_indicator-plan-and-requested-push.md",
+      "bytes": 13746,
+      "sha256": "bcf223484cd25f0f7187a04bb17427c5bb57c8f9c31a4b519546444cbf9f3dde"
+    }
+  ],
+  "verification": {
+    "copied_files_verified": 116,
+    "accepted_installation_hashes": 9,
+    "matching_prism_candidate_hashes": 9,
+    "credential_pattern_hits": 0,
+    "browser_tests_rerun_for_publication": false,
+    "source_repositories_changed": false
+  }
+}

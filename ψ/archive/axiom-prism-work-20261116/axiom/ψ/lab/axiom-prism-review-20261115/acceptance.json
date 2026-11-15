@@ -1,0 +1,29 @@
+{
+  "status": "accepted-personal-prototype-v2",
+  "acceptedAt": "2026-11-15T15:46:01.540357+00:00",
+  "implementation": "PRISM Oracle",
+  "reviewer": "AXIOM Oracle",
+  "installedFiles": 9,
+  "installedModelTests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "installedBrowserGroups": {
+    "passed": 11,
+    "failed": 0,
+    "pageerrors": []
+  },
+  "independentBrowserGroups": {
+    "passed": 6,
+    "failed": 0
+  },
+  "liveReplay": {
+    "closedCandles": 8640,
+    "days": 90
+  },
+  "thaiStocks": "external TradingView links; SET widget rejected these three symbols",
+  "deployed": false,
+  "accountConnected": false,
+  "notification": "acknowledged",
+  "notificationAt": "2026-11-15T15:48:17.351486+00:00"
+}

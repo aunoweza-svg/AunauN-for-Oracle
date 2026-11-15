@@ -1,0 +1,34 @@
+[
+  {
+    "label": "200 unbroken W characters",
+    "viewport": 1280,
+    "scroll": 1280,
+    "accountWidth": 278,
+    "accountScroll": 278,
+    "chartHeight": 510
+  },
+  {
+    "label": "200 unbroken W characters",
+    "viewport": 390,
+    "scroll": 390,
+    "accountWidth": 309,
+    "accountScroll": 309,
+    "chartHeight": 390
+  },
+  {
+    "label": "empty label / generated UUID",
+    "viewport": 1280,
+    "scroll": 1280,
+    "accountWidth": 278,
+    "accountScroll": 278,
+    "chartHeight": 510
+  },
+  {
+    "label": "empty label / generated UUID",
+    "viewport": 390,
+    "scroll": 390,
+    "accountWidth": 309,
+    "accountScroll": 309,
+    "chartHeight": 390
+  }
+]

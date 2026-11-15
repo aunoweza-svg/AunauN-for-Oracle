@@ -1,0 +1,1 @@
+Before .account overflow-wrap fix: new 200-character unbroken run-label regression passed first 9 browser groups, then failed settledLayout waitForFunction (timeout 5000ms) at browser.cjs:113/127. Process exit 1. Screenshot not used as delay. Full source baseline hashes for original submitted candidate retained in manifest-before-overflow.json.

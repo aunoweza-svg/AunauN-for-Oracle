@@ -1,0 +1,6 @@
+TradingView Lightweight Charts™
+Copyright (с) 2024 TradingView, Inc. https://www.tradingview.com/
+
+Unmodified Lightweight Charts v4.2.3 loaded from unpkg.com.
+Source NOTICE: https://github.com/tradingview/lightweight-charts/blob/v4.2.3/NOTICE
+License: Apache-2.0 https://github.com/tradingview/lightweight-charts/blob/v4.2.3/LICENSE

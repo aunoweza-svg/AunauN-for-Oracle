@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-11-15T15:31:37.675Z",
+  "dist": "/mnt/d/onedrive/aunaun oracle/oracles/prism-oracle/ψ/lab/axiom-prism-20261115/staged/dist",
+  "status": "ตรวจครบ 90 วัน ไม่พบข้อมูลขาด/ซ้ำ · เลือกวันเริ่ม UTC แล้วเริ่มรอบใหม่ก่อนเทรด",
+  "dataset": "Binance public USDⓈ-M klines · BTCUSDT / 15m · 8640 แท่งปิด · 2026-08-17T15:30:00 UTC ถึง 2026-11-15T15:30:00 UTC (ไม่รวมปลายช่วง) · ดึง 2026-11-15T15:31:37.083Z · SHA256 115c721ff362c75d322736b818a34338828d60bd1726d1da0974ead95d8e0cba",
+  "replayReady": true,
+  "widgets": [
+    "https://www.tradingview-widget.com/embed-widget/advanced-chart/?locale=th#%7B%22autosize%22%3Atrue%2C%22symbol%22%3A%22BINANCE%3ABTCUSDT.P%22%2C%22interval%22%3A%2215%22%2C%22timezone%22%3A%22Asia%2FBangkok%22%2C%22theme%22%3A%22dark%22%2C%22style%22%3A%221%22%2C%22allow_symbol_change%22%3Afalse%2C%22hide_side_toolbar%22%3Afalse%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22100%25%22%2C%22utm_source%22%3A%22127.0.0.1%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22advanced-chart%22%2C%22page-uri%22%3A%22127.0.0.1%3A43021%2F%22%7D"
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "https://unpkg.com/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js",
+      "status": 200
+    },
+    {
+      "url": "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js",
+      "status": 200
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1786980600000&endTime=1794756599999&limit=1000",
+      "status": 200
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1787880600000&endTime=1794756599999&limit=1000",
+      "status": 200
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1788780600000&endTime=1794756599999&limit=1000",
+      "status": 200
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1789680600000&endTime=1794756599999&limit=1000",
+      "status": 200
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1790580600000&endTime=1794756599999&limit=1000",
+      "status": 200
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1791480600000&endTime=1794756599999&limit=1000",
+      "status": 200
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1792380600000&endTime=1794756599999&limit=1000",
+      "status": 200
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1793280600000&endTime=1794756599999&limit=1000",
+      "status": 200
+    },
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1794180600000&endTime=1794756599999&limit=1000",
+      "status": 200
+    }
+  ],
+  "failures": []
+}

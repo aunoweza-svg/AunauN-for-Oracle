@@ -1,0 +1,40 @@
+AXIOM review — AXIOM-PRISM-20261115
+ผู้มอบหมาย AunauN; implementation PRISM; independent review AXIOM
+สถานะ: AXIOM ตรวจรับ personal prototype v2 และติดตั้งใน trading-lab แล้ว
+
+ขอบเขตตรวจรับ: personal prototype v2 สำหรับ market overview และ manual BTC replay ตาม PRISM-BRIEF. ไม่ deploy ไม่เชื่อมบัญชี ไม่เพิ่ม automatic strategy/backtest หรือสมมติฐาน leverage/margin/liquidation ที่ยังไม่มีข้อกำหนด
+
+ผลที่ AXIOM ตรวจเองก่อนติดตั้ง:
+- ต้นฉบับ: regression 13/13 และ Chromium baseline 4 กลุ่ม ผ่านก่อนเปลี่ยนแปลง
+- รุ่นใหม่: model/ledger regression 10/10 ผ่าน
+- Chromium acceptance ของ PRISM ที่ AXIOM รันเองกับ installed files: 11/11 กลุ่มผ่าน รวม SET restriction links, long-label200/UUID และ layout settlement; ไม่มี pageerror, ไม่มี pageerror
+- Chromium ที่ AXIOM เขียนแยก: 6 กลุ่มผ่าน ได้แก่ Long fee/open-position reload, Short same-candle fee, real JSON export, tampered ledger preservation, delayed-checksum race protection, mobile/no pageerror
+- Browser สดผ่าน Binance CORS และโหลด90วันครบ8640แท่ง เริ่มรอบได้จริง ไม่มี market fixtures ใน live probe
+  checkedAt/dataset period/hash อยู่ live-results.json. ภาพ live-replay.png. ราคาในภาพเป็นข้อมูลย้อนหลังของ replay ไม่ใช่คำแนะนำหรือราคาปัจจุบัน
+- TradingView live BTC มี OHLC และ canvas จริง หลังแก้ wrapper iframe อยู่ในกรอบและสูง538px desktop; PRISM มีผล mobile418px
+- TradingView live SET:SET, SET:PTT, SET:ADVANC ถูกปฏิเสธ "This symbol is only available on TradingView". ยอมรับเป็น provider restriction พร้อมข้อความไทยและ external symbol link; ไม่อ้างว่ามีกราฟหุ้นไทยในแอป
+
+ข้อบกพร่องที่พบและส่งกลับให้ PRISM แก้:
+1. Import ตรวจ SHA256 แบบ async ระหว่างที่ยังเปิดสถานะได้ แล้ว overwrite สถานะใหม่ — แก้ busy ครอบคลุม file read/checksum/confirm และ recheck position ภายใน transaction; ทดสอบ race ผ่าน
+2. Desktop-to-mobile resize ทำ chart/grid ล้น390px ไป906px — แก้ minmax(0,1fr), min-width:0; ทดสอบผ่าน
+3. TradingView placeholder กินเต็มกรอบและ iframe ต่อท้ายถูก clip — แก้ container wrapper ภายใน outer fixed height; live BTC OHLC แสดงจริง
+4. หุ้นไทย unsupported จริง — แสดงข้อจำกัดชัดเจนและลิงก์กราฟภายนอกตรง symbol
+5. ชื่อรอบยาว200ตัว/บาง UUID ดัน account overflow — PRISM เพิ่ม overflow-wrap:anywhere; AXIOM ทดสอบ200ตัวผ่าน พร้อม PRISM layout metrics desktop1280/mobile390 ไม่ล้น
+6. เพิ่มปฏิเสธ imported dataset ยังไม่ปิด/fetchedAt อนาคต; ตรวจ ledger และ checksum แยกกัน
+
+ข้อจำกัดคงเหลือที่แสดงใน UI/export/README:
+- ใช้ close ของแท่งที่เห็นและ fee สองด้าน เป็นแบบฝึก linear P&L; ไม่มี leverage/margin/liquidation/funding/slippage/orderbook/partial fill/SL/TP หรือ backtest อัตโนมัติ
+- เก็บใน browser/origin เดียว ไม่มี cloud sync ใช้หนึ่งแท็บเป็นหลัก ส่งออก JSON สำรองภายนอก; localStorage มี quota
+- SHA256 ไม่ใช่ลายเซ็นรับรองแหล่งข้อมูล; ต้องเชื่อถือ snapshot ต้นทางเอง
+- รายการ legacy เก็บเดิมและแยกว่าไม่มี dataset/run context
+- การเข้าถึง provider และความล่าช้าหุ้นไทยขึ้นกับผู้ให้บริการ เครือข่าย/ภูมิภาคอาจต่างกัน
+
+ตรวจรับและติดตั้งแล้ว: installed hashes ตรง final PRISM manifest ทั้ง9ไฟล์; model10/10 และ browser11/11ผ่านกับไฟล์ปลายทาง; baseline/ เก็บต้นฉบับก่อนแก้ ไม่แตะ hosting config ไม่ commit/push/deploy
+การแจ้ง AunauN Oracle: ส่งผ่าน Herdr และได้รับคำตอบรับทราบจริงแล้ว ดู notification.json
+
+ตรวจรับเมื่อ UTC 2026-11-15T15:46:01.532158+00:00
+วิธีเปิดจาก repo AXIOM: python3 -m http.server 8000 --bind 127.0.0.1 --directory trading-lab/dist แล้วเข้า http://localhost:8000 (ใช้ origin เดิมทุกครั้ง)
+ไม่มี server เปิดค้างจากการทดสอบ
+
+การแจ้ง AunauN Oracle: acknowledged
+รับทราบ AXIOM-PRISM-DONE-20261115 ครับ ได้รับรายงานผลตรวจและข้อจำกัดของ Trading Lab v2 แล้ว ผมจะทำงานประเมินการตลาดแม่ปืมกับ Lumina ต่อครับ
