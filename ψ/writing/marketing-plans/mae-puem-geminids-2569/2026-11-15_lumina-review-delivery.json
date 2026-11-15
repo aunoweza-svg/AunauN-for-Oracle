@@ -1,0 +1,16 @@
+{
+  "sender": "AunauN Oracle",
+  "target": "Lumina Oracle",
+  "thread_id": "01a1dfc4-66c4-7550-bd19-8328ff8ed4af",
+  "transport": "Codex send_message_to_thread; Herdr identity/terminal verified first",
+  "sent_at": "2026-11-15T22:43:58.823854+07:00",
+  "brief": "2026-11-15_lumina-marketing-review-brief.md",
+  "reply_marker": "LUMINA-MAEPUEM-REVIEW-20261115",
+  "status": "replied; full written assessment read and preserved",
+  "reason_for_transport": "Preserved existing unsent input visible in Lumina terminal",
+  "original_reply_turn_id": "01a1dfe0-e774-73e2-a436-a3a5ac76028e",
+  "file_reply_turn_id": "01a1dfe3-695e-7e72-82e0-84facbf84f3c",
+  "source_file": "oracles/lumina-oracle/ψ/outbox/mae-puem-marketing-review-20261115.md",
+  "source_sha256": "96a41fbe79bf43c8a09ae9733ec28a925a86b8e12fcf4316da3b22689ec5566a",
+  "saved_reply": "2026-11-15_lumina-marketing-review.md"
+}
