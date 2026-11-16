@@ -1,0 +1,16 @@
+{
+  "scope": "Synthetic OHLC only; external services mocked; chart v4.2.3 actual",
+  "passed": [
+    "new run settings saved",
+    "visible prefix only",
+    "real primitive rendering no page errors",
+    "bidirectional range synchronization",
+    "actual pointer crosshair synchronization both directions",
+    "display toggles preserve ledger",
+    "input edits do not rewrite active run",
+    "reload restores settings",
+    "desktop/mobile containment",
+    "legacy run remains usable without fabricated indicator context"
+  ],
+  "errors": []
+}

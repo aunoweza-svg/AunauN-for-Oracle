@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-11-16T18:06:37.809Z",
+  "scope": "Actual public Binance HTTP/WebSocket in Chromium; local LWC bundle pinned4.2.3; no TradingView parity comparison",
+  "frames": [
+    {
+      "tf": "15m",
+      "quote": "64,877.96 USDT · HA",
+      "rawSpotQuote": "ราคาตลาด Spot 64,919.46 USDT",
+      "chartType": "heikin-ashi",
+      "bar": "แท่งกำลังก่อตัว · สัญญาณเปลี่ยนได้",
+      "feed": "Binance Spot · BTCUSDT · 15m · แท่งล่าสุดปิด 17/11/2026 01:00:00 · รับข้อมูล 17/11/2026 01:06:26 (เวลาไทย)",
+      "stream": "LIVE · Binance · 17/11/2026 01:06:27",
+      "history": "501 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Green · EMA 64779.624326 / 64666.540626   |   MSO 0.631347 · Signal 0.375452 · Hist 0.255895",
+      "canvases": 7
+    },
+    {
+      "tf": "1h",
+      "quote": "64,888.925 USDT · HA",
+      "rawSpotQuote": "ราคาตลาด Spot 64,941.93 USDT",
+      "chartType": "heikin-ashi",
+      "bar": "แท่งกำลังก่อตัว · สัญญาณเปลี่ยนได้",
+      "feed": "Binance Spot · BTCUSDT · 1h · แท่งล่าสุดปิด 17/11/2026 01:00:00 · รับข้อมูล 17/11/2026 01:06:27 (เวลาไทย)",
+      "stream": "LIVE · Binance · 17/11/2026 01:06:29",
+      "history": "501 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Blue · EMA 64705.256020 / 64793.610189   |   MSO -0.214139 · Signal -0.340536 · Hist 0.126396",
+      "canvases": 7
+    },
+    {
+      "tf": "4h",
+      "quote": "64,699.355 USDT · HA",
+      "rawSpotQuote": "ราคาตลาด Spot 64,952.41 USDT",
+      "chartType": "heikin-ashi",
+      "bar": "แท่งกำลังก่อตัว · สัญญาณเปลี่ยนได้",
+      "feed": "Binance Spot · BTCUSDT · 4h · แท่งล่าสุดปิด 16/11/2026 23:00:00 · รับข้อมูล 17/11/2026 01:06:29 (เวลาไทย)",
+      "stream": "LIVE · Binance · 17/11/2026 01:06:31",
+      "history": "501 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Red · EMA 65252.268746 / 67006.932093   |   MSO -1.293792 · Signal -1.456830 · Hist 0.163039",
+      "canvases": 7
+    },
+    {
+      "tf": "1d",
+      "quote": "64,988.0525 USDT · HA",
+      "rawSpotQuote": "ราคาตลาด Spot 64,999.99 USDT",
+      "chartType": "heikin-ashi",
+      "bar": "แท่งกำลังก่อตัว · สัญญาณเปลี่ยนได้",
+      "feed": "Binance Spot · BTCUSDT · 1d · แท่งล่าสุดปิด 16/11/2026 07:00:00 · รับข้อมูล 17/11/2026 01:06:31 (เวลาไทย)",
+      "stream": "LIVE · Binance · 17/11/2026 01:06:33",
+      "history": "501 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Red · EMA 70992.135478 / 74692.612023   |   MSO -1.480599 · Signal -1.253733 · Hist -0.226866",
+      "canvases": 7
+    },
+    {
+      "tf": "1w",
+      "quote": "64,988.055 USDT · HA",
+      "rawSpotQuote": "ราคาตลาด Spot 65,000 USDT",
+      "chartType": "heikin-ashi",
+      "bar": "แท่งกำลังก่อตัว · สัญญาณเปลี่ยนได้",
+      "feed": "Binance Spot · BTCUSDT · 1w · แท่งล่าสุดปิด 16/11/2026 07:00:00 · รับข้อมูล 17/11/2026 01:06:33 (เวลาไทย)",
+      "stream": "LIVE · Binance · 17/11/2026 01:06:35",
+      "history": "484 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Orange · EMA 75171.181304 / 75161.372703   |   MSO 0.002445 · Signal 0.222670 · Hist -0.220225",
+      "canvases": 7
+    },
+    {
+      "tf": "1M",
+      "quote": "71,455.0075 USDT · HA",
+      "rawSpotQuote": "ราคาตลาด Spot 65,036 USDT",
+      "chartType": "heikin-ashi",
+      "bar": "แท่งกำลังก่อตัว · สัญญาณเปลี่ยนได้",
+      "feed": "Binance Spot · BTCUSDT · 1M · แท่งล่าสุดปิด 1/11/2026 07:00:00 · รับข้อมูล 17/11/2026 01:06:35 (เวลาไทย)",
+      "stream": "LIVE · Binance · 17/11/2026 01:06:37",
+      "history": "112 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Orange · EMA 77317.627994 / 77142.999595   |   MSO 0.016374 · Signal 0.292429 · Hist -0.276055",
+      "canvases": 7
+    }
+  ],
+  "sockets": [
+    {
+      "url": "wss://stream.binance.com/ws/btcusdt@kline_15m",
+      "frames": 1
+    },
+    {
+      "url": "wss://stream.binance.com/ws/btcusdt@kline_1h",
+      "frames": 1
+    },
+    {
+      "url": "wss://stream.binance.com/ws/btcusdt@kline_4h",
+      "frames": 1
+    },
+    {
+      "url": "wss://stream.binance.com/ws/btcusdt@kline_1d",
+      "frames": 1
+    },
+    {
+      "url": "wss://stream.binance.com/ws/btcusdt@kline_1w",
+      "frames": 1
+    },
+    {
+      "url": "wss://stream.binance.com/ws/btcusdt@kline_1M",
+      "frames": 1
+    }
+  ],
+  "errors": []
+}

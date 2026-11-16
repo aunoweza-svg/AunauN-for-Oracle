@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-16T18:02:09.290Z",
+  "scope": "Single forming15m screenshot reconstruction: published display precision only; not closed-bar/all-history/all-six-timeframes numerical or signal parity",
+  "source": "Updated user screenshot + actual prior Binance Spot REST candles",
+  "inference": "Raw last uses screenshot bid; exact HA close and two six-decimal EMAs support Heikin Ashi identification",
+  "snapshotRaw": {
+    "time": 1794850200,
+    "open": 64931.44,
+    "high": 65036.37,
+    "low": 64826,
+    "close": 64974.48
+  },
+  "snapshotHA": {
+    "time": 1794850200,
+    "open": 64895.56106146396,
+    "high": 65036.37,
+    "low": 64826,
+    "close": 64942.0725
+  },
+  "reference": {
+    "fast": 64722.746741,
+    "slow": 64623.344916,
+    "macd": 0.6,
+    "signal": 0.2,
+    "hist": 0.3
+  },
+  "computed": {
+    "fast": 64722.74674088969,
+    "slow": 64623.34491625396,
+    "macd": 0.554960916928956,
+    "signal": 0.23071784837550846,
+    "hist": 0.32424306855344753
+  },
+  "displayPrecisionMatch": true
+}

@@ -1,0 +1,19 @@
+{
+  "README.md": "549394329c5e70621dbf7d123d91ca3ad995167ef3d899a96361f2604d5e91f4",
+  "dist/app.js": "46ed818a0eb0c041a7f74908a633b31f8c43b7e1c6af56acdcda20d49a26c54a",
+  "dist/cdc.js": "940484a90039524f256700107be48978d5a565a330bd084912d7ae46bd77225f",
+  "dist/index.html": "6be5289a873a4d055836d7df6de2029eb6601c967e2727632b6c4229848377b2",
+  "dist/indicator-view.js": "da748f9f0a668bf1df5d254f9a9a881b73c49be87c08ae1db9e8ede04665423d",
+  "dist/indicators.js": "abd9a4a199f78c21ef3b03cf8272a9b0bd7b55bd3fb861f5b6d126658652c73b",
+  "dist/model.js": "f036b6d42a8b13181970dbdd7a4194d5273379498b8867ad33a3d6494efd6b0e",
+  "dist/mso.js": "59a5105f657b1bd19cf77779790fdf862b8bfcaeffeb93fe53c93e279edd897b",
+  "dist/NOTICE.txt": "fa527b0c58e3bbf837b6f64f5eb40233b1f5f880718f7e67b96763d88313f273",
+  "dist/style.css": "38acd2e286b8ece57c3bf5e509acbf4b906cb6045c433fde22f0d3f7c4700bef",
+  "source/cdc-actionzone-v3-2020.pine": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248",
+  "source/modified-stochastic-macd-oscillator.pine": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a",
+  "source/provenance.json": "62f22f85dda948deb97719e04f19980cf3e9090732ed2479eff3014cb860461b",
+  "tests/browser.cjs": "c0ac6fdc648d9ce073e27c14f430dc84048f23ed8f7c63dbdfbf1761501b67f1",
+  "tests/indicators.cjs": "164925d1a4e405c889595c2ae02607bf0b042660cc665f24216850f46c14468d",
+  "tests/model.cjs": "478274b2a4a57a216b46c5f7bb114baf35d5bca6e09bd507b50a20a290f61abf",
+  "tests/regression.cjs": "b9228017613100c51a72306a7696f9b2162c13244a2ad900d27ec9d0abcdf590"
+}

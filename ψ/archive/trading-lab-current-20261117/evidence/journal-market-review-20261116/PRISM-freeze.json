@@ -1,0 +1,17 @@
+{
+  "task": "JOURNAL-MARKET-20261116",
+  "status": "FROZEN-F1",
+  "frozenAt": "2026-11-16T23:41:27+07:00",
+  "soleInstaller": "01a1e50b-75dc-70e3-b8b4-962a41e9cb37",
+  "changedFiles": 8,
+  "manifestSHA256": "e0b9baac53fa078ea2dfdab65c88fa013f0120bb485c98398e6e6ff42d28ee3e",
+  "reportSHA256": "a711844bdbd8733bf9a219d224bfd32a1559d0583cd0b6fbddd724247bdf6645",
+  "tests": {
+    "model": 10,
+    "indicators": 11,
+    "journalMarket": 4,
+    "browserGroups": 16,
+    "browserErrors": []
+  },
+  "installed": false
+}

@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-11-16T18:00:25.985Z",
+  "scope": "Actual public Binance HTTP/WebSocket in Chromium; local LWC bundle pinned4.2.3; no TradingView parity comparison",
+  "frames": [
+    {
+      "tf": "15m",
+      "quote": "64,864.43 USDT",
+      "bar": "แท่งกำลังก่อตัว · สัญญาณเปลี่ยนได้",
+      "feed": "Binance Spot · BTCUSDT · 15m · แท่งล่าสุดปิด 17/11/2026 01:00:00 · รับข้อมูล 17/11/2026 01:00:08 (เวลาไทย)",
+      "stream": "LIVE · Binance · 17/11/2026 01:00:23",
+      "history": "501 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Green · EMA 64784.352049 / 64671.242094   |   MSO 0.631493 · Signal 0.403714 · Hist 0.227780",
+      "canvases": 7
+    },
+    {
+      "tf": "1h",
+      "quote": "64,912.62 USDT",
+      "bar": "แท่งปิดแล้ว",
+      "feed": "Binance Spot · BTCUSDT · 1h · แท่งล่าสุดปิด 17/11/2026 01:00:00 · รับข้อมูล 17/11/2026 01:00:24 (เวลาไทย)",
+      "stream": "กำลังเชื่อมต่อสตรีม…",
+      "history": "500 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Blue · EMA 64696.790174 / 64797.125785   |   MSO -0.243178 · Signal -0.361715 · Hist 0.118536",
+      "canvases": 7
+    },
+    {
+      "tf": "4h",
+      "quote": "64,467 USDT",
+      "bar": "แท่งปิดแล้ว",
+      "feed": "Binance Spot · BTCUSDT · 4h · แท่งล่าสุดปิด 16/11/2026 23:00:00 · รับข้อมูล 17/11/2026 01:00:24 (เวลาไทย)",
+      "stream": "กำลังเชื่อมต่อสตรีม…",
+      "history": "500 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Red · EMA 65309.311140 / 67126.625526   |   MSO -1.339987 · Signal -1.480883 · Hist 0.140896",
+      "canvases": 7
+    },
+    {
+      "tf": "1d",
+      "quote": "65,351.05 USDT",
+      "bar": "แท่งปิดแล้ว",
+      "feed": "Binance Spot · BTCUSDT · 1d · แท่งล่าสุดปิด 16/11/2026 07:00:00 · รับข้อมูล 17/11/2026 01:00:25 (เวลาไทย)",
+      "stream": "กำลังเชื่อมต่อสตรีม…",
+      "history": "500 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Red · EMA 71658.001619 / 75175.988963   |   MSO -1.395252 · Signal -1.250444 · Hist -0.144807",
+      "canvases": 7
+    },
+    {
+      "tf": "1w",
+      "quote": "65,351.05 USDT",
+      "bar": "แท่งปิดแล้ว",
+      "feed": "Binance Spot · BTCUSDT · 1w · แท่งล่าสุดปิด 16/11/2026 07:00:00 · รับข้อมูล 17/11/2026 01:00:25 (เวลาไทย)",
+      "stream": "กำลังเชื่อมต่อสตรีม…",
+      "history": "483 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Orange · EMA 76129.731718 / 75627.445952   |   MSO 0.125182 · Signal 0.262428 · Hist -0.137246",
+      "canvases": 7
+    },
+    {
+      "tf": "1M",
+      "quote": "77,582.02 USDT",
+      "bar": "แท่งปิดแล้ว",
+      "feed": "Binance Spot · BTCUSDT · 1M · แท่งล่าสุดปิด 1/11/2026 07:00:00 · รับข้อมูล 17/11/2026 01:00:25 (เวลาไทย)",
+      "stream": "กำลังเชื่อมต่อสตรีม…",
+      "history": "111 แท่งที่มี · เริ่ม EMA ที่ต้นชุดข้อมูล",
+      "readout": "CDC Yellow · EMA 77922.809309 / 77278.270827   |   MSO 0.060435 · Signal 0.320323 · Hist -0.259888",
+      "canvases": 7
+    }
+  ],
+  "sockets": [
+    {
+      "url": "wss://stream.binance.com/ws/btcusdt@kline_15m",
+      "frames": 8
+    },
+    {
+      "url": "wss://stream.binance.com/ws/btcusdt@kline_1M",
+      "frames": 0
+    }
+  ],
+  "errors": []
+}

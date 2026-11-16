@@ -1,0 +1,10 @@
+{
+  "task": "INDICATOR-INSTALL-20261116",
+  "implementer_thread": "01a1c68a-c00a-7233-ad3b-b00042f9f815",
+  "reviewer_installer_thread": "01a1e50b-75dc-70e3-b8b4-962a41e9cb37",
+  "reviewer_pane": "w2:pK",
+  "coordinator_thread": "01a1c68d-a207-7011-8a01-2c0840997d39",
+  "old_axiom_thread_install_permission": false,
+  "install_target": "oracles/axiom-oracle/trading-lab",
+  "check_before_install": true
+}

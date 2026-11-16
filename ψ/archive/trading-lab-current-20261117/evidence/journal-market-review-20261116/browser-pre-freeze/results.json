@@ -1,0 +1,16 @@
+{
+  "scope": "Synthetic OHLC, mocked services, real chart4.2.3; fresh isolated browser storage",
+  "passed": [
+    "market startup has no storage writes",
+    "HTTP/gap/duplicate failures retain last data and identify stale status",
+    "market display controls isolated",
+    "Thai symbols hide native BTC",
+    "closed net is visible after fees",
+    "technical UUIDs hidden until details opened",
+    "reason text safely rendered",
+    "market refresh preserves exact replay snapshot",
+    "mobile market/journal contained"
+  ],
+  "errors": [],
+  "marketRequests": 8
+}

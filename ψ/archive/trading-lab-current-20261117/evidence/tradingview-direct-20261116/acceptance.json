@@ -1,0 +1,15 @@
+{
+  "task": "TV-DIRECT-20261116",
+  "status": "implemented-local-verified",
+  "verifiedAt": "2026-11-16T16:55:47.867539+00:00",
+  "changedOrNewFiles": 8,
+  "browserGroups": 16,
+  "browserErrors": [],
+  "pureFileSuites": 3,
+  "pureResult": "pass",
+  "existingLocalhost8000": "serves-new-launcher",
+  "savedLayoutPreferenceKey": "axiom_tv_layout_v1",
+  "accountJournalIndicatorEngines": "unchanged",
+  "externalAccountSetup": "User adds CDC/MSO and saves layout on TradingView once; no account action performed",
+  "publication": false
+}

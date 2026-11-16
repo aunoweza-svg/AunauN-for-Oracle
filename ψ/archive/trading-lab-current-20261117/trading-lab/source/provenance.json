@@ -1,0 +1,8 @@
+{
+  "source": "exact user input_text, Codex conversation 01a1c68c-729b-7be2-a732-04b9a9cc9a6c",
+  "encoding": "UTF-8",
+  "scripts": {
+    "cdc-actionzone-v3-2020.pine": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248",
+    "modified-stochastic-macd-oscillator.pine": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a"
+  }
+}

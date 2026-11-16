@@ -1,0 +1,14 @@
+{
+  "scope": "Actual Chromium/Lightweight Charts with SYNTHETIC HTTP/WebSocket fixtures; external TradingView parity not evaluated",
+  "results": [
+    "native chart uses 500 closed bars; original CDC/MSO engines feed actual overlays and oscillator: PASS",
+    "six intervals, UTC Monday/calendar months, short listing history and restored TradingView reference interval: PASS",
+    "aborted old timeframe request cannot replace a newer chart: PASS",
+    "validated live candles append/update; wrong interval and stale/reopened events ignored; pending REST retains live tail; historical hover remains stable: PASS",
+    "market lifecycle closes streams and provider failure preserves chart with visible stale/error message: PASS",
+    "real mouse drawings, per-timeframe storage/reload, settings/volume/toggles leave replay/account storage unchanged: PASS",
+    "desktop/mobile contain actual chart canvases without horizontal page overflow: PASS"
+  ],
+  "errors": [],
+  "requests": 18
+}

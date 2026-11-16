@@ -1,0 +1,42 @@
+[
+  {
+    "path": "README.md",
+    "before": "d439f1d03391b7b07159378829e0625ccfc545f5851df04cc688445aac1b00e0",
+    "after": "3c9347f8fdc2e6c4b36330e0e1325fa28650b2c63e7df08a259a7b0273deb03d"
+  },
+  {
+    "path": "dist/app.js",
+    "before": "0d2216585f6a1993648dc51335067916656d1fa7e7015d0a677561e995dd4605",
+    "after": "abee6307264579c891529545d165f2116c2430f57dc5b60d842a4277e1375b1a"
+  },
+  {
+    "path": "dist/index.html",
+    "before": "0b26300e9a79fe0bcd78411cdd13260bf4c32fa6ff1f278d836b942db82b18bd",
+    "after": "96de08342a6f701cd33c783b263a5618d70f0237139480e11bebfe7789be2a82"
+  },
+  {
+    "path": "dist/style.css",
+    "before": "cf9ac872a5fe162252cc971c7b309a6625892f4f33be26c3bf80d43145552f44",
+    "after": "c10c24a35041d790e5feeca085dc611d2a13705e5a382b5d05634da5d5241419"
+  },
+  {
+    "path": "dist/tradingview-launcher.js",
+    "before": null,
+    "after": "8d627ee8caabea52cc32f30566dd80cbf3d07e26934f43b4c0b132a6c6e1994a"
+  },
+  {
+    "path": "tests/browser.cjs",
+    "before": "87ffa3f2b9f1d1980f2b2facae4506bb07cc4fefbd5b50f36030d8ce19e467f9",
+    "after": "5a6b982772f69d949c4ce0524eb2c78086bf36665251890aab3f5596acc75fd8"
+  },
+  {
+    "path": "dist/pine/cdc-actionzone-v3-2020.pine",
+    "before": null,
+    "after": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248"
+  },
+  {
+    "path": "dist/pine/modified-stochastic-macd-oscillator.pine",
+    "before": null,
+    "after": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a"
+  }
+]

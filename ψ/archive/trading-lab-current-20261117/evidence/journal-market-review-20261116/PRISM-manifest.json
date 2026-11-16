@@ -1,0 +1,47 @@
+{
+  "task": "JOURNAL-MARKET-20261116",
+  "status": "FROZEN-F1",
+  "target": "/mnt/d/onedrive/aunaun oracle/oracles/axiom-oracle/trading-lab",
+  "files": [
+    {
+      "path": "README.md",
+      "before": "549394329c5e70621dbf7d123d91ca3ad995167ef3d899a96361f2604d5e91f4",
+      "after": "d439f1d03391b7b07159378829e0625ccfc545f5851df04cc688445aac1b00e0"
+    },
+    {
+      "path": "dist/app.js",
+      "before": "46ed818a0eb0c041a7f74908a633b31f8c43b7e1c6af56acdcda20d49a26c54a",
+      "after": "0d2216585f6a1993648dc51335067916656d1fa7e7015d0a677561e995dd4605"
+    },
+    {
+      "path": "dist/index.html",
+      "before": "6be5289a873a4d055836d7df6de2029eb6601c967e2727632b6c4229848377b2",
+      "after": "0b26300e9a79fe0bcd78411cdd13260bf4c32fa6ff1f278d836b942db82b18bd"
+    },
+    {
+      "path": "dist/journal-view.js",
+      "before": null,
+      "after": "3bc65c94f60df91820351ef69ebd997288005ee1b55e3cec94ec25701d1ae9c5"
+    },
+    {
+      "path": "dist/market-view.js",
+      "before": null,
+      "after": "3ab99a18c5eb5ed18bf3b22d155e5a5c2474000728991dcf946807bbe7d26c53"
+    },
+    {
+      "path": "dist/style.css",
+      "before": "38acd2e286b8ece57c3bf5e509acbf4b906cb6045c433fde22f0d3f7c4700bef",
+      "after": "cf9ac872a5fe162252cc971c7b309a6625892f4f33be26c3bf80d43145552f44"
+    },
+    {
+      "path": "tests/browser.cjs",
+      "before": "c0ac6fdc648d9ce073e27c14f430dc84048f23ed8f7c63dbdfbf1761501b67f1",
+      "after": "87ffa3f2b9f1d1980f2b2facae4506bb07cc4fefbd5b50f36030d8ce19e467f9"
+    },
+    {
+      "path": "tests/journal-market.cjs",
+      "before": null,
+      "after": "0204a1498e1103c5455e249f43012b2ed5d681ff5978c03f08497d242b3433fd"
+    }
+  ]
+}

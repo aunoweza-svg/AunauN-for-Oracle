@@ -1,0 +1,279 @@
+{
+  "preparedAtUTC": "2026-11-16T18:44:10.576143+00:00",
+  "destination": "Existing parent snapshot flow: https://github.com/aunoweza-svg/AunauN-for-Oracle.git, main; sole publisher AunauN Oracle",
+  "sourceRepository": "/mnt/d/OneDrive/AunauN Oracle/oracles/axiom-oracle",
+  "scope": "Current Trading Lab code, latest own-chart and pane-label evidence, AXIOM RRR/lesson and one metrics row",
+  "checkedAppHashes": 27,
+  "fileCount": 43,
+  "bytes": 293580,
+  "files": [
+    {
+      "source": "trading-lab/PRISM-BRIEF.md",
+      "snapshot": "trading-lab/PRISM-BRIEF.md",
+      "bytes": 10399,
+      "sha256": "801d557f4619262fae2cb5aabd5e533070f0fe6eb40fca3a24a917be6d037418"
+    },
+    {
+      "source": "trading-lab/README.md",
+      "snapshot": "trading-lab/README.md",
+      "bytes": 35691,
+      "sha256": "2acffb3390105164d6e35b370f360cdf3456dabae7c81593f7387ca64b7145ae"
+    },
+    {
+      "source": "trading-lab/dist/NOTICE.txt",
+      "snapshot": "trading-lab/dist/NOTICE.txt",
+      "bytes": 1068,
+      "sha256": "fa527b0c58e3bbf837b6f64f5eb40233b1f5f880718f7e67b96763d88313f273"
+    },
+    {
+      "source": "trading-lab/dist/app.js",
+      "snapshot": "trading-lab/dist/app.js",
+      "bytes": 20986,
+      "sha256": "05e30ebf7f5a59b6ed4c6aa77d3ce3c1c80284db764e9dda035b056fd16f8260"
+    },
+    {
+      "source": "trading-lab/dist/cdc.js",
+      "snapshot": "trading-lab/dist/cdc.js",
+      "bytes": 2155,
+      "sha256": "940484a90039524f256700107be48978d5a565a330bd084912d7ae46bd77225f"
+    },
+    {
+      "source": "trading-lab/dist/index.html",
+      "snapshot": "trading-lab/dist/index.html",
+      "bytes": 17229,
+      "sha256": "95519fb0d56fe8d98d099d0cfb24d80718a5b65cd806e6ec59d4e5b380c9ecc0"
+    },
+    {
+      "source": "trading-lab/dist/indicator-view.js",
+      "snapshot": "trading-lab/dist/indicator-view.js",
+      "bytes": 7246,
+      "sha256": "fed5b7e43375338c2708e785c7c83ee264a67d9299accc25f727859f0e7d5bdf"
+    },
+    {
+      "source": "trading-lab/dist/indicators.js",
+      "snapshot": "trading-lab/dist/indicators.js",
+      "bytes": 2731,
+      "sha256": "abd9a4a199f78c21ef3b03cf8272a9b0bd7b55bd3fb861f5b6d126658652c73b"
+    },
+    {
+      "source": "trading-lab/dist/journal-view.js",
+      "snapshot": "trading-lab/dist/journal-view.js",
+      "bytes": 6747,
+      "sha256": "3bc65c94f60df91820351ef69ebd997288005ee1b55e3cec94ec25701d1ae9c5"
+    },
+    {
+      "source": "trading-lab/dist/market-view.js",
+      "snapshot": "trading-lab/dist/market-view.js",
+      "bytes": 6630,
+      "sha256": "3ab99a18c5eb5ed18bf3b22d155e5a5c2474000728991dcf946807bbe7d26c53"
+    },
+    {
+      "source": "trading-lab/dist/model.js",
+      "snapshot": "trading-lab/dist/model.js",
+      "bytes": 9819,
+      "sha256": "f036b6d42a8b13181970dbdd7a4194d5273379498b8867ad33a3d6494efd6b0e"
+    },
+    {
+      "source": "trading-lab/dist/mso.js",
+      "snapshot": "trading-lab/dist/mso.js",
+      "bytes": 1842,
+      "sha256": "59a5105f657b1bd19cf77779790fdf862b8bfcaeffeb93fe53c93e279edd897b"
+    },
+    {
+      "source": "trading-lab/dist/own-chart.js",
+      "snapshot": "trading-lab/dist/own-chart.js",
+      "bytes": 25501,
+      "sha256": "1fb49967b5d1a8136dd02f6ecc6f2de65432b6a06e717eff65befc7da3df8e33"
+    },
+    {
+      "source": "trading-lab/dist/pine/cdc-actionzone-v3-2020.pine",
+      "snapshot": "trading-lab/dist/pine/cdc-actionzone-v3-2020.pine",
+      "bytes": 9253,
+      "sha256": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248"
+    },
+    {
+      "source": "trading-lab/dist/pine/modified-stochastic-macd-oscillator.pine",
+      "snapshot": "trading-lab/dist/pine/modified-stochastic-macd-oscillator.pine",
+      "bytes": 2877,
+      "sha256": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a"
+    },
+    {
+      "source": "trading-lab/dist/style.css",
+      "snapshot": "trading-lab/dist/style.css",
+      "bytes": 9725,
+      "sha256": "8372afb572b8b52ffc75d1091822d6388cb554ef1f919a3629390e242530e831"
+    },
+    {
+      "source": "trading-lab/dist/tradingview-launcher.js",
+      "snapshot": "trading-lab/dist/tradingview-launcher.js",
+      "bytes": 3881,
+      "sha256": "8e12cc4e3c1efcc9c3129de2abb53807071456589af252d9786678fa61e8ad3a"
+    },
+    {
+      "source": "trading-lab/source/cdc-actionzone-v3-2020.pine",
+      "snapshot": "trading-lab/source/cdc-actionzone-v3-2020.pine",
+      "bytes": 9253,
+      "sha256": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248"
+    },
+    {
+      "source": "trading-lab/source/modified-stochastic-macd-oscillator.pine",
+      "snapshot": "trading-lab/source/modified-stochastic-macd-oscillator.pine",
+      "bytes": 2877,
+      "sha256": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a"
+    },
+    {
+      "source": "trading-lab/source/provenance.json",
+      "snapshot": "trading-lab/source/provenance.json",
+      "bytes": 358,
+      "sha256": "62f22f85dda948deb97719e04f19980cf3e9090732ed2479eff3014cb860461b"
+    },
+    {
+      "source": "trading-lab/tests/browser.cjs",
+      "snapshot": "trading-lab/tests/browser.cjs",
+      "bytes": 26830,
+      "sha256": "fe74a7bab045fd188d8abc322f701bd49f9b0d2db50d6ce9c849a29522a73050"
+    },
+    {
+      "source": "trading-lab/tests/indicators.cjs",
+      "snapshot": "trading-lab/tests/indicators.cjs",
+      "bytes": 5480,
+      "sha256": "164925d1a4e405c889595c2ae02607bf0b042660cc665f24216850f46c14468d"
+    },
+    {
+      "source": "trading-lab/tests/journal-market.cjs",
+      "snapshot": "trading-lab/tests/journal-market.cjs",
+      "bytes": 1674,
+      "sha256": "0204a1498e1103c5455e249f43012b2ed5d681ff5978c03f08497d242b3433fd"
+    },
+    {
+      "source": "trading-lab/tests/model.cjs",
+      "snapshot": "trading-lab/tests/model.cjs",
+      "bytes": 3542,
+      "sha256": "478274b2a4a57a216b46c5f7bb114baf35d5bca6e09bd507b50a20a290f61abf"
+    },
+    {
+      "source": "trading-lab/tests/own-chart-browser.cjs",
+      "snapshot": "trading-lab/tests/own-chart-browser.cjs",
+      "bytes": 15941,
+      "sha256": "e52bbb88e5969e0f3bfaa85f8a67591ae1ee4d5379f3d656125bbe9b320f17a6"
+    },
+    {
+      "source": "trading-lab/tests/own-chart.cjs",
+      "snapshot": "trading-lab/tests/own-chart.cjs",
+      "bytes": 5467,
+      "sha256": "21fce81090a22538ff5fd1b7f09ef5f8068899f0496e659797dffb75fa868662"
+    },
+    {
+      "source": "trading-lab/tests/regression.cjs",
+      "snapshot": "trading-lab/tests/regression.cjs",
+      "bytes": 97,
+      "sha256": "b9228017613100c51a72306a7696f9b2162c13244a2ad900d27ec9d0abcdf590"
+    },
+    {
+      "source": "ψ/memory/retrospectives/2026-11/17/01.36_spot-heikin-ashi-cdc-pane-labels.md",
+      "snapshot": "ψ/memory/retrospectives/2026-11/17/01.36_spot-heikin-ashi-cdc-pane-labels.md",
+      "bytes": 17068,
+      "sha256": "15c49dd7d65708075b297b4cd7252b18190903333d38e408dc0c7e4fac4ad488"
+    },
+    {
+      "source": "ψ/memory/learnings/2026-11-17_chart-reference-and-pane-labels.md",
+      "snapshot": "ψ/memory/learnings/2026-11-17_chart-reference-and-pane-labels.md",
+      "bytes": 3333,
+      "sha256": "3242fbd88f6ad1801afa3f438876aee922c07693cd6465c21b70d621b4ef39bd"
+    },
+    {
+      "source": "ψ/lab/own-chart-20261117/REVIEW.md",
+      "snapshot": "ψ/lab/own-chart-20261117/REVIEW.md",
+      "bytes": 5502,
+      "sha256": "e38f05d379955d8fa28f0aff3ef3b8f45edb3fac46d482388b22c6caaeac6624"
+    },
+    {
+      "source": "ψ/lab/own-chart-20261117/acceptance.json",
+      "snapshot": "ψ/lab/own-chart-20261117/acceptance.json",
+      "bytes": 1978,
+      "sha256": "5ec415182b2f0cc2e5d3eb758c8a138e28264691db6d8ddc091ac53bdc3f30cf"
+    },
+    {
+      "source": "ψ/lab/own-chart-20261117/installation.json",
+      "snapshot": "ψ/lab/own-chart-20261117/installation.json",
+      "bytes": 1952,
+      "sha256": "dc60b68548ee8bf956f3c3a0704cc59ce3f5718396a189dad489ef67974357c4"
+    },
+    {
+      "source": "ψ/lab/own-chart-20261117/accepted-hashes.json",
+      "snapshot": "ψ/lab/own-chart-20261117/accepted-hashes.json",
+      "bytes": 922,
+      "sha256": "7b71b0f1efe81fa83713751a11b1a7e369fe444d9faaffc308793f2acf277b83"
+    },
+    {
+      "source": "ψ/lab/own-chart-20261117/prism-review.json",
+      "snapshot": "ψ/lab/own-chart-20261117/prism-review.json",
+      "bytes": 805,
+      "sha256": "f68128c75fb4c19dbc0aa66a38722bac5a887bb28fc5384d2722d2ddaa52b89d"
+    },
+    {
+      "source": "ψ/lab/own-chart-20261117/heikin-ashi-reference-comparison.json",
+      "snapshot": "ψ/lab/own-chart-20261117/heikin-ashi-reference-comparison.json",
+      "bytes": 1028,
+      "sha256": "95fc9df9e830627c6ed7c6099b18126c2d369c20c880614f29f53393c1659e8a"
+    },
+    {
+      "source": "ψ/lab/own-chart-20261117/installed-live-browser/results.json",
+      "snapshot": "ψ/lab/own-chart-20261117/installed-live-browser/results.json",
+      "bytes": 5538,
+      "sha256": "9c690ace914fb7969bf02c6b90672a1617860e57e691264415aefe1e188a03e3"
+    },
+    {
+      "source": "ψ/lab/own-chart-20261117/installed-own-browser/results.json",
+      "snapshot": "ψ/lab/own-chart-20261117/installed-own-browser/results.json",
+      "bytes": 987,
+      "sha256": "8d8c0ada8d50eda4d31ab2d28c29aca1aefeaa5b17e6f53d4c9a6bac052acbed"
+    },
+    {
+      "source": "ψ/lab/own-chart-20261117/installed-regression-browser/results.json",
+      "snapshot": "ψ/lab/own-chart-20261117/installed-regression-browser/results.json",
+      "bytes": 2108,
+      "sha256": "eae2e7ab195a8f94eca8e3a3127ee2a76e167e8e0334faf1cef7e8e14ebf5c55"
+    },
+    {
+      "source": "ψ/lab/cdc-pane-labels-20261117/REVIEW.md",
+      "snapshot": "ψ/lab/cdc-pane-labels-20261117/REVIEW.md",
+      "bytes": 3146,
+      "sha256": "74b1384b460bb2f15244a53a928b89557c33c04cd7a37ac8e609b388232d46e1"
+    },
+    {
+      "source": "ψ/lab/cdc-pane-labels-20261117/acceptance.json",
+      "snapshot": "ψ/lab/cdc-pane-labels-20261117/acceptance.json",
+      "bytes": 1729,
+      "sha256": "6c43a7f90b3ed2f3c707230503e8594d693826ca55281a22262d69fbd01ae12b"
+    },
+    {
+      "source": "ψ/lab/cdc-pane-labels-20261117/baseline-hashes.json",
+      "snapshot": "ψ/lab/cdc-pane-labels-20261117/baseline-hashes.json",
+      "bytes": 548,
+      "sha256": "c562610eca2bdbe1805896bc29d964def2e9e421e941e710260027d222d724a7"
+    },
+    {
+      "source": "ψ/lab/cdc-pane-labels-20261117/browser/results.json",
+      "snapshot": "ψ/lab/cdc-pane-labels-20261117/browser/results.json",
+      "bytes": 1131,
+      "sha256": "df6b3d78bd83bc69cd78fc5eed58ffd5e416782b5adba3b79f6bfdd4b782e882"
+    },
+    {
+      "source": "ψ/memory/learnings/session-metrics.md",
+      "snapshot": "ψ/memory/learnings/session-metrics.md",
+      "bytes": 506,
+      "sha256": "7f4c189cb801dcd071383581132e8b6bebf83df63577912a02d589374d9b042d",
+      "scope": "Latest AXIOM RRR row only; older working rows preserved at source"
+    }
+  ],
+  "excluded": [
+    "hosting identity",
+    "original user screenshots",
+    "browser/user state",
+    "credentials/runtimes",
+    ".git",
+    "unrelated child changes"
+  ],
+  "status": "Prepared locally; not yet committed or pushed"
+}

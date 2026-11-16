@@ -1,0 +1,22 @@
+{
+  "README.md": "d439f1d03391b7b07159378829e0625ccfc545f5851df04cc688445aac1b00e0",
+  "dist/app.js": "0d2216585f6a1993648dc51335067916656d1fa7e7015d0a677561e995dd4605",
+  "dist/cdc.js": "940484a90039524f256700107be48978d5a565a330bd084912d7ae46bd77225f",
+  "dist/index.html": "0b26300e9a79fe0bcd78411cdd13260bf4c32fa6ff1f278d836b942db82b18bd",
+  "dist/indicator-view.js": "da748f9f0a668bf1df5d254f9a9a881b73c49be87c08ae1db9e8ede04665423d",
+  "dist/indicators.js": "abd9a4a199f78c21ef3b03cf8272a9b0bd7b55bd3fb861f5b6d126658652c73b",
+  "dist/journal-view.js": "3bc65c94f60df91820351ef69ebd997288005ee1b55e3cec94ec25701d1ae9c5",
+  "dist/market-view.js": "3ab99a18c5eb5ed18bf3b22d155e5a5c2474000728991dcf946807bbe7d26c53",
+  "dist/model.js": "f036b6d42a8b13181970dbdd7a4194d5273379498b8867ad33a3d6494efd6b0e",
+  "dist/mso.js": "59a5105f657b1bd19cf77779790fdf862b8bfcaeffeb93fe53c93e279edd897b",
+  "dist/NOTICE.txt": "fa527b0c58e3bbf837b6f64f5eb40233b1f5f880718f7e67b96763d88313f273",
+  "dist/style.css": "cf9ac872a5fe162252cc971c7b309a6625892f4f33be26c3bf80d43145552f44",
+  "source/cdc-actionzone-v3-2020.pine": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248",
+  "source/modified-stochastic-macd-oscillator.pine": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a",
+  "source/provenance.json": "62f22f85dda948deb97719e04f19980cf3e9090732ed2479eff3014cb860461b",
+  "tests/browser.cjs": "87ffa3f2b9f1d1980f2b2facae4506bb07cc4fefbd5b50f36030d8ce19e467f9",
+  "tests/indicators.cjs": "164925d1a4e405c889595c2ae02607bf0b042660cc665f24216850f46c14468d",
+  "tests/journal-market.cjs": "0204a1498e1103c5455e249f43012b2ed5d681ff5978c03f08497d242b3433fd",
+  "tests/model.cjs": "478274b2a4a57a216b46c5f7bb114baf35d5bca6e09bd507b50a20a290f61abf",
+  "tests/regression.cjs": "b9228017613100c51a72306a7696f9b2162c13244a2ad900d27ec9d0abcdf590"
+}

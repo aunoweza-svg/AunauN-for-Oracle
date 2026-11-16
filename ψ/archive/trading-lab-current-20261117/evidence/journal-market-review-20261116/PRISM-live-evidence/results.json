@@ -1,0 +1,16 @@
+{
+  "scope": "Actual Binance public 500 closed15m market bars in fresh Chromium; no account or replay writes",
+  "responses": [
+    {
+      "url": "https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=15m&startTime=1794396600000&endTime=1794846599999&limit=500",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "checkedAt": "2026-11-16T16:38:10.162Z",
+  "status": "Binance USDⓈ-M Futures · BTCUSDT · แท่งปิด 15 นาที · รับข้อมูลสำเร็จ 16/11/2026 23:38:10 (เวลาไทย) · ตรวจแท่งใหม่ทุก 60 วินาทีเมื่อเปิดหน้านี้",
+  "price": "ราคาปิดล่าสุด 64,746.2 USDT · แท่งปิด 16/11/2026 23:30:00 (เวลาไทย)",
+  "legend": "CDC Green · EMA 64501.25 / 64484.21 | MSO 0.0943 / Signal -0.0602 / Histogram 0.1545",
+  "lastClosed": "1794846600",
+  "storage": null
+}

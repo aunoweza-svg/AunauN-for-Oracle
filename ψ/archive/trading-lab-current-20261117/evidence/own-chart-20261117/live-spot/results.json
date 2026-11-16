@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-16T18:00:09.730Z",
+  "source": "Binance public Spot BTCUSDT REST klines",
+  "results": [
+    {
+      "interval": "15m",
+      "rows": 500,
+      "firstOpenUTC": "2026-11-11T13:00:00.000Z",
+      "lastCloseUTC": "2026-11-16T18:00:00.000Z",
+      "closedAndContinuous": true
+    },
+    {
+      "interval": "1h",
+      "rows": 500,
+      "firstOpenUTC": "2026-10-26T22:00:00.000Z",
+      "lastCloseUTC": "2026-11-16T18:00:00.000Z",
+      "closedAndContinuous": true
+    },
+    {
+      "interval": "4h",
+      "rows": 500,
+      "firstOpenUTC": "2026-08-25T08:00:00.000Z",
+      "lastCloseUTC": "2026-11-16T16:00:00.000Z",
+      "closedAndContinuous": true
+    },
+    {
+      "interval": "1d",
+      "rows": 500,
+      "firstOpenUTC": "2025-07-04T00:00:00.000Z",
+      "lastCloseUTC": "2026-11-16T00:00:00.000Z",
+      "closedAndContinuous": true
+    },
+    {
+      "interval": "1w",
+      "rows": 483,
+      "firstOpenUTC": "2017-08-14T00:00:00.000Z",
+      "lastCloseUTC": "2026-11-16T00:00:00.000Z",
+      "closedAndContinuous": true
+    },
+    {
+      "interval": "1M",
+      "rows": 111,
+      "firstOpenUTC": "2017-08-01T00:00:00.000Z",
+      "lastCloseUTC": "2026-11-01T00:00:00.000Z",
+      "closedAndContinuous": true
+    }
+  ],
+  "scope": "Actual provider rows validated for six intervals; not a TradingView indicator comparison"
+}

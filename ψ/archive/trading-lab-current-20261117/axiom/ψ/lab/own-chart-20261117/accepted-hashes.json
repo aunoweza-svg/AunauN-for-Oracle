@@ -1,0 +1,12 @@
+{
+  "README.md": "86af4653c7297df093497e31714edd967938b688e220c105923f2a396fec5b0c",
+  "dist/app.js": "05e30ebf7f5a59b6ed4c6aa77d3ce3c1c80284db764e9dda035b056fd16f8260",
+  "dist/index.html": "61f76baae4f8698714e7a42643e2a63a7e86baf0fae89889099f59c0de29a29e",
+  "dist/indicator-view.js": "fed5b7e43375338c2708e785c7c83ee264a67d9299accc25f727859f0e7d5bdf",
+  "dist/own-chart.js": "aabddb95e3e49043ec47d0277ae52f1cbbed3a7e10e074fc983ed32b0102b7c3",
+  "dist/style.css": "8372afb572b8b52ffc75d1091822d6388cb554ef1f919a3629390e242530e831",
+  "dist/tradingview-launcher.js": "8e12cc4e3c1efcc9c3129de2abb53807071456589af252d9786678fa61e8ad3a",
+  "tests/browser.cjs": "fe74a7bab045fd188d8abc322f701bd49f9b0d2db50d6ce9c849a29522a73050",
+  "tests/own-chart-browser.cjs": "e078ca5c11327e8425d3f61c142590818013920479c41181312595805fc747a7",
+  "tests/own-chart.cjs": "e870e6a54516936c01cabd5ddc2aa8a31f6c3e7fe71d172bac14c3a02dcf91a2"
+}

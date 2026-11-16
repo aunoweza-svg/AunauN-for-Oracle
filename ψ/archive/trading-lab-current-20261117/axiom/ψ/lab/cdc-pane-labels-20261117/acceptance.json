@@ -1,0 +1,37 @@
+{
+  "task": "CDC-PANE-LABELS-20261117",
+  "status": "implemented-and-browser-verified",
+  "checkedAt": "2026-11-16T18:31:38.286426+00:00",
+  "source": "Original user CDC Pine lines144–162",
+  "behavior": [
+    "One latest-bar pane label with pointer above high when close>slow, below low otherwise",
+    "BUY/SELL next bar only on original CDC buy/sell flags; bullish/bearish/sideways and chart-type close",
+    "Pine buy/sell/price-direction foreground and background colors",
+    "Foreground primitive redraws on live render, resize, price/time scaling; hidden if latest bar outside visible pane",
+    "Quick labels toggle shares existing cdc.assist setting with form; no preference reset"
+  ],
+  "files": {
+    "dist/own-chart.js": "1fb49967b5d1a8136dd02f6ecc6f2de65432b6a06e717eff65befc7da3df8e33",
+    "dist/index.html": "95519fb0d56fe8d98d099d0cfb24d80718a5b65cd806e6ec59d4e5b380c9ecc0",
+    "tests/own-chart.cjs": "21fce81090a22538ff5fd1b7f09ef5f8068899f0496e659797dffb75fa868662",
+    "tests/own-chart-browser.cjs": "e52bbb88e5969e0f3bfaa85f8a67591ae1ee4d5379f3d656125bbe9b320f17a6",
+    "README.md": "2acffb3390105164d6e35b370f360cdf3456dabae7c81593f7387ca64b7145ae"
+  },
+  "unitCases": 8,
+  "actualChromiumBrowserGroups": 8,
+  "pageErrors": [],
+  "visualReview": [
+    "browser/own-1440.png",
+    "browser/own-390.png"
+  ],
+  "protectedSourcesUnchanged": [
+    "dist/model.js",
+    "dist/cdc.js",
+    "dist/mso.js",
+    "dist/indicators.js",
+    "dist/journal-view.js",
+    "source/cdc-actionzone-v3-2020.pine",
+    "source/modified-stochastic-macd-oscillator.pine"
+  ],
+  "scope": "Local-only graphical fix; synthetic browser prices used for behavior QA; no new numerical parity claim; no trading/account changes"
+}

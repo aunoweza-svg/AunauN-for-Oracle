@@ -1,0 +1,18 @@
+{
+  "task": "INDICATOR-INSTALL-20261116",
+  "status": "FROZEN-F1",
+  "frozenAt": "2026-11-16T23:09:20+07:00",
+  "implementer": "PRISM",
+  "soleInstaller": "01a1e50b-75dc-70e3-b8b4-962a41e9cb37",
+  "manifestSHA256": "3ae76914ff283bbf9303d7428e45a7bc03ce39c8a2e65c7543980bf01312fcf2",
+  "reportSHA256": "9267ff36830366e749c81a99a1c0f6ec0d084c5312c7ec0046a11149213c214b",
+  "changedFiles": 15,
+  "tests": {
+    "baselineModel": 10,
+    "indicators": 11,
+    "browserGroups": 14,
+    "browserErrors": []
+  },
+  "installed": false,
+  "externalTradingViewParity": "unverified"
+}

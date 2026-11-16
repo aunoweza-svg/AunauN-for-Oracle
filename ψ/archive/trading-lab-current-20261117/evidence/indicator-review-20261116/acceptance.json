@@ -1,0 +1,21 @@
+{
+  "task": "INDICATOR-INSTALL-20261116",
+  "status": "accepted-installed-verified",
+  "freeze": "FROZEN-F1",
+  "verifiedAt": "2026-11-16T16:11:27.789121+00:00",
+  "installerThread": "01a1e50b-75dc-70e3-b8b4-962a41e9cb37",
+  "target": "trading-lab",
+  "acceptedFiles": 17,
+  "changedOrNewFiles": 15,
+  "scopedBackup": "baseline-before-install",
+  "installedHashes": "installed-hashes.json",
+  "expandedBrowserGroups": 14,
+  "independentBrowserGroups": 10,
+  "browserErrors": [],
+  "installedPureSuites": "pass",
+  "independentMath": "pass",
+  "hostingMetadata": "unchanged",
+  "externalTradingViewParity": "unverified",
+  "testMarketData": "synthetic-mocked",
+  "publication": false
+}

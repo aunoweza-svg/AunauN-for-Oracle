@@ -1,0 +1,8 @@
+{
+  "dist/own-chart.js": "aabddb95e3e49043ec47d0277ae52f1cbbed3a7e10e074fc983ed32b0102b7c3",
+  "dist/index.html": "61f76baae4f8698714e7a42643e2a63a7e86baf0fae89889099f59c0de29a29e",
+  "dist/style.css": "8372afb572b8b52ffc75d1091822d6388cb554ef1f919a3629390e242530e831",
+  "tests/own-chart.cjs": "e870e6a54516936c01cabd5ddc2aa8a31f6c3e7fe71d172bac14c3a02dcf91a2",
+  "tests/own-chart-browser.cjs": "e078ca5c11327e8425d3f61c142590818013920479c41181312595805fc747a7",
+  "README.md": "86af4653c7297df093497e31714edd967938b688e220c105923f2a396fec5b0c"
+}

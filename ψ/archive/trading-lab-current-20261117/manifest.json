@@ -1,0 +1,800 @@
+{
+  "capturedAt": "2026-11-17T01:44:22.533246+07:00",
+  "scope": "Current accepted Trading Lab app and selected review evidence; original reference screenshots, browser/user state, hosting metadata and duplicate historical candidates excluded",
+  "acceptedAppHashChecks": 27,
+  "files": [
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/cdc-pane-labels-20261117/REVIEW.md",
+      "snapshot": "evidence/cdc-pane-labels-20261117/REVIEW.md",
+      "bytes": 3146,
+      "sha256": "74b1384b460bb2f15244a53a928b89557c33c04cd7a37ac8e609b388232d46e1"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/cdc-pane-labels-20261117/acceptance.json",
+      "snapshot": "evidence/cdc-pane-labels-20261117/acceptance.json",
+      "bytes": 1729,
+      "sha256": "6c43a7f90b3ed2f3c707230503e8594d693826ca55281a22262d69fbd01ae12b"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/cdc-pane-labels-20261117/browser/results.json",
+      "snapshot": "evidence/cdc-pane-labels-20261117/browser/results.json",
+      "bytes": 1131,
+      "sha256": "df6b3d78bd83bc69cd78fc5eed58ffd5e416782b5adba3b79f6bfdd4b782e882"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/PRISM-REPORT.md",
+      "snapshot": "evidence/indicator-review-20261116/PRISM-REPORT.md",
+      "bytes": 8571,
+      "sha256": "9267ff36830366e749c81a99a1c0f6ec0d084c5312c7ec0046a11149213c214b"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/PRISM-freeze.json",
+      "snapshot": "evidence/indicator-review-20261116/PRISM-freeze.json",
+      "bytes": 573,
+      "sha256": "904dda35f6e8256acdabe620455f76a88e050f99a3e61d0440d8c73d61afd5c1"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/PRISM-manifest.json",
+      "snapshot": "evidence/indicator-review-20261116/PRISM-manifest.json",
+      "bytes": 2901,
+      "sha256": "3ae76914ff283bbf9303d7428e45a7bc03ce39c8a2e65c7543980bf01312fcf2"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/REVIEW.md",
+      "snapshot": "evidence/indicator-review-20261116/REVIEW.md",
+      "bytes": 6521,
+      "sha256": "3ffa7345a5a3553df4c003e4d731d68c9b476e781a180608d992e522943ba30d"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/acceptance.json",
+      "snapshot": "evidence/indicator-review-20261116/acceptance.json",
+      "bytes": 685,
+      "sha256": "2676382aca660d6f1dff1c56c73be9ba5515db1e042e9e4dff2941c8f14dd423"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/accepted-candidate-hashes.json",
+      "snapshot": "evidence/indicator-review-20261116/accepted-candidate-hashes.json",
+      "bytes": 1575,
+      "sha256": "59cb85d731c1f233cd0dc9414e742c2fcfaa41e6f1c9f902f9661233ce953dee"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/browser-independent-installed/results.json",
+      "snapshot": "evidence/indicator-review-20261116/browser-independent-installed/results.json",
+      "bytes": 548,
+      "sha256": "7c7878f3452791acf769b7af72a2f7895052368add556b569257ab57bb6d5c72"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/browser-installed/results.json",
+      "snapshot": "evidence/indicator-review-20261116/browser-installed/results.json",
+      "bytes": 1873,
+      "sha256": "e71bbcdd6a445f237264168fbc58532622d176c780590f9fb641f99e8e010bb7"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/browser-pre-freeze/results.json",
+      "snapshot": "evidence/indicator-review-20261116/browser-pre-freeze/results.json",
+      "bytes": 548,
+      "sha256": "7c7878f3452791acf769b7af72a2f7895052368add556b569257ab57bb6d5c72"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/installed-browser-expanded.log",
+      "snapshot": "evidence/indicator-review-20261116/installed-browser-expanded.log",
+      "bytes": 3420,
+      "sha256": "4d6e0cb385bdddbfd9b40b98ccdef5d733b9622e1f4ed7fd3053e52a117d2dc0"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/installed-browser-independent.log",
+      "snapshot": "evidence/indicator-review-20261116/installed-browser-independent.log",
+      "bytes": 483,
+      "sha256": "32a92d6558163444639494d0c0edc958ede2fdf30bdac89b582f1e78573390fc"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/indicator-review-20261116/installed-hashes.json",
+      "snapshot": "evidence/indicator-review-20261116/installed-hashes.json",
+      "bytes": 1575,
+      "sha256": "59cb85d731c1f233cd0dc9414e742c2fcfaa41e6f1c9f902f9661233ce953dee"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/PRISM-REPORT.md",
+      "snapshot": "evidence/journal-market-review-20261116/PRISM-REPORT.md",
+      "bytes": 8258,
+      "sha256": "a711844bdbd8733bf9a219d224bfd32a1559d0583cd0b6fbddd724247bdf6645"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/PRISM-freeze.json",
+      "snapshot": "evidence/journal-market-review-20261116/PRISM-freeze.json",
+      "bytes": 514,
+      "sha256": "3e3951efa20ea0763edcb30405f200aad527054d7a02117d9dcaf8b4c20959d9"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/PRISM-live-evidence/results.json",
+      "snapshot": "evidence/journal-market-review-20261116/PRISM-live-evidence/results.json",
+      "bytes": 955,
+      "sha256": "130df521ce8e1b8caa7a5f2f7e7a5267b8e441ba6e5a0206b12dc4eebe8a3091"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/PRISM-manifest.json",
+      "snapshot": "evidence/journal-market-review-20261116/PRISM-manifest.json",
+      "bytes": 1679,
+      "sha256": "e0b9baac53fa078ea2dfdab65c88fa013f0120bb485c98398e6e6ff42d28ee3e"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/REVIEW.md",
+      "snapshot": "evidence/journal-market-review-20261116/REVIEW.md",
+      "bytes": 6059,
+      "sha256": "12ee0e7cb6a65d9cf9751b0f7c14d05a0261455a43ba98290d84452892f5bc9b"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/acceptance.json",
+      "snapshot": "evidence/journal-market-review-20261116/acceptance.json",
+      "bytes": 577,
+      "sha256": "c78be16aa09e61cb9070f1fe0150b33395bdee84e350fe82bb5aafc3fb9e14d8"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/accepted-candidate-hashes.json",
+      "snapshot": "evidence/journal-market-review-20261116/accepted-candidate-hashes.json",
+      "bytes": 1860,
+      "sha256": "af081db5be80bf475ce58630f4965cfeb0df67c26d62d5cc9383d620deccbd5f"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/browser-independent-installed/results.json",
+      "snapshot": "evidence/journal-market-review-20261116/browser-independent-installed/results.json",
+      "bytes": 699,
+      "sha256": "afb9a6b8c30d3dc3223bc5a675ca9277d51b04492bf75064e67dc6480f3e55e6"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/browser-installed/results.json",
+      "snapshot": "evidence/journal-market-review-20261116/browser-installed/results.json",
+      "bytes": 2121,
+      "sha256": "d433280439f1300426dc70ce6ca035d08cb8207503bca4deede503b79eedb6ac"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/browser-pre-freeze/results.json",
+      "snapshot": "evidence/journal-market-review-20261116/browser-pre-freeze/results.json",
+      "bytes": 571,
+      "sha256": "e4cb8b55a8e4724cdaf91430c6c5d4628922b8ab27e7a72efbbc4b0a4cd458c3"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/installed-browser-expanded.log",
+      "snapshot": "evidence/journal-market-review-20261116/installed-browser-expanded.log",
+      "bytes": 3902,
+      "sha256": "206e0d5d29b7759035664394ed3f45ed5db2a16c7f2cb9ecde5a0454f9ed18b0"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/installed-browser-independent.log",
+      "snapshot": "evidence/journal-market-review-20261116/installed-browser-independent.log",
+      "bytes": 625,
+      "sha256": "53a3a6fe78ff9d2ff7f60f0811cd76d9ef914e420985bb835e9ffade43015693"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/journal-market-review-20261116/installed-hashes.json",
+      "snapshot": "evidence/journal-market-review-20261116/installed-hashes.json",
+      "bytes": 1860,
+      "sha256": "af081db5be80bf475ce58630f4965cfeb0df67c26d62d5cc9383d620deccbd5f"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/REVIEW.md",
+      "snapshot": "evidence/own-chart-20261117/REVIEW.md",
+      "bytes": 5502,
+      "sha256": "e38f05d379955d8fa28f0aff3ef3b8f45edb3fac46d482388b22c6caaeac6624"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/acceptance.json",
+      "snapshot": "evidence/own-chart-20261117/acceptance.json",
+      "bytes": 1978,
+      "sha256": "5ec415182b2f0cc2e5d3eb758c8a138e28264691db6d8ddc091ac53bdc3f30cf"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/accepted-hashes.json",
+      "snapshot": "evidence/own-chart-20261117/accepted-hashes.json",
+      "bytes": 922,
+      "sha256": "7b71b0f1efe81fa83713751a11b1a7e369fe444d9faaffc308793f2acf277b83"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/heikin-ashi-reference-comparison.json",
+      "snapshot": "evidence/own-chart-20261117/heikin-ashi-reference-comparison.json",
+      "bytes": 1028,
+      "sha256": "95fc9df9e830627c6ed7c6099b18126c2d369c20c880614f29f53393c1659e8a"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/installation.json",
+      "snapshot": "evidence/own-chart-20261117/installation.json",
+      "bytes": 1952,
+      "sha256": "dc60b68548ee8bf956f3c3a0704cc59ce3f5718396a189dad489ef67974357c4"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/installed-live-browser/results.json",
+      "snapshot": "evidence/own-chart-20261117/installed-live-browser/results.json",
+      "bytes": 5538,
+      "sha256": "9c690ace914fb7969bf02c6b90672a1617860e57e691264415aefe1e188a03e3"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/installed-own-browser/results.json",
+      "snapshot": "evidence/own-chart-20261117/installed-own-browser/results.json",
+      "bytes": 987,
+      "sha256": "8d8c0ada8d50eda4d31ab2d28c29aca1aefeaa5b17e6f53d4c9a6bac052acbed"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/installed-regression-browser/results.json",
+      "snapshot": "evidence/own-chart-20261117/installed-regression-browser/results.json",
+      "bytes": 2108,
+      "sha256": "eae2e7ab195a8f94eca8e3a3127ee2a76e167e8e0334faf1cef7e8e14ebf5c55"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/live-browser-spot/results.json",
+      "snapshot": "evidence/own-chart-20261117/live-browser-spot/results.json",
+      "bytes": 4296,
+      "sha256": "d640da1a2e27a1c4edde023dd1c37e138b05d4aa03c4531d678972e27defa3a2"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/live-browser/results.json",
+      "snapshot": "evidence/own-chart-20261117/live-browser/results.json",
+      "bytes": 4333,
+      "sha256": "dd764f09a40faa9aab14a6830f4582a70afe061e1a5a6afe2d7fd405a994bbf1"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/live-spot/results.json",
+      "snapshot": "evidence/own-chart-20261117/live-spot/results.json",
+      "bytes": 1363,
+      "sha256": "9b7bf0defd8bfd722781450d72a20747cf3595b522efd48f5b9e28ab5b7f651a"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/own-chart-20261117/prism-review.json",
+      "snapshot": "evidence/own-chart-20261117/prism-review.json",
+      "bytes": 805,
+      "sha256": "f68128c75fb4c19dbc0aa66a38722bac5a887bb28fc5384d2722d2ddaa52b89d"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/tradingview-direct-20261116/REVIEW.md",
+      "snapshot": "evidence/tradingview-direct-20261116/REVIEW.md",
+      "bytes": 4118,
+      "sha256": "c1b51209a288241e18ebea05de4c4d02fd5163e5284ebeb54b811b4c3d4c6e2e"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/tradingview-direct-20261116/acceptance.json",
+      "snapshot": "evidence/tradingview-direct-20261116/acceptance.json",
+      "bytes": 536,
+      "sha256": "a225e13f2a5971fc7ba62d74f3072389e9b61acdd75309ab623d2779d7d1e304"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/tradingview-direct-20261116/browser/results.json",
+      "snapshot": "evidence/tradingview-direct-20261116/browser/results.json",
+      "bytes": 2110,
+      "sha256": "1d4f851cb65f84c7fb7a237a4d1ab4723a27943b8e3bf1bb98797c33d016ae8f"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/tradingview-direct-20261116/changes.json",
+      "snapshot": "evidence/tradingview-direct-20261116/changes.json",
+      "bytes": 1494,
+      "sha256": "3c6baf61485716844798b4d873f485f54420bdbc9112aada97da2163a975b189"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/tradingview-direct-20261116/installed-hashes.json",
+      "snapshot": "evidence/tradingview-direct-20261116/installed-hashes.json",
+      "bytes": 2285,
+      "sha256": "e79fe6caa7f203f05a7bc9f7d631975ae9c73aa4fbcd8c819069d42014f439fd"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/PRISM-BRIEF.md",
+      "snapshot": "trading-lab/PRISM-BRIEF.md",
+      "bytes": 10399,
+      "sha256": "801d557f4619262fae2cb5aabd5e533070f0fe6eb40fca3a24a917be6d037418"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/README.md",
+      "snapshot": "trading-lab/README.md",
+      "bytes": 35691,
+      "sha256": "2acffb3390105164d6e35b370f360cdf3456dabae7c81593f7387ca64b7145ae"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/NOTICE.txt",
+      "snapshot": "trading-lab/dist/NOTICE.txt",
+      "bytes": 1068,
+      "sha256": "fa527b0c58e3bbf837b6f64f5eb40233b1f5f880718f7e67b96763d88313f273"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/app.js",
+      "snapshot": "trading-lab/dist/app.js",
+      "bytes": 20986,
+      "sha256": "05e30ebf7f5a59b6ed4c6aa77d3ce3c1c80284db764e9dda035b056fd16f8260"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/cdc.js",
+      "snapshot": "trading-lab/dist/cdc.js",
+      "bytes": 2155,
+      "sha256": "940484a90039524f256700107be48978d5a565a330bd084912d7ae46bd77225f"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/index.html",
+      "snapshot": "trading-lab/dist/index.html",
+      "bytes": 17229,
+      "sha256": "95519fb0d56fe8d98d099d0cfb24d80718a5b65cd806e6ec59d4e5b380c9ecc0"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/indicator-view.js",
+      "snapshot": "trading-lab/dist/indicator-view.js",
+      "bytes": 7246,
+      "sha256": "fed5b7e43375338c2708e785c7c83ee264a67d9299accc25f727859f0e7d5bdf"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/indicators.js",
+      "snapshot": "trading-lab/dist/indicators.js",
+      "bytes": 2731,
+      "sha256": "abd9a4a199f78c21ef3b03cf8272a9b0bd7b55bd3fb861f5b6d126658652c73b"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/journal-view.js",
+      "snapshot": "trading-lab/dist/journal-view.js",
+      "bytes": 6747,
+      "sha256": "3bc65c94f60df91820351ef69ebd997288005ee1b55e3cec94ec25701d1ae9c5"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/market-view.js",
+      "snapshot": "trading-lab/dist/market-view.js",
+      "bytes": 6630,
+      "sha256": "3ab99a18c5eb5ed18bf3b22d155e5a5c2474000728991dcf946807bbe7d26c53"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/model.js",
+      "snapshot": "trading-lab/dist/model.js",
+      "bytes": 9819,
+      "sha256": "f036b6d42a8b13181970dbdd7a4194d5273379498b8867ad33a3d6494efd6b0e"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/mso.js",
+      "snapshot": "trading-lab/dist/mso.js",
+      "bytes": 1842,
+      "sha256": "59a5105f657b1bd19cf77779790fdf862b8bfcaeffeb93fe53c93e279edd897b"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/own-chart.js",
+      "snapshot": "trading-lab/dist/own-chart.js",
+      "bytes": 25501,
+      "sha256": "1fb49967b5d1a8136dd02f6ecc6f2de65432b6a06e717eff65befc7da3df8e33"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/pine/cdc-actionzone-v3-2020.pine",
+      "snapshot": "trading-lab/dist/pine/cdc-actionzone-v3-2020.pine",
+      "bytes": 9253,
+      "sha256": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/pine/modified-stochastic-macd-oscillator.pine",
+      "snapshot": "trading-lab/dist/pine/modified-stochastic-macd-oscillator.pine",
+      "bytes": 2877,
+      "sha256": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/style.css",
+      "snapshot": "trading-lab/dist/style.css",
+      "bytes": 9725,
+      "sha256": "8372afb572b8b52ffc75d1091822d6388cb554ef1f919a3629390e242530e831"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/dist/tradingview-launcher.js",
+      "snapshot": "trading-lab/dist/tradingview-launcher.js",
+      "bytes": 3881,
+      "sha256": "8e12cc4e3c1efcc9c3129de2abb53807071456589af252d9786678fa61e8ad3a"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/source/cdc-actionzone-v3-2020.pine",
+      "snapshot": "trading-lab/source/cdc-actionzone-v3-2020.pine",
+      "bytes": 9253,
+      "sha256": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/source/modified-stochastic-macd-oscillator.pine",
+      "snapshot": "trading-lab/source/modified-stochastic-macd-oscillator.pine",
+      "bytes": 2877,
+      "sha256": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/source/provenance.json",
+      "snapshot": "trading-lab/source/provenance.json",
+      "bytes": 358,
+      "sha256": "62f22f85dda948deb97719e04f19980cf3e9090732ed2479eff3014cb860461b"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/tests/browser.cjs",
+      "snapshot": "trading-lab/tests/browser.cjs",
+      "bytes": 26830,
+      "sha256": "fe74a7bab045fd188d8abc322f701bd49f9b0d2db50d6ce9c849a29522a73050"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/tests/indicators.cjs",
+      "snapshot": "trading-lab/tests/indicators.cjs",
+      "bytes": 5480,
+      "sha256": "164925d1a4e405c889595c2ae02607bf0b042660cc665f24216850f46c14468d"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/tests/journal-market.cjs",
+      "snapshot": "trading-lab/tests/journal-market.cjs",
+      "bytes": 1674,
+      "sha256": "0204a1498e1103c5455e249f43012b2ed5d681ff5978c03f08497d242b3433fd"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/tests/model.cjs",
+      "snapshot": "trading-lab/tests/model.cjs",
+      "bytes": 3542,
+      "sha256": "478274b2a4a57a216b46c5f7bb114baf35d5bca6e09bd507b50a20a290f61abf"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/tests/own-chart-browser.cjs",
+      "snapshot": "trading-lab/tests/own-chart-browser.cjs",
+      "bytes": 15941,
+      "sha256": "e52bbb88e5969e0f3bfaa85f8a67591ae1ee4d5379f3d656125bbe9b320f17a6"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/tests/own-chart.cjs",
+      "snapshot": "trading-lab/tests/own-chart.cjs",
+      "bytes": 5467,
+      "sha256": "21fce81090a22538ff5fd1b7f09ef5f8068899f0496e659797dffb75fa868662"
+    },
+    {
+      "source": "oracles/axiom-oracle/trading-lab/tests/regression.cjs",
+      "snapshot": "trading-lab/tests/regression.cjs",
+      "bytes": 97,
+      "sha256": "b9228017613100c51a72306a7696f9b2162c13244a2ad900d27ec9d0abcdf590"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/README.md",
+      "snapshot": "axiom/README.md",
+      "bytes": 1403,
+      "sha256": "df8480fba436ab8a1e8b4608168c3cb0970d29a04f472727b62722fd387e27cd",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/manifest.json",
+      "snapshot": "axiom/manifest.json",
+      "bytes": 11079,
+      "sha256": "5593988a763bfb895fdaa2c492fa2c1ff536ed5f0a2531034b13fa6f48257ab4",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/PRISM-BRIEF.md",
+      "snapshot": "axiom/trading-lab/PRISM-BRIEF.md",
+      "bytes": 10399,
+      "sha256": "801d557f4619262fae2cb5aabd5e533070f0fe6eb40fca3a24a917be6d037418",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/README.md",
+      "snapshot": "axiom/trading-lab/README.md",
+      "bytes": 35691,
+      "sha256": "2acffb3390105164d6e35b370f360cdf3456dabae7c81593f7387ca64b7145ae",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/NOTICE.txt",
+      "snapshot": "axiom/trading-lab/dist/NOTICE.txt",
+      "bytes": 1068,
+      "sha256": "fa527b0c58e3bbf837b6f64f5eb40233b1f5f880718f7e67b96763d88313f273",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/app.js",
+      "snapshot": "axiom/trading-lab/dist/app.js",
+      "bytes": 20986,
+      "sha256": "05e30ebf7f5a59b6ed4c6aa77d3ce3c1c80284db764e9dda035b056fd16f8260",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/cdc.js",
+      "snapshot": "axiom/trading-lab/dist/cdc.js",
+      "bytes": 2155,
+      "sha256": "940484a90039524f256700107be48978d5a565a330bd084912d7ae46bd77225f",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/index.html",
+      "snapshot": "axiom/trading-lab/dist/index.html",
+      "bytes": 17229,
+      "sha256": "95519fb0d56fe8d98d099d0cfb24d80718a5b65cd806e6ec59d4e5b380c9ecc0",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/indicator-view.js",
+      "snapshot": "axiom/trading-lab/dist/indicator-view.js",
+      "bytes": 7246,
+      "sha256": "fed5b7e43375338c2708e785c7c83ee264a67d9299accc25f727859f0e7d5bdf",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/indicators.js",
+      "snapshot": "axiom/trading-lab/dist/indicators.js",
+      "bytes": 2731,
+      "sha256": "abd9a4a199f78c21ef3b03cf8272a9b0bd7b55bd3fb861f5b6d126658652c73b",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/journal-view.js",
+      "snapshot": "axiom/trading-lab/dist/journal-view.js",
+      "bytes": 6747,
+      "sha256": "3bc65c94f60df91820351ef69ebd997288005ee1b55e3cec94ec25701d1ae9c5",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/market-view.js",
+      "snapshot": "axiom/trading-lab/dist/market-view.js",
+      "bytes": 6630,
+      "sha256": "3ab99a18c5eb5ed18bf3b22d155e5a5c2474000728991dcf946807bbe7d26c53",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/model.js",
+      "snapshot": "axiom/trading-lab/dist/model.js",
+      "bytes": 9819,
+      "sha256": "f036b6d42a8b13181970dbdd7a4194d5273379498b8867ad33a3d6494efd6b0e",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/mso.js",
+      "snapshot": "axiom/trading-lab/dist/mso.js",
+      "bytes": 1842,
+      "sha256": "59a5105f657b1bd19cf77779790fdf862b8bfcaeffeb93fe53c93e279edd897b",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/own-chart.js",
+      "snapshot": "axiom/trading-lab/dist/own-chart.js",
+      "bytes": 25501,
+      "sha256": "1fb49967b5d1a8136dd02f6ecc6f2de65432b6a06e717eff65befc7da3df8e33",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/pine/cdc-actionzone-v3-2020.pine",
+      "snapshot": "axiom/trading-lab/dist/pine/cdc-actionzone-v3-2020.pine",
+      "bytes": 9253,
+      "sha256": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/pine/modified-stochastic-macd-oscillator.pine",
+      "snapshot": "axiom/trading-lab/dist/pine/modified-stochastic-macd-oscillator.pine",
+      "bytes": 2877,
+      "sha256": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/style.css",
+      "snapshot": "axiom/trading-lab/dist/style.css",
+      "bytes": 9725,
+      "sha256": "8372afb572b8b52ffc75d1091822d6388cb554ef1f919a3629390e242530e831",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/dist/tradingview-launcher.js",
+      "snapshot": "axiom/trading-lab/dist/tradingview-launcher.js",
+      "bytes": 3881,
+      "sha256": "8e12cc4e3c1efcc9c3129de2abb53807071456589af252d9786678fa61e8ad3a",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/source/cdc-actionzone-v3-2020.pine",
+      "snapshot": "axiom/trading-lab/source/cdc-actionzone-v3-2020.pine",
+      "bytes": 9253,
+      "sha256": "17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/source/modified-stochastic-macd-oscillator.pine",
+      "snapshot": "axiom/trading-lab/source/modified-stochastic-macd-oscillator.pine",
+      "bytes": 2877,
+      "sha256": "baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/source/provenance.json",
+      "snapshot": "axiom/trading-lab/source/provenance.json",
+      "bytes": 358,
+      "sha256": "62f22f85dda948deb97719e04f19980cf3e9090732ed2479eff3014cb860461b",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/tests/browser.cjs",
+      "snapshot": "axiom/trading-lab/tests/browser.cjs",
+      "bytes": 26830,
+      "sha256": "fe74a7bab045fd188d8abc322f701bd49f9b0d2db50d6ce9c849a29522a73050",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/tests/indicators.cjs",
+      "snapshot": "axiom/trading-lab/tests/indicators.cjs",
+      "bytes": 5480,
+      "sha256": "164925d1a4e405c889595c2ae02607bf0b042660cc665f24216850f46c14468d",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/tests/journal-market.cjs",
+      "snapshot": "axiom/trading-lab/tests/journal-market.cjs",
+      "bytes": 1674,
+      "sha256": "0204a1498e1103c5455e249f43012b2ed5d681ff5978c03f08497d242b3433fd",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/tests/model.cjs",
+      "snapshot": "axiom/trading-lab/tests/model.cjs",
+      "bytes": 3542,
+      "sha256": "478274b2a4a57a216b46c5f7bb114baf35d5bca6e09bd507b50a20a290f61abf",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/tests/own-chart-browser.cjs",
+      "snapshot": "axiom/trading-lab/tests/own-chart-browser.cjs",
+      "bytes": 15941,
+      "sha256": "e52bbb88e5969e0f3bfaa85f8a67591ae1ee4d5379f3d656125bbe9b320f17a6",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/tests/own-chart.cjs",
+      "snapshot": "axiom/trading-lab/tests/own-chart.cjs",
+      "bytes": 5467,
+      "sha256": "21fce81090a22538ff5fd1b7f09ef5f8068899f0496e659797dffb75fa868662",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/trading-lab/tests/regression.cjs",
+      "snapshot": "axiom/trading-lab/tests/regression.cjs",
+      "bytes": 97,
+      "sha256": "b9228017613100c51a72306a7696f9b2162c13244a2ad900d27ec9d0abcdf590",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/cdc-pane-labels-20261117/REVIEW.md",
+      "snapshot": "axiom/ψ/lab/cdc-pane-labels-20261117/REVIEW.md",
+      "bytes": 3146,
+      "sha256": "74b1384b460bb2f15244a53a928b89557c33c04cd7a37ac8e609b388232d46e1",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/cdc-pane-labels-20261117/acceptance.json",
+      "snapshot": "axiom/ψ/lab/cdc-pane-labels-20261117/acceptance.json",
+      "bytes": 1729,
+      "sha256": "6c43a7f90b3ed2f3c707230503e8594d693826ca55281a22262d69fbd01ae12b",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/cdc-pane-labels-20261117/baseline-hashes.json",
+      "snapshot": "axiom/ψ/lab/cdc-pane-labels-20261117/baseline-hashes.json",
+      "bytes": 548,
+      "sha256": "c562610eca2bdbe1805896bc29d964def2e9e421e941e710260027d222d724a7",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/cdc-pane-labels-20261117/browser/results.json",
+      "snapshot": "axiom/ψ/lab/cdc-pane-labels-20261117/browser/results.json",
+      "bytes": 1131,
+      "sha256": "df6b3d78bd83bc69cd78fc5eed58ffd5e416782b5adba3b79f6bfdd4b782e882",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/own-chart-20261117/REVIEW.md",
+      "snapshot": "axiom/ψ/lab/own-chart-20261117/REVIEW.md",
+      "bytes": 5502,
+      "sha256": "e38f05d379955d8fa28f0aff3ef3b8f45edb3fac46d482388b22c6caaeac6624",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/own-chart-20261117/acceptance.json",
+      "snapshot": "axiom/ψ/lab/own-chart-20261117/acceptance.json",
+      "bytes": 1978,
+      "sha256": "5ec415182b2f0cc2e5d3eb758c8a138e28264691db6d8ddc091ac53bdc3f30cf",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/own-chart-20261117/accepted-hashes.json",
+      "snapshot": "axiom/ψ/lab/own-chart-20261117/accepted-hashes.json",
+      "bytes": 922,
+      "sha256": "7b71b0f1efe81fa83713751a11b1a7e369fe444d9faaffc308793f2acf277b83",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/own-chart-20261117/heikin-ashi-reference-comparison.json",
+      "snapshot": "axiom/ψ/lab/own-chart-20261117/heikin-ashi-reference-comparison.json",
+      "bytes": 1028,
+      "sha256": "95fc9df9e830627c6ed7c6099b18126c2d369c20c880614f29f53393c1659e8a",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/own-chart-20261117/installation.json",
+      "snapshot": "axiom/ψ/lab/own-chart-20261117/installation.json",
+      "bytes": 1952,
+      "sha256": "dc60b68548ee8bf956f3c3a0704cc59ce3f5718396a189dad489ef67974357c4",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/own-chart-20261117/installed-live-browser/results.json",
+      "snapshot": "axiom/ψ/lab/own-chart-20261117/installed-live-browser/results.json",
+      "bytes": 5538,
+      "sha256": "9c690ace914fb7969bf02c6b90672a1617860e57e691264415aefe1e188a03e3",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/own-chart-20261117/installed-own-browser/results.json",
+      "snapshot": "axiom/ψ/lab/own-chart-20261117/installed-own-browser/results.json",
+      "bytes": 987,
+      "sha256": "8d8c0ada8d50eda4d31ab2d28c29aca1aefeaa5b17e6f53d4c9a6bac052acbed",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/own-chart-20261117/installed-regression-browser/results.json",
+      "snapshot": "axiom/ψ/lab/own-chart-20261117/installed-regression-browser/results.json",
+      "bytes": 2108,
+      "sha256": "eae2e7ab195a8f94eca8e3a3127ee2a76e167e8e0334faf1cef7e8e14ebf5c55",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/lab/own-chart-20261117/prism-review.json",
+      "snapshot": "axiom/ψ/lab/own-chart-20261117/prism-review.json",
+      "bytes": 805,
+      "sha256": "f68128c75fb4c19dbc0aa66a38722bac5a887bb28fc5384d2722d2ddaa52b89d",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/memory/learnings/2026-11-17_chart-reference-and-pane-labels.md",
+      "snapshot": "axiom/ψ/memory/learnings/2026-11-17_chart-reference-and-pane-labels.md",
+      "bytes": 3333,
+      "sha256": "3242fbd88f6ad1801afa3f438876aee922c07693cd6465c21b70d621b4ef39bd",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/memory/learnings/session-metrics.md",
+      "snapshot": "axiom/ψ/memory/learnings/session-metrics.md",
+      "bytes": 506,
+      "sha256": "7f4c189cb801dcd071383581132e8b6bebf83df63577912a02d589374d9b042d",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/axiom-oracle/ψ/lab/push-20261117/axiom/ψ/memory/retrospectives/2026-11/17/01.36_spot-heikin-ashi-cdc-pane-labels.md",
+      "snapshot": "axiom/ψ/memory/retrospectives/2026-11/17/01.36_spot-heikin-ashi-cdc-pane-labels.md",
+      "bytes": 17068,
+      "sha256": "15c49dd7d65708075b297b4cd7252b18190903333d38e408dc0c7e4fac4ad488",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/prism-oracle/ψ/lab/push-20261117/prism/README.md",
+      "snapshot": "prism/README.md",
+      "bytes": 982,
+      "sha256": "4218536e9ed8147f72841453b9d56c7701e94a030fccda7f4d56e0fa55c24c9b",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/prism-oracle/ψ/lab/push-20261117/prism/SHA256SUMS",
+      "snapshot": "prism/SHA256SUMS",
+      "bytes": 558,
+      "sha256": "9471f9c108f21ddf9011ee76f7448f7a90fbf7181225a10b3eb1df40688259e6",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/prism-oracle/ψ/lab/push-20261117/prism/manifest.json",
+      "snapshot": "prism/manifest.json",
+      "bytes": 2506,
+      "sha256": "8d3ba5d6bc41d88a0081d02b5a22addc242675fed4de8df51482f2e3895aeb04",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/prism-oracle/ψ/lab/push-20261117/prism/ψ/memory/learnings/2026-11-17_separate-tool-fixture-and-production-evidence.md",
+      "snapshot": "prism/ψ/memory/learnings/2026-11-17_separate-tool-fixture-and-production-evidence.md",
+      "bytes": 2700,
+      "sha256": "b372544b0e2751b2c14c6d2e0473c6bbbb296b75bd2936e79a4e9f5da8f9de63",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/prism-oracle/ψ/lab/push-20261117/prism/ψ/memory/learnings/session-metrics.md",
+      "snapshot": "prism/ψ/memory/learnings/session-metrics.md",
+      "bytes": 537,
+      "sha256": "b4ea27fe2a9a6a52b0aeead51c9601712171a33464534541a65c5b44cb9c731c",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    },
+    {
+      "source": "oracles/prism-oracle/ψ/lab/push-20261117/prism/ψ/memory/retrospectives/2026-11/17/01.40_trading-lab-review-and-design-validator.md",
+      "snapshot": "prism/ψ/memory/retrospectives/2026-11/17/01.40_trading-lab-review-and-design-validator.md",
+      "bytes": 18920,
+      "sha256": "5bef573d11d888fa5ed34df588f691ae3565863f11c4eb270315c0d3113a83c0",
+      "scope": "Reviewed role package; metrics is latest-row excerpt only"
+    }
+  ],
+  "rolePackages": {
+    "axiom": 45,
+    "prism": 6
+  }
+}

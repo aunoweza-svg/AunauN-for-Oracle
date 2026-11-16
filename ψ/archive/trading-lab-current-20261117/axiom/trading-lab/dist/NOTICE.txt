@@ -1,0 +1,18 @@
+TradingView Lightweight Charts™
+Copyright (с) 2024 TradingView, Inc. https://www.tradingview.com/
+
+Unmodified Lightweight Charts v4.2.3 loaded from unpkg.com.
+Source NOTICE: https://github.com/tradingview/lightweight-charts/blob/v4.2.3/NOTICE
+License: Apache-2.0 https://github.com/tradingview/lightweight-charts/blob/v4.2.3/LICENSE
+
+CDC ActionZone V3 2020 — © piriya33, MPL-2.0.
+JavaScript adaptation by PRISM Oracle, 2026-11-16; see cdc.js and
+https://mozilla.org/MPL/2.0/ . Exact user Pine and original notices are
+preserved in trading-lab/source/cdc-actionzone-v3-2020.pine.
+Source SHA256: 17be67ca761b508386b40dec2bad4f19aec8dec9e1f561fbbf5f2428c73fd248
+
+Modified Stochastic MACD Oscillator - Vitali Apirine: supplied user Pine v4
+has no explicit license header. No open-license claim is made for that source.
+Exact user source retained in trading-lab/source/modified-stochastic-macd-oscillator.pine.
+This installation is a private prototype; publication is outside this task.
+Source SHA256: baad49d91d4450cb511eaf5b93b6e4e97e59fc3e0ea1dd19ef7e5bb04cf9c97a

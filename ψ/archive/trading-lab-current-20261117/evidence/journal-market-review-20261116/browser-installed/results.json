@@ -1,0 +1,22 @@
+{
+  "scope": "Chromium, actual chart, synthetic Binance fixtures, external widget/fonts blocked",
+  "results": [
+    "SET restriction displayed immediately with exact external TradingView symbol links even when embed network blocked: PASS",
+    "UTC start selection/exact quarter hour, acknowledgement, real chart prefix without future candles: PASS",
+    "readable Thai journal exposes positive/negative net after both fees and hides raw run IDs in closed details: PASS",
+    "quota/retry/double close, reset/load open-position guards, reload preserves open position, Long/Short and frozen entry fee: PASS",
+    "pending/failed reload guards; missing, duplicate and malformed close-time datasets rejected without replacing run: PASS",
+    "JSON download has dataset/schema/limitations; invalid JSON/version/ledger/checksum/future candles rejected; validated import and pre-import backup restore: PASS",
+    "delayed SHA256 import locks direct trade/start/next/import/restore handlers; one confirmation only; existing position blocks import/restore: PASS",
+    "second tab detects external snapshot and stale handlers cannot overwrite it: PASS",
+    "delayed File.text also locks trading and duplicate import/restore before validation: PASS",
+    "start/next/open write failure and pre-import backup failure leave current snapshot untouched: PASS",
+    "200-character unbroken run label and empty-label UUID fit desktop/mobile after chart-filled resize settles; keyboard activation: PASS",
+    "indicator validated settings/frozen config, source metadata, assist option, display toggles and reload persistence: PASS",
+    "actual v4.2.3 oscillator primitives, synchronized ranges in both directions, mobile chart sizing: PASS",
+    "old v2 migration keeps config absent and open position/account byte-for-byte across reload: PASS",
+    "native BTC market indicators, failed-refresh stale message, toggles/mobile and exact raw replay-storage isolation: PASS",
+    "damaged v2/legacy originals exported exactly; validated recovery import preserves original legacy and backup of damaged snapshot: PASS"
+  ],
+  "errors": []
+}

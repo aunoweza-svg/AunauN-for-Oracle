@@ -1,0 +1,53 @@
+{
+  "task": "OWN-CHART-20261117",
+  "status": "installed-verified-with-explicit-parity-limit",
+  "verifiedAt": "2026-11-16T18:07:36.136992+00:00",
+  "url": "http://localhost:8000",
+  "market": "BINANCE:BTCUSDT Spot, explicitly confirmed by user",
+  "defaultChart": "Heikin Ashi based on numerical match to updated screenshot; standard candles optional",
+  "timeframes": [
+    "15m",
+    "1h",
+    "4h",
+    "1d",
+    "1w",
+    "1M"
+  ],
+  "checks": {
+    "installedPureSuites": 5,
+    "ownChartUnitCases": 7,
+    "installedOwnChartBrowserGroups": 7,
+    "installedRegressionBrowserGroups": 16,
+    "browserPageErrors": [],
+    "actualSpotRESTSixTF": "PASS",
+    "actualSpotWebSocketSixTF": "PASS; one or more received frames per interval",
+    "independentPRISM": "Read-only delta/pure checks pass; no unaddressed reported defect",
+    "HTTP": "localhost8000 HTTP200 and exact installed index bytes"
+  },
+  "screenshotSample": "15m reconstructed forming sample: HA OHLC/CDC6decimal/MSO1decimal match. Raw last inferred from bid. No all-bars/signals/all6TF parity claim",
+  "preserved": "17 baseline files unchanged including model, journal, pure CDC/MSO engines and exact Pine originals; account/schema/replay execution unchanged",
+  "changedFiles": [
+    "README.md",
+    "dist/app.js",
+    "dist/index.html",
+    "dist/indicator-view.js",
+    "dist/own-chart.js",
+    "dist/style.css",
+    "dist/tradingview-launcher.js",
+    "tests/browser.cjs",
+    "tests/own-chart-browser.cjs",
+    "tests/own-chart.cjs"
+  ],
+  "noPublicationOrAccountTransactions": true,
+  "evidence": [
+    "installation.json",
+    "accepted-hashes.json",
+    "heikin-ashi-reference-comparison.json",
+    "prism-review.json",
+    "installed-own-browser/results.json",
+    "installed-regression-browser/results.json",
+    "live-spot/results.json",
+    "installed-live-browser/results.json"
+  ],
+  "runtime": "Local server in retained exec session85561; current session runtime, not an installed daemon"
+}

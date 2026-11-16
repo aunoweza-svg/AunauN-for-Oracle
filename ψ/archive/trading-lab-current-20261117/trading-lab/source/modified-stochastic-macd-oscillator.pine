@@ -1,0 +1,38 @@
+//@version=4
+study("Modified Stochastic MACD Oscillator - Vitali Apirine", "MSMACDO", false, format.inherit, 1)
+
+periodStochastic= input(  45,                    "Stochastic Period", input.integer, minval=1)
+periodFast      = input(  12,                  "Fast Average Period", input.integer, minval=1)
+periodSlow      = input(  26,                  "Slow Average Period", input.integer, minval=2)
+periodSignal    = input(   9,                        "Signal Period", input.integer, minval=2)
+showHistogram   = input(true,  "========= Show Histogram ==========", input.bool)
+histogramScheme = input("#1",               "Histogram Color Scheme", input.string , options=["#1","#2"])
+showMomentumBGC = input(true,    "Show Momentum Background Coloring", input.bool)
+lineThickness   = input(   2,                       "Line Thickness", input.integer, options=[1,2])
+showCrossovers  = input(true, "===== Show Crossovers Markers ======", input.bool)
+levelOverBought = input( 1.0,                     "Overbought Level", input.float  , minval= 0.5, step=0.05)
+levelOverSold   = input(-1.0,                       "Oversold Level", input.float  , maxval=-0.5, step=0.05)
+
+bgcolor(color.new(#000000,15), title="Dark Background")
+plot( 0, color=color.new(color.olive, 80), linewidth=7, editable=false)
+hline(0, color=#FFFFFFff, linestyle=hline.style_dotted, editable=false)
+hline(levelOverBought, "Overbought", color=#FF0000ff)
+hline(levelOverSold  , "Oversold"  , color=#00FF00ff)
+
+lowestLow      =  lowest( low, periodStochastic)
+HHMinusLL      = highest(high, periodStochastic) - lowestLow
+stochasticFast = HHMinusLL==0.0 ? 0.0 : (ema(close, periodFast) - lowestLow) / HHMinusLL
+stochasticSlow = HHMinusLL==0.0 ? 0.0 : (ema(close, periodSlow) - lowestLow) / HHMinusLL
+stochasticMACD = 10 * (stochasticFast - stochasticSlow)
+signal         = ema(stochasticMACD, periodSignal)
+histogram      = stochasticMACD - signal
+colorHistogram = histogramScheme=="#1" ? 
+     histogram>0.0              ? #FF00FFff : #800080ff :
+     histogram>nz(histogram[1]) ? #FF00FFff : #800080ff
+     
+bgcolor(showMomentumBGC ? histogram>0.0 ? color.new(#00FF00, 90) : color.new(#FF0000, 90) : color(na), editable=false)
+plot(showHistogram ? histogram : na, color=colorHistogram, linewidth=            2, title="Histogram", style=plot.style_histogram, editable=false)
+plot(                stochasticMACD, color=#0066FFff     , linewidth=lineThickness, title="Stochastic MACD")
+plot(                        signal, color=#FF6600ff     , linewidth=lineThickness, title="Signal")
+plotshape(showCrossovers and crossover (stochasticMACD, signal), color=#00FF00ff, size=size.tiny, style=shape.triangleup  , location=location.bottom, editable=false)
+plotshape(showCrossovers and crossunder(stochasticMACD, signal), color=#FF0000ff, size=size.tiny, style=shape.triangledown, location=location.top   , editable=false)

@@ -1,0 +1,16 @@
+{
+  "reviewer": "Verified real PRISM Oracle via Herdr w2:pJ; reply forwarded from thread01a1c68a-c00a-7233-ad3b-b00042f9f815",
+  "scope": "Read-only controller/pure/source delta review; no claim browser/live/allTF parity",
+  "findingsFixed": [
+    "REST snapshot no longer overwrites finalized WS candle",
+    "Restored TF initializes before TradingView link",
+    "Historical hover stays stable during ticks",
+    "Settings shared/drawings perTF wording corrected"
+  ],
+  "finalDelta": "Spot/HA helper recursion, raw input preserved, independent frozen screenshot calculation, null crosshair target guard and source isolation pass; no new concrete defect",
+  "reviewedHashesPrefixes": {
+    "own-chart.js": "aabddb95",
+    "indicator-view.js": "fed5b7e4"
+  },
+  "noEditsOrInstallationByReviewer": true
+}

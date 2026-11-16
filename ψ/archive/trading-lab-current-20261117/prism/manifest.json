@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "owner": "PRISM",
+  "purpose": "Scoped latest RRR handoff for user-authorized sole parent publisher AunauN",
+  "createdAt": "2026-11-17T01:46:04.185239+07:00",
+  "sourceRoot": "/mnt/d/onedrive/aunaun oracle/oracles/prism-oracle",
+  "metricsMarker": "RRR-20261117T014057-design-validator",
+  "metricsRow": "| 2026-11-17T01:40:57+07:00 | 01a1c68a-c00a-7233-ad3b-b00042f9f815 / RRR-20261117T014057-design-validator | accepted Trading Lab stages; own-chart read-only review; skill1.4 installed | production DESIGN.md absent; full TV parity unverified | skill CLI7/7; 3 controller defects fixed/rechecked by owner | artifact naming confusion; approval and reference-scope iterations | float equality and mock/evidence harness issues corrected |",
+  "files": [
+    {
+      "path": "ψ/memory/retrospectives/2026-11/17/01.40_trading-lab-review-and-design-validator.md",
+      "source": "/mnt/d/onedrive/aunaun oracle/oracles/prism-oracle/ψ/memory/retrospectives/2026-11/17/01.40_trading-lab-review-and-design-validator.md",
+      "sourceSha256": "5bef573d11d888fa5ed34df588f691ae3565863f11c4eb270315c0d3113a83c0",
+      "sha256": "5bef573d11d888fa5ed34df588f691ae3565863f11c4eb270315c0d3113a83c0",
+      "bytes": 18920,
+      "mode": "exact-copy"
+    },
+    {
+      "path": "ψ/memory/learnings/2026-11-17_separate-tool-fixture-and-production-evidence.md",
+      "source": "/mnt/d/onedrive/aunaun oracle/oracles/prism-oracle/ψ/memory/learnings/2026-11-17_separate-tool-fixture-and-production-evidence.md",
+      "sourceSha256": "b372544b0e2751b2c14c6d2e0473c6bbbb296b75bd2936e79a4e9f5da8f9de63",
+      "sha256": "b372544b0e2751b2c14c6d2e0473c6bbbb296b75bd2936e79a4e9f5da8f9de63",
+      "bytes": 2700,
+      "mode": "exact-copy"
+    },
+    {
+      "path": "ψ/memory/learnings/session-metrics.md",
+      "source": "/mnt/d/onedrive/aunaun oracle/oracles/prism-oracle/ψ/memory/learnings/session-metrics.md",
+      "sourceSha256": "bddb35a6eb495df1be09cce49d3249cfd119bf858838af30352ab9945167157e",
+      "sha256": "b4ea27fe2a9a6a52b0aeead51c9601712171a33464534541a65c5b44cb9c731c",
+      "bytes": 537,
+      "mode": "latest-row-only"
+    }
+  ],
+  "scope": "Only latest retrospective, lesson and one metrics row. No app/source/skill/runtime artifacts. No parent writes, commits, pushes, remote changes or extra metrics row by PRISM.",
+  "secretCheck": "Reviewed content and scanned payload against common private-key/token patterns; no matches. This is not an exhaustive credential detector."
+}
